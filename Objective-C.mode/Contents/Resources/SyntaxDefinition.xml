@@ -61,7 +61,7 @@
             </keywords>
 			
 			<keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no">
-				<regex>(\w+)\s=|(\w+)\s\w+</regex>
+				<regex>\w+\s\*(\w+)\s\=|\w+\s(\w+)\s\=</regex>
 			</keywords>
             
             <keywords id="Cocoa Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support.function.objective-c">
