@@ -47,6 +47,7 @@
     </symbol>
 
 	<symbol id="language.variable.php.php-html" hidden="yes" useforautocomplete="yes">
+        <regex>(\$this\-\&gt;[a-zA-Z0-9_]+)</regex>
 		<regex>(\$[\w\d]+)</regex>
 	</symbol>
 	
