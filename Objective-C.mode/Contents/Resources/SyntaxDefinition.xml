@@ -49,6 +49,7 @@
                 <import mode="C" keywords-only="yes"/>
                 <import/>
             </state>
+            
             <keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
                 <regex>[^:]\([^)]*\)\s*([A-Za-z_][A-Za-z0-9_]*)\s*[{;]</regex>
                 <regex>\)\s*([A-Za-z_][A-Za-z0-9_]*:)</regex>
@@ -61,7 +62,11 @@
             </keywords>
 			
 			<keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no">
-				<regex>\w+\s\*(\w+)\s\=|\w+\s(\w+)\s\=</regex>
+				<regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
+			</keywords>
+			
+			<keywords id="User Classes" useforautocomplete="yes" scope="language.variable.objective-c">
+    			<regex>(\w+)\s\*|(\w+)\*</regex>
 			</keywords>
             
             <keywords id="Cocoa Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support.function.objective-c">
