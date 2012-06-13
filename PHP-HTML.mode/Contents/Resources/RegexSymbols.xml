@@ -45,6 +45,16 @@
         </postprocess>
         <arguments>([\$\w]+[\$=\w\s'"\(\)]*)[,\n\t]*</arguments>
     </symbol>
+    
+    <symbol id="case" useforautocomplete="no" image="SymbolS">
+        <regex>(case [^\n]+)</regex>
+        <postprocess>
+            <find>case</find>
+            <replace> </replace>
+            <find>"|'|:|[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
 
 	<symbol id="language.variable.php.php-html" hidden="yes" useforautocomplete="yes">
         <regex>(\$[\w\d]+\-\&gt;[a-zA-Z0-9_]+)</regex>

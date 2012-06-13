@@ -63,11 +63,17 @@
     <symbol id="Properties" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c">
 		<regex>[a-z_]+\.(\w+)</regex>
 	</symbol>
-    <symbol id="Variables" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name">
+    <symbol id="Variables" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c">
+        <regex>\w+\s\*(\w+)\s\=</regex>
+		<regex>\w+\s\*(\w+);</regex>
+		<regex>\w+\s(\w+)\s\=</regex>
 		<regex>(\w+)\s\=</regex>
-		<regex>(\w+)\s*</regex>
 	</symbol>
 	
+	<symbol id="Variables *" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c">
+		<regex>\w+\s(\*\w+)\s\=</regex>
+		<regex>\w+\s(\*\w+);</regex>
+	</symbol>
 
     <symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes">
         <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>

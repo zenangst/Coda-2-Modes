@@ -721,6 +721,7 @@
                 <string>NSRulerMarker</string>
                 <string>NSRulerView</string>
                 <string>NSRunLoop</string>
+                <string>NSRunningApplication</string>
                 <string>NSSavePanel</string>
                 <string>NSScanner</string>
                 <string>NSScreen</string>
@@ -2387,6 +2388,8 @@
                 <string>NSTabState</string>
                 <string>NSTabViewItemAuxiliaryOpaque</string>
                 <string>NSTabViewType</string>
+                <string>NSTableViewDelegate</string>
+                <string>NSTableViewDataSource</string>
                 <string>NSTableViewDropOperation</string>
                 <string>NSTableViewSelectionHighlightStyle</string>
                 <string>NSTableViewSelectionHighlightStyleRegular</string>
