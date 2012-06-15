@@ -57,11 +57,11 @@
                 <regex>(?&lt;![:\s])\s+([A-Za-z_][A-Za-z0-9_]*)]</regex>
             </keywords>
             
-            <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no">
+            <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
             	<regex>[a-z_]+\.(\w+)</regex>
             </keywords>
 			
-			<keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no">
+			<keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
 				<regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
 			</keywords>
 			
@@ -680,6 +680,7 @@
                 <string>NSPlaceholders</string>
                 <string>NSPointerArray</string>
                 <string>NSPointerFunctions</string>
+                <string>NSPopover</string>
                 <string>NSPopUpButton</string>
                 <string>NSPopUpButtonCell</string>
                 <string>NSPort</string>
@@ -773,6 +774,7 @@
                 <string>NSString</string>
                 <string>NSTabView</string>
                 <string>NSTabViewItem</string>
+                <string>NSTableCellView</string>
                 <string>NSTableColumn</string>
                 <string>NSTableDataSource</string>
                 <string>NSTableHeaderCell</string>

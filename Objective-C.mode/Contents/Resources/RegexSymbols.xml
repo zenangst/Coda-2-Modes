@@ -60,17 +60,17 @@
         </postprocess>
     </symbol>
     
-    <symbol id="Properties" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c">
+    <symbol id="Properties" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.properties" color="#8735a5">
 		<regex>[a-z_]+\.(\w+)</regex>
 	</symbol>
-    <symbol id="Variables" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c">
+    <symbol id="Variables*" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.variable" color="#006ff8">
         <regex>\w+\s\*(\w+)\s\=</regex>
 		<regex>\w+\s\*(\w+);</regex>
 		<regex>\w+\s(\w+)\s\=</regex>
 		<regex>(\w+)\s\=</regex>
 	</symbol>
 	
-	<symbol id="Variables *" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c">
+	<symbol id="Variables*" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.variable*" color="#006ff8">
 		<regex>\w+\s(\*\w+)\s\=</regex>
 		<regex>\w+\s(\*\w+);</regex>
 	</symbol>
