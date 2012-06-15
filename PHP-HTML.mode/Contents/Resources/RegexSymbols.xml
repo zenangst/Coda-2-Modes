@@ -63,7 +63,7 @@
     </symbol>
     
     <symbol id="default" useforautocomplete="no" image="SymbolCaseDefault">
-        <regex>(default[^\n]+)</regex>
+        <regex>(default:)</regex>
         <postprocess>
             <find>"|'|:|\t+</find>
             <replace></replace>
