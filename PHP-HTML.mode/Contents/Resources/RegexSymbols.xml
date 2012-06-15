@@ -46,13 +46,27 @@
         <arguments>([\$\w]+[\$=\w\s'"\(\)]*)[,\n\t]*</arguments>
     </symbol>
     
-    <symbol id="case" useforautocomplete="no" image="SymbolS">
+     <symbol id="switch" useforautocomplete="no" image="SymbolS">
+        <regex>switch[^\(]+\(([^\)]+)</regex>
+        <postprocess>
+            <find>"|'|:|\t+</find>
+            <replace></replace>
+        </postprocess>
+    </symbol>
+    
+    <symbol id="case" useforautocomplete="no" image="SymbolCase">
         <regex>(case [^\n]+)</regex>
         <postprocess>
-            <find>case</find>
-            <replace> </replace>
-            <find>"|'|:|[ \t]+</find>
-            <replace> </replace>
+            <find>"|'|:|\t+</find>
+            <replace></replace>
+        </postprocess>
+    </symbol>
+    
+    <symbol id="default" useforautocomplete="no" image="SymbolCaseDefault">
+        <regex>(default[^\n]+)</regex>
+        <postprocess>
+            <find>"|'|:|\t+</find>
+            <replace></replace>
         </postprocess>
     </symbol>
 
