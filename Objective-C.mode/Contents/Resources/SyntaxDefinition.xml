@@ -50,6 +50,15 @@
                 <import/>
             </state>
             
+            <keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
+				<regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
+				<regex>\[(\w+)</regex>
+				<regex>\((\w+)|\)(\w+)</regex>
+				<regex>(\w+)\s\=</regex>
+				<regex>\:(\w+)\]|\:(\w+)\s|(\w+);</regex>
+				<regex>\s(\w+)\.|\t(\w+)\.|:(\w+)\.</regex>
+			</keywords>
+            
             <keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
                 <regex>[^:]\([^)]*\)\s*([A-Za-z_][A-Za-z0-9_]*)\s*[{;]</regex>
                 <regex>\)\s*([A-Za-z_][A-Za-z0-9_]*:)</regex>
@@ -57,13 +66,9 @@
                 <regex>(?&lt;![:\s])\s+([A-Za-z_][A-Za-z0-9_]*)]</regex>
             </keywords>
             
-            <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
+			 <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
             	<regex>[a-z_]+\.(\w+)</regex>
             </keywords>
-			
-			<keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
-				<regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
-			</keywords>
 			
 			<keywords id="User Classes" useforautocomplete="yes" scope="language.variable.objective-c">
     			<regex>(\w+)\s\*|(\w+)\*</regex>
@@ -2453,7 +2458,7 @@
                 <string>NSZeroSize</string>
                 <string>NSZone</string>
             </keywords>
-            <keywords id="Cocoa Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="constant.cocoa">
+            <keywords id="Cocoa Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="style.at-rule.constant">
                 <string>AUHostVersionIdentifier</string>
                 <string>AUNumVersion</string>
                 <string>AVAudioQuality</string>
