@@ -1,0 +1,6609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comments</key>
+	<dict>
+		<key>EndTag</key>
+		<string>*/</string>
+		<key>StartTag</key>
+		<string>/*</string>
+	</dict>
+	<key>SymbolTableContext</key>
+	<dict>
+		<key>IncludeContexts</key>
+		<array>
+			<dict>
+				<key>State</key>
+				<string>SEEMode.JavaScript</string>
+				<key>Type</key>
+				<string>JavaScript Include</string>
+			</dict>
+		</array>
+		<key>MatchContexts</key>
+		<array>
+			<dict>
+				<key>State</key>
+				<string>SEEMode.JavaScript</string>
+				<key>Type</key>
+				<string>Functions</string>
+			</dict>
+			<dict>
+				<key>State</key>
+				<string>SEEMode.JavaScript</string>
+				<key>Type</key>
+				<string>Variable Declarations</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Completions</key>
+	<array>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>ID</key>
+			<string>style</string>
+			<key>String</key>
+			<string>style</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>NamedNodeMap</string>
+					</array>
+					<key>ID</key>
+					<string>attributes property</string>
+					<key>String</key>
+					<string>attributes</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>NodeList</string>
+					</array>
+					<key>ID</key>
+					<string>Child nodes</string>
+					<key>String</key>
+					<string>childNodes</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>firstChild property</string>
+					<key>String</key>
+					<string>firstChild</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>lastChild property</string>
+					<key>String</key>
+					<string>lastChild</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>nextSibling property</string>
+					<key>String</key>
+					<string>nextSibling</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>nodeName property</string>
+					<key>String</key>
+					<string>nodeName</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>nodeType property</string>
+					<key>String</key>
+					<string>nodeType</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>nodeValue property</string>
+					<key>String</key>
+					<string>nodeValue</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>document</string>
+					</array>
+					<key>ID</key>
+					<string>ownerDocument property</string>
+					<key>String</key>
+					<string>ownerDocument</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>parentElement property</string>
+					<key>String</key>
+					<string>parentElement</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>parentNode property</string>
+					<key>String</key>
+					<string>parentNode</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>previousSibling property</string>
+					<key>String</key>
+					<string>previousSibling</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>appendChild function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{12, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(Node newChild)</string>
+					<key>SelectionRange</key>
+					<string>{12, 13}</string>
+					<key>String</key>
+					<string>appendChild</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>cloneNode function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{10, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(boolean deep)</string>
+					<key>SelectionRange</key>
+					<string>{10, 12}</string>
+					<key>String</key>
+					<string>cloneNode</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>hasChildNodes function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{15, 0}</string>
+					<key>String</key>
+					<string>hasChildNodes</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>insertBefore function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{13, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{28, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(Node newChild, Node refChild)</string>
+					<key>SelectionRange</key>
+					<string>{13, 13}</string>
+					<key>String</key>
+					<string>insertBefore</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>removeChild function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{12, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(Node oldChild)</string>
+					<key>SelectionRange</key>
+					<string>{12, 13}</string>
+					<key>String</key>
+					<string>removeChild</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>removeNode function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{11, 22}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(boolean removeChildren)</string>
+					<key>SelectionRange</key>
+					<string>{11, 22}</string>
+					<key>String</key>
+					<string>removeNode</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>replaceChild function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{13, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{28, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(Node newChild, Node refChild)</string>
+					<key>SelectionRange</key>
+					<string>{13, 13}</string>
+					<key>String</key>
+					<string>replaceChild</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>Node base class</string>
+			<key>String</key>
+			<string>Node</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Node</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>tagName property</string>
+					<key>String</key>
+					<string>tagName</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>getAttribute function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{13, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{13, 11}</string>
+					<key>String</key>
+					<string>getAttribute</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>NodeList</string>
+					</array>
+					<key>ID</key>
+					<string>getElementsByTagName function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{21, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{21, 11}</string>
+					<key>String</key>
+					<string>getElementsByTagName</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>normalize function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{11, 0}</string>
+					<key>String</key>
+					<string>normalize</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>removeAttribute function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{16, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{16, 11}</string>
+					<key>String</key>
+					<string>removeAttribute</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>setAttribute function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{13, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{26, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name, String value)</string>
+					<key>SelectionRange</key>
+					<string>{13, 11}</string>
+					<key>String</key>
+					<string>setAttribute</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>children property</string>
+					<key>String</key>
+					<string>children</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>className property</string>
+					<key>String</key>
+					<string>className</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Style</string>
+					</array>
+					<key>ID</key>
+					<string>currentStyle property</string>
+					<key>String</key>
+					<string>currentStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>dir property</string>
+					<key>String</key>
+					<string>dir</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>document</string>
+					</array>
+					<key>ID</key>
+					<string>document property</string>
+					<key>String</key>
+					<string>document</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>filters property</string>
+					<key>String</key>
+					<string>filters</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>id property</string>
+					<key>String</key>
+					<string>id</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>innerHTML property</string>
+					<key>String</key>
+					<string>innerHTML</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>innerText property</string>
+					<key>String</key>
+					<string>innerText</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>lang property</string>
+					<key>String</key>
+					<string>lang</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>offsetHeight property</string>
+					<key>String</key>
+					<string>offsetHeight</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>offsetLeft property</string>
+					<key>String</key>
+					<string>offsetLeft</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>offsetParent property</string>
+					<key>String</key>
+					<string>offsetParent</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>offsetTop property</string>
+					<key>String</key>
+					<string>offsetTop</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>offsetWidth property</string>
+					<key>String</key>
+					<string>offsetWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Style</string>
+					</array>
+					<key>ID</key>
+					<string>style property</string>
+					<key>String</key>
+					<string>style</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>title property</string>
+					<key>String</key>
+					<string>title</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>uniqueID property</string>
+					<key>String</key>
+					<string>uniqueID</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>addBehavior function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{12, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url)</string>
+					<key>SelectionRange</key>
+					<string>{12, 10}</string>
+					<key>String</key>
+					<string>addBehavior</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>attachEvent function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{12, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{26, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String event, code notify)</string>
+					<key>SelectionRange</key>
+					<string>{12, 12}</string>
+					<key>String</key>
+					<string>attachEvent</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>detachEvent function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{12, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{26, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String event, code notify)</string>
+					<key>SelectionRange</key>
+					<string>{12, 12}</string>
+					<key>String</key>
+					<string>detachEvent</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>addEventListener function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{17, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{30, 21}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{53, 18}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String type, EventListner listener, boolean useCapture)</string>
+					<key>SelectionRange</key>
+					<string>{17, 11}</string>
+					<key>String</key>
+					<string>addEventListener</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>removeEventListener function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{20, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{33, 22}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{57, 18}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String type, EventListener listener, boolean useCapture)</string>
+					<key>SelectionRange</key>
+					<string>{20, 11}</string>
+					<key>String</key>
+					<string>removeEventListener</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>insertAdjacentHTML function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{19, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{33, 15}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String where, String HTMLText)</string>
+					<key>SelectionRange</key>
+					<string>{19, 12}</string>
+					<key>String</key>
+					<string>insertAdjacentHTML</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>removeBehavior function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{15, 9}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number id)</string>
+					<key>SelectionRange</key>
+					<string>{15, 9}</string>
+					<key>String</key>
+					<string>removeBehavior</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>Element class</string>
+			<key>String</key>
+			<string>Element</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Node</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>data property</string>
+					<key>String</key>
+					<string>data</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>appendData function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{11, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String arg)</string>
+					<key>SelectionRange</key>
+					<string>{11, 10}</string>
+					<key>String</key>
+					<string>appendData</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>deleteData function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{11, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{26, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number offset, number count)</string>
+					<key>SelectionRange</key>
+					<string>{11, 13}</string>
+					<key>String</key>
+					<string>deleteData</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>insertData function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{11, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{26, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number offset, String arg)</string>
+					<key>SelectionRange</key>
+					<string>{11, 13}</string>
+					<key>String</key>
+					<string>insertData</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>substringData function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{14, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{29, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number offset, number count)</string>
+					<key>SelectionRange</key>
+					<string>{14, 13}</string>
+					<key>String</key>
+					<string>substringData</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>CharacterData class</string>
+			<key>String</key>
+			<string>CharacterData</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>CharacterData</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Text</string>
+					</array>
+					<key>ID</key>
+					<string>splitText function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{10, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number offset)</string>
+					<key>SelectionRange</key>
+					<string>{10, 13}</string>
+					<key>String</key>
+					<string>splitText</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>Text class</string>
+			<key>String</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Node</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>Element property</string>
+					<key>String</key>
+					<string>documentElement</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>createElement function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{14, 14}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String tagName)</string>
+					<key>SelectionRange</key>
+					<string>{14, 14}</string>
+					<key>String</key>
+					<string>createElement</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Text</string>
+					</array>
+					<key>ID</key>
+					<string>createTextNode function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{15, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String data)</string>
+					<key>SelectionRange</key>
+					<string>{15, 11}</string>
+					<key>String</key>
+					<string>createTextNode</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>getElementById function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{15, 16}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String elementId)</string>
+					<key>SelectionRange</key>
+					<string>{15, 16}</string>
+					<key>String</key>
+					<string>getElementById</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>NodeList</string>
+					</array>
+					<key>ID</key>
+					<string>getElementsByTagName function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{21, 14}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String tagname)</string>
+					<key>SelectionRange</key>
+					<string>{21, 14}</string>
+					<key>String</key>
+					<string>getElementsByTagName</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>NodeList</string>
+					</array>
+					<key>ID</key>
+					<string>getElementsByName function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{18, 18}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String elementName)</string>
+					<key>SelectionRange</key>
+					<string>{18, 18}</string>
+					<key>String</key>
+					<string>getElementsByName</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>NodeList</string>
+					</array>
+					<key>ID</key>
+					<string>getElementsByClassName function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{23, 18}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String elementName)</string>
+					<key>SelectionRange</key>
+					<string>{23, 18}</string>
+					<key>String</key>
+					<string>getElementsByClassName</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>createStyleSheet function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{17, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{29, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url, number index)</string>
+					<key>SelectionRange</key>
+					<string>{17, 10}</string>
+					<key>String</key>
+					<string>createStyleSheet</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>open function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>open</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>tags function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>tags</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>write function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String text)</string>
+					<key>SelectionRange</key>
+					<string>{6, 11}</string>
+					<key>String</key>
+					<string>write</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>writeln function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{8, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String text)</string>
+					<key>SelectionRange</key>
+					<string>{8, 11}</string>
+					<key>String</key>
+					<string>writeln</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>all property</string>
+					<key>SelectionRange</key>
+					<string>{3, 0}</string>
+					<key>String</key>
+					<string>all</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>HTMLCollection</string>
+					</array>
+					<key>ID</key>
+					<string>anchors property</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>anchors</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>HTMLCollection</string>
+					</array>
+					<key>ID</key>
+					<string>applets property</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>applets</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>body property</string>
+					<key>SelectionRange</key>
+					<string>{4, 0}</string>
+					<key>String</key>
+					<string>body</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cookie property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>cookie</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>domain property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>domain</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>embeds property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>embeds</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>HTMLCollection</string>
+					</array>
+					<key>ID</key>
+					<string>forms property</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>forms</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>frames property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>frames</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>HTMLCollection</string>
+					</array>
+					<key>ID</key>
+					<string>images property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>images</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>layers property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>layers</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>HTMLCollection</string>
+					</array>
+					<key>ID</key>
+					<string>links property</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>links</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>location</string>
+					</array>
+					<key>ID</key>
+					<string>location property</string>
+					<key>SelectionRange</key>
+					<string>{8, 0}</string>
+					<key>String</key>
+					<string>location</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>window</string>
+					</array>
+					<key>ID</key>
+					<string>parentWindow property</string>
+					<key>SelectionRange</key>
+					<string>{12, 0}</string>
+					<key>String</key>
+					<string>parentWindow</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>plugins property</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>plugins</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>referrer property</string>
+					<key>SelectionRange</key>
+					<string>{8, 0}</string>
+					<key>String</key>
+					<string>referrer</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>scripts property</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>scripts</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>styleSheets property</string>
+					<key>SelectionRange</key>
+					<string>{11, 0}</string>
+					<key>String</key>
+					<string>styleSheets</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>title property</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>title</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>uniqueID property</string>
+					<key>SelectionRange</key>
+					<string>{8, 0}</string>
+					<key>String</key>
+					<string>uniqueID</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>URL property</string>
+					<key>SelectionRange</key>
+					<string>{3, 0}</string>
+					<key>String</key>
+					<string>URL</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>window</string>
+					</array>
+					<key>ID</key>
+					<string>window property</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>window</string>
+				</dict>
+			</array>
+			<key>ID</key>
+			<string>Root document object</string>
+			<key>String</key>
+			<string>document</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>navigator</string>
+					</array>
+					<key>ID</key>
+					<string>clientInformation property</string>
+					<key>String</key>
+					<string>clientInformation</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>closed property</string>
+					<key>String</key>
+					<string>closed</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>event</string>
+					</array>
+					<key>ID</key>
+					<string>event</string>
+					<key>String</key>
+					<string>event</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>frameElement property</string>
+					<key>String</key>
+					<string>frameElement</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>frames property</string>
+					<key>String</key>
+					<string>frames</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>history</string>
+					</array>
+					<key>ID</key>
+					<string>history property</string>
+					<key>String</key>
+					<string>history</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>innerHeight property</string>
+					<key>String</key>
+					<string>innerHeight</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>innerWidth property</string>
+					<key>String</key>
+					<string>innerWidth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>location</string>
+					</array>
+					<key>ID</key>
+					<string>location property</string>
+					<key>String</key>
+					<string>location</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>name property</string>
+					<key>String</key>
+					<string>name</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>navigator</string>
+					</array>
+					<key>ID</key>
+					<string>navigator property</string>
+					<key>String</key>
+					<string>navigator</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>offscreenBuffering property</string>
+					<key>String</key>
+					<string>offscreenBuffering</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>window</string>
+					</array>
+					<key>ID</key>
+					<string>opener property</string>
+					<key>String</key>
+					<string>opener</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>outerHeight property</string>
+					<key>String</key>
+					<string>outerHeight</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>outerWidth property</string>
+					<key>String</key>
+					<string>outerWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>window</string>
+					</array>
+					<key>ID</key>
+					<string>parent property</string>
+					<key>String</key>
+					<string>parent</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>screen</string>
+					</array>
+					<key>ID</key>
+					<string>screen property</string>
+					<key>String</key>
+					<string>screen</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>window</string>
+					</array>
+					<key>ID</key>
+					<string>self property</string>
+					<key>String</key>
+					<string>self</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>status property</string>
+					<key>String</key>
+					<string>status</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>top property</string>
+					<key>String</key>
+					<string>top</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>close function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>close</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>navigate function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{8, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url)</string>
+					<key>SelectionRange</key>
+					<string>{8, 10}</string>
+					<key>String</key>
+					<string>navigate</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>window</string>
+					</array>
+					<key>ID</key>
+					<string>open function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{17, 17}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{36, 15}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url, String windowName, String features)</string>
+					<key>SelectionRange</key>
+					<string>{5, 10}</string>
+					<key>String</key>
+					<string>open</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>window class</string>
+			<key>String</key>
+			<string>window</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>hash property</string>
+					<key>String</key>
+					<string>hash</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>host property</string>
+					<key>String</key>
+					<string>host</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>hostname property</string>
+					<key>String</key>
+					<string>hostname</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>href property</string>
+					<key>String</key>
+					<string>href</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pathname property</string>
+					<key>String</key>
+					<string>pathname</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>port property</string>
+					<key>String</key>
+					<string>port</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>protocol property</string>
+					<key>String</key>
+					<string>protocol</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>search property</string>
+					<key>String</key>
+					<string>search</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>assign function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url)</string>
+					<key>SelectionRange</key>
+					<string>{7, 10}</string>
+					<key>String</key>
+					<string>assign</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>reload function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 21}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(boolean unconditional)</string>
+					<key>SelectionRange</key>
+					<string>{7, 21}</string>
+					<key>String</key>
+					<string>reload</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>replace function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{8, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url)</string>
+					<key>SelectionRange</key>
+					<string>{8, 10}</string>
+					<key>String</key>
+					<string>replace</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>location class</string>
+			<key>String</key>
+			<string>location</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>concat function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(Array array2)</string>
+					<key>SelectionRange</key>
+					<string>{7, 12}</string>
+					<key>String</key>
+					<string>concat</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>join function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 22}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String delimiterString)</string>
+					<key>SelectionRange</key>
+					<string>{5, 22}</string>
+					<key>String</key>
+					<string>join</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Object</string>
+					</array>
+					<key>ID</key>
+					<string>pop function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 0}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>pop</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Object</string>
+					</array>
+					<key>ID</key>
+					<string>push function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 5}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(value)</string>
+					<key>SelectionRange</key>
+					<string>{5, 5}</string>
+					<key>String</key>
+					<string>push</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>reverse function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{9, 0}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{9, 0}</string>
+					<key>String</key>
+					<string>reverse</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Object</string>
+					</array>
+					<key>ID</key>
+					<string>shift function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 0}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>shift</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>slice function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 17}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{25, 15}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number startIndex, number endIndex)</string>
+					<key>SelectionRange</key>
+					<string>{6, 17}</string>
+					<key>String</key>
+					<string>slice</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>sort function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 15}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(compareFunction)</string>
+					<key>SelectionRange</key>
+					<string>{5, 15}</string>
+					<key>String</key>
+					<string>sort</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>unshift function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{8, 5}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(value)</string>
+					<key>SelectionRange</key>
+					<string>{8, 5}</string>
+					<key>String</key>
+					<string>unshift</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>Array class</string>
+			<key>String</key>
+			<string>Array</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>anchor function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{7, 11}</string>
+					<key>String</key>
+					<string>anchor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>big function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>big</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>blink function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>blink</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>bold function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>bold</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>charAt function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number index)</string>
+					<key>SelectionRange</key>
+					<string>{7, 12}</string>
+					<key>String</key>
+					<string>charAt</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>charCodeAt function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{11, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number index)</string>
+					<key>SelectionRange</key>
+					<string>{11, 12}</string>
+					<key>String</key>
+					<string>charCodeAt</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>concat function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 14}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String string2)</string>
+					<key>SelectionRange</key>
+					<string>{7, 14}</string>
+					<key>String</key>
+					<string>concat</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fixed function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>fixed</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontcolor function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{10, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String color)</string>
+					<key>SelectionRange</key>
+					<string>{10, 12}</string>
+					<key>String</key>
+					<string>fontcolor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontsize function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{9, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String size)</string>
+					<key>SelectionRange</key>
+					<string>{9, 11}</string>
+					<key>String</key>
+					<string>fontsize</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fromCharCode function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{14, 0}</string>
+					<key>String</key>
+					<string>fromCharCode</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>indexOf function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{8, 19}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{29, 25}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String searchString, number startPositionIndex)</string>
+					<key>SelectionRange</key>
+					<string>{8, 19}</string>
+					<key>String</key>
+					<string>indexOf</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>italics function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{9, 0}</string>
+					<key>String</key>
+					<string>italics</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>lastIndexOf function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{12, 19}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{33, 25}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String searchString, number startPositionIndex)</string>
+					<key>SelectionRange</key>
+					<string>{12, 19}</string>
+					<key>String</key>
+					<string>lastIndexOf</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>link function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 10}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String url)</string>
+					<key>SelectionRange</key>
+					<string>{5, 10}</string>
+					<key>String</key>
+					<string>link</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>slice function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 25}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{33, 23}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number startPositionIndex, number endPositionIndex)</string>
+					<key>SelectionRange</key>
+					<string>{6, 25}</string>
+					<key>String</key>
+					<string>slice</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>small function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{7, 0}</string>
+					<key>String</key>
+					<string>small</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>split function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 16}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String delimiter)</string>
+					<key>SelectionRange</key>
+					<string>{6, 16}</string>
+					<key>String</key>
+					<string>split</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>strike function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{8, 0}</string>
+					<key>String</key>
+					<string>strike</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>sub function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>sub</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>substr function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{7, 25}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{34, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number startPositionIndex, number length)</string>
+					<key>SelectionRange</key>
+					<string>{7, 25}</string>
+					<key>String</key>
+					<string>substr</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>substring function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{10, 25}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{37, 23}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number startPositionIndex, number endPositionIndex)</string>
+					<key>SelectionRange</key>
+					<string>{10, 25}</string>
+					<key>String</key>
+					<string>substring</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>sup function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{5, 0}</string>
+					<key>String</key>
+					<string>sup</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>toLowerCase function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{13, 0}</string>
+					<key>String</key>
+					<string>toLowerCase</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>toUpperCase function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{13, 0}</string>
+					<key>String</key>
+					<string>toUpperCase</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>replace function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{8, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{21, 14}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String find, String replace)</string>
+					<key>SelectionRange</key>
+					<string>{8, 11}</string>
+					<key>String</key>
+					<string>replace</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>String class</string>
+			<key>String</key>
+			<string>String</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>item function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number index)</string>
+					<key>SelectionRange</key>
+					<string>{5, 12}</string>
+					<key>String</key>
+					<string>item</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>namedItem function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{10, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{10, 11}</string>
+					<key>String</key>
+					<string>namedItem</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>HTMLCollection class</string>
+			<key>String</key>
+			<string>HTMLCollection</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>item function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number index)</string>
+					<key>SelectionRange</key>
+					<string>{5, 12}</string>
+					<key>String</key>
+					<string>item</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>NodeList class</string>
+			<key>String</key>
+			<string>NodeList</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>azimuth property</string>
+					<key>String</key>
+					<string>azimuth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>background property</string>
+					<key>String</key>
+					<string>background</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundAttachment property</string>
+					<key>String</key>
+					<string>backgroundAttachment</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundColor property</string>
+					<key>String</key>
+					<string>backgroundColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundImage property</string>
+					<key>String</key>
+					<string>backgroundImage</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundPosition property</string>
+					<key>String</key>
+					<string>backgroundPosition</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundPositionX property</string>
+					<key>String</key>
+					<string>backgroundPositionX</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundPositionY property</string>
+					<key>String</key>
+					<string>backgroundPositionY</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>backgroundRepeat property</string>
+					<key>String</key>
+					<string>backgroundRepeat</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>behavior property</string>
+					<key>String</key>
+					<string>behavior</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>border property</string>
+					<key>String</key>
+					<string>border</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>borderBottom property</string>
+					<key>String</key>
+					<string>borderBottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderBottomColor property</string>
+					<key>String</key>
+					<string>borderBottomColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderBottomStyle property</string>
+					<key>String</key>
+					<string>borderBottomStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderBottomWidth property</string>
+					<key>String</key>
+					<string>borderBottomWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderCollapse property</string>
+					<key>String</key>
+					<string>borderCollapse</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderColor property</string>
+					<key>String</key>
+					<string>borderColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderLeft property</string>
+					<key>String</key>
+					<string>borderLeft</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderLeftColor property</string>
+					<key>String</key>
+					<string>borderLeftColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderLeftStyle property</string>
+					<key>String</key>
+					<string>borderLeftStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderLeftWidth property</string>
+					<key>String</key>
+					<string>borderLeftWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderRight property</string>
+					<key>String</key>
+					<string>borderRight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderRightColor property</string>
+					<key>String</key>
+					<string>borderRightColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderRightStyle property</string>
+					<key>String</key>
+					<string>borderRightStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderRightWidth property</string>
+					<key>String</key>
+					<string>borderRightWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderSpacing property</string>
+					<key>String</key>
+					<string>borderSpacing</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderStyle property</string>
+					<key>String</key>
+					<string>borderStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderTop property</string>
+					<key>String</key>
+					<string>borderTop</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderTopColor property</string>
+					<key>String</key>
+					<string>borderTopColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderTopStyle property</string>
+					<key>String</key>
+					<string>borderTopStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderTopWidth property</string>
+					<key>String</key>
+					<string>borderTopWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>borderWidth property</string>
+					<key>String</key>
+					<string>borderWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>bottom property</string>
+					<key>String</key>
+					<string>bottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>boxSizing property</string>
+					<key>String</key>
+					<string>boxSizing</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>captionSide property</string>
+					<key>String</key>
+					<string>captionSide</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cellSpacing property</string>
+					<key>String</key>
+					<string>cellSpacing</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>clear property</string>
+					<key>String</key>
+					<string>clear</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>clip property</string>
+					<key>String</key>
+					<string>clip</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>bottom property</string>
+					<key>String</key>
+					<string>bottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>left property</string>
+					<key>String</key>
+					<string>left</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>right property</string>
+					<key>String</key>
+					<string>right</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>top property</string>
+					<key>String</key>
+					<string>top</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>color property</string>
+					<key>String</key>
+					<string>color</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>colorProfile property</string>
+					<key>String</key>
+					<string>colorProfile</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>columnSpan property</string>
+					<key>String</key>
+					<string>columnSpan</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>content property</string>
+					<key>String</key>
+					<string>content</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>counterIncrement property</string>
+					<key>String</key>
+					<string>counterIncrement</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>counterReset property</string>
+					<key>String</key>
+					<string>counterReset</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cssFloat property</string>
+					<key>String</key>
+					<string>cssFloat</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cssText property</string>
+					<key>String</key>
+					<string>cssText</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cue property</string>
+					<key>String</key>
+					<string>cue</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cueAfter property</string>
+					<key>String</key>
+					<string>cueAfter</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cueBefore property</string>
+					<key>String</key>
+					<string>cueBefore</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cursor property</string>
+					<key>String</key>
+					<string>cursor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>direction property</string>
+					<key>String</key>
+					<string>direction</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>display property</string>
+					<key>String</key>
+					<string>display</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>elevation property</string>
+					<key>String</key>
+					<string>elevation</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>emptyCells property</string>
+					<key>String</key>
+					<string>emptyCells</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>filter property</string>
+					<key>String</key>
+					<string>filter</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>float property</string>
+					<key>String</key>
+					<string>float</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>floatStyle property</string>
+					<key>String</key>
+					<string>floatStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>font property</string>
+					<key>String</key>
+					<string>font</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontFamily property</string>
+					<key>String</key>
+					<string>fontFamily</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontSize property</string>
+					<key>String</key>
+					<string>fontSize</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontSizeAdjust property</string>
+					<key>String</key>
+					<string>fontSizeAdjust</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontStretch property</string>
+					<key>String</key>
+					<string>fontStretch</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontStretch property</string>
+					<key>String</key>
+					<string>fontStretch</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontStyle property</string>
+					<key>String</key>
+					<string>fontStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontVariant property</string>
+					<key>String</key>
+					<string>fontVariant</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>fontWeight property</string>
+					<key>String</key>
+					<string>fontWeight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>height property</string>
+					<key>String</key>
+					<string>height</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>imeMode property</string>
+					<key>String</key>
+					<string>imeMode</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>important property</string>
+					<key>String</key>
+					<string>important</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>layoutGrid property</string>
+					<key>String</key>
+					<string>layoutGrid</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>layoutGridChar property</string>
+					<key>String</key>
+					<string>layoutGridChar</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>layoutGridCharSpacing property</string>
+					<key>String</key>
+					<string>layoutGridCharSpacing</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>layoutGridLine property</string>
+					<key>String</key>
+					<string>layoutGridLine</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>layoutGridMode property</string>
+					<key>String</key>
+					<string>layoutGridMode</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>layoutGridType property</string>
+					<key>String</key>
+					<string>layoutGridType</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>left property</string>
+					<key>String</key>
+					<string>left</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>letterSpacing property</string>
+					<key>String</key>
+					<string>letterSpacing</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>lineBreak property</string>
+					<key>String</key>
+					<string>lineBreak</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>lineHeight property</string>
+					<key>String</key>
+					<string>lineHeight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>listStyle property</string>
+					<key>String</key>
+					<string>listStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>listStyleImage property</string>
+					<key>String</key>
+					<string>listStyleImage</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>listStylePosition property</string>
+					<key>String</key>
+					<string>listStylePosition</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>listStyleType property</string>
+					<key>String</key>
+					<string>listStyleType</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>margin property</string>
+					<key>String</key>
+					<string>margin</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>marginBottom property</string>
+					<key>String</key>
+					<string>marginBottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>marginLeft property</string>
+					<key>String</key>
+					<string>marginLeft</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>marginRight property</string>
+					<key>String</key>
+					<string>marginRight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>marginTop property</string>
+					<key>String</key>
+					<string>marginTop</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>markerOffset property</string>
+					<key>String</key>
+					<string>markerOffset</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>marks property</string>
+					<key>String</key>
+					<string>marks</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>maxHeight property</string>
+					<key>String</key>
+					<string>maxHeight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>maxWidth property</string>
+					<key>String</key>
+					<string>maxWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>minHeight property</string>
+					<key>String</key>
+					<string>minHeight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>minWidth property</string>
+					<key>String</key>
+					<string>minWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>orphans property</string>
+					<key>String</key>
+					<string>orphans</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>outline property</string>
+					<key>String</key>
+					<string>outline</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>outlineColor property</string>
+					<key>String</key>
+					<string>outlineColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>outlineStyle property</string>
+					<key>String</key>
+					<string>outlineStyle</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>outlineWidth property</string>
+					<key>String</key>
+					<string>outlineWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>overflow property</string>
+					<key>String</key>
+					<string>overflow</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>overflowX property</string>
+					<key>String</key>
+					<string>overflowX</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>overflowY property</string>
+					<key>String</key>
+					<string>overflowY</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>padding property</string>
+					<key>String</key>
+					<string>padding</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>paddingBottom property</string>
+					<key>String</key>
+					<string>paddingBottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>paddingLeft property</string>
+					<key>String</key>
+					<string>paddingLeft</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>paddingRight property</string>
+					<key>String</key>
+					<string>paddingRight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>paddingTop property</string>
+					<key>String</key>
+					<string>paddingTop</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>page property</string>
+					<key>String</key>
+					<string>page</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pageBreakAfter property</string>
+					<key>String</key>
+					<string>pageBreakAfter</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pageBreakBefore property</string>
+					<key>String</key>
+					<string>pageBreakBefore</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pageBreakInside property</string>
+					<key>String</key>
+					<string>pageBreakInside</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pause property</string>
+					<key>String</key>
+					<string>pause</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pauseAfter property</string>
+					<key>String</key>
+					<string>pauseAfter</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pauseBefore property</string>
+					<key>String</key>
+					<string>pauseBefore</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pitch property</string>
+					<key>String</key>
+					<string>pitch</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pitchRange property</string>
+					<key>String</key>
+					<string>pitchRange</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pixelBottom property</string>
+					<key>String</key>
+					<string>pixelBottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pixelHeight property</string>
+					<key>String</key>
+					<string>pixelHeight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pixelLeft property</string>
+					<key>String</key>
+					<string>pixelLeft</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pixelRight property</string>
+					<key>String</key>
+					<string>pixelRight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pixelTop property</string>
+					<key>String</key>
+					<string>pixelTop</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>pixelWidth property</string>
+					<key>String</key>
+					<string>pixelWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>playDuring property</string>
+					<key>String</key>
+					<string>playDuring</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>posBottom property</string>
+					<key>String</key>
+					<string>posBottom</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>posHeight property</string>
+					<key>String</key>
+					<string>posHeight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>position property</string>
+					<key>String</key>
+					<string>position</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>posLeft property</string>
+					<key>String</key>
+					<string>posLeft</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>posRight property</string>
+					<key>String</key>
+					<string>posRight</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>posTop property</string>
+					<key>String</key>
+					<string>posTop</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>posWidth property</string>
+					<key>String</key>
+					<string>posWidth</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>quotes property</string>
+					<key>String</key>
+					<string>quotes</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>renderingIntent property</string>
+					<key>String</key>
+					<string>renderingIntent</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>richness property</string>
+					<key>String</key>
+					<string>richness</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>right property</string>
+					<key>String</key>
+					<string>right</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>rowSpan property</string>
+					<key>String</key>
+					<string>rowSpan</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>rubyAlign property</string>
+					<key>String</key>
+					<string>rubyAlign</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>rubyOverhang property</string>
+					<key>String</key>
+					<string>rubyOverhang</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>rubyPosition property</string>
+					<key>String</key>
+					<string>rubyPosition</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbar3dLightColor property</string>
+					<key>String</key>
+					<string>scrollbar3dLightColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbarArrowColor property</string>
+					<key>String</key>
+					<string>scrollbarArrowColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbarBaseColor property</string>
+					<key>String</key>
+					<string>scrollbarBaseColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbarDarkShadowcolor property</string>
+					<key>String</key>
+					<string>scrollbarDarkShadowcolor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbarFaceColor property</string>
+					<key>String</key>
+					<string>scrollbarFaceColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbarHighlightColor property</string>
+					<key>String</key>
+					<string>scrollbarHighlightColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>scrollbarShadowColor property</string>
+					<key>String</key>
+					<string>scrollbarShadowColor</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>size property</string>
+					<key>String</key>
+					<string>size</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speak property</string>
+					<key>String</key>
+					<string>speak</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speakDate property</string>
+					<key>String</key>
+					<string>speakDate</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speakHeader property</string>
+					<key>String</key>
+					<string>speakHeader</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speakNumeral property</string>
+					<key>String</key>
+					<string>speakNumeral</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speakPunctuation property</string>
+					<key>String</key>
+					<string>speakPunctuation</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speakTime property</string>
+					<key>String</key>
+					<string>speakTime</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>speechRate property</string>
+					<key>String</key>
+					<string>speechRate</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>stress property</string>
+					<key>String</key>
+					<string>stress</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>styleFloat property</string>
+					<key>String</key>
+					<string>styleFloat</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>tableLayout property</string>
+					<key>String</key>
+					<string>tableLayout</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textAlign property</string>
+					<key>String</key>
+					<string>textAlign</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textAutospace property</string>
+					<key>String</key>
+					<string>textAutospace</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textDecoration property</string>
+					<key>String</key>
+					<string>textDecoration</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textDecorationBlink property</string>
+					<key>String</key>
+					<string>textDecorationBlink</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textDecorationineThrough property</string>
+					<key>String</key>
+					<string>textDecorationineThrough</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textDecorationNone property</string>
+					<key>String</key>
+					<string>textDecorationNone</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textDecorationOverline property</string>
+					<key>String</key>
+					<string>textDecorationOverline</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textDecorationUnderline property</string>
+					<key>String</key>
+					<string>textDecorationUnderline</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textIndent property</string>
+					<key>String</key>
+					<string>textIndent</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textJustify property</string>
+					<key>String</key>
+					<string>textJustify</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textKashidaSpace property</string>
+					<key>String</key>
+					<string>textKashidaSpace</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textShadow property</string>
+					<key>String</key>
+					<string>textShadow</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textTransform property</string>
+					<key>String</key>
+					<string>textTransform</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>textUnderlinePosition property</string>
+					<key>String</key>
+					<string>textUnderlinePosition</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>top property</string>
+					<key>String</key>
+					<string>top</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>unicodeBidi property</string>
+					<key>String</key>
+					<string>unicodeBidi</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>verticalAlign property</string>
+					<key>String</key>
+					<string>verticalAlign</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>visibility property</string>
+					<key>String</key>
+					<string>visibility</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>voiceFamily property</string>
+					<key>String</key>
+					<string>voiceFamily</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>volume property</string>
+					<key>String</key>
+					<string>volume</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>whiteSpace property</string>
+					<key>String</key>
+					<string>whiteSpace</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>widows property</string>
+					<key>String</key>
+					<string>widows</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>width property</string>
+					<key>String</key>
+					<string>width</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>wordBreak property</string>
+					<key>String</key>
+					<string>wordBreak</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>wordSpacing property</string>
+					<key>String</key>
+					<string>wordSpacing</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>wordWrap property</string>
+					<key>String</key>
+					<string>wordWrap</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>writingMode property</string>
+					<key>String</key>
+					<string>writingMode</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>zIndex property</string>
+					<key>String</key>
+					<string>zIndex</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>zoom property</string>
+					<key>String</key>
+					<string>zoom</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>Style class</string>
+			<key>String</key>
+			<string>Style</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>appCodeName property</string>
+					<key>String</key>
+					<string>appCodeName</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>appMinorVersion property</string>
+					<key>String</key>
+					<string>appMinorVersion</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>appVersion property</string>
+					<key>String</key>
+					<string>appVersion</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>browserLanguage property</string>
+					<key>String</key>
+					<string>browserLanguage</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>cookieEnabled property</string>
+					<key>String</key>
+					<string>cookieEnabled</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>cpuClass property</string>
+					<key>String</key>
+					<string>cpuClass</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Array</string>
+					</array>
+					<key>ID</key>
+					<string>mimeTypes property</string>
+					<key>String</key>
+					<string>mimeTypes</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>onLine property</string>
+					<key>String</key>
+					<string>onLine</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>platform property</string>
+					<key>String</key>
+					<string>platform</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>plugins property</string>
+					<key>String</key>
+					<string>plugins</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>userAgent property</string>
+					<key>String</key>
+					<string>userAgent</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>navigator class</string>
+			<key>String</key>
+			<string>navigator</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>altKey property</string>
+					<key>String</key>
+					<string>altKey</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>button property</string>
+					<key>String</key>
+					<string>button</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>clientX property</string>
+					<key>String</key>
+					<string>clientX</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>clientY property</string>
+					<key>String</key>
+					<string>clientY</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>ctrlKey property</string>
+					<key>String</key>
+					<string>ctrlKey</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>metaKey property</string>
+					<key>String</key>
+					<string>metaKey</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>relatedTarget property</string>
+					<key>String</key>
+					<string>relatedTarget</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>screenX property</string>
+					<key>String</key>
+					<string>screenX</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>screenY property</string>
+					<key>String</key>
+					<string>screenY</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>shiftKey property</string>
+					<key>String</key>
+					<string>shiftKey</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>bubbles property</string>
+					<key>String</key>
+					<string>bubbles</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>cancelable property</string>
+					<key>String</key>
+					<string>cancelable</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>currentTarget property</string>
+					<key>String</key>
+					<string>currentTarget</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>eventPhase property</string>
+					<key>String</key>
+					<string>eventPhase</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Element</string>
+					</array>
+					<key>ID</key>
+					<string>target property</string>
+					<key>String</key>
+					<string>target</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>timeStamp property</string>
+					<key>String</key>
+					<string>timeStamp</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>type property</string>
+					<key>String</key>
+					<string>type</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>click property</string>
+					<key>String</key>
+					<string>click</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>ALT_MASK property</string>
+					<key>String</key>
+					<string>ALT_MASK</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>CONTROL_MASK property</string>
+					<key>String</key>
+					<string>CONTROL_MASK</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>SHIFT_MASK property</string>
+					<key>String</key>
+					<string>SHIFT_MASK</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>modifiers property</string>
+					<key>String</key>
+					<string>modifiers</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>event class</string>
+			<key>String</key>
+			<string>event</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>current property</string>
+					<key>String</key>
+					<string>current</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>next property</string>
+					<key>String</key>
+					<string>next</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>previous property</string>
+					<key>String</key>
+					<string>previous</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>history</string>
+					</array>
+					<key>ID</key>
+					<string>back function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
+					<key>String</key>
+					<string>back</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>history</string>
+					</array>
+					<key>ID</key>
+					<string>forward function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{9, 0}</string>
+					<key>String</key>
+					<string>forward</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>history</string>
+					</array>
+					<key>ID</key>
+					<string>go function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{3, 13}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(url|stepCount)</string>
+					<key>SelectionRange</key>
+					<string>{3, 13}</string>
+					<key>String</key>
+					<string>go</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>history class</string>
+			<key>String</key>
+			<string>history</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>availHeight property</string>
+					<key>String</key>
+					<string>availHeight</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>availLeft property</string>
+					<key>String</key>
+					<string>availLeft</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>availTop property</string>
+					<key>String</key>
+					<string>availTop</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>availWidth property</string>
+					<key>String</key>
+					<string>availWidth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>colorDepth property</string>
+					<key>String</key>
+					<string>colorDepth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>height property</string>
+					<key>String</key>
+					<string>height</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>pixelDepth property</string>
+					<key>String</key>
+					<string>pixelDepth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>width property</string>
+					<key>String</key>
+					<string>width</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>colorDepth property</string>
+					<key>String</key>
+					<string>colorDepth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>bufferDepth property</string>
+					<key>String</key>
+					<string>bufferDepth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>deviceXDPI property</string>
+					<key>String</key>
+					<string>deviceXDPI</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>deviceYDPI property</string>
+					<key>String</key>
+					<string>deviceYDPI</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>fontSmoothingEnabled property</string>
+					<key>String</key>
+					<string>fontSmoothingEnabled</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>logicalXDPI property</string>
+					<key>String</key>
+					<string>logicalXDPI</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>logicalYDPI property</string>
+					<key>String</key>
+					<string>logicalYDPI</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>pixelDepth property</string>
+					<key>String</key>
+					<string>pixelDepth</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>updateInterval property</string>
+					<key>String</key>
+					<string>updateInterval</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>screen class</string>
+			<key>String</key>
+			<string>screen</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>length property</string>
+					<key>String</key>
+					<string>length</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>getNamedItem function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{13, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{13, 11}</string>
+					<key>String</key>
+					<string>getNamedItem</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>item function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 12}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number index)</string>
+					<key>SelectionRange</key>
+					<string>{5, 12}</string>
+					<key>String</key>
+					<string>item</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>removeNamedItem function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{16, 11}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(String name)</string>
+					<key>SelectionRange</key>
+					<string>{16, 11}</string>
+					<key>String</key>
+					<string>removeNamedItem</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>Node</string>
+					</array>
+					<key>ID</key>
+					<string>setNamedItem function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{13, 8}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(Node arg)</string>
+					<key>SelectionRange</key>
+					<string>{13, 8}</string>
+					<key>String</key>
+					<string>setNamedItem</string>
+				</dict>
+			</array>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>NamedNodeMap class</string>
+			<key>String</key>
+			<string>NamedNodeMap</string>
+		</dict>
+		<dict>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>prototype property</string>
+					<key>String</key>
+					<string>prototype</string>
+				</dict>
+			</array>
+			<key>SymbolTableContext</key>
+			<dict>
+				<key>IncludeContexts</key>
+				<array>
+					<dict>
+						<key>State</key>
+						<string>SEEMode.JavaScript</string>
+						<key>Type</key>
+						<string>JavaScript Include</string>
+					</dict>
+				</array>
+				<key>MatchContexts</key>
+				<array>
+					<dict>
+						<key>State</key>
+						<string>SEEMode.JavaScript</string>
+						<key>Type</key>
+						<string>Functions</string>
+					</dict>
+					<dict>
+						<key>State</key>
+						<string>SEEMode.JavaScript</string>
+						<key>Type</key>
+						<string>Variable Declarations</string>
+					</dict>
+				</array>
+				<key>SubstringPrefix</key>
+				<string>(</string>
+				<key>SubstringSuffix</key>
+				<string>)</string>
+				<key>SubstringSeparator</key>
+				<string>, </string>
+				<key>SelectFirstSubstring</key>
+				<true/>
+				<key>SubstringsPlaceholderType</key>
+				<string>Required</string>
+			</dict>
+			<key>ExcludeStringFromCompletion</key>
+			<true/>
+			<key>ID</key>
+			<string>Object class</string>
+			<key>String</key>
+			<string>Object</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>var keyword</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{4, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{17, 5}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string> identifier = value;</string>
+			<key>SelectionRange</key>
+			<string>{4, 10}</string>
+			<key>String</key>
+			<string>var</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>function keyword</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{9, 4}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{17, 4}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(args) { body }</string>
+			<key>SelectionRange</key>
+			<string>{9, 4}</string>
+			<key>String</key>
+			<string>function</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>boolean keyword</string>
+			<key>String</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>break keyword</string>
+			<key>String</key>
+			<string>break</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>byte keyword</string>
+			<key>String</key>
+			<string>byte</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>case keyword</string>
+			<key>String</key>
+			<string>case</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>catch keyword</string>
+			<key>String</key>
+			<string>catch</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>char keyword</string>
+			<key>String</key>
+			<string>char</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>continue keyword</string>
+			<key>String</key>
+			<string>continue</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>default keyword</string>
+			<key>String</key>
+			<string>default</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>delete keyword</string>
+			<key>String</key>
+			<string>delete</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>do keyword</string>
+			<key>String</key>
+			<string>do</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>double keyword</string>
+			<key>String</key>
+			<string>double</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>else keyword</string>
+			<key>String</key>
+			<string>else</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>false keyword</string>
+			<key>String</key>
+			<string>false</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>final keyword</string>
+			<key>String</key>
+			<string>final</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>finally keyword</string>
+			<key>String</key>
+			<string>finally</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>float keyword</string>
+			<key>String</key>
+			<string>float</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>for keyword</string>
+			<key>String</key>
+			<string>for</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>if keyword</string>
+			<key>String</key>
+			<string>if</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>in keyword</string>
+			<key>String</key>
+			<string>in</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>instanceof keyword</string>
+			<key>String</key>
+			<string>instanceof</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>int keyword</string>
+			<key>String</key>
+			<string>int</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>long keyword</string>
+			<key>String</key>
+			<string>long</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>new keyword</string>
+			<key>String</key>
+			<string>new</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>null keyword</string>
+			<key>String</key>
+			<string>null</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>return keyword</string>
+			<key>String</key>
+			<string>return</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>short keyword</string>
+			<key>String</key>
+			<string>short</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>switch keyword</string>
+			<key>String</key>
+			<string>switch</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>this keyword</string>
+			<key>String</key>
+			<string>this</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>throw keyword</string>
+			<key>String</key>
+			<string>throw</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>true keyword</string>
+			<key>String</key>
+			<string>true</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>try keyword</string>
+			<key>String</key>
+			<string>try</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>typeof keyword</string>
+			<key>String</key>
+			<string>typeof</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>void keyword</string>
+			<key>String</key>
+			<string>void</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>while keyword</string>
+			<key>String</key>
+			<string>while</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>with keyword</string>
+			<key>String</key>
+			<string>with</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>Infinity keyword</string>
+			<key>String</key>
+			<string>Infinity</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>NaN keyword</string>
+			<key>String</key>
+			<string>NaN</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>undefined keyword</string>
+			<key>String</key>
+			<string>undefined</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>decodeURI function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{10, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String URI)</string>
+			<key>SelectionRange</key>
+			<string>{10, 10}</string>
+			<key>String</key>
+			<string>decodeURI</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>decodeURIComponent function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{19, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String URI)</string>
+			<key>SelectionRange</key>
+			<string>{19, 10}</string>
+			<key>String</key>
+			<string>decodeURIComponent</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>encodeURI function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{10, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String URI)</string>
+			<key>SelectionRange</key>
+			<string>{10, 10}</string>
+			<key>String</key>
+			<string>encodeURI</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>encodeURIComponent function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{19, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String URI)</string>
+			<key>SelectionRange</key>
+			<string>{19, 10}</string>
+			<key>String</key>
+			<string>encodeURIComponent</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>eval function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{6, 4}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(&quot;Code&quot;)</string>
+			<key>SelectionRange</key>
+			<string>{6, 4}</string>
+			<key>String</key>
+			<string>eval</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>isFinite function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{9, 6}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(number)</string>
+			<key>SelectionRange</key>
+			<string>{9, 6}</string>
+			<key>String</key>
+			<string>isFinite</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>isNaN function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{6, 6}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(number)</string>
+			<key>SelectionRange</key>
+			<string>{6, 6}</string>
+			<key>String</key>
+			<string>isNaN</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>parsefloat function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{11, 16}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String numString)</string>
+			<key>SelectionRange</key>
+			<string>{11, 16}</string>
+			<key>String</key>
+			<string>parsefloat</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>setInterval function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{12, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{24, 13}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(Expression, Timeout msecs)</string>
+			<key>SelectionRange</key>
+			<string>{12, 10}</string>
+			<key>String</key>
+			<string>setInterval</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>prompt function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{7, 14}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{23, 19}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String message, String defaultReply)</string>
+			<key>SelectionRange</key>
+			<string>{7, 14}</string>
+			<key>String</key>
+			<string>prompt</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>ScriptEngineMajorVersion function</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{26, 0}</string>
+			<key>String</key>
+			<string>ScriptEngineMajorVersion</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>String</string>
+			</array>
+			<key>ID</key>
+			<string>ScriptEngineMinorVersion function</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{26, 0}</string>
+			<key>String</key>
+			<string>ScriptEngineMinorVersion</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>window</string>
+			</array>
+			<key>ID</key>
+			<string>showModalDialog function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{16, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{28, 9}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{39, 8}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String url, arguments, features)</string>
+			<key>SelectionRange</key>
+			<string>{16, 10}</string>
+			<key>String</key>
+			<string>showModalDialog</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>window</string>
+			</array>
+			<key>ID</key>
+			<string>showModelessDialog function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{19, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{31, 9}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{42, 8}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String url, arguments, features)</string>
+			<key>SelectionRange</key>
+			<string>{19, 10}</string>
+			<key>String</key>
+			<string>showModelessDialog</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>confirm function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{8, 14}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String message)</string>
+			<key>SelectionRange</key>
+			<string>{8, 14}</string>
+			<key>String</key>
+			<string>confirm</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>setTimeout function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{11, 10}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+				<dict>
+					<key>Range</key>
+					<string>{23, 13}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(Expression, Timeout msecs)</string>
+			<key>SelectionRange</key>
+			<string>{11, 10}</string>
+			<key>String</key>
+			<string>setTimeout</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>window</string>
+			</array>
+			<key>ID</key>
+			<string>window property</string>
+			<key>String</key>
+			<string>window</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>alert function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{6, 14}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String message)</string>
+			<key>SelectionRange</key>
+			<string>{6, 14}</string>
+			<key>String</key>
+			<string>alert</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>clearInterval function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{14, 9}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(number id)</string>
+			<key>SelectionRange</key>
+			<string>{14, 9}</string>
+			<key>String</key>
+			<string>clearInterval</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>clearTimeout function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{13, 9}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(number id)</string>
+			<key>SelectionRange</key>
+			<string>{13, 9}</string>
+			<key>String</key>
+			<string>clearTimeout</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>parseint function</string>
+			<key>Placeholders</key>
+			<array>
+				<dict>
+					<key>Range</key>
+					<string>{9, 16}</string>
+					<key>Type</key>
+					<string>Required</string>
+				</dict>
+			</array>
+			<key>PostString</key>
+			<string>(String numString)</string>
+			<key>SelectionRange</key>
+			<string>{9, 16}</string>
+			<key>String</key>
+			<string>parseint</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>ID</key>
+			<string>this object</string>
+			<key>String</key>
+			<string>this</string>
+		</dict>
+		<dict>
+			<key>AlternateCompletions</key>
+			<array>
+				<string>Object</string>
+			</array>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>E property</string>
+					<key>String</key>
+					<string>E</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>LN2 property</string>
+					<key>String</key>
+					<string>LN2</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>LN10 property</string>
+					<key>String</key>
+					<string>LN10</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>LOG2E property</string>
+					<key>String</key>
+					<string>LOG2E</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>LOG10E property</string>
+					<key>String</key>
+					<string>LOG10E</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>PI property</string>
+					<key>String</key>
+					<string>PI</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>SQRT1_2 property</string>
+					<key>String</key>
+					<string>SQRT1_2</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>SQRT2 property</string>
+					<key>String</key>
+					<string>SQRT2</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>abs function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>abs</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>acos function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{5, 6}</string>
+					<key>String</key>
+					<string>acos</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>asin function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{5, 6}</string>
+					<key>String</key>
+					<string>asin</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>atan function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{5, 6}</string>
+					<key>String</key>
+					<string>atan</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>atan2 function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{14, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number, number)</string>
+					<key>SelectionRange</key>
+					<string>{6, 6}</string>
+					<key>String</key>
+					<string>atan2</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>ceil function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{5, 6}</string>
+					<key>String</key>
+					<string>ceil</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>cos function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>cos</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>exp function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>exp</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>floor function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{6, 6}</string>
+					<key>String</key>
+					<string>floor</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>log function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>log</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>max function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{12, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number, number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>max</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>min function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{12, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number, number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>min</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>pow function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+						<dict>
+							<key>Range</key>
+							<string>{12, 8}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number, exponent)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>pow</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>random function</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{8, 0}</string>
+					<key>String</key>
+					<string>random</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>round function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{6, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{6, 6}</string>
+					<key>String</key>
+					<string>round</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>sin function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>sin</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>sqrt function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{5, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{5, 6}</string>
+					<key>String</key>
+					<string>sqrt</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>tan function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{4, 6}</string>
+					<key>String</key>
+					<string>tan</string>
+				</dict>
+				<dict>
+					<key>AlternateCompletions</key>
+					<array>
+						<string>String</string>
+					</array>
+					<key>ID</key>
+					<string>toSource function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{9, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>(number)</string>
+					<key>SelectionRange</key>
+					<string>{9, 6}</string>
+					<key>String</key>
+					<string>toSource</string>
+				</dict>
+			</array>
+			<key>ID</key>
+			<string>Math class</string>
+			<key>String</key>
+			<string>Math</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>console Object</string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<string>log function</string>
+					<key>Placeholders</key>
+					<array>
+						<dict>
+							<key>Range</key>
+							<string>{4, 6}</string>
+							<key>Type</key>
+							<string>Required</string>
+						</dict>
+					</array>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{4, 0}</string>
+					<key>String</key>
+					<string>log</string>
+				</dict>
+			</array>
+			<key>String</key>
+			<string>console</string>
+		</dict>
+	</array>
+	<key>Contexts</key>
+	<array>
+		<dict>
+			<key>AnyIdentifierIsRoot</key>
+			<true/>
+			<key>Regex</key>
+			<string>(?:(?@[-\w\[\]]+)(?:\((?:(?:\s*[&apos;&quot;]?[-\w\s\x{FFFC}]*[&apos;&quot;]?\s*,)*\s*[&apos;&quot;]?[-\w\s\x{FFFC}]*[&apos;&quot;]?)?\s*\))?\.)*([-\w]+)\z</string>
+			<key>ShouldAppendCompletion</key>
+			<false/>
+			<key>ShouldCompleteAll</key>
+			<false/>
+			<key>ShouldCompleteInStringLiteral</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>AnyIdentifierIsRoot</key>
+			<true/>
+			<key>Regex</key>
+			<string>(?:(?@[-\w\[\]]+)(?:\((?:(?:\s*[&apos;&quot;]?[-\w\s\x{FFFC}]*[&apos;&quot;]?\s*,)*\s*[&apos;&quot;]?[-\w\s\x{FFFC}]*[&apos;&quot;]?)?\s*\))?\.)+(\s*)\z</string>
+			<key>ShouldAppendCompletion</key>
+			<false/>
+			<key>ShouldCompleteAll</key>
+			<true/>
+			<key>ShouldCompleteInStringLiteral</key>
+			<false/>
+		</dict>
+	</array>
+	<key>LineCompletion</key>
+	<string>;</string>
+	<key>Name</key>
+	<string>JavaScript</string>
+</dict>
+</plist>
