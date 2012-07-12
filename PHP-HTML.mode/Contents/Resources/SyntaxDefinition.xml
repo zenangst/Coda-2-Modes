@@ -3625,6 +3625,9 @@
                 <keywords id="PHP Variables" useforautocomplete="no" scope="language.variable.php">
                     <regex>(\$(?:[\w\d])+)</regex>
                 </keywords>
+                <keywords id="PHP Class Property" scope="keyword">
+	                <regex>\-\>(\w+)\-></regex>
+                </keywords>
                 <keywords id="PHP Static Class name" useforautocomplete="yes" scope="language.function.php">
                     <regex>(\w+\:\:\w+)</regex>
                     <regex>(\w+\:\:)</regex>

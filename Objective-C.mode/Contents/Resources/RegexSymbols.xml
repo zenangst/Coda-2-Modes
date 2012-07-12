@@ -88,5 +88,17 @@
             <replace>Versioning conflict!</replace>
         </postprocess>
     </symbol>
+    
+    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no">
+        <regex>NSLog(\([^;]+)</regex>
+        <postprocess>
+        	<find>(^\()|(\)$)</find>
+        	<replace></replace>
+        </postprocess>
+    </symbol>
+    
+	<symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
+	    <regex>TODO\s([^\n]+)</regex>
+    </symbol>
 
 </symbols>

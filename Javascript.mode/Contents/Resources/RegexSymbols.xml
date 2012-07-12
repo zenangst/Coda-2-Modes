@@ -104,6 +104,10 @@
         </postprocess>
     </symbol>
     
+    <symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
+	    <regex>TODO\s([^\n]+)</regex>
+    </symbol>
+    
 	<!-- END -->
 
 </symbols>
