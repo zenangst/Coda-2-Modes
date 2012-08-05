@@ -8833,6 +8833,156 @@
                 <string>sock_evt_shutdown</string>
                 <string>typeSecIdentityRef</string>
             </keywords>
+            <keywords id="Grand Central Dispatch - Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.inline.cdata">
+            	<string>dispatch_after</string>
+            	<string>dispatch_after_f</string>
+            	<string>dispatch_apply</string>
+            	<string>dispatch_apply_f</string>
+            	<string>dispatch_async</string>
+            	<string>dispatch_async_f</string>
+            	<string>dispatch_barrier_async</string>
+            	<string>dispatch_barrier_async_f</string>
+            	<string>dispatch_barrier_sync</string>
+            	<string>dispatch_barrier_sync_f</string>
+            	<string>dispatch_data_apply</string>
+            	<string>dispatch_data_copy_region</string>
+            	<string>dispatch_data_create</string>
+            	<string>dispatch_data_create_concat</string>
+            	<string>dispatch_data_create_map</string>
+            	<string>dispatch_data_create_subrange</string>
+            	<string>dispatch_data_get_size</string>	
+            	<string>dispatch_debug</string>
+            	<string>dispatch_get_context</string>
+            	<string>dispatch_get_current_queue</string>
+            	<string>dispatch_get_global_queue</string>
+            	<string>dispatch_get_main_queue</string>
+            	<string>dispatch_get_specific</string>
+            	<string>dispatch_group_async</string>
+            	<string>dispatch_group_async_f</string>
+            	<string>dispatch_group_create</string>
+            	<string>dispatch_group_enter</string>
+            	<string>dispatch_group_leave</string>
+            	<string>dispatch_group_notify</string>
+            	<string>dispatch_group_notify_f</string>
+            	<string>dispatch_group_wait</string>
+            	<string>dispatch_io_close</string>
+            	<string>dispatch_io_create</string>
+            	<string>dispatch_io_create_with_path</string>
+            	<string>dispatch_io_read</string>
+            	<string>dispatch_io_set_high_water</string>
+            	<string>dispatch_io_set_interval</string>
+            	<string>dispatch_io_set_low_water</string>
+            	<string>dispatch_io_write</string>
+            	<string>dispatch_main</string>
+            	<string>dispatch_once</string>
+            	<string>dispatch_queue_create</string>
+            	<string>dispatch_queue_get_label</string>
+            	<string>dispatch_queue_get_specific</string>
+            	<string>dispatch_queue_set_specific</string>
+            	<string>dispatch_read</string>
+            	<string>dispatch_release</string>
+            	<string>dispatch_resume</string>
+            	<string>dispatch_retain</string>
+            	<string>dispatch_semaphore_create</string>
+            	<string>dispatch_semaphore_signal</string>
+            	<string>dispatch_semaphore_wait</string>
+            	<string>dispatch_set_context</string>
+            	<string>dispatch_set_finalizer_f</string>
+            	<string>dispatch_set_target_queue</string>
+            	<string>dispatch_source_cancel</string>
+            	<string>dispatch_source_create</string>
+            	<string>dispatch_source_get_data</string>
+            	<string>dispatch_source_get_handle</string>
+            	<string>dispatch_source_get_mask</string>
+            	<string>dispatch_source_merge_data</string>
+            	<string>dispatch_source_set_cancel_handler</string>
+            	<string>dispatch_source_set_cancel_handler_f</string>
+            	<string>dispatch_source_set_event_handler</string>
+            	<string>dispatch_source_set_event_handler_f</string>
+            	<string>dispatch_source_set_registration_handler</string>
+            	<string>dispatch_source_set_registration_handler_f</string>
+            	<string>dispatch_source_set_timer</string>
+            	<string>dispatch_source_testcancel</string>
+            	<string>dispatch_suspend</string>
+            	<string>dispatch_sync</string>
+            	<string>dispatch_sync_f</string>
+            	<string>dispatch_time</string>
+            	<string>dispatch_walltime</string>
+            	<string>dispatch_write</string>
+            </keywords>
+            <keywords id="Grand Central Dispatch - Data Types" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.tag.attribute.value">
+            	<string>dispatch_block_t</string>
+            	<string>dispatch_group_t</string>
+            	<string>dispatch_object_t</string>
+            	<string>dispatch_once_t</string>
+            	<string>dispatch_queue_t</string>
+            	<string>dispatch_time_t</string>
+            	<string>dispatch_source_type_t</string>
+            	<string>dispatch_fd_t</string>
+            	<string>dispatch_data_t</string>
+            	<string>dispatch_data_applier_t</string>
+            	<string>dispatch_io_t</string>
+            	<string>dispatch_io_handler_t</string>
+            	<string>dispatch_io_type_t</string>
+            	<string>dispatch_io_close_flags_t</string>
+            	<string>dispatch_io_interval_flags_t</string>
+            </keywords>
+            <keywords id="Grand Central Dispatch - Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.tag">
+            	<string>dispatch_queue_priority_t</string>
+            	<string>DISPATCH_QUEUE_PRIORITY_HIGH</string>
+            	<string>DISPATCH_QUEUE_PRIORITY_DEFAULT</string>
+            	<string>DISPATCH_QUEUE_PRIORITY_LOW</string>
+            	<string>DISPATCH_QUEUE_PRIORITY_BACKGROUND</string>
+            	<string>dispatch_source_mach_send_flags_t</string>
+            	<string>DISPATCH_MACH_SEND_DEAD</string>
+            	<string>dispatch_source_proc_flags_t</string>
+            	<string>DISPATCH_PROC_EXIT</string>
+            	<string>DISPATCH_PROC_FORK</string>
+            	<string>DISPATCH_PROC_EXEC</string>
+            	<string>DISPATCH_PROC_SIGNAL</string>
+            	<string>dispatch_source_vnode_flags_t</string>
+            	<string>DISPATCH_VNODE_DELETE</string>
+			    <string>DISPATCH_VNODE_WRITE</string>
+			    <string>DISPATCH_VNODE_EXTEND</string>
+			    <string>DISPATCH_VNODE_ATTRIB</string>
+			    <string>DISPATCH_VNODE_LINK</string>
+			    <string>DISPATCH_VNODE_RENAME</string>
+			    <string>DISPATCH_VNODE_REVOKE</string>
+			    <!-- Dispatch Data Object Constants -->
+			    <string>dispatch_data_empty</string>
+			    <!-- Dispatch Data Destructor Constants -->
+			    <string>DISPATCH_DATA_DESTRUCTOR_DEFAULT</string>
+			    <string>DISPATCH_DATA_DESTRUCTOR_FREE</string>
+			    <!-- Dispatch Data Queue Types -->
+			    <string>DISPATCH_QUEUE_SERIAL</string>
+			    <string>DISPATCH_QUEUE_CONCURRENT</string>
+			    <!-- Dispatch Source Type Constants -->
+			    <string>DISPATCH_SOURCE_TYPE_DATA_ADD</string>
+				<string>DISPATCH_SOURCE_TYPE_DATA_OR</string>
+				<string>DISPATCH_SOURCE_TYPE_MACH_RECV</string>
+				<string>DISPATCH_SOURCE_TYPE_MACH_SEND</string>
+				<string>DISPATCH_SOURCE_TYPE_PROC</string>
+				<string>DISPATCH_SOURCE_TYPE_READ</string>
+				<string>DISPATCH_SOURCE_TYPE_SIGNAL</string>
+				<string>DISPATCH_SOURCE_TYPE_TIMER</string>
+				<string>DISPATCH_SOURCE_TYPE_VNODE</string>
+				<string>DISPATCH_SOURCE_TYPE_WRITE</string>
+				<!-- Dispatch Time Constants -->
+				<string>DISPATCH_TIME_NOW</string>
+				<string>DISPATCH_TIME_FOREVER</string>
+				<!-- Time Multiplier Constants -->
+				<string>Time Multiplier Constants</string>
+				<string>NSEC_PER_SEC</string>
+				<string>USEC_PER_SEC</string>
+				<string>NSEC_PER_USEC</string>
+				<!-- Dispatch I/O Channel Types -->
+				<string>DISPATCH_IO_STREAM</string>
+				<string>DISPATCH_IO_RANDOM</string>
+				<!-- Channel Closing Options -->
+				<string>DISPATCH_IO_STOP</string>
+				<!-- Channel Configuration Options -->
+				<string>DISPATCH_IO_STRICT_INTERVAL</string>
+            </keywords>
         </default>
     </states>
 </syntax>
