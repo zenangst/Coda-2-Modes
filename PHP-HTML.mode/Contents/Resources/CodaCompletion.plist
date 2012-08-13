@@ -46,7 +46,7 @@
 	</dict>
 	<key>Completions</key>
 	<array>
-				<dict>
+		<dict>
 			<key>ID</key>
 			<string>abs</string>
 			<key>MoveCursor</key>
