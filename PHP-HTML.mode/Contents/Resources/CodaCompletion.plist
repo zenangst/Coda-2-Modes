@@ -46,7 +46,7 @@
 	</dict>
 	<key>Completions</key>
 	<array>
-				<dict>
+		<dict>
 			<key>ID</key>
 			<string>abs</string>
 			<key>MoveCursor</key>
@@ -2880,9 +2880,9 @@
 			<key>ID</key>
 			<string>echo</string>
 			<key>MoveCursor</key>
-			<string>1</string>
+			<string>2</string>
 			<key>PostString</key>
-			<string>()</string>
+			<string> '';</string>
 			<key>String</key>
 			<string>echo</string>
 		</dict>
@@ -8240,9 +8240,9 @@
 			<key>ID</key>
 			<string>include</string>
 			<key>MoveCursor</key>
-			<string>1</string>
+			<string>2</string>
 			<key>PostString</key>
-			<string>()</string>
+			<string> '';</string>
 			<key>String</key>
 			<string>include</string>
 		</dict>
@@ -8250,9 +8250,9 @@
 			<key>ID</key>
 			<string>include_once</string>
 			<key>MoveCursor</key>
-			<string>1</string>
+			<string>2</string>
 			<key>PostString</key>
-			<string>()</string>
+			<string> '';</string>
 			<key>String</key>
 			<string>include_once</string>
 		</dict>
@@ -13900,9 +13900,9 @@
 			<key>ID</key>
 			<string>require</string>
 			<key>MoveCursor</key>
-			<string>1</string>
+			<string>2</string>
 			<key>PostString</key>
-			<string>()</string>
+			<string> '';</string>
 			<key>String</key>
 			<string>require</string>
 		</dict>
@@ -13910,9 +13910,9 @@
 			<key>ID</key>
 			<string>require_once</string>
 			<key>MoveCursor</key>
-			<string>1</string>
+			<string>2</string>
 			<key>PostString</key>
-			<string>()</string>
+			<string> '';</string>
 			<key>String</key>
 			<string>require_once</string>
 		</dict>
