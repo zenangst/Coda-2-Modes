@@ -2880,9 +2880,9 @@
 			<key>ID</key>
 			<string>echo</string>
 			<key>MoveCursor</key>
-			<string>1</string>
+			<string>2</string>
 			<key>PostString</key>
-			<string>()</string>
+			<string> '';</string>
 			<key>String</key>
 			<string>echo</string>
 		</dict>
