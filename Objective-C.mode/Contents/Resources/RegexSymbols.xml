@@ -7,7 +7,8 @@
         <endregex>}</endregex>
     </blocks>
     
-    <symbol id="Objective-C Methods" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
+    
+	<symbol id="Objective-C Methods" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
         <regex>(^[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[^{;/]*)</regex>
         <postprocess>
             <find>(:) *\([^\)]*\)</find>
@@ -63,6 +64,7 @@
     <symbol id="Properties" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.properties" color="#8735a5">
 		<regex>[a-z_]+\.(\w+)</regex>
 	</symbol>
+	
     <symbol id="Variables*" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.variable" color="#006ff8">
         <regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
 		<regex>\[(\w+)</regex>
@@ -74,6 +76,7 @@
 	
 	<symbol id="Variables*" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.variable*" color="#006ff8">
 		<regex>\w+\s(\*\w+)\s\=</regex>
+		<regex>synthesize\s(\w+)</regex>
 		<regex>\w+\s(\*\w+);</regex>
 	</symbol>
 
@@ -99,6 +102,14 @@
     
 	<symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
 	    <regex>TODO\s([^\n]+)</regex>
+    </symbol>
+    
+    <symbol id="Objective-C implementation and interface" useforautocomplete="yes" hidden="yes">
+    	<regex>implementation\s(\w+)|interface\s(\w+)</regex>
+    </symbol>
+    
+    <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes">
+    	<regex>(\w+)\.h</regex>
     </symbol>
 
 </symbols>
