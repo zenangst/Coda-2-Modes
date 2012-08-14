@@ -16,7 +16,7 @@
 			<replace></replace>
 		</postprocess>
 	</symbol>
-	
+    
 	<!-- END CODA -->
     
 	<!-- CODA <symbol id="Headers" font-weight="normal" font-style="normal" image="SymbolH.png" indentation="0" ignoreblocks="yes"> -->
@@ -67,10 +67,6 @@
     <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
 		<!-- CODA <regex>&lt;!\-\- !([^-]*) \-\-&gt;</regex> -->
         <regex>&lt;!--\s*!(.*?)\s*--&gt;</regex>
-    </symbol>
-
-    <symbol id="Attribute Context" hidden="yes" useforautocomplete="yes">
-        <regex>"([A-Za-z\-_]+)"</regex>
     </symbol>
 
 </symbols>
