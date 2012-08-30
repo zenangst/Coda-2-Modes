@@ -10,40 +10,40 @@
 
     <states>
     
-        <default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
+        <default id="Base" background-color="#fff" font-weight="normal" font-style="normal" scope="meta.default">
         
-            <keywords id="Variables" color="#881280" inverted-color="#ed77e5" useforautocomplete="no">
+            <keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.value.string">
                 <regex>\b(_[\w_]+(?=_)_)\b</regex>
             </keywords>
                         
-            <keywords id="Headings" color="#8f6d00" inverted-color="#c09100" font-weight="bold" useforautocomplete="no">
+            <keywords id="Headings" font-weight="bold" useforautocomplete="yes" scope="markup.tag.attribute.name">
                 <regex>^([[:upper:]0-9]+[[:upper:]0-9 &amp;_\-/'.?!]*)[\n\r]</regex>
             </keywords>
 
-            <keywords id="Sections" color="#a61a1a" inverted-color="#ff2528" font-weight="bold" useforautocomplete="no">
+            <keywords id="Sections" font-weight="bold" useforautocomplete="no"  scope="markup.tag">
                 <regex>^([[:upper:]0-9 _\-/&amp;.?!]+):</regex>
             </keywords>
             
-            <keywords id="Separators" color="#333" inverted-color="#ddd" useforautocomplete="no">
+            <keywords id="Separators" useforautocomplete="no" scope="language.variable.scope">
                 <regex>^(-{6,})</regex>
             </keywords>
 
-            <keywords id="Events" color="#333" inverted-color="#ccc" font-style="italic">
+            <keywords id="Events" font-style="italic" scope="style.at-rule.constant">
                 <regex>(\*\*\* [^\n\r\*]+ \*\*\*)</regex>
             </keywords>
 
-            <keywords id="References" color="#225" inverted-color="#ddf" useforautocomplete="no">
+            <keywords id="References" useforautocomplete="yes" scope="language.variable.references">
                 <regex>(\[\d+\])</regex>
             </keywords>
 
 
-            <keywords id="Emphasis" color="#000" inverted-color="#fff" font-style="italic" font-weight="bold" useforautocomplete="no">
+            <keywords id="Emphasis" font-style="italic" font-weight="bold" useforautocomplete="yes" scope="support.function.objective-c">
                 <regex>(\*\w+\*)</regex>
             </keywords>
 
             <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
                         
-            <state id="Tool Tip" color="#076e09" inverted-color="#67dd6a" font-weight="normal" font-style="italic">
+            <state id="Tool Tip" font-weight="normal" font-style="italic" scope="comment.doc.conference" type="comment">
                 <begin><regex>{</regex></begin>
                 <end><regex>}</regex></end>
 	            <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>

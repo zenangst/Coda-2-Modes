@@ -50089,8 +50089,10 @@ nrPropertyAlreadyExists
 nrResultCodeBase
 nrTransactionAborted
 nrTypeMismatchErr
+NSInteger
 nsDrvErr
 nsStackErr
+NSUInteger
 nsvErr
 ntscIn
 ntscReallyIn
