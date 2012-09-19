@@ -10,5 +10,6 @@
         <regex>\A#!/usr/bin/php</regex>
         <regex>\A#!/usr/bin/env php</regex>
         <regex>&lt;\?php.+(?:\?&gt;|\Z)</regex>
+        <regex>&lt;\?.+(?:\?&gt;|\Z)</regex>
     </recognition>
 </settings>
