@@ -67,4 +67,14 @@
         </postprocess>
     </symbol>
     
+    <symbol id="CSS Groups" font-weight="normal" font-style="normal" image="SymbolGroup" indentation="0" ignoreblocks="no" show-in-comments="yes">
+        <regex>/\*[ \t]*(?i)@group[ \t]*(.*?)[ \t]*\*/</regex>
+        <postprocess>
+           <find>[\n\r]</find>
+           <replace> </replace>
+           <find>[ \t]+</find>
+           <replace> </replace>
+        </postprocess>
+    </symbol>
+    
 </symbols>

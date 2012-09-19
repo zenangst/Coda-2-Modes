@@ -10,6 +10,7 @@
     </head>
     <states>
         <default id="Base" scope="meta.default">
+        	        
             <state id="Inside curly brackets" foldable="yes" indent="yes" scope="meta.block.curly">
                 <begin>
                     <string>{</string>
@@ -820,6 +821,13 @@
                 </end>
                 <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
             </state>
+            
+            <state id="Comment Group" foldable="yes" indent="no" delimiterState="Comment" scope="meta.default">
+       			<begin><regex>/\*[ \t]*(?i)@group[ \t]+.*?\*/</regex></begin>
+       			<end><regex>/\*[ \t]*(?i)@end[ \t]*\*/</regex></end>
+       			<import />
+       		</state>
+            
             <state id="Comment" type="comment" foldable="yes" scope="style.comment.block">
                 <begin>
                     <string>/\*</string>
@@ -828,6 +836,7 @@
                 <end>
                     <regex>\*/</regex>
                 </end>
+                
                 <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
             </state>
             <state id="String" type="string" scope="style.value.string.double">
