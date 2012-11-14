@@ -43,30 +43,7 @@ basics
 			<string>Basics</string>
 			<key>Clips</key>
 			<array>
-		
-				<dict><!-- !PHP Block -->
-					<key>Versions</key>
-					<array/>
-					<key>Placeholders</key>
-					<array>
-						<dict>
-							<key>Range</key>
-							<string>{7, 4}</string>
-							<key>Type</key>
-							<integer>12</integer>
-						</dict>
-					</array>
-					<key>Title</key>
-					<string>PHP Block</string>
-					<key>Trigger</key>
-					<string>php</string>
-					<key>Content</key>
-					<string><![CDATA[<?php
-	Code
-?>]]>
-						</string>
-				</dict>
-				
+			
 				<dict><!-- !Echo -->
 					<key>Versions</key>
 					<array/>

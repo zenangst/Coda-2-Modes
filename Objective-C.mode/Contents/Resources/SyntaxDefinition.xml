@@ -57,6 +57,12 @@
 				<regex>(\w+)\s\=</regex>
 				<regex>\:(\w+)\]|\:(\w+)\s|(\w+);</regex>
 				<regex>\s(\w+)\.|\t(\w+)\.|:(\w+)\.</regex>
+				<regex>\s(\w+),</regex>
+				<regex>\*(\w+)|in\s(\w+)</regex>
+			</keywords>
+			
+			<keywords id="Variables - synthesize" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
+				<regex>synthesize\s(\w+)</regex>
 			</keywords>
             
             <keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
@@ -68,6 +74,7 @@
             
 			 <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
             	<regex>[a-z_]+\.(\w+)</regex>
+            	<regex>\]\.(\w+)</regex>
             </keywords>
 			
 			<keywords id="User Classes" useforautocomplete="yes" scope="language.variable.objective-c">

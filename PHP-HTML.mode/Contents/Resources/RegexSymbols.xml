@@ -17,12 +17,25 @@
 	</symbol>
 	
 	<!-- END CODA -->
-
+	
+	 <symbol id="function prototype" font-weight="normal" font-style="normal" image="SymbolP" indentation="0" ignoreblocks="no" useforautocomplete="yes">
+		<!-- CODA 
+        <regex>(?:^|(?&lt;=\r))[ ]{0,1}(?:final[ \t]+)?(?:(?:private|public|protected)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?([a-zA-Z0-9_]+[ \t]*\([^)]*\))[^{}]*{</regex>
+		-->
+        <regex>(?:^|(?&lt;=\r))[ \t]*(?:(?:abstract|protected)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function\s+(?'name'\w+\s*\([^);]*\))[ \t]*;</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
+	
     <symbol id="function" font-weight="normal" font-style="normal" image="SymbolF()" indentation="0" ignoreblocks="no" useforautocomplete="yes"> 
 		<!-- CODA 
         <regex>(?:^|(?&lt;=\r))[ ]{0,1}(?:final[ \t]+)?(?:(?:private|public|protected)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?([a-zA-Z0-9_]+[ \t]*\([^)]*\))[^{}]*{</regex>
 		-->
-        <regex>(?:^|(?&lt;=\r))(?:(?:final|static|abstract)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function\s+(?'name'\w+\s*\((?'arguments'.*)\))[^{}]*{</regex>
+        <regex>(?:^|(?&lt;=\r))(?:(?:final|static|abstract)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function\s+(?'name'\w+\s*\((?'arguments'[^{;]*)\))[^{};]*{</regex>
         <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -31,12 +44,12 @@
         </postprocess>
         <arguments>([\$\w]+[\$=\w\s'"\(\)]*)[,\n\t]*</arguments>
     </symbol>
-
+	
     <symbol id="function indented" font-weight="normal" font-style="normal" image="SymbolF()" indentation="1" ignoreblocks="no" useforautocomplete="yes">
 		<!-- CODA
 		<regex>(?:^|(?&lt;=\r))(?:[ ]{2,}|\t)[ \t]*(?:final[ \t]+)?(?:(?:private|public|protected)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?([a-zA-Z0-9_]+[ \t]*\([^)]*\))[^{}]*{</regex>
 		-->
-		<regex>(?:^|(?&lt;=\r))[ \t]+(?:(?:final|static|abstract)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?\s*(?'name'[a-zA-Z0-9_]+[ \t]*\((?'arguments'.*)\))[^{}]*{</regex>
+		<regex>(?:^|(?&lt;=\r))[ \t]+(?:(?:final|static|abstract)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?\s*(?'name'[a-zA-Z0-9_]+[ \t]*\((?'arguments'[^{;]*)\))[^{};]*{</regex>
        <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>

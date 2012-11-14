@@ -11,15 +11,14 @@
      </head>
     <states>
         <default id="Base" usesymbolsfrommode="HTML" useautocompletefrommode="HTML" scope="meta.default">
+            
             <import mode="XML" keywords-only="yes"/>
-            <keywords id="href links" type="url" useforautocomplete="no" scope="meta.link">
-                <regex>\s(?i)(href|src)(?-i)\s*=\s*"([^"]*)"(?=[^&lt;]*>)</regex>
-            </keywords>
             <state-link mode="XML" state="Comment"/>
             <state-link mode="XML" state="CDATA"/>
             <state-link mode="XML" state="Doctype"/>
             <state-link mode="XML" state="Escape"/>
-            <state id="Inline CSS" usesymbolsfrommode="CSS" useautocompletefrommode="CSS" foldable="yes" indent="yes" scope="meta.block.css">
+            
+            <state id="Inline CSS" delimiterState="Tags" usesymbolsfrommode="CSS" useautocompletefrommode="CSS" foldable="yes" indent="yes" scope="meta.block.css">
                 <begin>
                     <regex>&lt;[ \t]*(?i)style[^>]*></regex>
                     <autoend>&lt;/style></autoend>
@@ -27,71 +26,102 @@
                 <end>
                     <regex>(?i)&lt;[ \t]*/[ \t]*style[ \t]*></regex>
                 </end>
-                <import mode="CSS"/>
-                    <keywords id="StyleTags" useforautocomplete="no" scope="markup.tag">
-                        <regex>(&lt;[/\s]*/?style\s*(?:[-:_\w]+[ \t]*=[ \t]*(?:".*?"|'.*?'|[\w:]+)\s*)*[/\s\w]*(?:[>&lt;]|$))</regex>
-                    </keywords>
-                    
-                    <keywords id="Attributes in StyleTags" useforautocomplete="no" scope="markup.tag.attribute.name">
-                        <regex>([\w-]*)(?=[ \t]*=[^&lt;]+(?:[>&lt;]|$))</regex>
-                    </keywords>
-                    <keywords id="Strings in StyleTags" type="string" useforautocomplete="no" scope="markup.tag.attribute.value.string">
-                        <regex>=[ \t\r\n]*("[^"]*"|'[^']*')(?=[^&lt;]*(?:[>&lt;]|$))</regex>
-                    </keywords>
-                    <keywords id="Entities in StyleTags" useforautocomplete="no" scope="markup.constant.entity">
-                        <regex>(&amp;#\d+;)</regex>
-                        <regex>(&amp;#x\h+;)</regex>
-                        <regex>(&amp;[\w\d\.\-]+;)</regex>
-                    </keywords>
-                <import keywords-only="yes"/>
+                	<import mode="CSS"/>
+                	
             </state>
-            <state id="Inline JavaScript" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="yes" indent="yes" scope="meta.block.js">
+            <state id="Inline JavaScript" delimiterState="Tags" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="yes" indent="yes" scope="meta.block.js">
                 <begin>
-                    <regex>&lt;[ \t]*(?i)script[^>]*></regex>
+                    <regex>(?:&lt;[ \t]*(?i)script\s*?>)|(?:&lt;[ \t]*(?i)script.+?javascript.*?>)</regex>
                     <autoend>&lt;/script></autoend>
                 </begin>
                 <end>
                     <regex>(?i)&lt;[ \t]*/[ \t]*script[ \t]*></regex>
                 </end>
                 <import mode="JavaScript"/>
-                    <keywords id="ScriptTags" useforautocomplete="no" scope="markup.tag">
-                        <regex>(&lt;[/\s]*/?script\s*(?:[-:_\w]+[ \t]*=[ \t]*(?:".*?"|'.*?'|[\w:]+)\s*)*[/\s\w]*(?:[>&lt;]|$))</regex>
-                    </keywords>
-                    
-                    <keywords id="Attributes in ScriptTags" useforautocomplete="no" scope="markup.tag.attribute.name">
-                        <regex>([\w-]*)(?=[ \t]*=[^&lt;]+(?:[>&lt;]|$))</regex>
-                    </keywords>
-                    <keywords id="Strings in ScriptTags" type="string" useforautocomplete="no" scope="markup.tag.attribute.value.string">
-                        <regex>=[ \t\r\n]*("[^"]*"|'[^']*')(?=[^&lt;]*(?:[>&lt;]|$))</regex>
-                    </keywords>
-                    <keywords id="Entities in ScriptTags" useforautocomplete="no" scope="markup.constant.entity">
-                        <regex>(&amp;#\d+;)</regex>
-                        <regex>(&amp;#x\h+;)</regex>
-                        <regex>(&amp;[\w\d\.\-]+;)</regex>
-                    </keywords>
-                <import keywords-only="yes"/>
+                
             </state>
-            <state id="Single Tag" foldable="no" scope="markup.tag">
-                <begin>
-                    <regex>&lt;\s*[^/?!][-:_\w]*\s*(?:[-:_\w]+=(?:"[^"]*"|'[^']*'|\w+)\s*)*/\s*(?=>)</regex>
+            
+            <state id="Self Closing Tags" foldable="no" scope="markup.tag">
+            	<begin>
+                    <regex>&lt;[ \t]*(?i)(?:area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)</regex>
                 </begin>
                 <end>
-                    <regex>></regex>
+                    <regex>&gt;</regex>
                 </end>
-                <import mode="XML" keywords-only="yes"/>
+                <import state="Tags"/>
+            </state>
+            
+            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)(?:.|[\r\n])*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
+				
+				<import mode="XML" keywords-only="yes"/>
                 <import keywords-only="yes"/>
+				<import/>
+			</state>
+
+			<state id="Tags" usespellchecking="no" foldState="Foldable Tags" scope="markup.tag">
+
+            	<begin><regex>&lt;</regex></begin>
+            	<end><regex>&gt;</regex></end>
+            	
+            	<state id="Javascript Actions" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" scope="meta.default" >
+					<begin><regex>(?&lt;=[ \t])(?i)on[\w]+[ \t]*=[ \t]*"</regex></begin>
+					<end><regex>"</regex></end>
+	                <keywords id="Action Attribute" useforautocomplete="no" scope="markup.tag.attribute.name">
+						<regex>\A([\w-]+)[ \t]*=</regex>
+					</keywords>
+					
+					<keywords id="Action Quotes" useforautocomplete="no" scope="markup.tag.attribute.value.string">
+						<regex>(")</regex>
+					</keywords>
+					
+					<keywords id="Action Equals" useforautocomplete="no" scope="markup.tag">
+						<regex>\A(?i)on[\w-]+([ \t]*=[ \t]*)</regex>
+					</keywords>
+					
+	                <import mode="JavaScript"/>
+            	</state>
+            	
+            	<state id="Links" type="url" useforautocomplete="no" scope="meta.link">
+					<begin><regex>(?&lt;=[ \t])(?i)(?:href|src)[ \t]*=[ \t]*"</regex></begin>
+					<end><regex>"</regex></end>
+					
+					<state id="Javascript in Links" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" scope="meta.block.js">
+						<begin><regex>\A[ \t]*(?i)javascript:</regex></begin>
+						<end><regex>(?'unwindend'")</regex></end>
+		                <import mode="JavaScript"/> 
+					</state>
+					
+					<keywords id="Link Attribute" useforautocomplete="no" scope="markup.tag.attribute.name">
+						<regex>\A(\w+)[ \t]*=</regex>
+					</keywords>
+					
+					<keywords id="Link Quotes" useforautocomplete="no" scope="markup.tag.attribute.value.string">
+						<regex>(")</regex>
+					</keywords>
+					
+					<keywords id="Link Equals" useforautocomplete="no" scope="markup.tag">
+						<regex>\A(?i)\w+([ \t]*=[ \t]*)</regex>
+					</keywords>
+					
+				</state>
+            	
+               	<state id="Strings in Tags" type="string" useforautocomplete="no" scope="markup.tag.attribute.value.string">
+					<begin><regex>"</regex></begin>
+					<end><regex>"</regex></end>
+				</state>
+				
+				<state id="Single Strings in Tags" type="string" useforautocomplete="no" scope="markup.tag.attribute.value.string">
+					<begin><regex>'</regex></begin>
+					<end><regex>'</regex></end>
+				</state>
+				
+				<keywords id="Attributes in Tags" useforautocomplete="no" scope="markup.tag.attribute.name">
+					<regex>([\w-]*)(?=[ \t]*=)</regex>
+				</keywords>
+
             </state>
-            <state id="Tag State" foldable="yes" indent="yes" scope="meta.default" usespellchecking="yes" lineardirtymode="yes">
-                <begin>
-                    <regex>&lt;\s*(?'xmltagstatename'[^/?!][-:_\w]*)\s*(?:[-:_\w]+=(?:"[^"]*"|'[^']*'|\w+)\s*)*\s*>(?'cutoffstart'(?:.|[\n])*&lt;/\k'xmltagstatename')</regex>
-					<autoend>&lt;/\g&lt;xmltagstatename>></autoend>
-                </begin>
-                <end>
-                    <regex>&lt;\s*/\s*(?#see-insert-start-group:xmltagstatename)\s*></regex>
-                </end>
-                <import mode="XML" keywords-only="yes"/>
-                <import mode="HTML"/>
-            </state>
+            
         </default>
     </states>
 </syntax>
+

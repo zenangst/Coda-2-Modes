@@ -153,12 +153,14 @@
 				</dict>
 				<dict>
 					<key>Versions</key>
-					<array/>
+					<array>
+						<string>15a43212ec9ef6d9408de98791c34343</string>
+					</array>
 					<key>Placeholders</key>
 					<array>
 						<dict>
 							<key>Range</key>
-							<string>{26, 4}</string>
+							<string>{10, 4}</string>
 							<key>Type</key>
 							<integer>12</integer>
 						</dict>
@@ -168,7 +170,7 @@
 					<key>Trigger</key>
 					<string>script</string>
 					<key>Content</key>
-					<string>&lt;script charset=&quot;utf-8&quot;&gt;
+					<string>&lt;script&gt;
 	Code
 &lt;/script&gt;</string>
 				</dict>

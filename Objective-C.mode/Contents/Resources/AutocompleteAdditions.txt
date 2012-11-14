@@ -21732,6 +21732,7 @@ contentStretch
 contentURL
 contentVerticalAlignment
 contentView
+contentViewController
 contentViewMargins
 contentWidth
 contentWidthValueType
@@ -50088,8 +50089,10 @@ nrPropertyAlreadyExists
 nrResultCodeBase
 nrTransactionAborted
 nrTypeMismatchErr
+NSInteger
 nsDrvErr
 nsStackErr
+NSUInteger
 nsvErr
 ntscIn
 ntscReallyIn
@@ -60793,3 +60796,4 @@ zunmrz_
 zunmtr_
 zupgtr_
 zupmtr_
+__FUNCTION__
