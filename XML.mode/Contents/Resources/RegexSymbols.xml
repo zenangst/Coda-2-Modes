@@ -14,15 +14,7 @@
         
     <!-- CODA <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="Symbol!.png" indentation="0" ignoreblocks="no" show-in-comments="yes"> -->
     <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
-        <regex>&lt;!--\s*!(.*?)\s*--&gt;</regex>
-    </symbol>
-    
-    <symbol id="Attributes" hidden="yes" useforautocomplete="yes">
-        <regex>([A-Za-z\-_]+)\=</regex>
-    </symbol>
-    
-    <symbol id="Tag" hidden="yes" useforautocomplete="yes">
-        <regex>(&lt;[A-Za-z\-_]+)</regex>
+        <regex>&lt;!--\s*![ \t]*(.*?)\s*--&gt;</regex>
     </symbol>
 
 </symbols>

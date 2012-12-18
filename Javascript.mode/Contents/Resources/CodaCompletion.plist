@@ -1430,9 +1430,9 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>instanceOf</string>
+			<string>instanceof</string>
 			<key>String</key>
-			<string>instanceOf</string>
+			<string>instanceof</string>
 		</dict>
 		<dict>
 			<key>ID</key>

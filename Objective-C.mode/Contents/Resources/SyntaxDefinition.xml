@@ -21,7 +21,7 @@
             <state-link mode="C" state="Comment"/>
             <state-link mode="C" state="SingleComment"/>
             <state-link mode="C" state="String"/>
-            <state id="NSString" type="string" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="markup.tag.attribute.value.string">
+            <state id="NSString" type="string" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="string.double.objective-c"> <!-- scope="markup.tag.attribute.value.string" -->
                 <begin>
                     <string>@"</string>
                 </begin>

@@ -52310,6 +52310,7 @@ runModalSession:
 runModalWithOptions:
 runModalWithPrintInfo:
 runMode: beforeDate:
+runningApplications
 runOperation
 runOperationModalForWindow: delegate: didRunSelector: contextInfo:
 runPageLayout:

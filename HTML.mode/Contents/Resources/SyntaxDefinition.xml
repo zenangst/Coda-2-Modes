@@ -29,6 +29,16 @@
                 	<import mode="CSS"/>
                 	
             </state>
+            
+            <state id="JavaScript Container" containerState="yes" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" scope="meta.block.js">
+				<import mode="JavaScript" keywords-only="yes"/>
+				<state-link state="AutodocComment" mode="JavaScript"/>
+				<state-link state="Comment" mode="JavaScript"/>
+				<state-link state="Regular Expressions" mode="JavaScript"/>
+				<state-link state="String" mode="JavaScript"/>
+				<state-link state="SingleString" mode="JavaScript"/>
+			</state>
+            
             <state id="Inline JavaScript" delimiterState="Tags" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="yes" indent="yes" scope="meta.block.js">
                 <begin>
                     <regex>(?:&lt;[ \t]*(?i)script\s*?>)|(?:&lt;[ \t]*(?i)script.+?javascript.*?>)</regex>
@@ -51,7 +61,7 @@
                 <import state="Tags"/>
             </state>
             
-            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)(?:.|[\r\n])*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
+            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="\A&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)[\s\S]*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
 				
 				<import mode="XML" keywords-only="yes"/>
                 <import keywords-only="yes"/>
@@ -78,7 +88,8 @@
 						<regex>\A(?i)on[\w-]+([ \t]*=[ \t]*)</regex>
 					</keywords>
 					
-	                <import mode="JavaScript"/>
+					<import mode="JavaScript" keywords-only="yes"/>
+	                <import state="JavaScript Container"/>
             	</state>
             	
             	<state id="Links" type="url" useforautocomplete="no" scope="meta.link">
@@ -88,7 +99,8 @@
 					<state id="Javascript in Links" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" scope="meta.block.js">
 						<begin><regex>\A[ \t]*(?i)javascript:</regex></begin>
 						<end><regex>(?'unwindend'")</regex></end>
-		                <import mode="JavaScript"/> 
+						<import mode="JavaScript" keywords-only="yes"/>
+	                	<import state="JavaScript Container"/>
 					</state>
 					
 					<keywords id="Link Attribute" useforautocomplete="no" scope="markup.tag.attribute.name">

@@ -44,7 +44,7 @@
         </postprocess>
         <arguments>([\$\w]+[\$=\w\s'"\(\)]*)[,\n\t]*</arguments>
     </symbol>
-	
+
     <symbol id="function indented" font-weight="normal" font-style="normal" image="SymbolF()" indentation="1" ignoreblocks="no" useforautocomplete="yes">
 		<!-- CODA
 		<regex>(?:^|(?&lt;=\r))(?:[ ]{2,}|\t)[ \t]*(?:final[ \t]+)?(?:(?:private|public|protected)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?([a-zA-Z0-9_]+[ \t]*\([^)]*\))[^{}]*{</regex>

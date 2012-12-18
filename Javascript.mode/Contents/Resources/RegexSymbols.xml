@@ -90,7 +90,7 @@
     </symbol>
     
     <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
-        <regex>// !([^\n\r]+)</regex>
+        <regex>//[ \t]*!([^\n\r]+)</regex>
     </symbol>
     
     <symbol id="Console log" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="yes">

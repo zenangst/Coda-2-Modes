@@ -3916,7 +3916,7 @@
 
             <state id="Inline JavaScript" delimiterState="Tags" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="yes" scope="meta.block.js">
                 <begin>
-                    <regex>(?:&lt;[ \t]*(?i)script\s*?>)|(?:&lt;(?i)script.+?javascript.*?(?&lt;![?])>)</regex>
+                    <regex>(?:&lt;[ \t]*(?i)script\s*?>)|(?:&lt;(?i)script.+?javascript.*?(?&lt;![?-])>)</regex>
                     <autoend>&lt;/script></autoend>
                 </begin>
                 <end>
@@ -3951,7 +3951,7 @@
                 <import state="Tags"/>
             </state>
 
-            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)(?:.|[\r\n])*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
+            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="\A&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)[\s\S]*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
 				
 				<import mode="XML" keywords-only="yes"/>
                 <import keywords-only="yes"/>
