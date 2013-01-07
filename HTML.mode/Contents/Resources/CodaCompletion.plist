@@ -751,9 +751,9 @@
 				</dict>
 				<dict>
 					<key>MoveCursor</key>
-					<integer>2</integer>
+					<integer>3</integer>
 					<key>PostString</key>
-					<string>=&quot;&quot;</string>
+					<string>=&quot;_&quot;</string>
 					<key>String</key>
 					<string>target</string>
 					<key>Children</key>
