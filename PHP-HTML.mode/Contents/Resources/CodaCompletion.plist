@@ -5513,6 +5513,12 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>foreach</string>
+			<key>String</key>
+			<string>foreach</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>forward_static_call</string>
 			<key>String</key>
 			<string>forward_static_call</string>
@@ -6236,7 +6242,7 @@
 			<key>String</key>
 			<string>function</string>
 			<key>PostString</key>
-			<string> </string>
+			<string> ()</string>
 			<key>SelectionRange</key>
 			<string>{9, 0}</string>
 			<key>Parameters</key>
