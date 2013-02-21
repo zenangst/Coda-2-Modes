@@ -56,6 +56,12 @@
         </postprocess>
         <arguments>([\$A-Za-z0-9_]+)[ ,]*</arguments>
     </symbol>
+	
+	<symbol id="Function calls" image="SymbolF()" indentation="0" ignoreblocks="yes" useforautocomplete="yes" hidden="yes">
+		<regex>[\.|\t]([A-Za-z0-9_]+[ \t]*)\(</regex>
+		<!-- JQuery selectors -->
+		<regex>(\$\([^)]+\))</regex>
+	</symbol>
 
     <symbol id="Inline Functions" image="SymbolF()" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
         <regex>(?'name'(\w{1,512})(?'trim'\s{0,512}=\s{0,512}(?i)function\s{0,512})\((?'arguments'([^\)]{0,512}))\))(?=\s{0,512}\{)</regex>
@@ -90,7 +96,7 @@
     </symbol>
     
     <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
-        <regex>// !([^\n\r]+)</regex>
+        <regex>//[ \t]*!([^\n\r]+)</regex>
     </symbol>
     
     <symbol id="Console log" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="yes">

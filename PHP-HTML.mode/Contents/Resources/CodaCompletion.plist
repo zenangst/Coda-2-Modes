@@ -1708,6 +1708,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>class</string>
+			<key>String</key>
+			<string>class</string>
+			<key>PostString</key>
+			<string> </string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>classname</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>classkit_import</string>
 			<key>String</key>
 			<string>classkit_import</string>
@@ -5078,6 +5092,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>extends</string>
+			<key>String</key>
+			<string>extends</string>
+			<key>PostString</key>
+			<string> </string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>rootClass</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>extract</string>
 			<key>String</key>
 			<string>extract</string>
@@ -5482,6 +5510,12 @@
 				<string>string $filename</string>
 				<string>string $mode</string>
 			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>foreach</string>
+			<key>String</key>
+			<string>foreach</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -6200,6 +6234,20 @@
 			<array>
 				<string>resource $handle</string>
 				<string>int $size</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>function</string>
+			<key>String</key>
+			<string>function</string>
+			<key>PostString</key>
+			<string> ()</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>function_name</string>
 			</array>
 		</dict>
 		<dict>
@@ -19186,6 +19234,36 @@
 			<array>
 				<string>resource $process</string>
 			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>public</string>
+			<key>String</key>
+			<string>public</string>
+			<key>PostString</key>
+			<string> </string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>protected</string>
+			<key>String</key>
+			<string>protected</string>
+			<key>PostString</key>
+			<string> </string>
+			<key>SelectionRange</key>
+			<string>{10, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>private</string>
+			<key>String</key>
+			<string>private</string>
+			<key>PostString</key>
+			<string> </string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
 		</dict>
 		<dict>
 			<key>ID</key>

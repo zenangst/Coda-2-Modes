@@ -2,6 +2,7 @@
 <settings>
     <recognition>
         <extension>c</extension>
+        <extension>cpp</extension>
         <extension>strings</extension>
         <extension>h</extension>
     </recognition>

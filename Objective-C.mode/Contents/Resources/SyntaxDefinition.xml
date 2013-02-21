@@ -21,7 +21,7 @@
             <state-link mode="C" state="Comment"/>
             <state-link mode="C" state="SingleComment"/>
             <state-link mode="C" state="String"/>
-            <state id="NSString" type="string" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="markup.tag.attribute.value.string">
+            <state id="NSString" type="string" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="string.double.objective-c"> <!-- scope="markup.tag.attribute.value.string" -->
                 <begin>
                     <string>@"</string>
                 </begin>
@@ -1063,7 +1063,7 @@
                 <string>XGResource</string>
                 <string>XGTwoWayRandomAuthenticator</string>
             </keywords>
-			<keywords id="Objective-C Keywords (@)" color="#881350" useforautocomplete="yes" font-weight="bold" scope="style.at-rule">
+			<keywords id="Objective-C Keywords (@)" color="#881350" useforautocomplete="yes" font-weight="bold" scope="style.value.keyword">
 	            <string>@catch</string>
 	            <string>@class</string>
 	            <string>@defs</string>
@@ -2465,7 +2465,7 @@
                 <string>NSZeroSize</string>
                 <string>NSZone</string>
             </keywords>
-            <keywords id="Cocoa Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="style.at-rule.constant">
+            <keywords id="Cocoa Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="style.value.string">
                 <string>AUHostVersionIdentifier</string>
                 <string>AUNumVersion</string>
                 <string>AVAudioQuality</string>
