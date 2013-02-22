@@ -6518,6 +6518,78 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>get_defined_functions</string>
+			<key>String</key>
+			<string>get_defined_functions</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{23, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_defined_vars</string>
+			<key>String</key>
+			<string>get_defined_vars</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{18, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_headers</string>
+			<key>String</key>
+			<string>get_headers</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $url</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_html_translation_table</string>
+			<key>String</key>
+			<string>get_html_translation_table</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{27, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_meta_tags</string>
+			<key>String</key>
+			<string>get_meta_tags</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{14, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $filename</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_resource_type</string>
+			<key>String</key>
+			<string>get_resource_type</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{18, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>resource $handle</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>getallheaders</string>
 			<key>String</key>
 			<string>getallheaders</string>
@@ -6703,78 +6775,6 @@
 			<key>Parameters</key>
 			<array>
 				<string>mixed $var</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_defined_functions</string>
-			<key>String</key>
-			<string>get_defined_functions</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{22, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_defined_vars</string>
-			<key>String</key>
-			<string>get_defined_vars</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{17, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_headers</string>
-			<key>String</key>
-			<string>get_headers</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{12, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $url</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_html_translation_table</string>
-			<key>String</key>
-			<string>get_html_translation_table</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{27, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_meta_tags</string>
-			<key>String</key>
-			<string>get_meta_tags</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{14, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $filename</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_resource_type</string>
-			<key>String</key>
-			<string>get_resource_type</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{18, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>resource $handle</string>
 			</array>
 		</dict>
 		<dict>
