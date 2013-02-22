@@ -214,6 +214,7 @@
 					<regex>(\b@??chroot) *\(</regex>
 					<regex>(\b@??chr) *\(</regex>
 					<regex>(\b@??chunk_split) *\(</regex>
+					<regex>(\b@??class_alias) *\(</regex>
 					<regex>(\b@??class_exists) *\(</regex>
 					<regex>(\b@??class_implements) *\(</regex>
 					<regex>(\b@??clearstatcache) *\(</regex>
@@ -853,6 +854,7 @@
 					<regex>(\b@??gd_info) *\(</regex>
 					<regex>(\b@??get_all_headers) *\(</regex>
 					<regex>(\b@??get_browser) *\(</regex>
+					<regex>(\b@??get_called_class) *\(</regex>
 					<regex>(\b@??get_cfg_var) *\(</regex>
 					<regex>(\b@??get_class_methods) *\(</regex>
 					<regex>(\b@??get_class_vars) *\(</regex>
@@ -860,6 +862,8 @@
 					<regex>(\b@??get_client_info) *\(</regex>
 					<regex>(\b@??get_current_user) *\(</regex>
 					<regex>(\b@??get_declared_classes) *\(</regex>
+					<regex>(\b@??get_declared_interfaces) *\(</regex>
+					<regex>(\b@??get_declared_traits) *\(</regex>
 					<regex>(\b@??get_defined_constants) *\(</regex>
 					<regex>(\b@??get_defined_functions) *\(</regex>
 					<regex>(\b@??get_defined_vars) *\(</regex>
@@ -1387,6 +1391,7 @@
 					<regex>(\b@??ini_set) *\(</regex>
 					<regex>(\b@??init) *\(</regex>
 					<regex>(\b@??insert_id) *\(</regex>
+					<regex>(\b@??interface_exists) *\(</regex>
 					<regex>(\b@??intval) *\(</regex>
 					<regex>(\b@??ip2long) *\(</regex>
 					<regex>(\b@??iptcembed) *\(</regex>
@@ -2775,6 +2780,7 @@
 					<regex>(\b@??proc_nice) *\(</regex>
 					<regex>(\b@??proc_open) *\(</regex>
 					<regex>(\b@??proc_terminate) *\(</regex>
+					<regex>(\b@??property_exists) *\(</regex>
 					<regex>(\b@??pspell_add_to_personal) *\(</regex>
 					<regex>(\b@??pspell_add_to_session) *\(</regex>
 					<regex>(\b@??pspell_check) *\(</regex>
@@ -3281,6 +3287,7 @@
 					<regex>(\b@??token_get_all) *\(</regex>
 					<regex>(\b@??token_name) *\(</regex>
 					<regex>(\b@??touch) *\(</regex>
+					<regex>(\b@??trait_exists) *\(</regex>
 					<regex>(\b@??trigger_error) *\(</regex>
 					<regex>(\b@??trim) *\(</regex>
 					<regex>(\b@??uasort) *\(</regex>
