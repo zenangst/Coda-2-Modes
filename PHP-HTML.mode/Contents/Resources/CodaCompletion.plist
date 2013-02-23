@@ -54,6 +54,83 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>__construct</string>
+			<key>String</key>
+			<string>__construct</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__get</string>
+			<key>String</key>
+			<string>__get</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $property</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__isset</string>
+			<key>String</key>
+			<string>__isset</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $property</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__set</string>
+			<key>String</key>
+			<string>__set</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $property</string>
+				<string>mixed $value</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__toString</string>
+			<key>String</key>
+			<string>__toString</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__unset</string>
+			<key>String</key>
+			<string>__unset</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $property</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>$argc</string>
 			<key>String</key>
 			<string>$argc</string>
@@ -17267,6 +17344,7 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $path</string>
+				<string>int $options = PATHINFO_DIRNAME | PATHINFO_BASENAME | PATHINFO_EXTENSION | PATHINFO_FILENAME</string>
 			</array>
 		</dict>
 		<dict>
