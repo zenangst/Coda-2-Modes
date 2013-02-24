@@ -54,6 +54,36 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>__call</string>
+			<key>String</key>
+			<string>__call</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $method</string>
+				<string>array $arguments</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__callStatic</string>
+			<key>String</key>
+			<string>__callStatic</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{13, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $method</string>
+				<string>array $arguments</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>__construct</string>
 			<key>String</key>
 			<string>__construct</string>
@@ -61,6 +91,46 @@
 			<string>()</string>
 			<key>SelectionRange</key>
 			<string>{12, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__clone</string>
+			<key>String</key>
+			<string>__clone</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__destruct</string>
+			<key>String</key>
+			<string>__destruct</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__sleep</string>
+			<key>String</key>
+			<string>__sleep</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>__wakeup</string>
+			<key>String</key>
+			<string>__wakeup</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{10, 0}</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1258,6 +1328,36 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>assert</string>
+			<key>String</key>
+			<string>assert</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>mixed $assertion</string>
+				<string>string $description</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>assert_options</string>
+			<key>String</key>
+			<string>assert_options</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{15, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>int $what</string>
+				<string>mixed $value</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>atan</string>
 			<key>String</key>
 			<string>atan</string>
@@ -1355,6 +1455,22 @@
 				<string>string $number</string>
 				<string>int $frombase</string>
 				<string>int $tobase</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcadd</string>
+			<key>String</key>
+			<string>bcadd</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>[ int $scale ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -1823,7 +1939,7 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $class_name</string>
-				<string>bool $autoload = TRUE</string>
+				<string>[ bool $autoload = TRUE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -1839,7 +1955,7 @@
 			<array>
 				<string>string $original</string>
 				<string>string $alias</string>
-				<string>bool $autoload = TRUE</string>
+				<string>[ bool $autoload = TRUE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -6659,7 +6775,7 @@
 			<string>{10, 0}</string>
 			<key>Parameters</key>
 			<array>
-				<string>object $object = NULL</string>
+				<string>[ object $object = NULL ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -11972,7 +12088,7 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $interface_name</string>
-				<string>bool $autoload = TRUE</string>
+				<string>[ bool $autoload = TRUE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -12045,7 +12161,7 @@
 			<array>
 				<string>object $object</string>
 				<string>string $class_name</string>
-				<string>bool $allow_string = FALSE</string>
+				<string>[ bool $allow_string = FALSE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -12367,7 +12483,7 @@
 			<array>
 				<string>mixed $object</string>
 				<string>string $class_name</string>
-				<string>bool $allow_string = TRUE</string>
+				<string>[ bool $allow_string = TRUE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -13760,7 +13876,7 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $str</string>
-				<string>int $mode = MB_CASE_UPPER</string>
+				<string>[ int $mode = MB_CASE_UPPER ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -17344,7 +17460,7 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $path</string>
-				<string>int $options = PATHINFO_DIRNAME | PATHINFO_BASENAME | PATHINFO_EXTENSION | PATHINFO_FILENAME</string>
+				<string>[ int $options = PATHINFO_DIRNAME | PATHINFO_BASENAME | PATHINFO_EXTENSION | PATHINFO_FILENAME ]</string>
 			</array>
 		</dict>
 		<dict>
