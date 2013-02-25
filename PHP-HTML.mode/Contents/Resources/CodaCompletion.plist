@@ -1475,6 +1475,147 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>bccomp</string>
+			<key>String</key>
+			<string>bccomp</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcdiv</string>
+			<key>String</key>
+			<string>bcdiv</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcmod</string>
+			<key>String</key>
+			<string>bcmod</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $modulus</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcmul</string>
+			<key>String</key>
+			<string>bcmul</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcpow</string>
+			<key>String</key>
+			<string>bcpow</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcpowmod</string>
+			<key>String</key>
+			<string>bcpowmod</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>string $modulus</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcscale</string>
+			<key>String</key>
+			<string>bcscale</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>int $scale</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcsqrt</string>
+			<key>String</key>
+			<string>bcsqrt</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $operand</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bcsub</string>
+			<key>String</key>
+			<string>bcsub</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $left_operand</string>
+				<string>string $right_operand</string>
+				<string>[ int $scale ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>bin2hex</string>
 			<key>String</key>
 			<string>bin2hex</string>
