@@ -1630,6 +1630,36 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>bind_textdomain_codeset</string>
+			<key>String</key>
+			<string>bind_textdomain_codeset</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{24, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $domain</string>
+				<string>string $codeset</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>bindtextdomain</string>
+			<key>String</key>
+			<string>bindtextdomain</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{15, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $domain</string>
+				<string>string $directory</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>bindec</string>
 			<key>String</key>
 			<string>bindec</string>
@@ -4018,6 +4048,40 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>dcgettext</string>
+			<key>String</key>
+			<string>dcgettext</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{10, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $domain</string>
+				<string>string $message</string>
+				<string>int $category</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>dcngettext</string>
+			<key>String</key>
+			<string>dcngettext</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{11, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $domain</string>
+				<string>string $msgid1</string>
+				<string>string $msgid2</string>
+				<string>int $n</string>
+				<string>int $category</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>debug_backtrace</string>
 			<key>String</key>
 			<string>debug_backtrace</string>
@@ -4140,6 +4204,21 @@
 			<string>()</string>
 			<key>SelectionRange</key>
 			<string>{7, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>dgettext</string>
+			<key>String</key>
+			<string>dgettext</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $domain</string>
+				<string>string $message</string>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -4333,6 +4412,23 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $directory</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>dngettext</string>
+			<key>String</key>
+			<string>dngettext</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{10, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $domain</string>
+				<string>string $msgid1</string>
+				<string>string $msgid2</string>
+				<string>int $n</string>
 			</array>
 		</dict>
 		<dict>
@@ -7240,6 +7336,20 @@
 			<array>
 				<string>int $port</string>
 				<string>string $protocol</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>gettext</string>
+			<key>String</key>
+			<string>gettext</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $message</string>
 			</array>
 		</dict>
 		<dict>
@@ -15829,6 +15939,22 @@
 			<key>Parameters</key>
 			<array>
 				<string>array &amp;$array</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>ngettext</string>
+			<key>String</key>
+			<string>ngettext</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $msgid1</string>
+				<string>string $msgid2</string>
+				<string>int $n</string>
 			</array>
 		</dict>
 		<dict>
@@ -24827,6 +24953,20 @@
 			<array>
 				<string>string $dir</string>
 				<string>string $prefix</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>textdomain</string>
+			<key>String</key>
+			<string>textdomain</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{11, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $text_domain</string>
 			</array>
 		</dict>
 		<dict>
