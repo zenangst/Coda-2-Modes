@@ -60,7 +60,7 @@
     </symbol>
     
      <symbol id="switch" useforautocomplete="no" image="SymbolS">
-        <regex>switch[^\(]+\(([^\)]+)</regex>
+        <regex>(?:^|(?&lt;=\r))[ \t]*switch[^\n\(]+\(([^\)]+)</regex>
         <postprocess>
             <find>"|'|:|\t+</find>
             <replace></replace>
@@ -68,7 +68,7 @@
     </symbol>
     
     <symbol id="case" useforautocomplete="no" image="SymbolCase">
-        <regex>(case [^\n]+)</regex>
+        <regex>(?:^|(?&lt;=\r))[ \t]*(case [^\n]+)</regex>
         <postprocess>
             <find>"|'|:|\t+</find>
             <replace></replace>
@@ -76,7 +76,7 @@
     </symbol>
     
     <symbol id="default" useforautocomplete="no" image="SymbolCaseDefault">
-        <regex>(default:)</regex>
+        <regex>(?:^|(?&lt;=\r))[ \t]*(default:)</regex>
         <postprocess>
             <find>"|'|:|\t+</find>
             <replace></replace>
