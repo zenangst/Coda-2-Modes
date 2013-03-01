@@ -25210,6 +25210,21 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>uniqid</string>
+			<key>String</key>
+			<string>uniqid</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>[ string $prefix = "" ]</string>
+				<string>[ bool $more_entropy = false ]</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>unixtojd</string>
 			<key>String</key>
 			<string>unixtojd</string>
