@@ -8,7 +8,7 @@
     </blocks>
     
     <!-- CODA - added support for comments after delarations before { -->
-    <symbol id="Tags" image="SymbolT">
+    <symbol id="Tags" image="SymbolT" ignoreblocks="no" useforautocomplete="yes">
         <regex>(?&lt;=[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*([\w\*][\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. %]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
         <postprocess>
             <find>[\n\r]</find>
@@ -20,7 +20,7 @@
         </postprocess>
     </symbol>
     
-    <symbol id="Classes" image="SymbolC">
+    <symbol id="Classes" image="SymbolC" ignoreblocks="no" useforautocomplete="yes">
         <regex>(?&lt;=[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*([.:][\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. %]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
         <postprocess>
             <find>[\n\r]</find>
@@ -32,7 +32,7 @@
         </postprocess>
     </symbol>
     
-    <symbol id="IDs" image="SymbolID">
+    <symbol id="IDs" image="SymbolID" ignoreblocks="no" useforautocomplete="yes">
         <regex>(?&lt;=[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*(#[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. %]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
         <postprocess>
             <find>[\n\r]</find>

@@ -5,12 +5,11 @@
     <head>
         <name>CSS</name>
         <!-- The definitions title -->
-        <charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@]]></charsintokens>
-        <charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@]]></charsincompletion>
+        <charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.]]></charsintokens>
+        <charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@.]]></charsincompletion>
     </head>
     <states>
-        <default id="Base" scope="meta.default">
-        	        
+        <default id="Base" usesymbolsfrommode="CSS" useautocompletefrommode="CSS" scope="meta.default">
             <state id="Inside curly brackets" foldable="yes" indent="yes" scope="meta.block.curly">
                 <begin>
                     <string>{</string>
