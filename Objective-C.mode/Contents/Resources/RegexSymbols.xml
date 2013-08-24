@@ -8,7 +8,7 @@
     </blocks>
     
     
-	<symbol id="Objective-C Methods" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
+	<symbol id="Objective-C Methods" image="SymbolM" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
         <regex>(^[ \t]*[-+][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[^{;/]*)</regex>
         <postprocess>
             <find>(:) *\([^\)]*\)</find>
@@ -37,7 +37,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolC" indentation="0" ignoreblocks="yes">
+    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolC" indentation="0" ignoreblocks="yes" scope="language.directives">
         <regex>(@implementation[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -45,7 +45,7 @@
         </postprocess>
     </symbol>
     
-    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolC" indentation="0" ignoreblocks="yes">
+    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolC" indentation="0" ignoreblocks="yes" scope="language.declarations">
         <regex>(@interface[^[:cntrl:]{]*|@protocol[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -53,7 +53,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolMark">
+    <symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolMark" scope="meta.tag.framework.pragma">
         <regex>(#pragma mark[	 -]*[^\n]*)\n</regex>
         <postprocess>
             <find>#pragma mark[-	 \n]*</find> <!-- An empty string places a separator -->
@@ -80,11 +80,11 @@
 		<regex>\w+\s(\*\w+);</regex>
 	</symbol>
 
-    <symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes">
+    <symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes" scope="markup.constant.entity">
         <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
     </symbol>
 
-    <symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no">
+    <symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no" scope="markup.invalid">
         <regex>^&lt;&lt;&lt;&lt;&lt;&lt;&lt;([\n\r]|.)*?======([\n\r]|.)*?&gt;&gt;&gt;&gt;&gt;&gt;&gt;</regex>
         <postprocess>
             <find>.*</find>
@@ -92,7 +92,7 @@
         </postprocess>
     </symbol>
     
-    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no">
+    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
         <regex>NSLog(\([^;]+)</regex>
         <postprocess>
         	<find>(^\()|(\)$)</find>
@@ -100,7 +100,7 @@
         </postprocess>
     </symbol>
     
-	<symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
+	<symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes" scope="style.at-rule">
 	    <regex>TODO\s([^\n]+)</regex>
     </symbol>
     
