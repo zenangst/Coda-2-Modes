@@ -64,6 +64,14 @@
             <replace> </replace>
         </postprocess>
     </symbol>
+
+    <symbol id="Objective-C Synthesize" font-weight="bold" image="SymbolS" indentation="0" ignoreblocks="yes" scope="language.directives">
+        <regex>@synthesize\s([^[:cntrl:]{]*);</regex>
+        <postprocess>
+            <find>([\n\r]| +)</find>
+            <replace></replace>
+        </postprocess>
+    </symbol>
     
     <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolC" indentation="0" ignoreblocks="yes" scope="language.declarations">
         <regex>(@interface[^[:cntrl:]{]*|@protocol[^[:cntrl:]{]*)</regex>
