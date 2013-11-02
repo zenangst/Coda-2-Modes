@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE syntax SYSTEM "symbol.dtd">
 <symbols>
-
     <blocks>
         <beginregex>{</beginregex>
         <endregex>}</endregex>
     </blocks>
-    
-    
-    <symbol id="Objective-C Methods" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
+	
+	<symbol id="Objects" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8">
+		<regex>\*([a-z]\w+)</regex>
+		<regex>([a-z]\w+)\s\=</regex>
+		<regex>\s([a-z]\w+);</regex>
+		<regex>\[([a-z]\w+)</regex>
+		<regex>\s([a-z]\w+)\)</regex>
+		<regex>\(([a-z]\w+)\)</regex>
+	</symbol>
+	
+	<symbol id="User Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" hidden="yes" useforautocomplete="yes">
+		<regex>\)(\w+)[^{]+</regex>
+	</symbol>
+	
+	<symbol id="Objective-C Methods" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
         <regex>(^[ \t]*[-][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+:[^{;/]*)</regex>
         <postprocess>
             <find>(:) *\([^\)]*\)</find>
@@ -18,7 +29,7 @@
         </postprocess>
     </symbol>
 
-<symbol id="Objective-C Methods (without arguments)" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
+	<symbol id="Objective-C Methods (without arguments)" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
         <regex>(^[ \t]*[-][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[\s\t+|^;])</regex>
         <postprocess>
             <find>(:) *\([^\)]*\)</find>
@@ -27,26 +38,19 @@
             <replace></replace>
         </postprocess>
     </symbol>
-
-    <symbol id="Objective-C Methods" image="SymbolS" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
-        <regex>(^[ \t]*[+][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[^{;/]*)</regex>
-        <postprocess>
-            <find>(:) *\([^\)]*\)</find>
-            <replace>\1</replace>
-            <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
-            <replace></replace>
-        </postprocess>
-    </symbol>
-    
-    <symbol id="Methods" color="#6C0540" hidden="yes" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
-        <regex>[^:]\([^)]*\)\s*([A-Za-z_][A-Za-z0-9_]*)\s*[{;]</regex>
-        <regex>\)\s*([A-Za-z_][A-Za-z0-9_]*):</regex>
-        <regex>\s([A-Za-z_][A-Za-z0-9_]+*):</regex>
-        <regex>(?&lt;![:\s])\s+([A-Za-z_][A-Za-z0-9_]*)]</regex>
-    </symbol>
-
-    <symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
-        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
+	
+	<symbol id="Objective-C Methods" image="SymbolS" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
+	    <regex>(^[ \t]*[+][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[^{;/]*)</regex>
+	    <postprocess>
+	        <find>(:) *\([^\)]*\)</find>
+	        <replace>\1</replace>
+	        <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
+	        <replace></replace>
+	    </postprocess>
+	</symbol>
+	
+	<symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
+	        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
         <postprocess>
             <find>\([^\)]*\)</find>
             <replace>()</replace>
@@ -72,7 +76,7 @@
             <replace></replace>
         </postprocess>
     </symbol>
-    
+
     <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolC" indentation="0" ignoreblocks="yes" scope="language.declarations">
         <regex>(@interface[^[:cntrl:]{]*|@protocol[^[:cntrl:]{]*)</regex>
         <postprocess>
@@ -80,64 +84,46 @@
             <replace> </replace>
         </postprocess>
     </symbol>
-
-    <symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolP" scope="meta.tag.framework.pragma">
+	
+	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolP" scope="meta.tag.framework.pragma">
         <regex>(#pragma mark[	 -]*[^\n]*)\n</regex>
         <postprocess>
             <find>#pragma mark[-	 \n]*</find> <!-- An empty string places a separator -->
             <replace></replace>
         </postprocess>
     </symbol>
-    
-    <symbol id="Properties" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.properties" color="#8735a5">
-		<regex>[a-z_]+\.(\w+)</regex>
-	</symbol>
 	
-    <symbol id="Variables" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.variable" color="#006ff8">
-        <regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
-		<regex>\[(\w+)</regex>
-		<regex>\((\w+)|\)(\w+)</regex>
-		<regex>(\w+)\s\=</regex>
-		<regex>\:(\w+)\]|\:(\w+)\s|(\w+);</regex>
-		<regex>\s(\w+)\.|\t(\w+)\.|:(\w+)\.</regex>
-	</symbol>
 	
-	<symbol id="Variables*" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="language.variable.objective-c.variable*" color="#006ff8">
-		<regex>\w+\s(\*\w+)\s\=</regex>
-		<regex>synthesize\s(\w+)</regex>
-		<regex>\w+\s(\*\w+);</regex>
-	</symbol>
-
-    <symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes" scope="markup.constant.entity">
-        <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
+	<symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes" scope="markup.constant.entity">
+	    <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
     </symbol>
-
-    <symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no" scope="markup.invalid">
-        <regex>^&lt;&lt;&lt;&lt;&lt;&lt;&lt;([\n\r]|.)*?======([\n\r]|.)*?&gt;&gt;&gt;&gt;&gt;&gt;&gt;</regex>
-        <postprocess>
-            <find>.*</find>
-            <replace>Versioning conflict!</replace>
-        </postprocess>
-    </symbol>
+	
+	<symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no" scope="markup.invalid">
+	        <regex>^&lt;&lt;&lt;&lt;&lt;&lt;&lt;([\n\r]|.)*?======([\n\r]|.)*?&gt;&gt;&gt;&gt;&gt;&gt;&gt;</regex>
+	        <postprocess>
+	            <find>.*</find>
+	            <replace>Versioning conflict!</replace>
+	        </postprocess>
+	    </symbol>
     
-    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
+	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
         <regex>NSLog(\([^;]+)</regex>
         <postprocess>
         	<find>(^\()|(\)$)</find>
         	<replace></replace>
         </postprocess>
     </symbol>
-    
+
 	<symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes" scope="style.at-rule">
 	    <regex>TODO\s([^\n]+)</regex>
     </symbol>
-    
+
     <symbol id="Objective-C implementation and interface" useforautocomplete="yes" hidden="yes">
     	<regex>implementation\s(\w+)|interface\s(\w+)</regex>
     </symbol>
-    
+
     <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes">
     	<regex>(\w+)\.h</regex>
     </symbol>
-
+	
 </symbols>

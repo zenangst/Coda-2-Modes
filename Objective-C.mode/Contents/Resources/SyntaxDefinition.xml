@@ -49,1022 +49,69 @@
                 <import mode="C" keywords-only="yes"/>
                 <import/>
             </state>
-            
-            <keywords id="Variables" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
-				<regex>\w+\s\*(\w+)\s\=|\w+\s\*(\w+);|\w+\s(\w+)\s\=</regex>
-				<regex>\[(\w+)</regex>
-				<regex>\((\w+)|\)(\w+)</regex>
+			
+			<keywords id="Objects" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
+				<regex>\*(\w+)</regex>
 				<regex>(\w+)\s\=</regex>
-				<regex>\:(\w+)\]|\:(\w+)\s|(\w+);</regex>
-				<regex>\s(\w+)\.|\t(\w+)\.|:(\w+)\.</regex>
-				<regex>\s(\w+),</regex>
-				<regex>\*(\w+)|in\s(\w+)</regex>
+				<regex>(\w+);</regex>
+				<regex>\[(\w+)</regex>
+				<regex>\s(\w+)\)</regex>
+				<regex>\((\w+)\)|\(!(\w+)\)</regex>
+				<regex>\:(\w+)</regex>
 			</keywords>
 			
-			<keywords id="Variables - synthesize" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no" color="#006ff8">
-				<regex>synthesize\s(\w+)</regex>
+			<keywords id="User Classes" useforautocomplete="yes" casesensitive="no" scope="language.variable.objective-c">
+				<regex>\[([A-Z]{1}\w+)</regex>
 			</keywords>
-            
-            <keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
-                <regex>[^:]\([^)]*\)\s*([A-Za-z_][A-Za-z0-9_]*)\s*[{;]</regex>
-                <regex>\)\s*([A-Za-z_][A-Za-z0-9_]*):</regex>
-                <regex>\s([A-Za-z_][A-Za-z0-9_]+*):</regex>
-                <regex>(?&lt;![:\s])\s+([A-Za-z_][A-Za-z0-9_]*)]</regex>
-            </keywords>
-            
-			 <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
-            	<regex>[a-z_]+\.(\w+)</regex>
-            	<regex>\]\.(\w+)</regex>
+			
+			<keywords id="User Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
+				<regex>\)(\w+)[^{]+</regex>
+				<regex>selector\(([^w]+)</regex>
+			</keywords>
+			
+			<!-- Foundation (OS X and iOS) and Application Kit (OS X) -->
+			<keywords id="NS Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+				<regex>(NS\w+)</regex>
+			</keywords>
+			
+			<!-- UIKit (iOS) -->
+			<keywords id="UI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+				<regex>(UI\w+)</regex>
+			</keywords>
+			
+			<!-- Address Book -->
+			<keywords id="AB Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+				<regex>(AB\w+)</regex>
+			</keywords>
+			
+			<!-- Core Animation -->
+			<keywords id="CA Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+				<regex>(CA\w+)</regex>
+			</keywords>
+			
+			<!-- Core Image -->
+			<keywords id="CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+				<regex>(CI\w+)</regex>
+			</keywords>
+			
+			<keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
+				<regex>(\w+):</regex>
+			</keywords>
+			
+			<keywords id="Method calls" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
+				<regex>(\w+)\]</regex>
+			</keywords>
+			
+			<keywords id="Properties" useforautocomplete="yes"  scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
+				<regex>\.(\w+)</regex>
+			</keywords>
+			
+			<keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="meta.invalid.ampersand">
+					                <regex>(?&lt;![\w:_])(new|allocWithZone:|alloc|autorelease|copyWithZone:|copy|mutableCopyWithZone:|mutableCopy|retain|release)(?![\w:_])</regex>
             </keywords>
 			
-			<keywords id="User Classes" useforautocomplete="yes" scope="language.variable.objective-c">
-    			<regex>(\w+)\s\*|(\w+)\*</regex>
-			</keywords>
-            
-            <keywords id="Cocoa Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support.function.objective-c">
-                <string>ABActionDelegate</string>
-                <string>ABAddressBook</string>
-                <string>ABGroup</string>
-                <string>ABIdentityPicker</string>
-                <string>ABImageClient</string>
-                <string>ABMultiValue</string>
-                <string>ABMutableMultiValue</string>
-                <string>ABNewPersonViewController</string>
-                <string>ABNewPersonViewControllerDelegate</string>
-                <string>ABPeoplePickerNavigationController</string>
-                <string>ABPeoplePickerNavigationControllerDelegate</string>
-                <string>ABPeoplePickerView</string>
-                <string>ABPerson</string>
-                <string>ABPersonViewController</string>
-                <string>ABPersonViewControllerDelegate</string>
-                <string>ABRecord</string>
-                <string>ABSearchElement</string>
-                <string>ABUnknownPersonViewController</string>
-                <string>ABUnknownPersonViewControllerDelegate</string>
-                <string>AMAction</string>
-                <string>AMAppleScriptAction</string>
-                <string>AMBundleAction</string>
-                <string>AMShellScriptAction</string>
-                <string>AMWorkflow</string>
-                <string>AMWorkflowController</string>
-                <string>AMWorkflowView</string>
-                <string>ASKPluginObject</string>
-                <string>AUGenericView</string>
-                <string>AUPannerView</string>
-                <string>AVAudioRecorder</string>
-                <string>AVAudioSession</string>
-                <string>CAAnimation</string>
-                <string>CAAnimationGroup</string>
-                <string>CABasicAnimation</string>
-                <string>CAConstraint</string>
-                <string>CAConstraintLayoutManager</string>
-                <string>CAEAGLLayer</string>
-                <string>CAGradientLayer</string>
-                <string>CAKeyframeAnimation</string>
-                <string>CALayer</string>
-                <string>CALayerArray</string>
-                <string>CAMediaTimingFunction</string>
-                <string>CAOpenGLLayer</string>
-                <string>CAPropertyAnimation</string>
-                <string>CARenderer</string>
-                <string>CAReplicatorLayer</string>
-                <string>CAScrollLayer</string>
-                <string>CAShapeLayer</string>
-                <string>CATextLayer</string>
-                <string>CATiledLayer</string>
-                <string>CATransaction</string>
-                <string>CATransformLayer</string>
-                <string>CATransition</string>
-                <string>CAValueFunction</string>
-                <string>CBGroupIdentity</string>
-                <string>CBIdentity</string>
-                <string>CBIdentityAuthority</string>
-                <string>CBIdentityPicker</string>
-                <string>CBUserIdentity</string>
-                <string>CIColor</string>
-                <string>CIContext</string>
-                <string>CIFilter</string>
-                <string>CIFilterGenerator</string>
-                <string>CIFilterShape</string>
-                <string>CIImage</string>
-                <string>CIImageAccumulator</string>
-                <string>CIImageProvider</string>
-                <string>CIKernel</string>
-                <string>CIPlugIn</string>
-                <string>CIPlugInRegistration</string>
-                <string>CISampler</string>
-                <string>CIVector</string>
-                <string>CalAlarm</string>
-                <string>CalAttendee</string>
-                <string>CalCalendar</string>
-                <string>CalCalendarItem</string>
-                <string>CalCalendarStore</string>
-                <string>CalEvent</string>
-                <string>CalNthWeekDay</string>
-                <string>CalRecurrenceEnd</string>
-                <string>CalRecurrenceRule</string>
-                <string>CalTask</string>
-                <string>DOMAbstractView</string>
-                <string>DOMAttr</string>
-                <string>DOMCDATASection</string>
-                <string>DOMCSSCharsetRule</string>
-                <string>DOMCSSFontFaceRule</string>
-                <string>DOMCSSImportRule</string>
-                <string>DOMCSSMediaRule</string>
-                <string>DOMCSSPageRule</string>
-                <string>DOMCSSPrimitiveValue</string>
-                <string>DOMCSSRule</string>
-                <string>DOMCSSRuleList</string>
-                <string>DOMCSSStyleDeclaration</string>
-                <string>DOMCSSStyleRule</string>
-                <string>DOMCSSStyleSheet</string>
-                <string>DOMCSSUnknownRule</string>
-                <string>DOMCSSValue</string>
-                <string>DOMCSSValueList</string>
-                <string>DOMCharacterData</string>
-                <string>DOMComment</string>
-                <string>DOMCounter</string>
-                <string>DOMDocument</string>
-                <string>DOMDocumentFragment</string>
-                <string>DOMDocumentType</string>
-                <string>DOMElement</string>
-                <string>DOMEntity</string>
-                <string>DOMEntityReference</string>
-                <string>DOMEvent</string>
-                <string>DOMHTMLAnchorElement</string>
-                <string>DOMHTMLAppletElement</string>
-                <string>DOMHTMLAreaElement</string>
-                <string>DOMHTMLBRElement</string>
-                <string>DOMHTMLBaseElement</string>
-                <string>DOMHTMLBaseFontElement</string>
-                <string>DOMHTMLBodyElement</string>
-                <string>DOMHTMLButtonElement</string>
-                <string>DOMHTMLCollection</string>
-                <string>DOMHTMLDListElement</string>
-                <string>DOMHTMLDirectoryElement</string>
-                <string>DOMHTMLDivElement</string>
-                <string>DOMHTMLDocument</string>
-                <string>DOMHTMLElement</string>
-                <string>DOMHTMLEmbedElement</string>
-                <string>DOMHTMLFieldSetElement</string>
-                <string>DOMHTMLFontElement</string>
-                <string>DOMHTMLFormElement</string>
-                <string>DOMHTMLFrameElement</string>
-                <string>DOMHTMLFrameSetElement</string>
-                <string>DOMHTMLHRElement</string>
-                <string>DOMHTMLHeadElement</string>
-                <string>DOMHTMLHeadingElement</string>
-                <string>DOMHTMLHtmlElement</string>
-                <string>DOMHTMLIFrameElement</string>
-                <string>DOMHTMLImageElement</string>
-                <string>DOMHTMLInputElement</string>
-                <string>DOMHTMLIsIndexElement</string>
-                <string>DOMHTMLLIElement</string>
-                <string>DOMHTMLLabelElement</string>
-                <string>DOMHTMLLegendElement</string>
-                <string>DOMHTMLLinkElement</string>
-                <string>DOMHTMLMapElement</string>
-                <string>DOMHTMLMenuElement</string>
-                <string>DOMHTMLMetaElement</string>
-                <string>DOMHTMLModElement</string>
-                <string>DOMHTMLOListElement</string>
-                <string>DOMHTMLObjectElement</string>
-                <string>DOMHTMLOptGroupElement</string>
-                <string>DOMHTMLOptionElement</string>
-                <string>DOMHTMLOptionsCollection</string>
-                <string>DOMHTMLParagraphElement</string>
-                <string>DOMHTMLParamElement</string>
-                <string>DOMHTMLPreElement</string>
-                <string>DOMHTMLQuoteElement</string>
-                <string>DOMHTMLScriptElement</string>
-                <string>DOMHTMLSelectElement</string>
-                <string>DOMHTMLStyleElement</string>
-                <string>DOMHTMLTableCaptionElement</string>
-                <string>DOMHTMLTableCellElement</string>
-                <string>DOMHTMLTableColElement</string>
-                <string>DOMHTMLTableElement</string>
-                <string>DOMHTMLTableRowElement</string>
-                <string>DOMHTMLTableSectionElement</string>
-                <string>DOMHTMLTextAreaElement</string>
-                <string>DOMHTMLTitleElement</string>
-                <string>DOMHTMLUListElement</string>
-                <string>DOMImplementation</string>
-                <string>DOMKeyboardEvent</string>
-                <string>DOMMediaList</string>
-                <string>DOMMouseEvent</string>
-                <string>DOMMutationEvent</string>
-                <string>DOMNamedNodeMap</string>
-                <string>DOMNode</string>
-                <string>DOMNodeIterator</string>
-                <string>DOMNodeList</string>
-                <string>DOMNotation</string>
-                <string>DOMObject</string>
-                <string>DOMOverflowEvent</string>
-                <string>DOMProcessingInstruction</string>
-                <string>DOMRGBColor</string>
-                <string>DOMRange</string>
-                <string>DOMRect</string>
-                <string>DOMStyleSheet</string>
-                <string>DOMStyleSheetList</string>
-                <string>DOMText</string>
-                <string>DOMTreeWalker</string>
-                <string>DOMUIEvent</string>
-                <string>DOMWheelEvent</string>
-                <string>DOMXPathExpression</string>
-                <string>DOMXPathResult</string>
-                <string>DRBurn</string>
-                <string>DRBurnProgressPanel</string>
-                <string>DRBurnSetupPanel</string>
-                <string>DRCDTextBlock</string>
-                <string>DRDevice</string>
-                <string>DRDeviceArrayController</string>
-                <string>DRDeviceObjectController</string>
-                <string>DRErase</string>
-                <string>DREraseProgressPanel</string>
-                <string>DREraseSetupPanel</string>
-                <string>DRFSObject</string>
-                <string>DRFile</string>
-                <string>DRFolder</string>
-                <string>DRMSF</string>
-                <string>DRMSFFormatter</string>
-                <string>DRNotificationCenter</string>
-                <string>DRSetupPanel</string>
-                <string>DRTrack</string>
-                <string>EAAccessory</string>
-                <string>EAAccessoryManager</string>
-                <string>EASession</string>
-                <string>GKPeerPickerController</string>
-                <string>GKSession</string>
-                <string>GKSessionError</string>
-                <string>GKVoiceChatClient</string>
-                <string>GKVoiceChatService</string>
-                <string>IBDocument</string>
-                <string>IBEditor</string>
-                <string>IBInspector</string>
-                <string>IBInspectorManager</string>
-                <string>IBPalette</string>
-                <string>IBPlugin</string>
-                <string>IBResourceManager</string>
-                <string>IBViewEditor</string>
-                <string>IKFilterBrowserPanel</string>
-                <string>IKFilterBrowserView</string>
-                <string>IKFilterUIView</string>
-                <string>IKImageBrowserView</string>
-                <string>IKImageEditPanel</string>
-                <string>IKImagePicker</string>
-                <string>IKImageView</string>
-                <string>IKPictureTaker</string>
-                <string>IKSaveOptions</string>
-                <string>IKSlideshow</string>
-                <string>IMAVManager</string>
-                <string>IMKCandidates</string>
-                <string>IMKInputController</string>
-                <string>IMKServer</string>
-                <string>IMService</string>
-                <string>IOBluetoothDevice</string>
-                <string>IOBluetoothDeviceInquiry</string>
-                <string>IOBluetoothDeviceSelectorController</string>
-                <string>IOBluetoothHandsFreeGateway</string>
-                <string>IOBluetoothHeadsetDevice</string>
-                <string>IOBluetoothHostController</string>
-                <string>IOBluetoothL2CAPChannel</string>
-                <string>IOBluetoothL</string>
-                <string>IOBluetoothOBEXSession</string>
-                <string>IOBluetoothObject</string>
-                <string>IOBluetoothObjectPushUIController</string>
-                <string>IOBluetoothPairingController</string>
-                <string>IOBluetoothRFCOMMAudioController</string>
-                <string>IOBluetoothRFCOMMChannel</string>
-                <string>IOBluetoothSDPDataElement</string>
-                <string>IOBluetoothSDPServiceAttribute</string>
-                <string>IOBluetoothSDPServiceRecord</string>
-                <string>IOBluetoothSDPUUID</string>
-                <string>IOBluetoothServiceBrowserController</string>
-                <string>IOBluetoothUserNotification</string>
-                <string>IOUPSPlugInInterface</string>
-                <string>IOUSBDeviceInterface182</string>
-                <string>IOUSBDeviceInterface187</string>
-                <string>IOUSBDeviceInterface197</string>
-                <string>IOUSBDeviceInterface</string>
-                <string>IOUSBInterfaceInterface182</string>
-                <string>IOUSBInterfaceInterface183</string>
-                <string>IOUSBInterfaceInterface190</string>
-                <string>IOUSBInterfaceInterface192</string>
-                <string>IOUSBInterfaceInterface197</string>
-                <string>IOUSBInterfaceInterface</string>
-                <string>ISyncChange</string>
-                <string>ISyncClient</string>
-                <string>ISyncFilter</string>
-                <string>ISyncFiltering</string>
-                <string>ISyncManager</string>
-                <string>ISyncRecordReference</string>
-                <string>ISyncRecordSnapshot</string>
-                <string>ISyncSession</string>
-                <string>ISyncSessionDriver</string>
-                <string>InstallerPane</string>
-                <string>InstallerSection</string>
-                <string>InstallerState</string>
-                <string>JavaFrameView</string>
-                <string>LKAnimation</string>
-                <string>LKAnimationGroup</string>
-                <string>LKBasicAnimation</string>
-                <string>LKConstraint</string>
-                <string>LKConstraintLayoutManager</string>
-                <string>LKKeyframeAnimation</string>
-                <string>LKLayer</string>
-                <string>LKOpenGLLayer</string>
-                <string>LKPropertyAnimation</string>
-                <string>LKScrollLayer</string>
-                <string>LKTextLayer</string>
-                <string>LKTiledLayer</string>
-                <string>LKTimingFunction</string>
-                <string>LKTransaction</string>
-                <string>LKTransition</string>
-                <string>MFMailComposeViewController</string>
-                <string>MKAnnotation</string>
-                <string>MKAnnotationView</string>
-                <string>MKMapView</string>
-                <string>MKPinAnnotationView</string>
-                <string>MKPlacemark</string>
-                <string>MKReverseGeocoder</string>
-                <string>MKUserLocation</string>
-                <string>MPMediaItem</string>
-                <string>MPMediaItemCollection</string>
-                <string>MPMediaLibrary</string>
-                <string>MPMediaPickerController</string>
-                <string>MPMediaPlaylist</string>
-                <string>MPMediaPredicate</string>
-                <string>MPMediaPropertyPredicate</string>
-                <string>MPMediaQuery</string>
-                <string>MPMusicPlayerController</string>
-                <string>MathTest</string>
-                <string>NSATSTypesetter</string>
-                <string>NSAccessibility</string>
-                <string>NSActionCell</string>
-                <string>NSAffineTransform</string>
-                <string>NSAlert</string>
-                <string>NSAllMapTableKeys</string>
-                <string>NSAllMapTableValues</string>
-                <string>NSAllocateMemoryPages</string>
-                <string>NSAllocateObject</string>
-                <string>NSAnimatablePropertyContainer</string>
-                <string>NSAnimation</string>
-                <string>NSAnimationContext</string>
-                <string>NSAppleEventDescriptor</string>
-                <string>NSAppleEventManager</string>
-                <string>NSAppleScript</string>
-                <string>NSApplication</string>
-                <string>NSArchiver</string>
-                <string>NSArray</string>
-                <string>NSArrayController</string>
-                <string>NSAssertionHandler</string>
-                <string>NSAtomicStore</string>
-                <string>NSAtomicStoreCacheNode</string>
-                <string>NSAttributeDescription</string>
-                <string>NSAttributedString</string>
-                <string>NSAutoreleasePool</string>
-                <string>NSBezierPath</string>
-                <string>NSBitmapImageRep</string>
-                <string>NSBox</string>
-                <string>NSBrowser</string>
-                <string>NSBrowserCell</string>
-                <string>NSBundle</string>
-                <string>NSButton</string>
-                <string>NSButtonCell</string>
-                <string>NSCIImageRep</string>
-                <string>NSCachedImageRep</string>
-                <string>NSCachedURLResponse</string>
-                <string>NSCalendar</string>
-                <string>NSCalendarDate</string>
-                <string>NSCell</string>
-                <string>NSChangeSpelling</string>
-                <string>NSCharacterSet</string>
-                <string>NSClassDescription</string>
-                <string>NSClipView</string>
-                <string>NSCloneCommand</string>
-                <string>NSCloseCommand</string>
-                <string>NSCoder</string>
-                <string>NSCoding</string>
-                <string>NSCoercionHandler</string>
-                <string>NSCollectionView</string>
-                <string>NSCollectionViewItem</string>
-                <string>NSColor</string>
-                <string>NSColorList</string>
-                <string>NSColorPanel</string>
-                <string>NSColorPicker</string>
-                <string>NSColorPickingCustom</string>
-                <string>NSColorPickingDefault</string>
-                <string>NSColorSpace</string>
-                <string>NSColorWell</string>
-                <string>NSComboBox</string>
-                <string>NSComboBoxCell</string>
-                <string>NSComboBoxCellDataSource</string>
-                <string>NSComboBoxDataSource</string>
-                <string>NSComparisonMethods</string>
-                <string>NSComparisonPredicate</string>
-                <string>NSCompoundPredicate</string>
-                <string>NSCondition</string>
-                <string>NSConditionLock</string>
-                <string>NSConnection</string>
-                <string>NSConstantString</string>
-                <string>NSControl</string>
-                <string>NSController</string>
-                <string>NSCopyHashTableWithZone</string>
-                <string>NSCopyMapTableWithZone</string>
-                <string>NSCopyMemoryPages</string>
-                <string>NSCopyObject</string>
-                <string>NSCopying</string>
-                <string>NSCountCommand</string>
-                <string>NSCountedSet</string>
-                <string>NSCreateCommand</string>
-                <string>NSCreateHashTable</string>
-                <string>NSCreateHashTableWithZone</string>
-                <string>NSCreateMapTable</string>
-                <string>NSCreateMapTableWithZone</string>
-                <string>NSCreateZone</string>
-                <string>NSCursor</string>
-                <string>NSCustomImageRep</string>
-                <string>NSData</string>
-                <string>NSDate</string>
-                <string>NSDateComponents</string>
-                <string>NSDateFormatter</string>
-                <string>NSDatePicker</string>
-                <string>NSDatePickerCell</string>
-                <string>NSDeallocateMemoryPages</string>
-                <string>NSDeallocateObject</string>
-                <string>NSDecNumberBehaviors</string>
-                <string>NSDecimalNumber</string>
-                <string>NSDecimalNumberBehaviors</string>
-                <string>NSDecimalNumberHandler</string>
-                <string>NSDecrementExtraRefCountWasZero</string>
-                <string>NSDefaultMallocZone</string>
-                <string>NSDeleteCommand</string>
-                <string>NSDeserializer</string>
-                <string>NSDictionary</string>
-                <string>NSDictionaryController</string>
-                <string>NSDirectoryEnumerator</string>
-                <string>NSDistantObject</string>
-                <string>NSDistantObjectRequest</string>
-                <string>NSDistributedLock</string>
-                <string>NSDistributedNotificationCenter</string>
-                <string>NSDivideRect</string>
-                <string>NSDockTile</string>
-                <string>NSDocument</string>
-                <string>NSDocumentController</string>
-                <string>NSDraggingDestination</string>
-                <string>NSDraggingInfo</string>
-                <string>NSDraggingSource</string>
-                <string>NSDrawer</string>
-                <string>NSEPSImageRep</string>
-                <string>NSEditor</string>
-                <string>NSEditorRegistration</string>
-                <string>NSEntityDescription</string>
-                <string>NSEntityMapping</string>
-                <string>NSEntityMigrationPolicy</string>
-                <string>NSEnumerateHashTable</string>
-                <string>NSEnumerateMapTable</string>
-                <string>NSEnumerator</string>
-                <string>NSError</string>
-                <string>NSEvent</string>
-                <string>NSException</string>
-                <string>NSExceptionHandler</string>
-                <string>NSExistsCommand</string>
-                <string>NSExpression</string>
-                <string>NSExpressionDescription</string>
-                <string>NSExtraRefCount</string>
-                <string>NSFetchRequest</string>
-                <string>NSFetchRequestExpression</string>
-                <string>NSFetchedPropertyDescription</string>
-                <string>NSFetchedResultsController</string>
-                <string>NSFileHandle</string>
-                <string>NSFileManager</string>
-                <string>NSFileWrapper</string>
-                <string>NSFont</string>
-                <string>NSFontDescriptor</string>
-                <string>NSFontManager</string>
-                <string>NSFontPanel</string>
-                <string>NSFontPanelValidation</string>
-                <string>NSForm</string>
-                <string>NSFormCell</string>
-                <string>NSFormatter</string>
-                <string>NSFreeHashTable</string>
-                <string>NSFreeMapTable</string>
-                <string>NSGarbageCollector</string>
-                <string>NSGetCommand</string>
-                <string>NSGetUncaughtExceptionHandler</string>
-                <string>NSGlyphGenerator</string>
-                <string>NSGlyphInfo</string>
-                <string>NSGlyphStorage</string>
-                <string>NSGradient</string>
-                <string>NSGraphicsContext</string>
-                <string>NSHTTPCookie</string>
-                <string>NSHTTPCookieStorage</string>
-                <string>NSHTTPURLResponse</string>
-                <string>NSHashInsert</string>
-                <string>NSHashInsertIfAbsent</string>
-                <string>NSHashInsertKnownAbsent</string>
-                <string>NSHashRemove</string>
-                <string>NSHelpManager</string>
-                <string>NSHost</string>
-                <string>NSIgnoreMisspelledWords</string>
-                <string>NSImage</string>
-                <string>NSImageCell</string>
-                <string>NSImageRep</string>
-                <string>NSImageView</string>
-                <string>NSIncrementExtraRefCount</string>
-                <string>NSIndexPath</string>
-                <string>NSIndexSet</string>
-                <string>NSIndexSpecifier</string>
-                <string>NSInputManager</string>
-                <string>NSInputServer</string>
-                <string>NSInputServerMouseTracker</string>
-                <string>NSInputServiceProvider</string>
-                <string>NSInputStream</string>
-                <string>NSInvocation</string>
-                <string>NSInvocationOperation</string>
-                <string>NSJavaClassesForBundle</string>
-                <string>NSJavaClassesFromPath</string>
-                <string>NSJavaConfiguration</string>
-                <string>NSJavaSetupVirtualMachine</string>
-                <string>NSJavaVirtualMachine</string>
-                <string>NSKeyValueBindingCreation</string>
-                <string>NSKeyValueCoding</string>
-                <string>NSKeyedArchiver</string>
-                <string>NSKeyedUnarchiver</string>
-                <string>NSLayoutManager</string>
-                <string>NSLevelIndicator</string>
-                <string>NSLevelIndicatorCell</string>
-                <string>NSLocale</string>
-                <string>NSLock</string>
-                <string>NSLocking</string>
-                <string>NSLogPageSize</string>
-                <string>NSLogicalTest</string>
-                <string>NSMachBootstrapServer</string>
-                <string>NSMachPort</string>
-                <string>NSMailDelivery</string>
-                <string>NSManagedObject</string>
-                <string>NSManagedObjectContext</string>
-                <string>NSManagedObjectID</string>
-                <string>NSManagedObjectModel</string>
-                <string>NSMapGet</string>
-                <string>NSMapInsert</string>
-                <string>NSMapInsertIfAbsent</string>
-                <string>NSMapInsertKnownAbsent</string>
-                <string>NSMapMember</string>
-                <string>NSMapRemove</string>
-                <string>NSMappingModel</string>
-                <string>NSMatrix</string>
-                <string>NSMenu</string>
-                <string>NSMenuItem</string>
-                <string>NSMenuItemCell</string>
-                <string>NSMenuValidation</string>
-                <string>NSMenuView</string>
-                <string>NSMessagePort</string>
-                <string>NSMessagePortNameServer</string>
-                <string>NSMetadataItem</string>
-                <string>NSMetadataQuery</string>
-                <string>NSMetadataQueryAttributeValueTuple</string>
-                <string>NSMetadataQueryResultGroup</string>
-                <string>NSMethodSignature</string>
-                <string>NSMiddleSpecifier</string>
-                <string>NSMigrationManager</string>
-                <string>NSMoveCommand</string>
-                <string>NSMovie</string>
-                <string>NSMovieView</string>
-                <string>NSMutableArray</string>
-                <string>NSMutableAttributedString</string>
-                <string>NSMutableCharacterSet</string>
-                <string>NSMutableCopying</string>
-                <string>NSMutableData</string>
-                <string>NSMutableDictionary</string>
-                <string>NSMutableIndexSet</string>
-                <string>NSMutableParagraphStyle</string>
-                <string>NSMutableSet</string>
-                <string>NSMutableString</string>
-                <string>NSMutableURLRequest</string>
-                <string>NSNameSpecifier</string>
-                <string>NSNetService</string>
-                <string>NSNetServiceBrowser</string>
-                <string>NSNextHashEnumeratorItem</string>
-                <string>NSNextMapEnumeratorPair</string>
-                <string>NSNib</string>
-                <string>NSNibAwaking</string>
-                <string>NSNibConnector</string>
-                <string>NSNibControlConnector</string>
-                <string>NSNibOutletConnector</string>
-                <string>NSNotification</string>
-                <string>NSNotificationCenter</string>
-                <string>NSNotificationQueue</string>
-                <string>NSNull</string>
-                <string>NSNumber</string>
-                <string>NSNumberFormatter</string>
-                <string>NSObjCTypeSerialization</string>
-                <string>NSObjCTypeSerializationCallBack</string>
-                <string>NSObject</string>
-                <string>NSObjectController</string>
-                <string>NSObjectSpecifier</string>
-                <string>NSOpenGLContext</string>
-                <string>NSOpenGLPixelBuffer</string>
-                <string>NSOpenGLPixelFormat</string>
-                <string>NSOpenGLView</string>
-                <string>NSOpenPanel</string>
-                <string>NSOperation</string>
-                <string>NSOperationQueue</string>
-                <string>NSOutlineView</string>
-                <string>NSOutlineViewDataSource</string>
-                <string>NSOutputStream</string>
-                <string>NSPDFImageRep</string>
-                <string>NSPICTImageRep</string>
-                <string>NSPageLayout</string>
-                <string>NSPageSize</string>
-                <string>NSPanel</string>
-                <string>NSParagraphStyle</string>
-                <string>NSPasteboard</string>
-                <string>NSPathCell</string>
-                <string>NSPathCellDelegate</string>
-                <string>NSPathComponentCell</string>
-                <string>NSPathControl</string>
-                <string>NSPathControlDelegate</string>
-                <string>NSPersistentDocument</string>
-                <string>NSPersistentStore</string>
-                <string>NSPersistentStoreCoordinator</string>
-                <string>NSPipe</string>
-                <string>NSPlaceholders</string>
-                <string>NSPointerArray</string>
-                <string>NSPointerFunctions</string>
-                <string>NSPopover</string>
-                <string>NSPopUpButton</string>
-                <string>NSPopUpButtonCell</string>
-                <string>NSPort</string>
-                <string>NSPortCoder</string>
-                <string>NSPortMessage</string>
-                <string>NSPortNameServer</string>
-                <string>NSPositionalSpecifier</string>
-                <string>NSPredicate</string>
-                <string>NSPredicateEditor</string>
-                <string>NSPredicateEditorRowTemplate</string>
-                <string>NSPreferencePane</string>
-                <string>NSPrintInfo</string>
-                <string>NSPrintOperation</string>
-                <string>NSPrintPanel</string>
-                <string>NSPrintPanelAccessorizing</string>
-                <string>NSPrinter</string>
-                <string>NSProcessInfo</string>
-                <string>NSProgressIndicator</string>
-                <string>NSPropertyDescription</string>
-                <string>NSPropertyListSerialization</string>
-                <string>NSPropertyMapping</string>
-                <string>NSPropertySpecifier</string>
-                <string>NSProtocolChecker</string>
-                <string>NSProxy</string>
-                <string>NSQuickDrawView</string>
-                <string>NSQuitCommand</string>
-                <string>NSRandomSpecifier</string>
-                <string>NSRangeSpecifier</string>
-                <string>NSRecursiveLock</string>
-                <string>NSRecycleZone</string>
-                <string>NSRelationshipDescription</string>
-                <string>NSRelativeSpecifier</string>
-                <string>NSResetHashTable</string>
-                <string>NSResetMapTable</string>
-                <string>NSResponder</string>
-                <string>NSRoundDownToMultipleOfPageSize</string>
-                <string>NSRoundUpToMultipleOfPageSize</string>
-                <string>NSRuleEditor</string>
-                <string>NSRulerMarker</string>
-                <string>NSRulerView</string>
-                <string>NSRunLoop</string>
-                <string>NSRunningApplication</string>
-                <string>NSSavePanel</string>
-                <string>NSScanner</string>
-                <string>NSScreen</string>
-                <string>NSScriptClassDescription</string>
-                <string>NSScriptCoercionHandler</string>
-                <string>NSScriptCommand</string>
-                <string>NSScriptCommandDescription</string>
-                <string>NSScriptExecutionContext</string>
-                <string>NSScriptKeyValueCoding</string>
-                <string>NSScriptObjectSpecifier</string>
-                <string>NSScriptObjectSpecifiers</string>
-                <string>NSScriptSuiteRegistry</string>
-                <string>NSScriptWhoseTest</string>
-                <string>NSScriptingComparisonMethods</string>
-                <string>NSScrollView</string>
-                <string>NSScroller</string>
-                <string>NSSearchField</string>
-                <string>NSSearchFieldCell</string>
-                <string>NSSecureTextField</string>
-                <string>NSSecureTextFieldCell</string>
-                <string>NSSegmentedCell</string>
-                <string>NSSegmentedControl</string>
-                <string>NSSerializer</string>
-                <string>NSServicesRequests</string>
-                <string>NSSet</string>
-                <string>NSSetCommand</string>
-                <string>NSSetUncaughtExceptionHandler</string>
-                <string>NSSetZoneName</string>
-                <string>NSShadow</string>
-                <string>NSSimpleCString</string>
-                <string>NSSimpleHorizontalTypesetter</string>
-                <string>NSSlider</string>
-                <string>NSSliderCell</string>
-                <string>NSSocketPort</string>
-                <string>NSSocketPortNameServer</string>
-                <string>NSSortDescriptor</string>
-                <string>NSSound</string>
-                <string>NSSpecifierTest</string>
-                <string>NSSpeechRecognizer</string>
-                <string>NSSpeechSynthesizer</string>
-                <string>NSSpellChecker</string>
-                <string>NSSpellServer</string>
-                <string>NSSplitView</string>
-                <string>NSStatusBar</string>
-                <string>NSStatusItem</string>
-                <string>NSStepper</string>
-                <string>NSStepperCell</string>
-                <string>NSStream</string>
-                <string>NSString</string>
-                <string>NSTabView</string>
-                <string>NSTabViewItem</string>
-                <string>NSTableCellView</string>
-                <string>NSTableColumn</string>
-                <string>NSTableDataSource</string>
-                <string>NSTableHeaderCell</string>
-                <string>NSTableHeaderView</string>
-                <string>NSTableView</string>
-                <string>NSTask</string>
-                <string>NSText</string>
-                <string>NSTextAttachment</string>
-                <string>NSTextAttachmentCell</string>
-                <string>NSTextBlock</string>
-                <string>NSTextContainer</string>
-                <string>NSTextField</string>
-                <string>NSTextFieldCell</string>
-                <string>NSTextInput</string>
-                <string>NSTextInputClient</string>
-                <string>NSTextList</string>
-                <string>NSTextStorage</string>
-                <string>NSTextStorageScripting</string>
-                <string>NSTextTab</string>
-                <string>NSTextTable</string>
-                <string>NSTextTableBlock</string>
-                <string>NSTextView</string>
-                <string>NSThread</string>
-                <string>NSTimeZone</string>
-                <string>NSTimer</string>
-                <string>NSTokenField</string>
-                <string>NSTokenFieldCell</string>
-                <string>NSToolTipOwner</string>
-                <string>NSToolbar</string>
-                <string>NSToolbarItem</string>
-                <string>NSToolbarItemValidation</string>
-                <string>NSTrackingArea</string>
-                <string>NSTreeController</string>
-                <string>NSTreeNode</string>
-                <string>NSTypesetter</string>
-                <string>NSURL</string>
-                <string>NSURLAuthenticationChallenge</string>
-                <string>NSURLAuthenticationChallengeSender</string>
-                <string>NSURLCache</string>
-                <string>NSURLClient</string>
-                <string>NSURLConnection</string>
-                <string>NSURLCredential</string>
-                <string>NSURLCredentialStorage</string>
-                <string>NSURLDownload</string>
-                <string>NSURLHandle</string>
-                <string>NSURLHandleClient</string>
-                <string>NSURLProtectionSpace</string>
-                <string>NSURLProtocol</string>
-                <string>NSURLProtocolClient</string>
-                <string>NSURLRequest</string>
-                <string>NSURLResponse</string>
-                <string>NSUnarchiver</string>
-                <string>NSUndoManager</string>
-                <string>NSUniqueIDSpecifier</string>
-                <string>NSUserDefaults</string>
-                <string>NSUserDefaultsController</string>
-                <string>NSUserInterfaceValidations</string>
-                <string>NSValidatedUserInterfaceItem</string>
-                <string>NSValue</string>
-                <string>NSValueTransformer</string>
-                <string>NSView</string>
-                <string>NSViewAnimation</string>
-                <string>NSViewController</string>
-                <string>NSWhoseSpecifier</string>
-                <string>NSWhoseTest</string>
-                <string>NSWindow</string>
-                <string>NSWindowController</string>
-                <string>NSWindowScripting</string>
-                <string>NSWorkspace</string>
-                <string>NSXMLDTD</string>
-                <string>NSXMLDTDNode</string>
-                <string>NSXMLDocument</string>
-                <string>NSXMLElement</string>
-                <string>NSXMLNode</string>
-                <string>NSXMLParser</string>
-                <string>NSZoneCalloc</string>
-                <string>NSZoneFree</string>
-                <string>NSZoneMalloc</string>
-                <string>NSZoneName</string>
-                <string>NSZoneRealloc</string>
-                <string>OBEXFileTransferServices</string>
-                <string>OBEXSession</string>
-                <string>OSALanguage</string>
-                <string>OSAScript</string>
-                <string>OSAScriptController</string>
-                <string>OSAScriptView</string>
-                <string>PDFAction</string>
-                <string>PDFActionGoTo</string>
-                <string>PDFActionNamed</string>
-                <string>PDFActionRemoteGoTo</string>
-                <string>PDFActionResetForm</string>
-                <string>PDFActionURL</string>
-                <string>PDFAnnotation</string>
-                <string>PDFAnnotationButtonWidget</string>
-                <string>PDFAnnotationChoiceWidget</string>
-                <string>PDFAnnotationCircle</string>
-                <string>PDFAnnotationFreeText</string>
-                <string>PDFAnnotationInk</string>
-                <string>PDFAnnotationLine</string>
-                <string>PDFAnnotationLink</string>
-                <string>PDFAnnotationMarkup</string>
-                <string>PDFAnnotationPopup</string>
-                <string>PDFAnnotationSquare</string>
-                <string>PDFAnnotationStamp</string>
-                <string>PDFAnnotationText</string>
-                <string>PDFAnnotationTextWidget</string>
-                <string>PDFBorder</string>
-                <string>PDFDestination</string>
-                <string>PDFDocument</string>
-                <string>PDFOutline</string>
-                <string>PDFPage</string>
-                <string>PDFSelection</string>
-                <string>PDFThumbnailView</string>
-                <string>PDFView</string>
-                <string>PSAuthor</string>
-                <string>PSClient</string>
-                <string>PSContent</string>
-                <string>PSEnclosure</string>
-                <string>PSEntry</string>
-                <string>PSFeed</string>
-                <string>PSFeedSettings</string>
-                <string>PSLink</string>
-                <string>QCComposition</string>
-                <string>QCCompositionLayer</string>
-                <string>QCCompositionParameterView</string>
-                <string>QCCompositionPickerPanel</string>
-                <string>QCCompositionPickerView</string>
-                <string>QCCompositionRepository</string>
-                <string>QCPlugIn</string>
-                <string>QCPlugInViewController</string>
-                <string>QCRenderer</string>
-                <string>QCView</string>
-                <string>QTCaptureAudioPreviewOutput</string>
-                <string>QTCaptureConnection</string>
-                <string>QTCaptureDecompressedVideoOutput</string>
-                <string>QTCaptureDevice</string>
-                <string>QTCaptureDeviceInput</string>
-                <string>QTCaptureFileOutput</string>
-                <string>QTCaptureInput</string>
-                <string>QTCaptureLayer</string>
-                <string>QTCaptureMovieFileOutput</string>
-                <string>QTCaptureOutput</string>
-                <string>QTCaptureSession</string>
-                <string>QTCaptureVideoPreviewOutput</string>
-                <string>QTCaptureView</string>
-                <string>QTCompressionOptions</string>
-                <string>QTDataReference</string>
-                <string>QTFormatDescription</string>
-                <string>QTMedia</string>
-                <string>QTMovie</string>
-                <string>QTMovieLayer</string>
-                <string>QTMovieView</string>
-                <string>QTSampleBuffer</string>
-                <string>QTTrack</string>
-                <string>QuartzFilter</string>
-                <string>QuartzFilterManager</string>
-                <string>QuartzFilterView</string>
-                <string>RBObject</string>
-                <string>SBApplication</string>
-                <string>SBElementArray</string>
-                <string>SBObject</string>
-                <string>SFAuthorization</string>
-                <string>SFAuthorizationPluginView</string>
-                <string>SFAuthorizationView</string>
-                <string>SFCertificatePanel</string>
-                <string>SFCertificateTrustPanel</string>
-                <string>SFCertificateView</string>
-                <string>SFChooseIdentityPanel</string>
-                <string>SFKeychainSavePanel</string>
-                <string>SFKeychainSettingsPanel</string>
-                <string>SKMutablePayment</string>
-                <string>SKPayment</string>
-                <string>SKPaymentQueue</string>
-                <string>SKPaymentTransaction</string>
-                <string>SKPaymentTransactionObserver</string>
-                <string>SKProduct</string>
-                <string>SKProductsRequest</string>
-                <string>SKProductsResponse</string>
-                <string>SKRequest</string>
-                <string>ScreenSaverDefaults</string>
-                <string>ScreenSaverView</string>
-                <string>SenInterfaceTestCase</string>
-                <string>SenTest</string>
-                <string>SenTestCase</string>
-                <string>SenTestCaseRun</string>
-                <string>SenTestDistributedNotifier</string>
-                <string>SenTestLog</string>
-                <string>SenTestObserver</string>
-                <string>SenTestProbe</string>
-                <string>SenTestRun</string>
-                <string>SenTestSuite</string>
-                <string>SenTestSuiteRun</string>
-                <string>UIAcceleration</string>
-                <string>UIAccelerometer</string>
-                <string>UIAccessibilityElement</string>
-                <string>UIActionSheet</string>
-                <string>UIActivityIndicatorView</string>
-                <string>UIAlertView</string>
-                <string>UIApplication</string>
-                <string>UIBarButtonItem</string>
-                <string>UIBarItem</string>
-                <string>UIButton</string>
-                <string>UIColor</string>
-                <string>UIControl</string>
-                <string>UIDatePicker</string>
-                <string>UIDevice</string>
-                <string>UIEvent</string>
-                <string>UIFont</string>
-                <string>UIImage</string>
-                <string>UIImagePickerController</string>
-                <string>UIImageView</string>
-                <string>UILabel</string>
-                <string>UINavigationBar</string>
-                <string>UINavigationController</string>
-                <string>UINavigationItem</string>
-                <string>UIPageControl</string>
-                <string>UIPickerView</string>
-                <string>UIProgressView</string>
-                <string>UIResponder</string>
-                <string>UIScreen</string>
-                <string>UIScrollView</string>
-                <string>UISearchBar</string>
-                <string>UISearchDisplayController</string>
-                <string>UISegmentedControl</string>
-                <string>UISlider</string>
-                <string>UISwitch</string>
-                <string>UITabBar</string>
-                <string>UITabBarController</string>
-                <string>UITabBarItem</string>
-                <string>UITableView</string>
-                <string>UITableViewCell</string>
-                <string>UITableViewController</string>
-                <string>UITextField</string>
-                <string>UITextView</string>
-                <string>UIToolbar</string>
-                <string>UITouch</string>
-                <string>UIView</string>
-                <string>UIViewController</string>
-                <string>UIWebView</string>
-                <string>UIWindow</string>
-                <string>WebArchive</string>
-                <string>WebBackForwardList</string>
-                <string>WebDataSource</string>
-                <string>WebDocumentRepresentation</string>
-                <string>WebDocumentSearching</string>
-                <string>WebDocumentText</string>
-                <string>WebDocumentView</string>
-                <string>WebDownload</string>
-                <string>WebFrame</string>
-                <string>WebFrameLoadDelegate</string>
-                <string>WebFrameView</string>
-                <string>WebHistory</string>
-                <string>WebHistoryItem</string>
-                <string>WebOpenPanelResultListener</string>
-                <string>WebPlugInViewFactory</string>
-                <string>WebPolicyDecisionListener</string>
-                <string>WebPolicyDelegate</string>
-                <string>WebPreferences</string>
-                <string>WebResource</string>
-                <string>WebResourceLoadDelegate</string>
-                <string>WebScriptObject</string>
-                <string>WebUIDelegate</string>
-                <string>WebUndefined</string>
-                <string>WebView</string>
-                <string>XGActionMonitor</string>
-                <string>XGAuthenticator</string>
-                <string>XGConnection</string>
-                <string>XGController</string>
-                <string>XGFile</string>
-                <string>XGFileDownload</string>
-                <string>XGGSSAuthenticator</string>
-                <string>XGGrid</string>
-                <string>XGJob</string>
-                <string>XGResource</string>
-                <string>XGTwoWayRandomAuthenticator</string>
-            </keywords>
 			<keywords id="Objective-C Keywords (@)" color="#881350" useforautocomplete="yes" font-weight="bold" scope="style.value.keyword">
-	            <string>@catch</string>
+				<string>@catch</string>
 	            <string>@class</string>
 	            <string>@defs</string>
 	            <string>@dynamic</string>
@@ -1086,7 +133,8 @@
 	            <string>@throw</string>
 	            <string>@try</string>
 			</keywords>
-            <keywords id="Objective-C Keywords" color="#881350" useforautocomplete="yes" font-weight="bold" scope="keyword">
+			
+			<keywords id="Objective-C Keywords" color="#881350" useforautocomplete="yes" font-weight="bold" scope="keyword">
                 <string>BOOL</string>
                 <string>Class</string>
                 <string>IBAction</string>
@@ -1110,10 +158,8 @@
                 <string>setter</string>
                 <string>super</string>
             </keywords>
-            <keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="meta.invalid.ampersand">
-                <regex>(?&lt;![\w:_])(new|allocWithZone:|alloc|autorelease|copyWithZone:|copy|mutableCopyWithZone:|mutableCopy|retain|release)(?![\w:_])</regex>
-            </keywords>
-            <keywords id="Cocoa Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="language.function.cocoa.objective-c">
+			
+			<keywords id="Cocoa Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="language.function.cocoa.objective-c">
                 <string>ABAddPropertiesAndTypes</string>
                 <string>ABAddRecord</string>
                 <string>ABAddressBookAddRecord</string>
@@ -2030,7 +1076,8 @@
                 <string>glVertexAttrib4fv</string>
                 <string>glVertexAttribPointer</string>
             </keywords>
-            <keywords id="Cocoa Types" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="support.function.cocoatypes.objective-c">
+			
+			<keywords id="Cocoa Types" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="support.function.cocoatypes.objective-c">
                 <string>CAAction</string>
                 <string>CFAllocatorRef</string>
                 <string>CFArrayRef</string>
@@ -2465,7 +1512,8 @@
                 <string>NSZeroSize</string>
                 <string>NSZone</string>
             </keywords>
-            <keywords id="Cocoa Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="style.value.string">
+			
+			<keywords id="Cocoa Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="style.value.string">
                 <string>AUHostVersionIdentifier</string>
                 <string>AUNumVersion</string>
                 <string>AVAudioQuality</string>
@@ -8840,7 +7888,8 @@
                 <string>sock_evt_shutdown</string>
                 <string>typeSecIdentityRef</string>
             </keywords>
-            <keywords id="Grand Central Dispatch - Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.inline.cdata">
+			
+			<keywords id="Grand Central Dispatch - Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.inline.cdata">
             	<string>dispatch_after</string>
             	<string>dispatch_after_f</string>
             	<string>dispatch_apply</string>
@@ -8934,21 +7983,22 @@
             	<string>dispatch_io_close_flags_t</string>
             	<string>dispatch_io_interval_flags_t</string>
             </keywords>
-            <keywords id="Grand Central Dispatch - Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.tag">
-            	<string>dispatch_queue_priority_t</string>
-            	<string>DISPATCH_QUEUE_PRIORITY_HIGH</string>
-            	<string>DISPATCH_QUEUE_PRIORITY_DEFAULT</string>
-            	<string>DISPATCH_QUEUE_PRIORITY_LOW</string>
-            	<string>DISPATCH_QUEUE_PRIORITY_BACKGROUND</string>
-            	<string>dispatch_source_mach_send_flags_t</string>
-            	<string>DISPATCH_MACH_SEND_DEAD</string>
-            	<string>dispatch_source_proc_flags_t</string>
-            	<string>DISPATCH_PROC_EXIT</string>
-            	<string>DISPATCH_PROC_FORK</string>
-            	<string>DISPATCH_PROC_EXEC</string>
-            	<string>DISPATCH_PROC_SIGNAL</string>
-            	<string>dispatch_source_vnode_flags_t</string>
-            	<string>DISPATCH_VNODE_DELETE</string>
+			
+			<keywords id="Grand Central Dispatch - Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.tag">
+	        	<string>dispatch_queue_priority_t</string>
+	        	<string>DISPATCH_QUEUE_PRIORITY_HIGH</string>
+	        	<string>DISPATCH_QUEUE_PRIORITY_DEFAULT</string>
+	        	<string>DISPATCH_QUEUE_PRIORITY_LOW</string>
+	        	<string>DISPATCH_QUEUE_PRIORITY_BACKGROUND</string>
+	        	<string>dispatch_source_mach_send_flags_t</string>
+	        	<string>DISPATCH_MACH_SEND_DEAD</string>
+	        	<string>dispatch_source_proc_flags_t</string>
+	        	<string>DISPATCH_PROC_EXIT</string>
+	        	<string>DISPATCH_PROC_FORK</string>
+	        	<string>DISPATCH_PROC_EXEC</string>
+	        	<string>DISPATCH_PROC_SIGNAL</string>
+	        	<string>dispatch_source_vnode_flags_t</string>
+	        	<string>DISPATCH_VNODE_DELETE</string>
 			    <string>DISPATCH_VNODE_WRITE</string>
 			    <string>DISPATCH_VNODE_EXTEND</string>
 			    <string>DISPATCH_VNODE_ATTRIB</string>
@@ -8989,7 +8039,8 @@
 				<string>DISPATCH_IO_STOP</string>
 				<!-- Channel Configuration Options -->
 				<string>DISPATCH_IO_STRICT_INTERVAL</string>
-            </keywords>
+	        </keywords>
+			
         </default>
     </states>
 </syntax>
