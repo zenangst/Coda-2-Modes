@@ -58,10 +58,11 @@
 				<regex>\s(\w+)\)</regex>
 				<regex>\((\w+)\)|\(!(\w+)\)</regex>
 				<regex>\:(\w+)</regex>
+				<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 			</keywords>
 			
-			<keywords id="User Classes" useforautocomplete="yes" casesensitive="no" scope="language.variable.objective-c">
-				<regex>\[([A-Z]{1}\w+)</regex>
+			<keywords id="Referenced Object" color="#6C0540" casesensitive="yes" scope="markup.tag.attribute.value" useforautocomplete="yes">
+				<regex>(&amp;\w+)</regex>
 			</keywords>
 			
 			<keywords id="User Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
@@ -70,28 +71,30 @@
 			</keywords>
 			
 			<!-- Foundation (OS X and iOS) and Application Kit (OS X) -->
-			<keywords id="NS Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+			<keywords id="NS Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support">
 				<regex>(NS\w+)</regex>
 			</keywords>
 			
 			<!-- UIKit (iOS) -->
-			<keywords id="UI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+			<keywords id="UI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support">
 				<regex>(UI\w+)</regex>
 			</keywords>
 			
 			<!-- Address Book -->
-			<keywords id="AB Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+			<keywords id="AB Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support">
 				<regex>(AB\w+)</regex>
 			</keywords>
 			
-			<!-- Core Animation -->
-			<keywords id="CA Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
+			
+			<!-- Core Animation, Core Graphics, Core Image   -->
+			<keywords id="CA, CG and CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="style.value.string">
 				<regex>(CA\w+)</regex>
+				<regex>(CI\w+)</regex>
+				<regex>([a-z]{1}CG\w+)|(CG\w+)</regex>
 			</keywords>
 			
-			<!-- Core Image -->
-			<keywords id="CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support.function.objective-c">
-				<regex>(CI\w+)</regex>
+			<keywords id="User Classes" useforautocomplete="yes" casesensitive="no" font-weight="normal" scope="support.function.objective-c">
+				<regex>\[([A-Z]{1}\w+)</regex>
 			</keywords>
 			
 			<keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
@@ -99,7 +102,7 @@
 			</keywords>
 			
 			<keywords id="Method calls" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
-				<regex>(\w+)\]</regex>
+				<regex>\s(\w+)\]</regex>
 			</keywords>
 			
 			<keywords id="Properties" useforautocomplete="yes"  scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
