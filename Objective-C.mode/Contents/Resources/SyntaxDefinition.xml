@@ -84,7 +84,6 @@
 				<regex>(AB\w+)</regex>
 			</keywords>
 			
-			
 			<!-- Core Animation, Core Graphics, Core Image   -->
 			<keywords id="CA, CG and CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="style.value.string">
 				<regex>(CA\w+)</regex>
@@ -114,7 +113,7 @@
 			</keywords>
 			
 			<keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="style.at-rule">
-				<regex>(@)\[</regex>
+				<regex>(@)</regex>
 			</keywords>
 			
 			<keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="meta.invalid.ampersand">
