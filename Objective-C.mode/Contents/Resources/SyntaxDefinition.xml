@@ -67,7 +67,6 @@
 			
 			<keywords id="User Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
 				<regex>\)(\w+)[^{]+</regex>
-				<regex>selector\(([^w]+)</regex>
 			</keywords>
 			
 			<!-- Foundation (OS X and iOS) and Application Kit (OS X) -->
@@ -97,6 +96,11 @@
 				<regex>\[([A-Z]{1}\w+)</regex>
 			</keywords>
 			
+			<keywords id="User Classes Declaration" useforautocomplete="yes" casesensitive="no" font-weight="normal" scope="markup.tag">
+				<regex>\@implementation\s(\w+)</regex>
+				<regex>\@interface\s(\w+)</regex>
+			</keywords>
+			
 			<keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
 				<regex>(\w+):</regex>
 			</keywords>
@@ -106,7 +110,11 @@
 			</keywords>
 			
 			<keywords id="Properties" useforautocomplete="yes"  scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
-				<regex>\.(\w+)</regex>
+				<regex>\.(\w{2,}+)</regex>
+			</keywords>
+			
+			<keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="style.at-rule">
+				<regex>(@)\[</regex>
 			</keywords>
 			
 			<keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="meta.invalid.ampersand">
@@ -7986,7 +7994,6 @@
             	<string>dispatch_io_close_flags_t</string>
             	<string>dispatch_io_interval_flags_t</string>
             </keywords>
-			
 			<keywords id="Grand Central Dispatch - Constants" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="markup.tag">
 	        	<string>dispatch_queue_priority_t</string>
 	        	<string>DISPATCH_QUEUE_PRIORITY_HIGH</string>
@@ -8043,7 +8050,6 @@
 				<!-- Channel Configuration Options -->
 				<string>DISPATCH_IO_STRICT_INTERVAL</string>
 	        </keywords>
-			
         </default>
     </states>
 </syntax>

@@ -105,7 +105,11 @@
 	            <replace>Versioning conflict!</replace>
 	        </postprocess>
 	    </symbol>
-    
+    	
+		<symbol id="Properties" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="language.function.objective-c">
+			<regex>\.(\w{2,}+)</regex>
+		</symbol>
+		
 	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
         <regex>NSLog(\([^;]+)</regex>
         <postprocess>
