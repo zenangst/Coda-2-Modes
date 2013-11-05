@@ -106,7 +106,7 @@
 	        </postprocess>
 	    </symbol>
     	
-		<symbol id="Properties" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="language.function.objective-c">
+		<symbol id="Properties" font-weight="bold" hidden="yes" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="language.function.objective-c">
 			<regex>\.(\w{2,}+)</regex>
 		</symbol>
 		
