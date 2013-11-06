@@ -61,7 +61,7 @@
 				<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 			</keywords>
 			
-			<keywords id="Referenced Object" color="#6C0540" casesensitive="yes" scope="markup.tag.attribute.value" useforautocomplete="yes">
+			<keywords id="Referenced Object" color="#6C0540" casesensitive="yes" scope="style.value.color.rgb-value" useforautocomplete="yes">
 				<regex>(&amp;\w+)</regex>
 			</keywords>
 			
@@ -112,7 +112,11 @@
 				<regex>\.(\w{2,}+)</regex>
 			</keywords>
 			
-			<keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="style.at-rule">
+			<keywords id="Constants" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="keyword.control">
+				<regex>([_]{1,2}[A-Z]+[_]{1,2})</regex>
+			</keywords>
+			
+			<keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="markup.tag.attribute.value">
 				<regex>(@)</regex>
 			</keywords>
 			
@@ -145,6 +149,9 @@
 			</keywords>
 			
 			<keywords id="Objective-C Keywords" color="#881350" useforautocomplete="yes" font-weight="bold" scope="keyword">
+				<regex>(YES|NO)</regex>
+                <string>NSUInteger</string>
+                <string>NSInteger</string>
                 <string>BOOL</string>
                 <string>Class</string>
                 <string>IBAction</string>

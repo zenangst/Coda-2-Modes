@@ -60,8 +60,6 @@
                 <string>UInt32</string>
                 <string>UInt16</string>
                 <string>UInt8</string>
-                <string>NSUInteger</string>
-                <string>NSInteger</string>
             </keywords>
             
             <keywords id="Numbers" color="#00f" inverted-color="#5d56ff" useforautocomplete="no" scope="constant.numeric">
