@@ -88,8 +88,8 @@
     <!-- CODA -->
     <symbol id="Variable Declarations" ignoreblocks="yes" hidden="yes" useforautocomplete="yes">
     	<regex>(?&lt;=[\n\r\A;])\s*(var|const)\s+(?'variables'[^{;]{1,512});</regex>
-		<variables>(?:(?:\A)|(?:[,]))\s*([\w\d]+)[;]*</variables>
-	</symbol>
+  		<variables>(?:(?:\A)|(?:[,]))\s*([\w\d]+)[;]*</variables>
+  	</symbol>
  
     <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
         <regex>/\*\s*!(.+) \*/</regex>
