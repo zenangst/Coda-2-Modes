@@ -9,7 +9,7 @@
     </head>
 
     <states>
-    
+
        <default id="Base" scope="meta.default">
             <keywords id="Objects" useforautocomplete="yes" scope="support.class.standard.js">
                 <string>Object</string>
@@ -72,20 +72,20 @@
                 <string>volatile</string>
                 <string>while</string>
                 <string>with</string>
+                <string>class</string>
+                <string>void</string>
             </keywords>
 
             <keywords id="Types" useforautocomplete="yes" scope="keyword.type.js">
                 <string>boolean</string>
                 <string>byte</string>
                 <string>char</string>
-                <string>class</string>
                 <string>double</string>
                 <string>enum</string>
                 <string>float</string>
                 <string>int</string>
                 <string>long</string>
                 <string>short</string>
-                <string>void</string>
             </keywords>
 
             <keywords id="Operators" useforautocomplete="no" scope="language.operator">
@@ -93,7 +93,7 @@
             </keywords>
 
             <keywords id="Numbers" inverted-color="#5d56ff" useforautocomplete="no" scope="constant.numeric.js">
-				<regex>(?&lt;![\w\d\._])((?:(?:(?:[0-9]+\.[0-9]*)|(\.[0-9]+))(?:[eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0(?:[1-7][0-7]*)?|(?:0[xX][0-9a-fA-F]+))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?![\w\d\._])</regex>
+                <regex>(?&lt;![\w\d\._])((?:(?:(?:[0-9]+\.[0-9]*)|(\.[0-9]+))(?:[eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0(?:[1-7][0-7]*)?|(?:0[xX][0-9a-fA-F]+))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?![\w\d\._])</regex>
             </keywords>
 
             <keywords id="Number Literals" inverted-color="#5d56ff" useforautocomplete="YES" scope="constant.numeric.keyword.js">
@@ -106,42 +106,46 @@
             </keywords>
 
             <keywords id="FunctionRegex" useforautocomplete="no" scope="language.function.js">
-				<regex>([\$A-Za-z0-9_]+[ \t]*)\(</regex>
+                <regex>([\$A-Za-z0-9_]+[ \t]*)\(</regex>
             </keywords>
-                    
+
+            <keywords id="Variables" useforautocomplete="yes" scope="language.variable">
+                <regex>(var|,)(.*?)=</regex>
+            </keywords>
+
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
                 <begin><regex>/\*"</regex></begin>
                 <end><regex>"\*/</regex></end>
             </state>
-    
+
             <state id="Comment" type="comment" foldable="yes" scope="comment.block.js">
                 <begin><regex>/\*</regex><autoend>\*/</autoend></begin>
                 <end><regex>\*/</regex></end>
                 <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
             </state>
-            
+
             <state id="SingleComment" type="comment" scope="comment.line.double-slash.js">
                 <begin><regex>//</regex></begin>
                 <end><regex>[\n\r]</regex></end>
                 <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
             </state>
-            
+
             <state id="Regular Expressions" type="string" scope="string.regex.js">
                 <!--CODA <begin><regex>(?i)(?&lt;=[=(,:\+~!]|^|return|;|(?:\|\|))\s*/(?![/*+{}?])</regex></begin>-->
                 <begin><regex>(?i)(?&lt;=[=(,:\+~!?]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
                 <end><regex>/[cgimosx]*</regex></end>
 
-				<state id="Escaped Characters" scope="string.regex.escaped.js">
-                	<begin><regex>\\</regex></begin>
-                	<end><regex>.</regex></end>	
+                <state id="Escaped Characters" scope="string.regex.escaped.js">
+                    <begin><regex>\\</regex></begin>
+                    <end><regex>.</regex></end>	
                 </state>
             </state>
-    
+
             <state id="String" type="string" scope="string.double.js">
                 <begin><regex>"</regex></begin>
                 <end><regex>(?&lt;!\\)(\\\\)*"</regex></end>
             </state>
-    
+
             <state id="SingleString" type="string" scope="string.single.js">
                 <begin><regex>'</regex></begin>
                 <end><regex>(?&lt;!\\)(\\\\)*'</regex></end>
