@@ -8252,6 +8252,10 @@
 					<key>String</key>
 					<string>!important</string>
 				</dict>
+				<dict>
+					<key>String</key>
+					<string>none</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -12004,6 +12008,43 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>animation-fill-mode</string>
+			<key>String</key>
+			<string>animation-fill-mode</string>
+			<key>SelectionRange</key>
+			<string>{21, 0}</string>
+			<key>PostString</key>
+			<string>: </string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>String</key>
+					<string>inherit</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>!important</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>none</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>forwards</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>backwards</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>both</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>animation-iteration-count</string>
 			<key>String</key>
 			<string>animation-iteration-count</string>
@@ -12042,6 +12083,10 @@
 					<key>String</key>
 					<string>!important</string>
 				</dict>
+				<dict>
+					<key>String</key>
+					<string>none</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -12062,6 +12107,46 @@
 				<dict>
 					<key>String</key>
 					<string>!important</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>ease</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>ease-in</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>ease-out</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>ease-in-out</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>linear</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>cubic-bezier()</string>
+					<key>SelectionRange</key>
+					<string>{13, 0}</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>step-start</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>step-stop</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>steps()</string>
+					<key>SelectionRange</key>
+					<string>{6, 0}</string>
 				</dict>
 			</array>
 		</dict>
@@ -12131,6 +12216,35 @@
 				<dict>
 					<key>String</key>
 					<string>password</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>backface-visibility</string>
+			<key>String</key>
+			<string>backface-visibility</string>
+			<key>SelectionRange</key>
+			<string>{21, 0}</string>
+			<key>PostString</key>
+			<string>: </string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>String</key>
+					<string>inherit</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>!important</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>visible</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>hidden</string>
 				</dict>
 			</array>
 		</dict>
@@ -12284,6 +12398,8 @@
 					<string>()</string>
 					<key>SelectionRange</key>
 					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>String</key>
@@ -12747,9 +12863,13 @@
 				</dict>
 				<dict>
 					<key>String</key>
-					<string>url()</string>
+					<string>url</string>
+					<key>PostString</key>
+					<string>()</string>
 					<key>SelectionRange</key>
 					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>String</key>
@@ -13949,6 +14069,16 @@
 				<dict>
 					<key>String</key>
 					<string>!important</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>url</string>
+					<key>PostString</key>
+					<string>()</string>
+					<key>SelectionRange</key>
+					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 			</array>
 		</dict>
@@ -15402,6 +15532,10 @@
 					<key>String</key>
 					<string>!important</string>
 				</dict>
+				<dict>
+					<key>String</key>
+					<string>none</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -15732,9 +15866,13 @@
 				</dict>
 				<dict>
 					<key>String</key>
-					<string>url()</string>
+					<string>url</string>
+					<key>PostString</key>
+					<string>()</string>
 					<key>SelectionRange</key>
 					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 			</array>
 		</dict>
@@ -15809,9 +15947,13 @@
 				</dict>
 				<dict>
 					<key>String</key>
-					<string>url()</string>
+					<string>url</string>
+					<key>PostString</key>
+					<string>()</string>
 					<key>SelectionRange</key>
 					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>String</key>
@@ -16619,6 +16761,39 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>image-rendering</string>
+			<key>String</key>
+			<string>image-rendering</string>
+			<key>SelectionRange</key>
+			<string>{17, 0}</string>
+			<key>PostString</key>
+			<string>: </string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>String</key>
+					<string>inherit</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>!important</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>auto</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>crisp-edges</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>pixelated</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>left</string>
 			<key>String</key>
 			<string>left</string>
@@ -16810,6 +16985,8 @@
 					<string>()</string>
 					<key>SelectionRange</key>
 					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 			</array>
 		</dict>
@@ -16834,9 +17011,13 @@
 				</dict>
 				<dict>
 					<key>String</key>
-					<string>url()</string>
+					<string>url</string>
+					<key>PostString</key>
+					<string>()</string>
 					<key>SelectionRange</key>
 					<string>{4, 0}</string>
+					<key>ShouldAddPathCompletions</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>String</key>
@@ -18099,6 +18280,31 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>perspective</string>
+			<key>String</key>
+			<string>perspective</string>
+			<key>SelectionRange</key>
+			<string>{13, 0}</string>
+			<key>PostString</key>
+			<string>: </string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>String</key>
+					<string>inherit</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>!important</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>none</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>pointer-events</string>
 			<key>String</key>
 			<string>pointer-events</string>
@@ -18524,6 +18730,22 @@
 					<key>String</key>
 					<string>!important</string>
 				</dict>
+				<dict>
+					<key>String</key>
+					<string>auto</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>optimizeSpeed</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>optimizeLegibility</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>geometricPrecision</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -18778,6 +19000,10 @@
 					<string>translateZ()</string>
 					<key>SelectionRange</key>
 					<string>{11, 0}</string>
+				</dict>
+				<dict>
+					<key>String</key>
+					<string>none</string>
 				</dict>
 			</array>
 		</dict>
@@ -19333,7 +19559,7 @@
 		<!-- mutiple values -->
 		<dict>
 			<key>Regex</key>
-			<string>[{;]\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)(?:\s*):(?:\s*)[&quot;\s\d\w\-#():/\\\.,]*?([!&quot;\d\w\-#():/\\\.,]+)\z</string>
+			<string>(?:[{;]|(?i)style[ \t]*=[ \t]*")\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)(?:\s*):(?:\s*)[&quot;\s\d\w\-#():/\\\.,%]*?([!&quot;\d\w\-#():/\\\.,%]+)\z</string>
 			<key>ShouldAppendCompletion</key>
 			<false/>
 			<key>ShouldCompleteInStringLiteral</key>
@@ -19342,7 +19568,7 @@
 		<!-- single value or space -->
 		<dict>
 			<key>Regex</key>
-			<string>[{;]\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)(?:\s*):[!\d\s\w\-#():/\\\.&quot;,]+?(\s+)\z</string>
+			<string>(?:[{;]|(?i)style[ \t]*=[ \t]*")\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)(?:\s*):[!\d\s\w\-#():/\\\.&quot;,%]+?(\s+)\z</string>
 			<key>ShouldCompleteAll</key>
 			<true/>
 			<key>ShouldAppendCompletion</key>
@@ -19353,7 +19579,7 @@
 		<!-- no value or space -->
 		<dict>
 			<key>Regex</key>
-			<string>[{;]\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)(?:\s*):(\s*)\z</string>
+			<string>(?:[{;]|(?i)style[ \t]*=[ \t]*")\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)(?:\s*):(\s*)\z</string>
 			<key>ShouldCompleteAll</key>
 			<true/>
 			<key>ShouldAppendCompletion</key>
@@ -19362,7 +19588,7 @@
 		<!-- property -->
 		<dict>
 			<key>Regex</key>
-			<string>[{;]\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)\s*\z</string>
+			<string>(?:[{;]|(?i)style[ \t]*=[ \t]*")\s*(?:/\*.*?\*/\s*)*([\d\w\-#():/\\]+)\s*\z</string>
 		</dict>
 	</array>
 	<key>LineCompletion</key>

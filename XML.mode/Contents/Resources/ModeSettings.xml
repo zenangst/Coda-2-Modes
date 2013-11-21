@@ -15,4 +15,5 @@
         <extension>scriptTerminology</extension>
         <regex>\A&lt;\?xml</regex>
     </recognition>
+    <color>0.493, 0.874, 0.741</color>
 </settings>

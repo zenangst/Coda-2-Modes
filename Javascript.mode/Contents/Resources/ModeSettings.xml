@@ -6,4 +6,5 @@
         <extension>jsx</extension>
         <extension>json</extension>
     </recognition>
+    <color>0.706,0.855,0.349</color>
 </settings>

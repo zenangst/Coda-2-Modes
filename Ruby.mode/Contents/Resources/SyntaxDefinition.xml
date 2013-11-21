@@ -15,9 +15,9 @@
                 <string>true</string>
                 <string>false</string>
                 <string>nil</string>
-				<string>TRUE</string>
-				<string>FALSE</string>
-				<string>NIL</string>
+        				<string>TRUE</string>
+        				<string>FALSE</string>
+        				<string>NIL</string>
             </keywords>
             <keywords id="Attribute Definitions" useforautocomplete="yes" scope="support.accessor">
                 <string>attr</string>
@@ -701,7 +701,10 @@
                 <import />
             </state>
 
-
+			
+		    <keywords id="Objects" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8">
+		    	<regex>(\w+)[^=]=</regex>
+		    </keywords>
         </default>
         
     </states>

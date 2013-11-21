@@ -31,7 +31,8 @@
             </keywords>
 
             <keywords id="Keywords" useforautocomplete="yes" scope="keyword.control.js">
-                <string>break</string>
+                <string>arguments</string>
+				<string>break</string>
                 <string>case</string>
                 <string>catch</string>
                 <string>const</string>
@@ -41,6 +42,8 @@
                 <string>delete</string>
                 <string>do</string>
                 <string>else</string>
+				<string>eval</string>
+				<string>export</string>
                 <string>extends</string>
                 <string>final</string>
                 <string>finally</string>
@@ -53,9 +56,11 @@
                 <string>in</string>
                 <string>instanceof</string>
                 <string>interface</string>
+				<string>let</string>
                 <string>native</string>
                 <string>new</string>
                 <string>package</string>
+				<string>private</string>
                 <string>protected</string>
                 <string>public</string>
                 <string>return</string>
@@ -72,6 +77,7 @@
                 <string>volatile</string>
                 <string>while</string>
                 <string>with</string>
+				<string>yield</string>
             </keywords>
 
             <keywords id="Types" useforautocomplete="yes" scope="keyword.type.js">
@@ -86,10 +92,6 @@
                 <string>long</string>
                 <string>short</string>
                 <string>void</string>
-            </keywords>
-
-            <keywords id="Operators" useforautocomplete="no" scope="language.operator">
-                <regex>([\+\-\*\/\=\!\&lt;\&gt;\%])</regex>
             </keywords>
 
             <keywords id="Numbers" inverted-color="#5d56ff" useforautocomplete="no" scope="constant.numeric.js">
@@ -108,10 +110,14 @@
             <keywords id="FunctionRegex" useforautocomplete="no" scope="language.function.js">
 				<regex>([\$A-Za-z0-9_]+[ \t]*)\(</regex>
             </keywords>
-                    
+            
+            <keywords id="Operators" useforautocomplete="no" scope="language.operator" highlightInOrder="yes">
+                <regex>([\$\+\-\*\/\=\!\&lt;\&gt;\%&amp;]|\|\||\|)</regex>
+            </keywords>
+            
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
                 <begin><regex>/\*"</regex></begin>
-                <end><regex>"\*/</regex></end>
+                <end><regex>\*/</regex></end>
             </state>
     
             <state id="Comment" type="comment" foldable="yes" scope="comment.block.js">
@@ -128,7 +134,7 @@
             
             <state id="Regular Expressions" type="string" scope="string.regex.js">
                 <!--CODA <begin><regex>(?i)(?&lt;=[=(,:\+~!]|^|return|;|(?:\|\|))\s*/(?![/*+{}?])</regex></begin>-->
-                <begin><regex>(?i)(?&lt;=[=(,:\+~!?]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
+                <begin><regex>(?i)(?&lt;=[=(,:\+~!?\[]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
                 <end><regex>/[cgimosx]*</regex></end>
 
 				<state id="Escaped Characters" scope="string.regex.escaped.js">

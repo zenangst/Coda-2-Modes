@@ -5,11 +5,98 @@
     <head>
         <name>CSS</name>
         <!-- The definitions title -->
-        <charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.]]></charsintokens>
-        <charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@.]]></charsincompletion>
+        <charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@$]]></charsintokens>
+        <charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@$]]></charsincompletion>
     </head>
     <states>
-        <default id="Base" usesymbolsfrommode="CSS" useautocompletefrommode="CSS" scope="meta.default">
+        <default id="Base" scope="meta.default">
+        	
+			<state id="CSS Functions" type="string" useforautocomplete="no" scope="meta.default">
+				<begin>
+					<regex>(?i)(?&lt;![#\d\w-])(?:url|local|format)\s*\(</regex>
+				</begin>
+				<end>
+					<regex>(\)|(?'unwindend'}))</regex>
+				</end>
+				
+				<keywords id="Function Keywords" casesensitive="no" useforautocomplete="yes" scope="language.function.css">
+					<string>url</string>
+					<string>local</string>
+					<string>format</string>
+				</keywords>
+				
+				<state-link state="AutodocComment"/>
+				<state-link state="Comment"/>
+				<state-link state="String"/>
+				<state-link state="SingleString"/>
+				
+				<!-- need to handle brackets in urls for sass #21362 -->
+				 <state id="Curly brackets in Functions" type="string" scope="meta.default">
+					<begin>
+						<string>{</string>
+						<autoend>}</autoend>
+					</begin>
+					<end>
+						<regex>}</regex>
+					</end>
+					
+					<state-link state="AutodocComment"/>
+					<state-link state="Comment"/>
+					<state-link state="String"/>
+					<state-link state="SingleString"/>
+				
+				</state>
+
+			</state>        	
+	
+			<state id="Type Selectors" scope="meta.block">
+				<begin><regex>\[</regex></begin>
+				<end><regex>(\]|(?'unwindend'[\}\{]))</regex></end>
+				
+				<keywords id="Attribute" useforautocomplete="no" scope="style.value.keyword">
+					<regex>([^\[\]=]+)</regex>
+				</keywords>
+				
+				<keywords id="Value" useforautocomplete="no" scope="style.value.string">
+					<regex>=\s*([^\[\]]+)</regex>
+				</keywords>
+			</state>
+			
+			<state id="Digits and Colors" containerState="yes" scope="meta.default">
+				<keywords id="CSS Digits" useforautocomplete="yes" scope="style.value.numeric">
+					<regex>(?&lt;![A-Za-z0-9-#\\])(-?[\d]+[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn|rem|ch|vw|vh|vmin|vmax)?)</regex>
+				</keywords>
+				<keywords id="CSS Colors" useforautocomplete="yes" scope="style.value.color.rgb-value">
+					<regex>(?&lt;![A-Za-z0-9-#\\])(#[\da-fA-F]{3,6})\b</regex>
+				</keywords>
+			</state>
+			
+			<import state="Digits and Colors" keywords-only="yes" />
+                			
+			<keywords id="Rule Keywords" casesensitive="no" useforautocomplete="yes" scope="style.at-rule">
+				<string>@import</string>
+				<string>@media</string>
+				<string>@screen</string>
+				<string>@page</string>
+				<string>@charset</string>
+				<string>@keyframes</string>
+				<string>@region</string>
+				<string>@supports</string>
+				<string>@font-face</string>
+				<string>@namespace</string>
+				<string>@viewport</string>
+				<regex>(@top-[\w-]+)\b</regex>
+				<regex>(@bottom-[\w-]+)\b</regex>
+				<regex>(@left-[\w]+)\b</regex>
+				<regex>(@right-[\w]+)\b</regex>
+				<regex>(@(?:-webkit|-ms|-moz|-o)-[\w-]+)\b</regex>
+			</keywords>
+        	
+        	<keywords id="Pseudo Classes" casesensitive="no" useforautocomplete="yes" scope="style.value.keyword">
+				<regex>:((?:link|visited|active|hover|focus|first-[\w-]+|before|after|lang|last-[\w-]+|only-[\w-]+|nth-[\w-]+|root|empty|target|enabled|disabled|checked|not))</regex>
+				<regex>::((?:selection|-(?:webkit|khtml|moz|o|ms)-[\w-]+))</regex>
+        	</keywords>
+        	
             <state id="Inside curly brackets" foldable="yes" indent="yes" scope="meta.block.curly">
                 <begin>
                     <string>{</string>
@@ -19,185 +106,49 @@
                     <regex>}</regex>
                 </end>
                 <keywords id="CSS Keywords" useforautocomplete="yes" casesensitive="no" scope="style.property.name">
-                    <regex>(?&lt;![\d\w.\-#])(_background)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(_filter)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(-webkit(?:-\w+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(-khtml(?:-\w+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(-moz(?:-\w+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(-o(?:-\w+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(-ms(?:-\w+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(alignment(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(animation(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(appearance)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(azimuth)</regex>
-           	        <regex>(?&lt;![\d\w.\-#])(background(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(backface-visibility)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(baseline-shift)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(binding)</regex>
-           	        <regex>(?&lt;![\d\w.\-#])(bookmark(?:-[\w]+)+)</regex>
-           	        <regex>(?&lt;![\d\w.\-#])(border(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(bottom)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(box-[\w]*)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(caption-side)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(clear)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(clip(?:-\w+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(color(?:-\w+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(column(?:-[\w]+)+)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(columns)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(content)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(counter-increment)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(counter-reset)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(crop)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(cue-after)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(cue-before)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(cue)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(cursor)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(direction)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(display(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(dominant-baseline)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(drop-initial(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(elevation)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(empty-cells)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(enable-background)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(fill(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(fit(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(filter)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(float(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(flood(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(font(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(glyph-orientation-\w+)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(grid(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(group-reset)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(hanging-puctuation)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(height)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(hyphenate(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(hyphens)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(icons)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(image(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(inline-box-align)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(kerning)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(key-equivalent)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(konq_bgpos_x)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(konq_bgpos_y)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(layer-background-color)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(layer-background-image)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(layout(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(left)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(letter-spacing)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(lighting-color)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(line(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(list-style(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(margin(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(mark(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(marks)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(marker(?:-\w+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(mask)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(marquee(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(max-height)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(max-width)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(min-height)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(min-width)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(move-to)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(nav-down)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(nav-index)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(nav-left)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(nav-right)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(nav-up)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(opacity)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(orphans)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(outline(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(overflow-x)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(overflow-y)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(overflow)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(padding-bottom)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(padding-left)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(padding-right)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(padding-top)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(padding)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(page(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(pause-after)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(pause-before)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(pause)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(phonemes)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(pitch-range)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(pitch)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(play-during)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(pointer-events)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(position)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(presentation-level)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(punctuation-trim)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(perspective(?:-[\w]+)*)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(quotes)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(rendering-indent)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(resize)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(rest(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(richness)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(?i)(right)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(rotation(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(ruby(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(src)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(size)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(shape-rendering)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(speak-header)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(speak-numeral)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(speak-punctuation)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(speak)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(speech-rate)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(stop-\w+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(stress)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(string-set)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(stroke(?:-\w+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(tab-side)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(tab-index)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(table-layout)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(text(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(toggle-group)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(top)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(transition(?:-[\w]+)*)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(transform(?:-[\w]+)*)</regex>                    
-                    <regex>(?&lt;![\d\w.\-#])(unicode-bidi)</regex>
-                   	<regex>(?&lt;![\d\w.\-#])(unicode-range)</regex>
-                   	<regex>(?&lt;![\d\w.\-#])(user-focus)</regex>
-                   	<regex>(?&lt;![\d\w.\-#])(user-input)</regex>                   	
-                   	<regex>(?&lt;![\d\w.\-#])(user-modify)</regex>
-                   	<regex>(?&lt;![\d\w.\-#])(user-select)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(vertical-align)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(visibility)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(voice(?:-[\w]+)+)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(volume)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(white-space)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(widows)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(width)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(word-break)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(word-spacing)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(word-wrap)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(writing-mode)</regex>
-                    <regex>(?&lt;![\d\w.\-#])(z-index)</regex>
-                	<regex>(?&lt;![\d\w.\-#])(zoom)</regex>
+                    
+                    <regex>(?&lt;![\d\w.\-#@:\$])(_(?:background|filter))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(-(?:webkit|khtml|moz|o|ms)-[\w-]+)</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(a(?:lignment-\w+|nimation(?:-\w+)*|ppearance|zimuth))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(b(?:ackground(?:-\w+)*|ackface-visibility|aseline-shift|inding|ookmark-\w+|order(?:-\w+)*|ottom|ox-[\w-]+))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(c(?:aption-side|lear|lip(?:-\w+)*|olor(?:-\w+)*|olumn-[\w-]+|olumns(?:-\w+)*|ontent|ounter-increment|ounter-reset|rop|ue-after|ue-before|ue|ursor))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(d(?:irection|isplay(?:-\w+)*|ominant-baseline|rop-initial-\w+))</regex>                    
+					<regex>(?&lt;![\d\w.\-#@:\$])(e(?:levation|mpty-cells|nable-background))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(f(?:ill|it|ilter|loat|lood|ont)(?:-\w+)*)</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(g(?:lyph-orientation-\w+|rid-\w+|roup-reset))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(h(?:anging-puctuation|eight|yphenate-\w+|yphens))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(i(?:cons|mage-\w+|nline-box-align))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(k(?:erning|ey-equivalent|onq_bgpos_x|onq_bgpos_y))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(l(?:ayer-background-color|ayer-background-image|ayout-\w+|eft|etter-spacing|ighting-color|ine-\w+|ist-style(?:-\w+)*))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(m(?:argin(?:-\w+)*|arks|arker(?:-\w+)*|ark(?:-\w+)*|ask(?:-\w+)*|arquee-\w+|ax-height|ax-width|in-height|in-width|ove-to))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(n(?:av-down|av-index|av-left|av-right|av-up))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(o(?:pacity|rphans|utline(?:-\w+)*|verflow-x|verflow-y|verflow))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(p(?:adding(?:-\w+)*|age(?:-\w+)*|ause-after|ause-before|ause|honemes|itch-range|itch|lay-during|ointer-events|osition|resentation-level|unctuation-trim|erspective(?:-\w+)*))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(quotes)</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(r(?:endering-indent|esize|est(?:-\w+)*|ichness|ight|otation(?:-\w+)*|uby-\w+))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:])(s(?:rc|ize|hape-rendering|peak-header|peak-numeral|peak-punctuation|peak|peech-rate|top-\w+|tress|tring-set|troke(?:-\w+)*))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(t(?:ab-side|ab-index|able-layout|ext-[\w-]+|oggle-group|op|ransition(?:-[\w-]+)*|ransform(?:-[\w-]+)*))</regex> 
+                    <regex>(?&lt;![\d\w.\-#@:\$])(u(?:nicode-bidi|nicode-range|ser-focus|ser-input|ser-modify|ser-select))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(v(?:ertical-align|isibility|oice-\w+|olume))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(w(?:hite-space|idows|idth|ord-break|ord-spacing|ord-wrap|riting-mode))</regex>
+                    <regex>(?&lt;![\d\w.\-#@:\$])(z(?:-index|oom))</regex>
+                    
                 </keywords>
+                
+       			<import state="Digits and Colors" keywords-only="yes" />
+                
                 <state id="Attribute state" scope="meta.block.attribute">
                     <begin>
-                        <string>:</string>
+						<regex>:(?i)(?!(?:link|visited|active|hover|focus|first-|before|after|lang|last-|only-|nth-|root|empty|target|enabled|disabled|checked|not|:))</regex>
                     </begin>
                     <end>
                         <!--<regex>(;|.(?=})|[\n\r])</regex> Coda #17819-->
                         <regex>(;|(?'unwindend'[{}]))</regex>
                     </end>
                     
-                    <state id="CSS Functions" type="string" useforautocomplete="no" scope="meta.default">
-                    	<begin>
-                    		<regex>(?i)(?&lt;=(?:url|local|format))\s*\(</regex>
-                    	</begin>
-                    	<end>
-                    		<regex>(\)|(?'unwindend'}))</regex>
-                    	</end>
-                    	<state-link state="AutodocComment"/>
-						<state-link state="Comment"/>
-						<state-link state="String"/>
-						<state-link state="SingleString"/>
-                    </state>
+                    <state-link state="CSS Functions" />
                     
-                    <state id="CSS Color Functions" useforautocomplete="no" scope="meta.default">
+					<state id="CSS Color Functions" useforautocomplete="no" scope="meta.default">
                     	<begin>
                     		<regex>(?i)(?&lt;=(?:rgb|rgba|hsl|hsla|cmyk|device-cmyk))\s*\(</regex>
                     	</begin>
@@ -207,24 +158,15 @@
 
                     	<state-link state="AutodocComment"/>
 						<state-link state="Comment"/>
-
-                    	 <keywords id="CSS Digits" useforautocomplete="yes" scope="style.value.numeric">
-							<regex>(?&lt;![#\d\w-])(-?[\d]+[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn)?)</regex>
-						</keywords>
-						<keywords id="CSS Colors" useforautocomplete="yes" scope="style.value.color.rgb-value">
-							<regex>(#[\da-fA-F]{3,6})</regex>
-						</keywords>
+                    	<import state="Digits and Colors" keywords-only="yes" />
                     </state>
                     
                     <keywords id="!important" useforautocomplete="no" scope="meta.important">
                         <regex>(!\s*important)</regex>
                     </keywords>
                     <keywords id="CSS Attributes" useforautocomplete="yes" casesensitive="no" scope="style.value.keyword">
-                    	<regex>(-webkit(?:-\w+)+)</regex>
-                    	<regex>(-moz(?:-\w+)+)</regex>
-                    	<regex>(-ms(?:-\w+)+)</regex>
-                    	<regex>(-o(?:-\w+)+)</regex>
-                    	<string>above</string>
+                    	<regex>(?&lt;![\d\w.\-#@:\$])(-(?:webkit|moz|ms|o)-[\w-]+)</regex>
+               			<string>above</string>
 						<string>absolute</string>
 						<string>accumulate</string>
 						<string>activeborder</string>
@@ -239,21 +181,26 @@
 						<string>alphabetic</string>
 						<string>alternate</string>
 						<string>always</string>
+						<string>antialiased</string>
 						<string>antiquewhite</string>
 						<string>appworkspace</string>
 						<string>aqua</string>
 						<string>aquamarine</string>
 						<string>arial</string>
 						<string>armenian</string>
+						<string>aspect-ratio</string>
 						<string>auto</string>
 						<string>avoid</string>
 						<string>azure</string>
+						<string>background</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(background-[\w-]+)</regex>
 						<string>backwards</string>
 						<string>balance</string>
 						<string>baseline</string>
 						<string>before-edge</string>
 						<string>beige</string>
 						<string>below</string>
+						<string>bicubic</string>
 						<string>bidi-override</string>
 						<string>bisque</string>
 						<string>black</string>
@@ -265,9 +212,11 @@
 						<string>bold</string>
 						<string>bolder</string>
 						<string>border</string>
-						<string>border-box</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(border-[\w-]+)</regex>
 						<string>both</string>
 						<string>bottom</string>
+						<string>box</string>
+						<string>box-shadow</string>
 						<string>break-all</string>
 						<string>break-strict</string>
 						<string>break-word</string>
@@ -298,6 +247,7 @@
 						<string>chocolate</string>
 						<string>circle</string>
 						<string>cjk-ideographic</string>
+						<string>clip</string>
 						<string>close-quote</string>
 						<string>closest-side</string>
 						<string>closest-corner</string>
@@ -305,6 +255,8 @@
 						<string>col-resize</string>
 						<string>collapse</string>
 						<string>collapsed</string>
+						<string>color</string>
+						<string>color-index</string>
 						<string>color-stop</string>
 						<string>compact</string>
 						<string>condensed</string>
@@ -320,6 +272,7 @@
 						<string>cover</string>
 						<string>crimson</string>
 						<string>crispEdges</string>
+						<string>crisp-edges</string>
 						<string>crop</string>
 						<string>cross</string>
 						<string>crosshair</string>
@@ -327,6 +280,7 @@
 						<string>currentcolor</string>
 						<string>cursive</string>
 						<string>cyan</string>
+						<string>dark</string>
 						<string>darkblue</string>
 						<string>darkcyan</string>
 						<string>darkgoldenrod</string>
@@ -356,7 +310,10 @@
 						<string>destination-in</string>
 						<string>destination-out</string>
 						<string>destination-over</string>
+						<string>device-aspect-ratio</string>
 						<string>device-cmyk</string>
+						<string>device-width</string>
+						<string>device-height</string>
 						<string>dimgray</string>
 						<string>dimgrey</string>
 						<string>disc</string>
@@ -366,7 +323,8 @@
 						<string>double</string>
 						<string>down</string>
 						<string>e-resize</string>
-						<regex>(ease(?:-\w+)*)</regex>
+						<string>ease</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(ease-[\w-]+)</regex>
 						<string>element</string>
 						<string>ellipse cover</string>
 						<string>ellipsis</string>
@@ -386,7 +344,11 @@
 						<string>fixed</string>
 						<string>fixedsys</string>
 						<string>flat</string>
+						<string>flex</string>
+						<string>flex-box</string>
 						<string>floralwhite</string>
+						<string>font-size</string>
+						<string>font-weight</string>
 						<string>forestgreen</string>
 						<string>format</string>
 						<string>forwards</string>
@@ -406,12 +368,14 @@
 						<string>green</string>
 						<string>greenyellow</string>
 						<string>grey</string>
+						<string>grid</string>
 						<string>groove</string>
 						<string>hand</string>
 						<string>hanging</string>
 						<string>hebrew</string>
 						<string>help</string>
 						<string>helvetica</string>
+						<string>height</string>
 						<string>hidden</string>
 						<string>hide</string>
 						<string>higher</string>
@@ -420,6 +384,7 @@
 						<string>hiragana-iroha</string>
 						<string>hiragana</string>
 						<string>honeydew</string>
+						<string>horizontal</string>
 						<string>hotpink</string>
 						<string>hsl</string>
 						<string>hsla</string>
@@ -436,8 +401,8 @@
 						<string>infobackground</string>
 						<string>infotext</string>
 						<string>inherit</string>
-						<regex>(inline(?:-\w+)*)</regex>
 						<string>inline</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(inline-\w+)</regex>
 						<string>inset</string>
 						<string>inside</string>
 						<string>intrinsic</string>
@@ -458,6 +423,7 @@
 						<string>lawngreen</string>
 						<string>left</string>
 						<string>lemonchiffon</string>
+						<string>letter-spacing</string>
 						<string>level</string>
 						<string>light</string>
 						<string>lightblue</string>
@@ -478,6 +444,7 @@
 						<string>lightyellow</string>
 						<string>lime</string>
 						<string>limegreen</string>
+						<string>line-height</string>
 						<string>line-through</string>
 						<string>linear</string>
 						<string>linearRGB</string>
@@ -501,12 +468,17 @@
 						<string>lr</string>
 						<string>lr-tb</string>
 						<string>magenta</string>
+						<string>margin</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(margin-\w+)</regex>
 						<string>marker</string>
 						<string>maroon</string>
 						<string>match</string>
 						<string>mathematical</string>
 						<string>matrix</string>
 						<string>matrix3d</string>
+						<string>max-height</string>
+						<string>max-width</string>
+						<string>max-resolution</string>
 						<string>medium</string>
 						<string>mediumaquamarine</string>
 						<string>mediumblue</string>
@@ -526,13 +498,17 @@
 						<string>message-box</string>
 						<string>middle</string>
 						<string>midnightblue</string>
+						<string>min-height</string>
 						<string>min-intrinsic</string>
+						<string>min-resolution</string>
+						<string>min-width</string>
 						<string>mintcream</string>
 						<string>mistyrose</string>
 						<string>miter</string>
 						<string>mix</string>
 						<string>moccasin</string>
 						<string>monaco</string>
+						<string>monochrome</string>
 						<string>monospace</string>
 						<string>move</string>
 						<string>n-resize</string>
@@ -540,6 +516,7 @@
 						<string>navajowhite</string>
 						<string>navy</string>
 						<string>ne-resize</string>
+						<string>nearest-neighbor</string>
 						<string>nesw-resize</string>
 						<string>new</string>
 						<string>never</string>
@@ -568,12 +545,13 @@
 						<string>orange</string>
 						<string>orangered</string>
 						<string>orchid</string>
+						<string>orientation</string>
 						<string>outset</string>
 						<string>outside</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(o(?:utline)-\w+)</regex>
 						<string>overlay</string>
 						<string>overline</string>
-						<string>padding</string>
-						<string>padding-box</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(p(?:adding)(?:-\w+)*)</regex>
 						<string>painted</string>
 						<string>palatino</string>
 						<string>palegoldenrod</string>
@@ -585,6 +563,7 @@
 						<string>peachpuff</string>
 						<string>peru</string>
 						<string>pink</string>
+						<string>pixelated</string>
 						<string>plum</string>
 						<string>plus-darker</string>
 						<string>plus-lighter</string>
@@ -612,6 +591,7 @@
 						<string>repeating-linear-gradient</string>
 						<string>repeating-radial-gradient</string>
 						<string>reset-size</string>
+						<string>resolution</string>
 						<string>reverse</string>
 						<string>rgb</string>
 						<string>rgba</string>
@@ -642,6 +622,7 @@
 						<string>scalex</string>
 						<string>scaley</string>
 						<string>scalez</string>
+						<string>scan</string>
 						<string>scroll</string>
 						<string>scrollbar</string>
 						<string>scrollbarbutton-down</string>
@@ -725,7 +706,8 @@
 						<string>teal</string>
 						<string>techno</string>
 						<string>terminal</string>
-						<regex>(text(?:-\w+)*)</regex>
+						<string>text</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(text-[\w-]+)</regex>
 						<string>textarea</string>
 						<string>textfield</string>
 						<string>textile</string>
@@ -759,9 +741,11 @@
 						<string>url</string>
 						<string>use-script</string>
 						<string>verdana</string>
-						<string>vertical-text</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(vertical(?:[-\w])*)</regex>
 						<string>violet</string>
-						<regex>(visible(?:-\w+)*)</regex>
+						<string>visible</string>
+						<regex>(?&lt;![\d\w.\-#@:\$])(visible-\w+)</regex>
+						<string>visibility</string>
 						<string>visual</string>
 						<string>w-resize</string>
 						<string>wait</string>
@@ -769,9 +753,11 @@
 						<string>white</string>
 						<string>whitesmoke</string>
 						<string>wider</string>
+						<string>width</string>
 						<string>window</string>
 						<string>windowframe</string>
 						<string>windowtext</string>
+						<string>word-spacing</string>
 						<string>x-large</string>
 						<string>x-small</string>
 						<string>xor</string>
@@ -779,13 +765,10 @@
 						<string>xx-small</string>
 						<string>yellow</string>
 						<string>yellowgreen</string>
+						<string>z-index</string>						
                     </keywords>
-                    <keywords id="CSS Digits" useforautocomplete="yes" scope="style.value.numeric">
-                        <regex>(?&lt;![#\d\w-])(-?[\d]+[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn)?)</regex>
-                    </keywords>
-                    <keywords id="CSS Colors" useforautocomplete="yes" scope="style.value.color.rgb-value">
-                        <regex>(#[\da-fA-F]{3,6})</regex>
-                    </keywords>
+
+                   	<import state="Digits and Colors" keywords-only="yes" />
                     <state-link state="AutodocComment"/>
                     <state-link state="Comment"/>
                     <state-link state="String"/>
@@ -799,7 +782,8 @@
                 --> 
                 <import />
             </state>
-            
+           
+           	<!-- 
             <state id="Rules" scope="style.at-rule">
                 <begin>
 				    <string>@</string>
@@ -809,6 +793,7 @@
                     <regex>\s|(?:.|[\r\n])(?=\{)</regex>
                 </end>
             </state>
+            -->
             
             <state id="AutodocComment" type="comment" foldable="yes" scope="style.comment.block.documentation">
                 <begin>

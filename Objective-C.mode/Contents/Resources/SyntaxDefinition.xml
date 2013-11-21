@@ -70,22 +70,22 @@
 			</keywords>
 			
 			<!-- Foundation (OS X and iOS) and Application Kit (OS X) -->
-			<keywords id="NS Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support">
+			<keywords id="NS Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
 				<regex>(NS\w+)</regex>
 			</keywords>
 			
 			<!-- UIKit (iOS) -->
-			<keywords id="UI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support">
+			<keywords id="UI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
 				<regex>(UI\w+)</regex>
 			</keywords>
 			
 			<!-- Address Book -->
-			<keywords id="AB Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="support">
+			<keywords id="AB Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
 				<regex>(AB\w+)</regex>
 			</keywords>
 			
 			<!-- Core Animation, Core Graphics, Core Image   -->
-			<keywords id="CA, CG and CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="no" useforautocomplete="yes" scope="style.value.string">
+			<keywords id="CA, CG and CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="style.value.string">
 				<regex>(CA\w+)</regex>
 				<regex>(CI\w+)</regex>
 				<regex>([a-z]{1}CG\w+)|(CG\w+)</regex>
@@ -120,7 +120,7 @@
 				<regex>(@)</regex>
 			</keywords>
 			
-			<keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="meta.invalid.ampersand">
+			<keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="style.at-rule">
 					                <regex>(?&lt;![\w:_])(new|allocWithZone:|alloc|autorelease|copyWithZone:|copy|mutableCopyWithZone:|mutableCopy|retain|release)(?![\w:_])</regex>
             </keywords>
 			

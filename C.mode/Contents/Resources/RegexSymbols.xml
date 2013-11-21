@@ -7,7 +7,7 @@
         <endregex>}</endregex>
     </blocks>
     
-    <symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes">
+    <symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
         <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
         <postprocess>
             <find>\([^\)]*\)</find>
@@ -17,6 +17,10 @@
             <find>[ \t]+</find>
             <replace> </replace>
         </postprocess>
+    </symbol>
+	
+    <symbol id="FunctionRegex" color="#003369" useforautocomplete="yes" hidden="yes" scope="language.function.c">
+		<regex>([A-Za-z0-9_]+ *)\(</regex>
     </symbol>
 
     <symbol id="Pragma Marks" font-weight="bold" image="Symbol#" indentation="0" ignoreblocks="yes" show-in-comments="yes">

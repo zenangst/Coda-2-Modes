@@ -10,6 +10,7 @@
         <regex>\A#!/usr/bin/php</regex>
         <regex>\A#!/usr/bin/env php</regex>
         <regex>&lt;\?php.+(?:\?&gt;|\Z)</regex>
-        <regex>&lt;\?.+(?:\?&gt;|\Z)</regex>
+        <regex>&lt;\?(?i)(?!xml).+(?:\?&gt;|\Z)</regex>
     </recognition>
+    <color>0.604, 0.659, 0.961</color>
 </settings>

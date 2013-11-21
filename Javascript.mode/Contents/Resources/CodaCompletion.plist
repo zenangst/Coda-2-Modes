@@ -83,6 +83,21 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>addEventListener</string>
+			<key>String</key>
+			<string>addEventListener</string>
+			<key>SelectionRange</key>
+			<string>{17, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>type</string>
+				<string>listener</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>alert</string>
 			<key>String</key>
 			<string>alert</string>
@@ -136,6 +151,12 @@
 			<array>
 				<string>string</string>
 			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>arguments</string>
+			<key>String</key>
+			<string>arguments</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -216,6 +237,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>bind</string>
+			<key>String</key>
+			<string>bind</string>
+			<key>SelectionRange</key>
+			<string>{5, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>thisArg</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>blink</string>
 			<key>String</key>
 			<string>blink</string>
@@ -249,6 +284,12 @@
 			<string>break</string>
 			<key>String</key>
 			<string>break</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>case</string>
+			<key>String</key>
+			<string>case</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -297,6 +338,18 @@
 			<array>
 				<string>index</string>
 			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>class</string>
+			<key>String</key>
+			<string>class</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>classList</string>
+			<key>String</key>
+			<string>classList</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -427,6 +480,21 @@
 			<key>Parameters</key>
 			<array>
 				<string>number</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>create</string>
+			<key>String</key>
+			<string>create</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>proto</string>
+				<string>props</string>
 			</array>
 		</dict>
 		<dict>
@@ -632,6 +700,12 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>debugger</string>
+			<key>String</key>
+			<string>debugger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>decodeURI</string>
 			<key>String</key>
 			<string>decodeURI</string>
@@ -656,6 +730,37 @@
 			<key>Parameters</key>
 			<array>
 				<string>uri</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>defineProperties</string>
+			<key>String</key>
+			<string>defineProperties</string>
+			<key>SelectionRange</key>
+			<string>{17, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+				<string>props</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>defineProperty</string>
+			<key>String</key>
+			<string>defineProperty</string>
+			<key>SelectionRange</key>
+			<string>{15, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+				<string>prop</string>
+				<string>desc</string>
 			</array>
 		</dict>
 		<dict>
@@ -765,6 +870,12 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>enum</string>
+			<key>String</key>
+			<string>enum</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>escape</string>
 			<key>String</key>
 			<string>escape</string>
@@ -789,6 +900,20 @@
 			<key>Parameters</key>
 			<array>
 				<string>string</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>every</string>
+			<key>String</key>
+			<string>every</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
 			</array>
 		</dict>
 		<dict>
@@ -824,6 +949,38 @@
 			<string>export</string>
 			<key>String</key>
 			<string>export</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>extends</string>
+			<key>String</key>
+			<string>extends</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>false</string>
+			<key>String</key>
+			<string>false</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>filter</string>
+			<key>String</key>
+			<string>filter</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>finally</string>
+			<key>String</key>
+			<string>finally</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -895,6 +1052,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>forEach</string>
+			<key>String</key>
+			<string>forEach</string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>forward</string>
 			<key>String</key>
 			<string>forward</string>
@@ -902,6 +1073,20 @@
 			<string>{8, 0}</string>
 			<key>PostString</key>
 			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>freeze</string>
+			<key>String</key>
+			<string>freeze</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1013,6 +1198,20 @@
 			<key>Parameters</key>
 			<array>
 				<string>id</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>getElementsByClassName</string>
+			<key>String</key>
+			<string>getElementsByClassName</string>
+			<key>SelectionRange</key>
+			<string>{23, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>string</string>
 			</array>
 		</dict>
 		<dict>
@@ -1135,6 +1334,49 @@
 			<array>
 				<string>namespace</string>
 				<string>name</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>getOwnPropertyDescriptor</string>
+			<key>String</key>
+			<string>getOwnPropertyDescriptor</string>
+			<key>SelectionRange</key>
+			<string>{25, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+				<string>property</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>getOwnPropertyNames</string>
+			<key>String</key>
+			<string>getOwnPropertyNames</string>
+			<key>SelectionRange</key>
+			<string>{20, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>getPrototypeOf</string>
+			<key>String</key>
+			<string>getPrototypeOf</string>
+			<key>SelectionRange</key>
+			<string>{15, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
 			</array>
 		</dict>
 		<dict>
@@ -1337,6 +1579,12 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>implements</string>
+			<key>String</key>
+			<string>implements</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>import</string>
 			<key>String</key>
 			<string>import</string>
@@ -1436,6 +1684,40 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>interface</string>
+			<key>String</key>
+			<string>interface</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>isArray</string>
+			<key>String</key>
+			<string>isArray</string>
+			<key>SelectionRange</key>
+			<string>{8, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>array</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>isExtensible</string>
+			<key>String</key>
+			<string>isExtensible</string>
+			<key>SelectionRange</key>
+			<string>{13, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>isFinite</string>
 			<key>String</key>
 			<string>isFinite</string>
@@ -1450,6 +1732,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>isFrozen</string>
+			<key>String</key>
+			<string>isFrozen</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>isNaN</string>
 			<key>String</key>
 			<string>isNaN</string>
@@ -1460,6 +1756,34 @@
 			<key>Parameters</key>
 			<array>
 				<string>value</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>isPrototypeOf</string>
+			<key>String</key>
+			<string>isPrototypeOf</string>
+			<key>SelectionRange</key>
+			<string>{14, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>isSealed</string>
+			<key>String</key>
+			<string>isSealed</string>
+			<key>SelectionRange</key>
+			<string>{9, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
 			</array>
 		</dict>
 		<dict>
@@ -1527,6 +1851,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>keys</string>
+			<key>String</key>
+			<string>keys</string>
+			<key>SelectionRange</key>
+			<string>{5, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>lastIndexOf</string>
 			<key>String</key>
 			<string>lastIndexOf</string>
@@ -1571,6 +1909,20 @@
 			<key>Parameters</key>
 			<array>
 				<string>value</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>map</string>
+			<key>String</key>
+			<string>map</string>
+			<key>SelectionRange</key>
+			<string>{4, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
 			</array>
 		</dict>
 		<dict>
@@ -1663,6 +2015,22 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>now</string>
+			<key>String</key>
+			<string>now</string>
+			<key>SelectionRange</key>
+			<string>{4, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>null</string>
+			<key>String</key>
+			<string>null</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>Number</string>
 			<key>String</key>
 			<string>Number</string>
@@ -1681,6 +2049,12 @@
 				<string>url</string>
 				<string>name</string>
 			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>package</string>
+			<key>String</key>
+			<string>package</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1751,6 +2125,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>preventExtensions</string>
+			<key>String</key>
+			<string>preventExtensions</string>
+			<key>SelectionRange</key>
+			<string>{18, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>print</string>
 			<key>String</key>
 			<string>print</string>
@@ -1758,6 +2146,12 @@
 			<string>{6, 0}</string>
 			<key>PostString</key>
 			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>private</string>
+			<key>String</key>
+			<string>private</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1773,6 +2167,18 @@
 				<string>msg</string>
 				<string>defaultText</string>
 			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>protected</string>
+			<key>String</key>
+			<string>protected</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>public</string>
+			<key>String</key>
+			<string>public</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1797,6 +2203,34 @@
 			<string>{7, 0}</string>
 			<key>PostString</key>
 			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>reduce</string>
+			<key>String</key>
+			<string>reduce</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>reduceRight</string>
+			<key>String</key>
+			<string>reduceRight</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -2052,6 +2486,20 @@
 			<array>
 				<string>x</string>
 				<string>y</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>seal</string>
+			<key>String</key>
+			<string>seal</string>
+			<key>SelectionRange</key>
+			<string>{5, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
 			</array>
 		</dict>
 		<dict>
@@ -2469,6 +2917,20 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>some</string>
+			<key>String</key>
+			<string>some</string>
+			<key>SelectionRange</key>
+			<string>{5, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>callback</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>sort</string>
 			<key>String</key>
 			<string>sort</string>
@@ -2540,6 +3002,12 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>static</string>
+			<key>String</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>strike</string>
 			<key>String</key>
 			<string>strike</string>
@@ -2553,6 +3021,20 @@
 			<string>String</string>
 			<key>String</key>
 			<string>String</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>stringify</string>
+			<key>String</key>
+			<string>stringify</string>
+			<key>SelectionRange</key>
+			<string>{10, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>Parameters</key>
+			<array>
+				<string>obj</string>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -2628,6 +3110,12 @@
 			<string>{4, 0}</string>
 			<key>PostString</key>
 			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>super</string>
+			<key>String</key>
+			<string>super</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -2735,6 +3223,16 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>toISOString</string>
+			<key>String</key>
+			<string>toISOString</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>toLocaleDateString</string>
 			<key>String</key>
 			<string>toLocaleDateString</string>
@@ -2826,6 +3324,22 @@
 			<string>{12, 0}</string>
 			<key>PostString</key>
 			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>trim</string>
+			<key>String</key>
+			<string>trim</string>
+			<key>SelectionRange</key>
+			<string>{5, 0}</string>
+			<key>PostString</key>
+			<string>()</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>true</string>
+			<key>String</key>
+			<string>true</string>
 		</dict>
 		<dict>
 			<key>ID</key>

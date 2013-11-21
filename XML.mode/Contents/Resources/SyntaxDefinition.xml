@@ -15,9 +15,7 @@
         <default id="Base" font-style="normal" usespellchecking="yes" scope="meta.default">
         
             <keywords id="Entities" scope="markup.constant.entity">
-                <regex>(&amp;\w{1,8};)</regex>
-                <regex>(&amp;#[0-9]+;)</regex>
-                <regex>(&amp;#x[A-Fa-f0-9]+;)</regex>
+                <regex>(&amp;(?:\w{1,8};|#[0-9]+;|#x[A-Fa-f0-9]+;))</regex>
             </keywords>
 
         <state id="Comment" foldable="yes" type="comment" scope="markup.comment">
@@ -25,10 +23,6 @@
             <end><regex>--&gt;</regex></end>
 			
 			<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>     
-          	<keywords id="SGML Double Dash" useforautocomplete="no" scope="meta.invalid.sgmlcomment">
-                <regex>(?&lt;!\!)(- -)(?!&gt;)</regex>
-           	</keywords>
-            
         </state>
 
         <state id="CDATA" scope="markup.inline.cdata">
@@ -67,7 +61,7 @@
 			</state>
         </state>
 
-		<state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="\A&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)[\s\S]*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
+		<state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="&lt;[ \t]*(?'xmltagstatename'[-:_\.a-zA-Z\d]+)[\s\S]*(?&lt;![/?])>" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
 				
             <import keywords-only="yes"/>
 			<import/>

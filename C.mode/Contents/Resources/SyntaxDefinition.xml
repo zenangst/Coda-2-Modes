@@ -120,6 +120,10 @@
                 <begin><regex>"</regex></begin>
                 <end><regex>((?&lt;!\\)(\\\\)*)"</regex></end>
             </state>
+			
+			<!-- <keywords id="Framwork Include" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="language.variable.string">
+				<regex>(&lt;[^&gt;]+&gt;)</regex>
+			</keywords> -->
 
             <state id="Block" type="block" foldable="yes" scope="meta.block.curly">
                 <begin><regex>{</regex></begin>

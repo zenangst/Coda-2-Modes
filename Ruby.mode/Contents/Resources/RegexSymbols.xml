@@ -12,12 +12,12 @@
     </symbol>
     
     <symbol id="Static method calls" color="#6C0540" casesensitive="yes" scope="language.function.ruby" hidden="yes" useforautocomplete="yes">
-		<regex>::(\w+)</regex>
-	</symbol>
+  		<regex>::(\w+)</regex>
+  	</symbol>
 	
-	<symbol id="Static class" color="#6C0540" casesensitive="yes" scope="language.function.ruby" hidden="yes" useforautocomplete="yes">
-		<regex>(\w+)::</regex>
-	</symbol>
+  	<symbol id="Static class" color="#6C0540" casesensitive="yes" scope="language.function.ruby" hidden="yes" useforautocomplete="yes">
+  		<regex>(\w+)::</regex>
+  	</symbol>
     
     <symbol id="Defs With Args" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
         <regex>(?&lt;=[^[_A-Za-z0-9]]|^)def\s+(?'name'[\w\d?!_]+\s*\((?'arguments'[^)]*)\))[\r\n]+</regex>

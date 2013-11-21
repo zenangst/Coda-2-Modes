@@ -9,4 +9,5 @@
     <regex>\A&lt;!DOCTYPE (?i:HTML)</regex>
     <regex>\A&lt;(?i:html)</regex>
   </recognition>
+  <color>0.949,0.871,0.600</color>
 </settings>

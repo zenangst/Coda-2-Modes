@@ -17,39 +17,31 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
-	<symbol id="User Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" hidden="yes" useforautocomplete="yes">
+	<!-- <symbol id="User Methods" color="#6C0540" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="yes" useforautocomplete="yes">
 		<regex>\)(\w+)[^{]+</regex>
-	</symbol>
+	</symbol> -->
 	
-	<symbol id="Objective-C Methods" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
-        <regex>(^[ \t]*[-][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+:[^{;/]*)</regex>
+	<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes" scope="language.function">
+        <regex>(\- \([^\)]+\)(\w+)[^{]+)|(\+ \([^\)]+\)(\w+)[^{]+)</regex>
         <postprocess>
             <find>(:) *\([^\)]*\)</find>
-            <replace>\1</replace>
+            <replace>:</replace>
             <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
             <replace></replace>
         </postprocess>
+		<arguments>(:*+)</arguments>
+		<captures>{"sender" : "1"}</captures>
     </symbol>
 
-	<symbol id="Objective-C Methods (without arguments)" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
+	<!-- <symbol id="Objective-C Methods (without arguments)" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
         <regex>(^[ \t]*[-][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[\s\t+|^;])</regex>
         <postprocess>
             <find>(:) *\([^\)]*\)</find>
-            <replace>\1</replace>
+            <replace></replace>
             <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
             <replace></replace>
         </postprocess>
-    </symbol>
-	
-	<symbol id="Objective-C Methods" image="SymbolS" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
-	    <regex>(^[ \t]*[+][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[^{;/]*)</regex>
-	    <postprocess>
-	        <find>(:) *\([^\)]*\)</find>
-	        <replace>\1</replace>
-	        <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
-	        <replace></replace>
-	    </postprocess>
-	</symbol>
+    </symbol> -->
 	
 	<symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
 	        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
