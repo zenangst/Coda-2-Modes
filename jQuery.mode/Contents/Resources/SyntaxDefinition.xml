@@ -108,9 +108,9 @@
             <keywords id="FunctionRegex" useforautocomplete="no" scope="language.function.js">
 				<regex>([\$A-Za-z0-9_]+[ \t]*)\(</regex>
             </keywords>
-            
+
             <keywords id="Variables" useforautocomplete="yes" scope="language.variable">
-                <regex>(var|,)(.*?)=</regex>
+                <regex>(var|,)(.*?)(?:=|$)</regex>
             </keywords>
                     
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
