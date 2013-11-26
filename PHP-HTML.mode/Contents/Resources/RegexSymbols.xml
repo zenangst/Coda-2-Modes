@@ -74,12 +74,12 @@
         </postprocess>
     </symbol>
 
-	<symbol id="language.variable.php.php-html" hidden="no" useforautocomplete="yes">
+	<symbol id="language.variable.php.php-html" hidden="yes" useforautocomplete="yes">
 		<regex>(\$\w[\w\d]+)</regex>
 		<regex>&gt;(\w[\w\d]+)</regex>
 	</symbol>
 	
-	<symbol id="language.variable.php.instance.variables" hidden="no" useforautocomplete="yes">
+	<symbol id="language.variable.php.instance.variables" hidden="yes" useforautocomplete="yes">
 		<regex>[private|protected|public]\s(\$\w+)</regex>
 		<postprocess>
 			<find>\$</find>
