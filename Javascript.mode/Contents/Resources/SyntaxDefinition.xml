@@ -110,7 +110,7 @@
             </keywords>
 
             <keywords id="Variables" useforautocomplete="yes" scope="language.variable">
-                <regex>(var|,)(.*?)(?:=|$)</regex>
+                <regex>(?:var|,)\s*(\w+)(?= *=|$)</regex>
             </keywords>
 
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
