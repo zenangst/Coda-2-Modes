@@ -15,9 +15,9 @@
                 <string>true</string>
                 <string>false</string>
                 <string>nil</string>
-        				<string>TRUE</string>
-        				<string>FALSE</string>
-        				<string>NIL</string>
+				<string>TRUE</string>
+				<string>FALSE</string>
+				<string>NIL</string>
             </keywords>
             <keywords id="Attribute Definitions" useforautocomplete="yes" scope="support.accessor">
                 <string>attr</string>
@@ -375,6 +375,10 @@
             <keywords id="Global Variables" useforautocomplete="no" scope="language.variable.global">
             	<regex>(?&lt;=[^[_A-Za-z0-9:]]|^)(\$[A-Za-z0-9_]+)(?=[^[_A-Za-z0-9]]|$)</regex>
             </keywords>
+			
+			<keywords id="User Variables" useforautocomplete="yes" scope="language.variable.ruby">
+				<regex>(@\w+)|(\w+)[^=]=</regex>
+			</keywords>
         	
         	<state id="String with double quotes" type="string" scope="string.double">
                 <begin><regex>"</regex></begin>
@@ -395,14 +399,14 @@
 
 			<!-- actually heredocs start in the next line, so a way to recolor everything from start to end of line again in normal colors would be good. -->
             <state id="Heredoc" foldable="yes" scope="string.here-doc">
-                <begin><string>(?:(?&lt;=[=\s+*\({\[])|^)&lt;&lt;(?:(?'heredoc'[_A-Za-z][A-Za-z0-9_]*)|(?:'\g'heredoc'')|(?:"\g'heredoc'"))</string></begin>
-                <end><regex>^(?#see-insert-start-group:heredoc)\s*[\r\n]</regex></end>
+                <begin><regex>(?:[=\s+*\({\[]|^)&lt;&lt;['"]??(?'heredoc'[A-Za-z0-9_]+)['"]??</regex></begin>
+                <end><regex>[\n\r](?#see-insert-start-group:heredoc)\s*[\r\n]</regex></end>
                 <state-link state="Interpolation"/>
             </state>
-
+			
             <state id="Heredoc Indented End" foldable="yes" scope="string.here-doc.intended">
-                <begin><string>(?:(?&lt;=[=\s+*\({\[])|^)&lt;&lt;\-?(?:(?'heredocindented'[_A-Za-z][A-Za-z0-9_]*)|(?:'\g'heredocindented'')|(?:"\g'heredocindented'"))</string></begin>
-                <end><regex>^[ \t]*(?#see-insert-start-group:heredocindented)\s*[\r\n]</regex></end>
+                <begin><regex>(?:[=\s+*\({\[]|^)&lt;&lt;\-?['"]??(?'heredocindented'[A-Za-z0-9_]+)['"]??</regex></begin>
+                <end><regex>[\n\r][ \t]*(?#see-insert-start-group:heredocindented)\s*[\r\n]</regex></end>
                 <state-link state="Interpolation"/>
             </state>
 
@@ -682,7 +686,7 @@
             </state>
 
             <state id="Block" type="block" foldable="yes" scope="meta.block">
-				<begin><regex>(?:(?:\A|^|=)[ \t]*(?:(?:(?:if|unless|while|until)(?:[ \t]+|(?=\()))|(?:case[ \t]+\g'ruby_ident'[ \t]?)|(?:for[ \t]+\g'ruby_ident'[ \t]+in(?:[^\n\r]+do)?)|(?:case))|\b(?:(?:class(?:(?:[ \t]+(?'ruby_ident'(?'ruby_ident_part'[a-zA-Z_][a-zA-Z0-9_]*)(?:(?:\.|::)\g'ruby_ident_part')*)(?:[ \t]+&lt;[ \t]+\g'ruby_ident')?)|(?:[ \t]*&lt;&lt;)))|(?:module[ \t]+[a-zA-Z_][a-zA-Z0-9_]*)|\bdo\b(?:[ \t]*\|[^\n\r|]+\|)?|(?:def[ \t]+(?:(?'ruby_operator_methods'&amp;|\||\^|&lt;=>|===|==|=~|>>|\?|\!|>=|>|&lt;=|\+@|\-@|\+|\-|\*\*|\*|/|%|&lt;&lt;|&lt;|~|\[\]|\[\]=)|\g'ruby_ident'\g'ruby_operator_methods'?))))</regex></begin>
+				<begin><regex>(?:(?:[\r\n]|^|=)[ \t]*(?:(?:(?:if|unless|while|until)(?:[ \t]+|(?=\()))|(?:case[ \t]+\g'ruby_ident'[ \t]?)|(?:for[ \t]+\g'ruby_ident'[ \t]+in(?:[^\n\r]+do)?)|(?:case))|\b(?:(?:class(?:(?:[ \t]+(?'ruby_ident'(?'ruby_ident_part'[a-zA-Z_][a-zA-Z0-9_]*)(?:(?:\.|::)\g'ruby_ident_part')*)(?:[ \t]+&lt;[ \t]+\g'ruby_ident')?)|(?:[ \t]*&lt;&lt;)))|(?:module[ \t]+[a-zA-Z_][a-zA-Z0-9_]*)|\bdo\b(?:[ \t]*\|[^\n\r|]+\|)?|(?:def[ \t]+(?:(?'ruby_operator_methods'&amp;|\||\^|&lt;=>|===|==|=~|>>|\?|\!|>=|>|&lt;=|\+@|\-@|\+|\-|\*\*|\*|/|%|&lt;&lt;|&lt;|~|\[\]|\[\]=)|\g'ruby_ident'\g'ruby_operator_methods'?))))</regex></begin>
 				<end><regex>\bend\b</regex></end>
                 <import />
             </state>
@@ -701,10 +705,7 @@
                 <import />
             </state>
 
-			
-		    <keywords id="Objects" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8">
-		    	<regex>(\w+)[^=]=</regex>
-		    </keywords>
+
         </default>
         
     </states>

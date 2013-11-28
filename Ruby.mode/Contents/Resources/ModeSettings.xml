@@ -9,5 +9,8 @@
         <extension>rjs</extension>
         <filename>Rakefile</filename>
         <regex>\A#!/usr/bin/(env )?ruby</regex>
+        <regex>\A#!/usr/bin/(env )?macruby</regex>
+        <regex>\A#!/usr/local/bin/macruby</regex>
     </recognition>
+    <color>0.929, 0.392, 0.400</color>
 </settings>
