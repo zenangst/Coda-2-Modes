@@ -3648,6 +3648,7 @@
                 </keywords>
                 <keywords id="PHP Variables" useforautocomplete="no" scope="language.variable.php">
                     <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
+					<regex>\-&gt;(\w+)</regex>
                 </keywords>
                 <keywords id="PHP Class Property" scope="keyword">
 	                <regex>\-\>(\w+)\-></regex>
