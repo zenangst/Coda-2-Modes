@@ -106,7 +106,15 @@
                 <string>infinity</string>
                 <string>undefined</string>
             </keywords>
-
+			
+			<keywords id="Variables" scope="language.variable">
+				<regex>var\s(\w+)</regex>
+				<regex>(\w+)?\s?=</regex>
+				<regex>(\w+)\.</regex>
+				<regex>\.(\w+)</regex>
+				<regex>\:\s(\w+)|\:(\w+)</regex>
+			</keywords>
+			
             <keywords id="FunctionRegex" useforautocomplete="no" scope="language.function.js">
 				<regex>([\$A-Za-z0-9_]+[ \t]*)\(</regex>
             </keywords>
@@ -115,10 +123,7 @@
                 <regex>([\$\+\-\*\/\=\!\&lt;\&gt;\%&amp;]|\|\||\|)</regex>
             </keywords>
 			
-			<keywords id="Variables" scope="language.variable">
-				<regex>var\s(\w+)</regex>
-				<regex>(\w+)?\s?=</regex>
-			</keywords>
+			
             
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
                 <begin><regex>/\*"</regex></begin>
