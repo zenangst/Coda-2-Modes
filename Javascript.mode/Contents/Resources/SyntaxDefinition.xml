@@ -114,6 +114,11 @@
             <keywords id="Operators" useforautocomplete="no" scope="language.operator" highlightInOrder="yes">
                 <regex>([\$\+\-\*\/\=\!\&lt;\&gt;\%&amp;]|\|\||\|)</regex>
             </keywords>
+			
+			<keywords id="Variables" scope="language.variable">
+				<regex>var\s(\w+)</regex>
+				<regex>(\w+)?\s?=</regex>
+			</keywords>
             
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
                 <begin><regex>/\*"</regex></begin>
