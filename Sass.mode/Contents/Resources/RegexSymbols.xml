@@ -102,5 +102,13 @@
 	<symbol id="language.variable.sass" hidden="yes" useforautocomplete="yes" ignoreblocks="yes">
 		<regex>(\$[\d\w\-]+)</regex>
 	</symbol>
+	
+	<symbol id="CSS IDs" casesensitive="no" scope="support" useforautocomplete="yes" image="SymbolID">
+		<regex>(\#[A-z_\-]{4,}+)</regex>
+	</symbol>
+	
+	<symbol id="CSS Classes" casesensitive="no" scope="language.function" useforautocomplete="yes" image="SymbolC">
+		<regex>(\.[A-z_\-]{4,}+)</regex>
+	</symbol>
 
 </symbols>
