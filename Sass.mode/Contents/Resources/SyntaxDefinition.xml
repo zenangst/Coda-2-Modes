@@ -14,11 +14,12 @@
 			<state-link state="Type Selectors" mode="CSS" />
 			<import mode="CSS" state="Digits and Colors" keywords-only="yes" />
 			<import mode="CSS" keywords-only="yes"/>
-						
+					
 			<keywords id="Illegals" casesensitive="no" useforautocomplete="yes" scope="style.at-rule">
-				<regex>:([A-z_]+)</regex>
+				<regex>:([A-z_0-9]+)</regex>
 				<regex>({|}|;)</regex>
 			</keywords>
+			
 			
 			<keywords id="CSS Keywords" useforautocomplete="yes" casesensitive="no" scope="style.property.name">
 				<regex>([A-z_\-]+):\s</regex>
@@ -64,12 +65,9 @@
 				<string>blanchedalmond</string>
 				<string>blink</string>
 				<string>block</string>
-				<string>blue</string>
-				<string>blueviolet</string>
 				<string>bold</string>
 				<string>bolder</string>
 				<string>both</string>
-				<string>bottom</string>
 				<string>box</string>
 				<string>box-shadow</string>
 				<string>break-all</string>
@@ -80,12 +78,10 @@
 				<string>burlywood</string>
 				<string>butt</string>
 				<string>button-bevel</string>
-				<string>button</string>
 				<string>buttonface</string>
 				<string>buttonhighlight</string>
 				<string>buttonshadow</string>
 				<string>buttontext</string>
-				<string>cadetblue</string>
 				<string>capitalize</string>
 				<string>capitals</string>
 				<string>caps-height</string>
@@ -115,12 +111,9 @@
 				<string>compact</string>
 				<string>condensed</string>
 				<string>contain</string>
-				<string>content</string>
 				<string>content-box</string>
 				<string>context-menu</string>
 				<string>copy</string>
-				<string>coral</string>
-				<string>cornflowerblue</string>
 				<string>cornsilk</string>
 				<string>courier</string>
 				<string>cover</string>
@@ -272,7 +265,6 @@
 				<string>lavender</string>
 				<string>lavenderblush</string>
 				<string>lawngreen</string>
-				<string>left</string>
 				<string>lemonchiffon</string>
 				<string>letter-spacing</string>
 				<string>level</string>
@@ -381,7 +373,6 @@
 				<string>oldlace</string>
 				<string>olive</string>
 				<string>olivedrab</string>
-				<string>opacity</string>
 				<string>open-quote</string>
 				<string>optimizelegibility</string>
 				<string>optimizeSpeed</string>
@@ -502,7 +493,6 @@
 				<string>slateblue</string>
 				<string>slategray</string>
 				<string>slategrey</string>
-				<string>slide</string>
 				<string>slider-horizontal</string>
 				<string>slider-vertical</string>
 				<string>sliderthumb-horizontal</string>
@@ -563,7 +553,6 @@
 				<string>times</string>
 				<string>to</string>
 				<string>tomato</string>
-				<string>top</string>
 				<string>translate</string>
 				<string>translate3d</string>
 				<string>translatex</string>
@@ -847,6 +836,27 @@
 	   			<state-link state="Inside curly brackets" />
 				
             </state>
+			
+			<keywords id="Pseudo" casesensitive="no" scope="language.operator">
+				<string>active</string>
+				<string>after</string>
+				<string>before</string>
+				<string>first-child</string>
+				<string>first-letter</string>
+				<string>first-line</string>
+				<string>hover</string>
+				<string>lang</string>
+				<string>link</string>
+				<string>visited</string>
+			</keywords>
+			
+			<keywords id="CSS IDs" casesensitive="no" scope="support">
+				<regex>(\#[A-z_\-]+)</regex>
+			</keywords>
+			
+			<keywords id="CSS Classes" casesensitive="no" scope="language.function">
+				<regex>(\.[A-z_\-]+)</regex>
+			</keywords>
 
 			<!--
 			<state id="Interpolation" useforautocomplete="no" scope="meta.important">
