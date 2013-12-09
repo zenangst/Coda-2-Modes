@@ -9,7 +9,7 @@
 
     <symbol id="language.method" image="SymbolM" indentation="1" useforautocomplete="yes">
       <!--<regex>(\w{1,512}\s{0,512}:\s{0,512}function\([^)]{0,512}\))\s{0,512}{</regex>-->            
-	   <regex>(([^\s:,()\{\}]{1,512})(\s{0,64}\:\s{0,64}function\s{0,64})\(([^)]{0,512})\))\s{0,256}\{</regex>
+	   <regex>\b(([A-Za-z0-9_]{1,256})(\s{0,64}\:\s{0,64}function\s{0,64})\(([^)]{0,512})\))\s{0,256}\{</regex>
 	   <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -34,7 +34,7 @@
 	</symbol>
 
 	<symbol id="language.function" image="SymbolF()" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
-       <regex>=[ \t]{0,64}(?i)function[ \t\n\r]{1,256}((\w{1,512})[ \t\n\r]{0,512}\(([^)]{0,512})\))(?=[ \t\n\r]{0,512}\{)</regex>
+       <regex>=[ \t]{0,64}function\s{1,64}((\w{1,512})[ \t\n\r]{0,512}\(([^)]{0,512})\))\s{0,256}\{</regex>
        <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -44,12 +44,10 @@
         <arguments>([\$A-Za-z0-9_]+)[ ,]*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
     </symbol>
-	
-    <symbol id="language.function" image="SymbolF()" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
-       <regex>(?&lt;=[\n\r]|^)[ \t]{0,512}(?i)function[ \t\n\r]{1,256}((\w{1,512})[ \t\n\r]{0,512}\(([^)]{0,512})\))(?=[ \t\n\r]{0,512}\{)</regex>
+
+	<symbol id="language.function" image="SymbolF()" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
+       <regex>(?:[\n\r]|^)[ \t]{0,128}function\s{1,64}((\w{1,512})\s{0,64}\(([^)]{0,512})\))\s{0,256}\{</regex>
        <postprocess>
-            <!-- <find>\([^\)]*\)</find>
-            <replace>()</replace> -->
             <find>[\n\r]</find>
             <replace> </replace>
             <find>[ \t]+</find>
@@ -60,14 +58,14 @@
     </symbol>
     
     <symbol id="language.function.inline" image="SymbolF()" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
-        <regex>((\w{1,512})([ \t\n\r]{0,256}=[ \t\n\r]{0,256}(?i)function[ \t\n\r]{0,256})\(([^\)]{0,512})\)))(?=[ \t\n\r]{0,512}\{</regex>
+        <regex>\b(([A-Za-z0-9_]{1,256})(\s{0,64}=\s{0,64}function\s{0,64})\(([^\)]{0,512})\))\s{0,64}\{</regex>
         <!--<regex>(\w+)\s*=\s*(?i)function\s*\([^\)]*\)(?=\s*\{)</regex>-->
         <postprocess>
         	<find>[\n\r]</find>
             <replace> </replace>
             <find>[ \t]+</find>
             <replace> </replace>
-            <find>(\s{0,512}=\s{0,512}(?i)function\s{0,512})</find>
+            <find>(\s{0,64}=\s{0,64}function\s{0,64})</find>
             <replace></replace>
         </postprocess>
         <arguments>([\$A-Za-z0-9_]+)[ ,]*</arguments>
@@ -84,7 +82,7 @@
 
     <!-- CODA -->
     <symbol id="language.variable" ignoreblocks="yes" hidden="yes" useforautocomplete="yes">
-    	<regex>(?:^|[\n\r;])\s*(?:var|const)\s+([^{;]{1,512})?(?=;|\};)</regex>
+    	<regex>(?:^|[\n\r;])\s*(?:var|const)\s+([^{;]{1,512})?(?:;|\};)</regex>
 		<!--<variables>(?:(?:\A)|(?:[,]))\s*([\w\d]+)[;]*</variables>-->
 		<variables>(?:^|,)\s*(?://.*[\r\n])?([\w\d]+)</variables>
         <captures>{ "variables" : "1" }</captures>

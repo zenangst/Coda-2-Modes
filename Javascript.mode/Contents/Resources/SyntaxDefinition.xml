@@ -114,7 +114,7 @@
 				<regex>\.(\w+)</regex>
 				<regex>\:\s(\w+)|\:(\w+)</regex>
 			</keywords>
-			
+
             <keywords id="FunctionRegex" useforautocomplete="no" scope="language.function.js">
 				<regex>([\$A-Za-z0-9_]+[ \t]*)\(</regex>
             </keywords>
@@ -122,8 +122,6 @@
             <keywords id="Operators" useforautocomplete="no" scope="language.operator" highlightInOrder="yes">
                 <regex>([\$\+\-\*\/\=\!\&lt;\&gt;\%&amp;]|\|\||\|)</regex>
             </keywords>
-			
-			
             
             <state id="AutodocComment" type="comment" foldable="yes" scope="comment.block.documentation.js">
                 <begin><regex>/\*"</regex></begin>
@@ -144,7 +142,7 @@
             
             <state id="Regular Expressions" type="string" scope="string.regex.js">
                 <!--CODA <begin><regex>(?i)(?&lt;=[=(,:\+~!]|^|return|;|(?:\|\|))\s*/(?![/*+{}?])</regex></begin>-->
-                <begin><regex>(?i)(?&lt;=[=(,:\+~!?\[]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
+                <begin><regex>(?i)(?&lt;=[=(,:\+~!?\[|]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
                 <end><regex>/[cgimosx]*</regex></end>
 
 				<state id="Escaped Characters" scope="string.regex.escaped.js">

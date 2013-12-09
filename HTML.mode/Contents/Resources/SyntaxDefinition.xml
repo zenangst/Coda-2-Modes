@@ -100,7 +100,7 @@
             </state>
             
 			<state id="Foldable Tags" containerState="yes" delimiterState="Tags" 
-				foldBegin="&lt;[ \t]*(?'xmltagstatename'(?i:(?:a(?:rticle|side|udio))|(?:h(?:ead|eader|tml|\d|group))|(?:b(?:ody|lockquote))|p|pre|a|(?:t(?:able|head|body|foot|h|d|r))|div|(?:f(?:ieldset|orm|ooter))|ul|ol|li|dl|(?:s(?:ection|elect|ource))|nav|ruby|video))\b[\s\S]*(?&lt;![/?])>$" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
+				foldBegin="&lt;[ \t]*(?'xmltagstatename'(?i:(?:a(?:rticle|side|udio))|(?:h(?:ead|eader|tml|\d|group))|(?:b(?:ody|lockquote))|p|pre|a|(?:t(?:able|head|body|foot|h|d|r))|div|(?:f(?:ieldset|orm|ooter))|ul|ol|dl|(?:s(?:ection|elect|ource))|nav|ruby|video))\b[\s\S]*(?&lt;![/?])>$" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
 				
 				<import mode="XML" keywords-only="yes"/>
                 <import keywords-only="yes"/>

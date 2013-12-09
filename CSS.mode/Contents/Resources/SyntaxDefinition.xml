@@ -64,10 +64,10 @@
 			
 			<state id="Digits and Colors" containerState="yes" scope="meta.default">
 				<keywords id="CSS Digits" useforautocomplete="yes" scope="style.value.numeric">
-					<regex>(?&lt;![A-Za-z0-9-#\\])(-?[\d]+[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn|rem|ch|vw|vh|vmin|vmax)?)</regex>
+					<regex>(?&lt;![A-Za-z0-9-#\\_])(-?[\d]+[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn|rem|ch|vw|vh|vmin|vmax)?)</regex>
 				</keywords>
 				<keywords id="CSS Colors" useforautocomplete="yes" scope="style.value.color.rgb-value">
-					<regex>(?&lt;![A-Za-z0-9-#\\])(#[\da-fA-F]{3,6})\b</regex>
+					<regex>(?&lt;![A-Za-z0-9-#\\_])(#[\da-fA-F]{3,6})\b</regex>
 				</keywords>
 			</state>
 			
@@ -165,7 +165,7 @@
                         <regex>(!\s*important)</regex>
                     </keywords>
                     <keywords id="CSS Attributes" useforautocomplete="yes" casesensitive="no" scope="style.value.keyword">
-                    	<regex>(?&lt;![\d\w.\-#@:\$])(-(?:webkit|moz|ms|o)-[\w-]+)</regex>
+                    	<regex>(?&lt;![\d\w.\-#@\$])(-(?:webkit|moz|ms|o)-[\w-]+)</regex>
                			<string>above</string>
 						<string>absolute</string>
 						<string>accumulate</string>
@@ -193,7 +193,7 @@
 						<string>avoid</string>
 						<string>azure</string>
 						<string>background</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(background-[\w-]+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(background-[\w-]+)</regex>
 						<string>backwards</string>
 						<string>balance</string>
 						<string>baseline</string>
@@ -212,7 +212,7 @@
 						<string>bold</string>
 						<string>bolder</string>
 						<string>border</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(border-[\w-]+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(border-[\w-]+)</regex>
 						<string>both</string>
 						<string>bottom</string>
 						<string>box</string>
@@ -324,7 +324,7 @@
 						<string>down</string>
 						<string>e-resize</string>
 						<string>ease</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(ease-[\w-]+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(ease-[\w-]+)</regex>
 						<string>element</string>
 						<string>ellipse cover</string>
 						<string>ellipsis</string>
@@ -402,7 +402,7 @@
 						<string>infotext</string>
 						<string>inherit</string>
 						<string>inline</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(inline-\w+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(inline-\w+)</regex>
 						<string>inset</string>
 						<string>inside</string>
 						<string>intrinsic</string>
@@ -469,7 +469,7 @@
 						<string>lr-tb</string>
 						<string>magenta</string>
 						<string>margin</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(margin-\w+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(margin-\w+)</regex>
 						<string>marker</string>
 						<string>maroon</string>
 						<string>match</string>
@@ -548,10 +548,10 @@
 						<string>orientation</string>
 						<string>outset</string>
 						<string>outside</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(o(?:utline)-\w+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(o(?:utline)-\w+)</regex>
 						<string>overlay</string>
 						<string>overline</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(p(?:adding)(?:-\w+)*)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(p(?:adding)(?:-\w+)*)</regex>
 						<string>painted</string>
 						<string>palatino</string>
 						<string>palegoldenrod</string>
@@ -707,7 +707,7 @@
 						<string>techno</string>
 						<string>terminal</string>
 						<string>text</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(text-[\w-]+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(text-[\w-]+)</regex>
 						<string>textarea</string>
 						<string>textfield</string>
 						<string>textile</string>
@@ -741,10 +741,10 @@
 						<string>url</string>
 						<string>use-script</string>
 						<string>verdana</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(vertical(?:[-\w])*)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(vertical(?:[-\w])*)</regex>
 						<string>violet</string>
 						<string>visible</string>
-						<regex>(?&lt;![\d\w.\-#@:\$])(visible-\w+)</regex>
+						<regex>(?&lt;![\d\w.\-#@\$])(visible-\w+)</regex>
 						<string>visibility</string>
 						<string>visual</string>
 						<string>w-resize</string>
