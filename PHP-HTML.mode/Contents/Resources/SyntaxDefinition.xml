@@ -13,7 +13,7 @@
             <import mode="XML" keywords-only="yes"/>
             <state id="PHP" usesymbolsfrommode="PHP-HTML" useautocompletefrommode="PHP-HTML" foldable="yes" scope="meta.block">
                 <begin>
-                    <regex>(?:&lt;\?(?i)php)|(?:&lt;\?(?=[\s=]))</regex>
+                    <regex>(?:&lt;\?(?:(?i)php|=)?)</regex>
                     <autoend>\?></autoend>
                 </begin>
                 <end>
@@ -21,7 +21,7 @@
                 </end>
                 <keywords id="PHP Delimiter" useforautocomplete="no" scope="markup.processing.languageswitch.php">
                     <regex>(&lt;\?(?i)php\d?)</regex>
-                    <regex>(&lt;\?)(?![\S])</regex>
+                    <!--<regex>(&lt;\?)(?![\S])</regex>-->
                     <regex>(&lt;\?=)</regex>
                     <regex>(\?>)</regex>
                 </keywords>
@@ -3628,14 +3628,10 @@
 				  	<string>SCANDIR_SORT_DESCENDING</string>
 				  	<string>SCANDIR_SORT_NONE</string>
 				</keywords>
-                <keywords id="Number Literals" useforautocomplete="YES" scope="constant.numeric.keyword">
+                <keywords id="Number Literals" useforautocomplete="yes" casesensitive="no" scope="constant.numeric.keyword">
                     <string>true</string>
                     <string>false</string>
-                    <string>TRUE</string>
-                    <string>FALSE</string>
                     <string>null</string>
-                    <string>NULL</string>
-                    <string>undefined</string>
                 </keywords>
 				<keywords id="Operators" useforautocomplete="no" scope="language.operator">
 					<regex>([\+\-\*\\\=\|\!])</regex>
@@ -3680,7 +3676,7 @@
                     <end>
                         <regex>(((?&lt;!\\)(\\\\)*)|^)"</regex>
                     </end>
-                    <keywords id="PHP Variables" useforautocomplete="no" scope="language.variable.string.php">
+                    <keywords id="Variables" useforautocomplete="no" scope="language.variable.string.php">
                         <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
                     </keywords>
                 </state>
@@ -3706,19 +3702,32 @@
                         <autoend>\g&lt;phpheredoc></autoend>
                     </begin>
                     <end>
-                        <regex>(?#see-insert-start-group:phpheredoc)</regex>
+                        <regex>[\r\n](?#see-insert-start-group:phpheredoc)\b</regex>
                     </end>
                      <keywords id="Variables" useforautocomplete="no" scope="language.variable.string.php">
                         <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
                     </keywords>
                 </state>
+                <state id="PHP Heredoc Quotes" type="string" scope="string.here-doc.php">
+                    <begin>
+                        <regex>&lt;&lt;&lt;"(?'phpheredocquotes'[A-Za-z][A-Za-z0-9_]*)"</regex>
+                        <autoend>\g&lt;phpheredocquotes></autoend>
+                    </begin>
+                    <end>
+                        <regex>[\r\n](?#see-insert-start-group:phpheredocquotes)\b</regex>
+                    </end>
+                     <keywords id="Variables" useforautocomplete="no" scope="language.variable.string.php">
+                        <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
+                    </keywords>
+                </state>
+
                 <state id="PHP Nowdoc" type="string" scope="string.now-doc.php">
                     <begin>
                         <regex>&lt;&lt;&lt;'(?'phpnowdoc'[A-Za-z][A-Za-z0-9_]*)'</regex>
                         <autoend>\g&lt;phpnowdoc></autoend>
                     </begin>
                     <end>
-                        <regex>(?#see-insert-start-group:phpnowdoc)</regex>
+                        <regex>[\r\n](?#see-insert-start-group:phpnowdoc)\b</regex>
                     </end>
                 </state>
                 <state id="PHP Block" type="block" foldable="yes" scope="meta.block.curly">
@@ -3770,7 +3779,7 @@
 				</state>
 			   <state-link state="PHP"/>
             </state>
-         <state id="Escape" foldable="no" scope="markup.processing">
+        	<state id="Escape" foldable="no" scope="markup.processing">
                 <begin>
                     <regex>&lt;\?</regex><autoend>\?></autoend>
                 </begin>
@@ -3789,6 +3798,7 @@
 				</state>
                    <state-link state="PHP"/>
             </state>
+            
             <state id="Inline CSS" delimiterState="Tags" usesymbolsfrommode="CSS" useautocompletefrommode="CSS" foldable="yes" indent="yes" scope="meta.block.css">
                 <begin>
                     <regex>&lt;[\t ]*(?i)style.*?(?&lt;![/?])></regex>
@@ -3800,7 +3810,11 @@
 
                 <state-link state="PHP"/>
                 
-				<state id="CSSInside curly brackets" foldable="yes" indent="yes" scope="meta.block.curly">
+                <import mode="CSS" keywords-only="yes"/>
+                <state-link mode="CSS" state="CSS Functions"/>
+                <state-link mode="CSS" state="Type Selectors"/>
+                
+                <state id="CSSInside curly brackets" foldable="yes" indent="yes" scope="meta.block.curly">
 					<begin>
 						<string>{</string>
 						<autoend>}</autoend>
@@ -3810,6 +3824,13 @@
 					</end>
 					
 					<import mode="CSS" state="Inside curly brackets" keywords-only="yes"/>
+					<import mode="CSS" state="Digits and Colors" keywords-only="yes" />
+					<state-link state="CSSAutodocComment"/>
+					<state-link state="CSSComment"/>
+					<state-link state="CSSString"/>
+					<state-link state="CSSSingleString"/>
+					<state-link state="PHP"/>
+					
 					<state id="CSS Attribute state" scope="meta.block.attribute">
 						<begin>
 							<string>:</string>
@@ -3817,31 +3838,19 @@
 						<end>
 							<regex>(;|(?'unwindend'[{}]))</regex>
 						</end>
-					   <import mode="CSS" state="Attribute state" keywords-only="yes"/>
+						<import mode="CSS" state="Attribute state" keywords-only="yes"/>
+ 						<import mode="CSS" state="Digits and Colors" keywords-only="yes" />
 						<state-link state="PHP"/>
 						<state-link state="CSSAutodocComment"/>
 						<state-link state="CSSComment"/>
 						<state-link state="CSSString"/>
 						<state-link state="CSSSingleString"/>
 					</state>
-					<state-link state="CSSAutodocComment"/>
-					<state-link state="CSSComment"/>
-					<state-link state="CSSString"/>
-					<state-link state="CSSSingleString"/>
-					<state-link state="PHP"/>
+
 				</state>
 
                 <import keywords-only="yes"/>
 
-				<state id="CSSRules" scope="style.at-rule">
-					<begin>
-						<regex>^@[-\w_]+</regex>
-					</begin>
-					<end>
-						<regex>.(?=[{\n\r])</regex>
-					</end>
-				</state>
-				
 				<state id="CSSAutodocComment" type="comment" foldable="yes" scope="style.comment.block.documentation">
 					<begin>
 						<string>/\*"</string>
@@ -3899,7 +3908,7 @@
 				</state>
 					
 				<state id="JSRegular Expressions" type="string" scope="string.regex.js">
-                	<begin><regex>(?i)(?&lt;=[=(,:\+~!?]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
+                	<begin><regex>(?i)(?&lt;=[=(,:\+~!?|]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
 					<end><regex>/[cgimosx]*</regex></end>
                     
                     <state id="Escaped Characters" scope="string.regex.escaped.js">
@@ -3959,7 +3968,8 @@
                 <import state="Tags"/>
             </state>
 
-            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" foldBegin="\A&lt;[ \t]*(?'xmltagstatename'[-:_\.\w\d]+)[\s\S]*(?&lt;![/?])>\Z" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
+            <state id="Foldable Tags" containerState="yes" delimiterState="Tags" 
+            	foldBegin="&lt;[ \t]*(?'xmltagstatename'(?i:(?:a(?:rticle|side|udio))|(?:h(?:ead|eader|tml|\d|group))|(?:b(?:ody|lockquote))|p|pre|a|(?:t(?:able|head|body|foot|h|d|r))|div|(?:f(?:ieldset|orm|ooter))|ul|ol|dl|(?:s(?:ection|elect|ource))|nav|ruby|video))\b[\s\S]*(?&lt;![/?])>" foldEnd="&lt;\s*/\s*(?i)(?#see-insert-start-group:xmltagstatename)\s*>" foldable="yes" usespellchecking="yes" scope="meta.block.tag">
 				
 				<import mode="XML" keywords-only="yes"/>
                 <import keywords-only="yes"/>
@@ -3977,10 +3987,10 @@
                 <state-link state="PHP" />
                 
                 <state id="Javascript Actions" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" scope="meta.default" >
-					<begin><regex>(?&lt;=[ \t])(?i)on[\w]+[ \t]*=[ \t]*"</regex></begin>
+					<begin><regex>\b(?i)on[\w]+[ \t]*=[ \t]*"</regex></begin>
 					<end><regex>"</regex></end>
 	                <keywords id="Action Attribute" useforautocomplete="no" scope="markup.tag.attribute.name">
-						<regex>\A([\w-]+)[ \t]*=</regex>
+						<regex>\b(on[\w-]+)[ \t]*=</regex>
 					</keywords>
 					
 					<keywords id="Action Quotes" useforautocomplete="no" scope="markup.tag.attribute.value.string">
@@ -3988,7 +3998,7 @@
 					</keywords>
 					
 					<keywords id="Action Equals" useforautocomplete="no" scope="markup.tag">
-						<regex>\A(?i)on[\w-]+([ \t]*=[ \t]*)</regex>
+						<regex>\b(?i)on[\w-]+([ \t]*=[ \t]*)</regex>
 					</keywords>
 					
 					<import mode="JavaScript" keywords-only="yes"/>
@@ -3996,24 +4006,20 @@
             	</state>
             	
             	<state id="Links" type="url" useforautocomplete="no" scope="meta.link">
-					<begin><regex>(?&lt;=[ \t])(?i)(?:href|src)[ \t]*=[ \t]*"</regex></begin>
+					<begin><regex>(?i)(?:href|src)[ \t]*=[ \t]*"</regex></begin>
 					<end><regex>"</regex></end>
 
 	                <state-link state="PHP" />
 
 					<state id="Javascript in Links" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" scope="meta.block.js">
-						<begin><regex>\A[ \t]*(?i)javascript:</regex></begin>
+						<begin><regex>\b[ \t]*(?i)javascript:</regex></begin>
 						<end><regex>(?'unwindend'")</regex></end>
 						<import mode="JavaScript" keywords-only="yes"/>
 		                <import state="JavaScript Container"/>
 					</state>
 					
 					<keywords id="Link Attribute" useforautocomplete="no" scope="markup.tag.attribute.name">
-						<regex>\A(\w+)[ \t]*=</regex>
-					</keywords>
-					
-					<keywords id="Link Attribute" useforautocomplete="no" scope="markup.tag.attribute.name">
-						<regex>(\A[ \t]+[\w-]*[ \t]*)=</regex>
+						<regex>\b((?i)href|src)[ \t]*=</regex>
 					</keywords>
 					
 					<keywords id="Link Quotes" useforautocomplete="no" scope="markup.tag.attribute.value.string">
@@ -4021,10 +4027,12 @@
 					</keywords>
 					
 					<keywords id="Link Equals" useforautocomplete="no" scope="markup.tag">
-						<regex>\A(?i)\w+([ \t]*=[ \t]*)</regex>
+						<regex>\b(?i)(?:href|src)([ \t]*=[ \t]*)</regex>
 					</keywords>
 					
 				</state>
+
+            	<state-link state="Style CSS" mode="HTML"/>
             	
                	<state id="Strings in Tags" type="string" useforautocomplete="no" scope="markup.tag.attribute.value.string">
 					<begin><regex>"</regex></begin>

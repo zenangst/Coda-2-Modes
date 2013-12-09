@@ -8,7 +8,7 @@
 
 	<!-- CODA -->
 	<symbol id="language.include" font-weight="normal" font-style="normal" image="Symbol#" indentation="0" ignoreblocks="no"> 
-		<regex>(?i)(?:(?:^|\s)(?:include|require)(?:_once)?)\s*\(([-\s_\w\./\$'"\[\]]+?)\)</regex>
+		<regex>(?i)(?:(?:^|\s)(?:include|require)(?:_once)?)\s+\(([-\s_\w\./\$'"\[\]]+?)\)</regex>
 		<postprocess>
 			<find>[-\s_\d\w\./'"]*?/</find>
 			<replace></replace>
@@ -20,7 +20,7 @@
 	<!-- END CODA -->
 	
 	 <symbol id="language.prototype" font-weight="normal" font-style="normal" image="SymbolP" indentation="0" ignoreblocks="no" useforautocomplete="yes">
-        <regex>(?:^|[\r\n])[ \t]*(?:(?:abstract|protected)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function\s+(\w+\s*\([^);]*\))[ \t]*;</regex>
+        <regex>(?:^|[\r\n])[ \t]*(?:(?:abstract|protected)[ \t]+)?(?:(?:(?:p(?:rivate|ublic|rotected))|abstract)[ \t]+)?(?:static[ \t]+)?function\s+(\w+\s*\([^);]*\))[ \t]*;</regex>
         <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -30,7 +30,7 @@
     </symbol>
 	
     <symbol id="language.function" font-weight="normal" font-style="normal" image="SymbolF()" indentation="0" ignoreblocks="no" useforautocomplete="yes"> 
-        <regex>(?:^|[\r\n])(?:(?:final|static|abstract)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function\s+((\w+)\s*\(([^{;]*)\))[^{};]*\{</regex>
+        <regex>(?:^|[\r\n])(?:(?:final|static|abstract)[ \t]+)?(?:(?:(?:p(?:rivate|ublic|rotected))|abstract)[ \t]+)?(?:static[ \t]+)?function\s+((\w+)\s*\(([^{;]*)\))[^{};]*\{</regex>
         <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -42,7 +42,7 @@
     </symbol>
 
     <symbol id="language.function" font-weight="normal" font-style="normal" image="SymbolF()" indentation="1" ignoreblocks="no" useforautocomplete="yes">
-		<regex>(?:^|[\r\n])[ \t]+(?:(?:final|static|abstract)[ \t]+)?(?:(?:private|public|protected|abstract)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?\s*(([\w\d_]+)[ \t]*\(([^{;]*)\))[^{};]*\{</regex>
+		<regex>(?:^|[\r\n])[ \t]+(?:(?:final|static|abstract)[ \t]+)?(?:(?:(?:p(?:rivate|ublic|rotected))|abstract)[ \t]+)?(?:static[ \t]+)?function[ \t]+&amp;?\s*(([\w\d_]+)[ \t]*\(([^{;]*)\))[^{};]*\{</regex>
        <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
@@ -74,7 +74,7 @@
         </postprocess>
     </symbol>
 
-	<symbol id="language.variable.php.php-html" hidden="yes" useforautocomplete="yes">
+	<symbol id="language.variable" hidden="yes" useforautocomplete="yes">
 		<regex>(\$\w[\w\d]+)</regex>
 		<regex>&gt;(\w[\w\d]+)</regex>
 	</symbol>
@@ -87,7 +87,7 @@
 		</postprocess>
 	</symbol>
 
-    <symbol id="language.class.php.php-html" font-weight="bold" font-style="normal" image="SymbolC" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" font-style="normal" image="SymbolC" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
         <regex>(?:^|[\r\n])[ \t]*(?:(?:final|static|abstract)[ \t]+)?class[ \t]+([a-zA-Z0-9_]+)(?:[ \t]+extends[ \t]+[a-zA-Z0-9_]+)?[ \t]*[^{}]*\{</regex>
         <postprocess>
             <find>[\n\r]</find>
@@ -99,7 +99,7 @@
         <movecursor>1</movecursor>
     </symbol>
     
-     <symbol id="language.trait.php.php-html" font-weight="bold" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
+     <symbol id="language.trait" font-weight="bold" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
         <regex>(?:^|[\r\n])[ \t]*?trait[ \t]+([a-zA-Z0-9_]+)[ \t]*[^{}]*\{</regex>
         <postprocess>
             <find>[\n\r]</find>
@@ -120,6 +120,7 @@
         <regex>//\s*!([^\n\r]+)</regex>
 		<regex>/\*\s*!(.+) \*/</regex>
     </symbol>
+    
     <!-- END CODA -->
     
     <symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">

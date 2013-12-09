@@ -100,6 +100,16 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>$this</string>
+			<key>String</key>
+			<string>$this</string>
+			<key>PostString</key>
+			<string></string>
+			<key>SelectionRange</key>
+			<string>{5, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>$_COOKIE</string>
 			<key>String</key>
 			<string>$_COOKIE</string>
@@ -1167,36 +1177,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>assert</string>
-			<key>String</key>
-			<string>assert</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{7, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>mixed $assertion</string>
-				<string>string $description</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>assert_options</string>
-			<key>String</key>
-			<string>assert_options</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{15, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>int $what</string>
-				<string>mixed $value</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>atan</string>
 			<key>String</key>
 			<string>atan</string>
@@ -1298,163 +1278,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>bcadd</string>
-			<key>String</key>
-			<string>bcadd</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bccomp</string>
-			<key>String</key>
-			<string>bccomp</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{7, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcdiv</string>
-			<key>String</key>
-			<string>bcdiv</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcmod</string>
-			<key>String</key>
-			<string>bcmod</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $modulus</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcmul</string>
-			<key>String</key>
-			<string>bcmul</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcpow</string>
-			<key>String</key>
-			<string>bcpow</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcpowmod</string>
-			<key>String</key>
-			<string>bcpowmod</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{9, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>string $modulus</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcscale</string>
-			<key>String</key>
-			<string>bcscale</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{8, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>int $scale</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcsqrt</string>
-			<key>String</key>
-			<string>bcsqrt</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{7, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>bcsub</string>
-			<key>String</key>
-			<string>bcsub</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $left_operand</string>
-				<string>string $right_operand</string>
-				<string>[ int $scale ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>bin2hex</string>
 			<key>String</key>
 			<string>bin2hex</string>
@@ -1469,17 +1292,16 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>bind_textdomain_codeset</string>
+			<string>bindec</string>
 			<key>String</key>
-			<string>bind_textdomain_codeset</string>
+			<string>bindec</string>
 			<key>PostString</key>
 			<string>()</string>
 			<key>SelectionRange</key>
-			<string>{24, 0}</string>
+			<string>{7, 0}</string>
 			<key>Parameters</key>
 			<array>
-				<string>string $domain</string>
-				<string>string $codeset</string>
+				<string>string $binary_string</string>
 			</array>
 		</dict>
 		<dict>
@@ -1499,16 +1321,17 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>bindec</string>
+			<string>bind_textdomain_codeset</string>
 			<key>String</key>
-			<string>bindec</string>
+			<string>bind_textdomain_codeset</string>
 			<key>PostString</key>
 			<string>()</string>
 			<key>SelectionRange</key>
-			<string>{7, 0}</string>
+			<string>{24, 0}</string>
 			<key>Parameters</key>
 			<array>
-				<string>string $binary_string</string>
+				<string>string $domain</string>
+				<string>string $codeset</string>
 			</array>
 		</dict>
 		<dict>
@@ -1921,51 +1744,6 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $body</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>class</string>
-			<key>String</key>
-			<string>class</string>
-			<key>PostString</key>
-			<string> </string>
-			<key>SelectionRange</key>
-			<string>{6, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>classname</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>class_exists</string>
-			<key>String</key>
-			<string>class_exists</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{13, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $class_name</string>
-				<string>[ bool $autoload = TRUE ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>class_alias</string>
-			<key>String</key>
-			<string>class_alias</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{12, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $original</string>
-				<string>string $alias</string>
-				<string>[ bool $autoload = TRUE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -5406,20 +5184,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>extends</string>
-			<key>String</key>
-			<string>extends</string>
-			<key>PostString</key>
-			<string> </string>
-			<key>SelectionRange</key>
-			<string>{8, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>rootClass</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>extract</string>
 			<key>String</key>
 			<string>extract</string>
@@ -5824,12 +5588,6 @@
 				<string>string $filename</string>
 				<string>string $mode</string>
 			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>foreach</string>
-			<key>String</key>
-			<string>foreach</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -6552,20 +6310,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>function</string>
-			<key>String</key>
-			<string>function</string>
-			<key>PostString</key>
-			<string> ()</string>
-			<key>SelectionRange</key>
-			<string>{9, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>function_name</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>function_exists</string>
 			<key>String</key>
 			<string>function_exists</string>
@@ -6832,188 +6576,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>get_called_class</string>
-			<key>String</key>
-			<string>get_called_class</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{18, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_class</string>
-			<key>String</key>
-			<string>get_class</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{10, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>[ object $object = NULL ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_class_methods</string>
-			<key>String</key>
-			<string>get_class_methods</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{18, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>mixed $class_name</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_class_vars</string>
-			<key>String</key>
-			<string>get_class_vars</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{15, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $class_name</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_declared_classes</string>
-			<key>String</key>
-			<string>get_declared_classes</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{22, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_declared_interfaces</string>
-			<key>String</key>
-			<string>get_declared_interfaces</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{25, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_declared_traits</string>
-			<key>String</key>
-			<string>get_declared_traits</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{21, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_defined_functions</string>
-			<key>String</key>
-			<string>get_defined_functions</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{23, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_defined_vars</string>
-			<key>String</key>
-			<string>get_defined_vars</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{18, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_headers</string>
-			<key>String</key>
-			<string>get_headers</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{12, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $url</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_html_translation_table</string>
-			<key>String</key>
-			<string>get_html_translation_table</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{27, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_meta_tags</string>
-			<key>String</key>
-			<string>get_meta_tags</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{14, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $filename</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_object_vars</string>
-			<key>String</key>
-			<string>get_object_vars</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{16, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>object $object</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_parent_class</string>
-			<key>String</key>
-			<string>get_parent_class</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{17, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>mixed $object</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>get_resource_type</string>
-			<key>String</key>
-			<string>get_resource_type</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{18, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>resource $handle</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>getallheaders</string>
 			<key>String</key>
 			<string>getallheaders</string>
@@ -7213,6 +6775,78 @@
 			<key>Parameters</key>
 			<array>
 				<string>mixed $var</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_defined_functions</string>
+			<key>String</key>
+			<string>get_defined_functions</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{22, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_defined_vars</string>
+			<key>String</key>
+			<string>get_defined_vars</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{17, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_headers</string>
+			<key>String</key>
+			<string>get_headers</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{12, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $url</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_html_translation_table</string>
+			<key>String</key>
+			<string>get_html_translation_table</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{27, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_meta_tags</string>
+			<key>String</key>
+			<string>get_meta_tags</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{14, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>string $filename</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>get_resource_type</string>
+			<key>String</key>
+			<string>get_resource_type</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{18, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>resource $handle</string>
 			</array>
 		</dict>
 		<dict>
@@ -12168,21 +11802,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>interface_exists</string>
-			<key>String</key>
-			<string>interface_exists</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{17, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $interface_name</string>
-				<string>[ bool $autoload = TRUE ]</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>intval</string>
 			<key>String</key>
 			<string>intval</string>
@@ -12236,22 +11855,6 @@
 			<key>Parameters</key>
 			<array>
 				<string>mixed $var</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>is_a</string>
-			<key>String</key>
-			<string>is_a</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{5, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>object $object</string>
-				<string>string $class_name</string>
-				<string>[ bool $allow_string = FALSE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -12558,22 +12161,6 @@
 			<key>Parameters</key>
 			<array>
 				<string>mixed $var</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>is_subclass_of</string>
-			<key>String</key>
-			<string>is_subclass_of</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{15, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>mixed $object</string>
-				<string>string $class_name</string>
-				<string>[ bool $allow_string = TRUE ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -13966,7 +13553,7 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $str</string>
-				<string>[ int $mode = MB_CASE_UPPER ]</string>
+				<string>int $mode = MB_CASE_UPPER</string>
 			</array>
 		</dict>
 		<dict>
@@ -14724,21 +14311,6 @@
 			<key>Parameters</key>
 			<array>
 				<string>bool $on_off</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>method_exists</string>
-			<key>String</key>
-			<string>method_exists</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{14, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>mixed $object</string>
-				<string>string $method_name</string>
 			</array>
 		</dict>
 		<dict>
@@ -17566,7 +17138,6 @@
 			<key>Parameters</key>
 			<array>
 				<string>string $path</string>
-				<string>[ int $options = PATHINFO_DIRNAME | PATHINFO_BASENAME | PATHINFO_EXTENSION | PATHINFO_FILENAME ]</string>
 			</array>
 		</dict>
 		<dict>
@@ -19754,51 +19325,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>property_exists</string>
-			<key>String</key>
-			<string>property_exists</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{16, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>mixed $class</string>
-				<string>string $property</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>protected</string>
-			<key>String</key>
-			<string>protected</string>
-			<key>PostString</key>
-			<string> </string>
-			<key>SelectionRange</key>
-			<string>{10, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>private</string>
-			<key>String</key>
-			<string>private</string>
-			<key>PostString</key>
-			<string> </string>
-			<key>SelectionRange</key>
-			<string>{8, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>public</string>
-			<key>String</key>
-			<string>public</string>
-			<key>PostString</key>
-			<string> </string>
-			<key>SelectionRange</key>
-			<string>{7, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>quoted_printable_decode</string>
 			<key>String</key>
 			<string>quoted_printable_decode</string>
@@ -20628,6 +20154,20 @@
 			<string>()</string>
 			<key>SelectionRange</key>
 			<string>{7, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>sleep</string>
+			<key>String</key>
+			<string>sleep</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{6, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>int $seconds</string>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -24938,21 +24478,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>trait_exists</string>
-			<key>String</key>
-			<string>trait_exists</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{13, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>string $traitname</string>
-				<string>bool $autoload</string>
-			</array>
-		</dict>
-		<dict>
-			<key>ID</key>
 			<string>trigger_error</string>
 			<key>String</key>
 			<string>trigger_error</string>
@@ -25046,21 +24571,6 @@
 			<string>()</string>
 			<key>SelectionRange</key>
 			<string>{6, 0}</string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>uniqid</string>
-			<key>String</key>
-			<string>uniqid</string>
-			<key>PostString</key>
-			<string>()</string>
-			<key>SelectionRange</key>
-			<string>{7, 0}</string>
-			<key>Parameters</key>
-			<array>
-				<string>[ string $prefix = "" ]</string>
-				<string>[ bool $more_entropy = false ]</string>
-			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -25165,6 +24675,20 @@
 			<string>()</string>
 			<key>SelectionRange</key>
 			<string>{11, 0}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>usleep</string>
+			<key>String</key>
+			<string>usleep</string>
+			<key>PostString</key>
+			<string>()</string>
+			<key>SelectionRange</key>
+			<string>{7, 0}</string>
+			<key>Parameters</key>
+			<array>
+				<string>int $microseconds</string>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
