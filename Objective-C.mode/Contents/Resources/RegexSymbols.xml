@@ -6,7 +6,7 @@
         <endregex>}</endregex>
     </blocks>
 	
-	<symbol id="Objects" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8">
+	<symbol id="Objects" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8" image="SymbolsV">
 		<regex>\*(\w+)</regex>
 		<regex>(\w+)\s\=</regex>
 		<regex>(\w+);</regex>
@@ -102,7 +102,7 @@
 	        </postprocess>
 	    </symbol>
     	
-		<symbol id="Properties" font-weight="bold" hidden="yes" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="language.function.objective-c">
+		<symbol id="Properties" font-weight="bold" hidden="yes" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="language.function.objective-c" image="SymbolP">
 			<regex>\.(\w{2,}+)</regex>
 		</symbol>
 		
@@ -118,11 +118,11 @@
 	    <regex>TODO\s([^\n]+)</regex>
     </symbol>
 
-    <symbol id="Objective-C implementation and interface" useforautocomplete="yes" hidden="yes">
+    <symbol id="Objective-C implementation and interface" useforautocomplete="yes" hidden="yes" image="SymbolAt">
     	<regex>implementation\s(\w+)|interface\s(\w+)</regex>
     </symbol>
 
-    <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes">
+    <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes" image="SymbolH">
     	<regex>(\w+)\.h</regex>
     </symbol>
 	

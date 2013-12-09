@@ -19,7 +19,7 @@
         </postprocess>
     </symbol>
 	
-    <symbol id="FunctionRegex" color="#003369" useforautocomplete="yes" hidden="yes" scope="language.function.c">
+    <symbol id="FunctionRegex" color="#003369" useforautocomplete="yes" hidden="yes" image="SymbolF()" scope="language.function.c">
 		<regex>([A-Za-z0-9_]+ *)\(</regex>
     </symbol>
 

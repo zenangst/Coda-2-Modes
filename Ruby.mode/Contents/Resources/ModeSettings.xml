@@ -8,6 +8,7 @@
         <extension>builder</extension>
         <extension>rjs</extension>
         <filename>Rakefile</filename>
+		<filename>Gemfile</filename>
         <regex>\A#!/usr/bin/(env )?ruby</regex>
         <regex>\A#!/usr/bin/(env )?macruby</regex>
         <regex>\A#!/usr/local/bin/macruby</regex>

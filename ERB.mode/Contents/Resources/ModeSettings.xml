@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <recognition>
+	   <extension>rhtml</extension>
+	   <extension>erb</extension>
+    </recognition>
+    <color>0.416, 0.706, 0.921</color>
+</settings>
+
+

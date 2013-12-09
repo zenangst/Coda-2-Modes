@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "symbol.dtd">
+<symbols>
+
+    <blocks>
+        <beginregex>{</beginregex>
+        <endregex>}</endregex>
+    </blocks>
+    
+	<symbol id="Auto-Completion" hidden="yes" casesensitive="no" useforautocomplete="yes">
+		<regex>([A-z_\-]+)</regex>
+	</symbol>
+		
+	<symbol id="language.include" image="Symbol#">
+		<regex>(?i)@import\surl[ \t]*\([ \t]*"(.*?)"[ \t]*\)</regex>
+		<regex>(?i)@import\s[ \t]*"(.*?)"[ \t]*</regex>
+	</symbol>
+	
+    <symbol id="language.tag.css" image="SymbolT">
+        <regex>(?:[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*([&amp;\w\*][^}{;]*?)[^#](?=(\{)|(?:/\*.*\*/\s*\{))</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+            <find>/\*.*\*/</find>
+            <replace></replace>
+        </postprocess>
+        <slicer>
+        	<regex>[#\.]([^:\s]+)[ ]*</regex>
+        	<capture>value</capture>
+        </slicer>
+        <captures>{ "value" : "1" }</captures>
+    </symbol>
+   
+    <symbol id="language.class.css" image="SymbolC" useforautocomplete="yes">
+        <regex>(?:[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*([.:][^}{;]*?)\s*(?=(\{)|(?:/\*.*\*/\s*\{))</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+            <find>/\*.*\*/</find>
+            <replace></replace>
+        </postprocess>
+        <slicer>
+        	<regex>\.([^:\s]+)[ ]*</regex>
+        	<capture>value</capture>
+        </slicer>
+        <captures>{ "value" : "1" }</captures>
+    </symbol>
+    
+    <symbol id="language.id.css" image="SymbolID" useforautocomplete="yes">
+        <regex>(?:[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*(#[^}{;]*?)\s*(?=(\{)|(?:/\*.*\*/\s*\{))</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+            <find>/\*.*\*/</find>
+            <replace></replace>
+        </postprocess>
+         <slicer>
+        	<regex>\b\#([^:\s]+)[ ]*</regex>
+        	<capture>value</capture>
+        </slicer>
+        <captures>{ "value" : "1" }</captures>
+    </symbol>
+    
+    <symbol id="Rules" image="SymbolAt">
+        <regex>(?i)(?:[\n\r\}]|^)[\t ]*(?:/\*.*\*/)*[ \t]*(@(?:media|function|screen|keyframes|mixin)\s[^}{;]+)\s*(?=(\{)|(/\*.*\*/\s*\{))</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+            <find>/\*.*\*/</find>
+            <replace></replace>
+        </postprocess>
+    </symbol>
+	
+    <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
+        <regex>/\*[ \t]*!(.+)[ \t]*\*/</regex>
+        <postprocess>
+           <find>[\n\r]</find>
+           <replace> </replace>
+           <find>[ \t]+</find>
+           <replace> </replace>
+        </postprocess>
+    </symbol>
+    
+    <symbol id="SASS Groups" font-weight="normal" font-style="normal" image="SymbolGroup" indentation="0" ignoreblocks="no" show-in-comments="yes">
+        <regex>/\*[ \t]*(?i)@group[ \t]*(.*?)[ \t]*\*/</regex>
+        <postprocess>
+           <find>[\n\r]</find>
+           <replace> </replace>
+           <find>[ \t]+</find>
+           <replace> </replace>
+        </postprocess>
+    </symbol>
+
+	<symbol id="language.variable.sass" hidden="yes" useforautocomplete="yes" ignoreblocks="yes">
+		<regex>(\$[\d\w\-]+)</regex>
+	</symbol>
+
+</symbols>

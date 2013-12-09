@@ -88,7 +88,7 @@
         <regex>(?:^|(?&lt;=\r))[\t ]*#mark[\t -]*([^\n]*)\n</regex>
     </symbol>
 	
-	<symbol id="User Variables" useforautocomplete="yes" scope="language.variable.ruby" hidden="yes">
+	<symbol id="User Variables" useforautocomplete="yes" scope="language.variable.ruby" hidden="yes" image="SymbolsV">
 		<regex>(@\w+)|(\w+)[^=]=</regex>
         <postprocess>
             <find>[\s|\t|=]</find>
