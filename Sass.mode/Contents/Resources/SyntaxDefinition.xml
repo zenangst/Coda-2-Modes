@@ -855,7 +855,7 @@
 			</keywords>
 			
 			<keywords id="CSS Classes" casesensitive="no" scope="language.function">
-				<regex>(\.[A-z_\-]{4}+)</regex>
+				<regex>(\.[A-z_\-]{4,}+)</regex>
 			</keywords>
 
 			<!--
