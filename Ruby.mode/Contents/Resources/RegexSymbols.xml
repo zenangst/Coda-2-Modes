@@ -93,5 +93,9 @@
             <replace></replace>
         </postprocess>
 	</symbol>
+	
+	<symbol id="Auto-Complete" useforautocomplete="yes" hidden="yes" scope="language">
+		<regex>([A-z0-9_]+)</regex>
+	</symbol>
 
 </symbols>

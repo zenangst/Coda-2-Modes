@@ -378,7 +378,15 @@
             </keywords>
 			
 			<keywords id="User Variables" useforautocomplete="yes" scope="language.variable.ruby">
-				<regex>(@\w+)|(\w+)[^=]=</regex>
+				<regex>(@\w+)|([A-z0-9_\s]+)?\s?=</regex>
+			</keywords>
+			
+			<keywords id="Symbols" useforautocomplete="yes" scope="markup.tag.attribute.name">
+				<regex>(:\w+)</regex>
+			</keywords>
+			
+			<keywords id="Hashes" useforautocomplete="yes" scope="markup.tag.attribute.value">
+				<regex>(\w+):</regex>
 			</keywords>
         	
         	<state id="String with double quotes" type="string" scope="string.double">
