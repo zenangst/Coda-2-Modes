@@ -65,7 +65,8 @@
 				<regex>(&amp;\w+)</regex>
 			</keywords>
 			
-			<keywords id="User Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
+			<keywords id="User Methods" color="#6C0540" casesensitive="no" scope="language.function.objective-c" useforautocomplete="yes">
+				<regex>\)([A-z]+)</regex>
 				<regex>\)(\w+)[^{]+</regex>
 			</keywords>
 			
