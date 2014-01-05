@@ -115,8 +115,8 @@
                 <end><regex>(?&lt;!\\)[\n\r]</regex></end>
                 <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
             </state>
-            
-            <state id="String" type="string" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="string.double.c">
+			
+            <state id="String" color="#760f15" font-weight="normal" font-style="normal" foldable="no" scope="string.double.c">
                 <begin><regex>"</regex></begin>
                 <end><regex>((?&lt;!\\)(\\\\)*)"</regex></end>
             </state>
