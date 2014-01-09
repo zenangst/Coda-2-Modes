@@ -124,6 +124,6 @@
     <!-- END CODA -->
     
     <symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
-	    <regex>TODO\s([^\n]+)</regex>
+	    <regex>[TODO|EDGE_CASE]\s([^\n]+)</regex>
     </symbol>
 </symbols>

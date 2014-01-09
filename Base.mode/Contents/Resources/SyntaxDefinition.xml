@@ -28,7 +28,7 @@
             </keywords>            
 			
 			<keywords id="TODO" font-weight="normal" scope="style.at-rule">
-			    <regex>TODO\s([^\n]+)</regex>
+			    <regex>[TODO|EDGE_CASE]\s([^\n]+)</regex>
 		    </keywords>          
 
           </state>
