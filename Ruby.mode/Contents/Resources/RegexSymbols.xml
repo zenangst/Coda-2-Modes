@@ -99,7 +99,8 @@
 	</symbol>
 	
   <symbol id="TODO and EDGE_CASE" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
-    <regex>[TODO|EDGE_CASE]\s([^\n]+)</regex>
+    <regex>(TODO\s[^\n]+)</regex>
+    <regex>(EDGE_CASE\s[^\n]+)</regex>
   </symbol>
 
 </symbols>
