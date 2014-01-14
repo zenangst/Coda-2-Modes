@@ -99,7 +99,7 @@
         </postprocess>
     </symbol>
 
-	<symbol id="language.variable.sass" hidden="yes" useforautocomplete="yes" ignoreblocks="yes">
+	<symbol id="language.variable.sass" hidden="yes" useforautocomplete="yes" image="SymbolsV" ignoreblocks="yes">
 		<regex>(\$[\d\w\-]+)</regex>
 	</symbol>
 	

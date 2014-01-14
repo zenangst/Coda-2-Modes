@@ -6,7 +6,13 @@
         <beginregex>{</beginregex>
         <endregex>}</endregex>
     </blocks>
-    
+	<symbol id="Auto-Complete" useforautocomplete="yes" hidden="yes" scope="language" image="SymbolS">
+		<regex>([A-z0-9_]+)</regex>
+        <postprocess>
+            <find>[\[|\]]</find>
+            <replace></replace>
+        </postprocess>
+	</symbol>
     <!--args -->
     <symbol id="language.method" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
         <regex>\bdef\s+(([\w\d?!_]+)\s*\(([^)]*)\))[\r\n]+</regex>
@@ -94,13 +100,11 @@
         </postprocess>
 	</symbol>
 	
-	<symbol id="Auto-Complete" useforautocomplete="yes" hidden="yes" scope="language">
-		<regex>([A-z0-9_]+)</regex>
-	</symbol>
-	
-  <symbol id="TODO and EDGE_CASE" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
+  <symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
     <regex>(TODO\s[^\n]+)</regex>
-    <regex>(EDGE_CASE\s[^\n]+)</regex>
   </symbol>
-
+  
+  <symbol id="EDGE_CASE" font-weight="normal" font-style="normal" image="Symbol#" indentation="0" ignoreblocks="no" show-in-comments="yes">
+      <regex>(EDGE_CASE\s[^\n]+)</regex>
+  </symbol>
 </symbols>
