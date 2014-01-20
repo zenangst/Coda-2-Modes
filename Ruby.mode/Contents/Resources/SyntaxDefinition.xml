@@ -718,7 +718,7 @@
 						</keywords>
 						
 						<keywords id="User Variables" scope="markup.tag.attribute.name" useforautocomplete="yes">
-							<regex>(\w+_[^\s|\[|\(|\|\)]+)|\s([a-z]+)\.</regex>
+							<regex>(\w+_[^\s|\[|\(|\|\)|\]]+)|\s([a-z]+)\.</regex>
 							<regex>\w+\:(\w+)</regex>
 						</keywords>
 						
