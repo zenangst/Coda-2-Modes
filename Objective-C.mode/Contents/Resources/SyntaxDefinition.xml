@@ -59,6 +59,7 @@
 				<regex>\((\w+)\)|\(!(\w+)\)</regex>
 				<regex>\:(\w+)</regex>
 				<regex>\(?[^\w]([a-z]{1}\w+)</regex>
+				<regex>[\s|\t]([a-z_]+)\.</regex>
 			</keywords>
 			
 			<keywords id="Referenced Object" color="#6C0540" casesensitive="yes" scope="style.value.color.rgb-value" useforautocomplete="yes">
@@ -111,10 +112,6 @@
 			
 			<keywords id="Properties" useforautocomplete="yes"  scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
 				<regex>\.(\w{2,}+)</regex>
-			</keywords>
-			
-			<keywords id="Constants" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="keyword.control">
-				<regex>([_]{1,2}[A-Z]+[_]{1,2})</regex>
 			</keywords>
 			
 			<keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="markup.tag.attribute.value">
@@ -8057,6 +8054,11 @@
 				<!-- Channel Configuration Options -->
 				<string>DISPATCH_IO_STRICT_INTERVAL</string>
 	        </keywords>
+					
+					<keywords id="Float" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="constant.numeric">
+						<regex>(\d+\.\d+f)</regex>
+					</keywords>
+					
         </default>
     </states>
 </syntax>

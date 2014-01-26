@@ -21,19 +21,19 @@
 		<regex>\)(\w+)[^{]+</regex>
 	</symbol> -->
 	
-	<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes" scope="language.function">
-        <regex>([-|+][|\s]\([A-z\\s*]+\)[^;|\n|\{]+)</regex>
-        <postprocess>
-            <find>(:) *\([^\)]*\)</find>
-            <replace>:</replace>
-            <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
-            <replace></replace>
-			<find>;</find>
-			<replace></replace>
-        </postprocess>
-		<arguments>(:*+)</arguments>
-		<captures>{"sender" : "1"}</captures>
-    </symbol>
+		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes" scope="language.function">
+	    <regex>[-|+][|\s]\([A-z\\s*]+\)([^;|\n|\{]+)</regex>
+	    <postprocess>
+	        <find>(:) *\([^\)]*\)</find>
+	        <replace>:</replace>
+	        <find>([\n\r\t\-\+]|\([^\)]*\))|;|\s$</find>
+	        <replace></replace>
+	    </postprocess>
+			<arguments>\:\w+</arguments>
+			<captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
+			<!-- <arguments>(:\w+)</arguments>
+			<captures>{"sender" : "1"}</captures> -->
+	  </symbol>
 
 	<!-- <symbol id="Objective-C Methods (without arguments)" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
         <regex>(^[ \t]*[-][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[\s\t+|^;])</regex>
