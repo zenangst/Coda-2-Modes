@@ -17,6 +17,10 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
+	<symbol id="Imports" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
+		<regex>import\s\"([^"]+)\"</regex>
+	</symbol>
+	
 	<!-- <symbol id="User Methods" color="#6C0540" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="yes" useforautocomplete="yes">
 		<regex>\)(\w+)[^{]+</regex>
 	</symbol> -->
@@ -26,10 +30,10 @@
 	    <postprocess>
 				<find>([-|+][|\s]\([A-z\\s*]+\))</find>
 				<replace></replace>
-	        <find>(:) *\([^\)]*\)</find>
-	        <replace>:</replace>
-	        <find>([\n\r\t\-\+]|\([^\)]*\))|;|\s$</find>
-	        <replace></replace>
+        <find>(:) *\([^\)]*\)</find>
+        <replace>:</replace>
+        <find>([\n\r\t\-\+]|\([^\)]*\))|;|\s$</find>
+        <replace></replace>
 	    </postprocess>
 			<arguments>(:)</arguments>
 			<captures>{"sender" : "1"}</captures>
