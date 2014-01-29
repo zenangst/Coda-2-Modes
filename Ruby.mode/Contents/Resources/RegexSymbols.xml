@@ -66,6 +66,22 @@
     <symbol id="language.class" image="SymbolC" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
         <regex>\b[ \t]*class[ \t]+([\w\d?!_]+)</regex>
     </symbol>
+    
+    <symbol id="language.class.model" image="SymbolM" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
+        <regex>\b[ \t]*class[ \t]++([\w\d?!_]+\s&lt;\sActiveRecord[^\n]+)</regex>
+        <postprocess>
+          <find>&lt;[^\n]+</find>
+          <replace>Model</replace>
+        </postprocess>
+    </symbol>
+    
+    <symbol id="language.class.controller" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
+        <regex>\b[ \t]*class[ \t]++([\w\d?!_]+Controller)</regex>
+        <postprocess>
+          <find>Controller</find>
+          <replace> Controller</replace>
+        </postprocess>
+    </symbol>
 
     <symbol id="Modules" image="SymbolM" indentation="0" ignoreblocks="yes">
         <regex>\b[ \t]*module[ \t]+([\w\d?!_]+)</regex>
