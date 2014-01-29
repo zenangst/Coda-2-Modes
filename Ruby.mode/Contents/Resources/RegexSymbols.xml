@@ -68,7 +68,7 @@
     </symbol>
     
     <symbol id="language.class.model" image="SymbolM" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
-        <regex>\b[ \t]*class[ \t]++([\w\d?!_]+\s&lt;\sActiveRecord[^\n]+)</regex>
+        <regex>\b[ \t]*class[ \t]++([\w\d?!_]+\s&lt;\sActiveRecord::Base+)</regex>
         <postprocess>
           <find>&lt;[^\n]+</find>
           <replace>Model</replace>
