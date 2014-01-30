@@ -118,7 +118,7 @@
 		</symbol>
 		
 	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
-        <regex>(NSLog\([^\)]+\))?[\n|;]?</regex>
+        <regex>(NSLog[^;]+?;?)</regex>
         <postprocess>
         	<find>\(</find>
         	<replace> </replace>
