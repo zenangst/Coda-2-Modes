@@ -76,9 +76,17 @@
     </symbol>
     
     <symbol id="language.class.controller" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
-        <regex>\b[ \t]*class[ \t]++([\w\d?!_]+Controller)</regex>
+        <regex>\b[ \t]*class[ \t]+([\w\d?!_]+Controller)</regex>
         <postprocess>
           <find>Controller</find>
+          <replace> Controller</replace>
+        </postprocess>
+    </symbol>
+		
+    <symbol id="language.class.controller.alt" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
+        <regex>\b[ \t]*class[ \t]+([\w\d?!_]+Controller)</regex>
+        <postprocess>
+          <find>sController</find>
           <replace> Controller</replace>
         </postprocess>
     </symbol>
@@ -116,7 +124,7 @@
         </postprocess>
 	</symbol>
 	
-  <symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes">
+  <symbol id="TODO" font-weight="normal" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="no" show-in-comments="yes">
     <regex>(TODO\s[^\n]+)</regex>
   </symbol>
   
