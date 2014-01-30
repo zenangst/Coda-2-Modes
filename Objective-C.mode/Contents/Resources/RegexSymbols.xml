@@ -68,11 +68,13 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolAt" indentation="0" ignoreblocks="yes" scope="language.directives">
+    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolM" indentation="0" ignoreblocks="yes" scope="language.directives">
         <regex>(@implementation[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
+						<find>@implementation\s</find>
+						<replace></replace>
         </postprocess>
     </symbol>
 
@@ -84,15 +86,17 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolC" indentation="0" ignoreblocks="yes" scope="language.declarations">
+    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolH" indentation="0" ignoreblocks="yes" scope="language.declarations">
         <regex>(@interface[^[:cntrl:]{]*|@protocol[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
+						<find>@interface|@protocol|\s:\s\w+</find>
+						<replace></replace>
         </postprocess>
     </symbol>
 	
-	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="Symbol#" scope="meta.tag.framework.pragma">
+	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolMark" scope="meta.tag.framework.pragma">
         <regex>(#pragma mark[	 -]*[^\n]*)\n</regex>
         <postprocess>
             <find>#pragma mark[-	 \n]*</find> <!-- An empty string places a separator -->
@@ -140,7 +144,7 @@
     </symbol>
 
     <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes" image="SymbolH">
-    	<regex>(\w+)\.h</regex>
+    	<regex>(\w+\.h)</regex>
     </symbol>
 	
 </symbols>
