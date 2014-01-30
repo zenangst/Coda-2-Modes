@@ -17,8 +17,12 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
-	<symbol id="Imports" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
+	<symbol id="Import" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
 		<regex>import\s\"([^"]+)\"</regex>
+	</symbol>
+	
+	<symbol id="Import Framework" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
+		<regex>import\s&lt;\w+\/([^\.]+)\.\w&gt;</regex>
 	</symbol>
 	
 	<!-- <symbol id="User Methods" color="#6C0540" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="yes" useforautocomplete="yes">
@@ -88,7 +92,7 @@
         </postprocess>
     </symbol>
 	
-	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolP" scope="meta.tag.framework.pragma">
+	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="Symbol#" scope="meta.tag.framework.pragma">
         <regex>(#pragma mark[	 -]*[^\n]*)\n</regex>
         <postprocess>
             <find>#pragma mark[-	 \n]*</find> <!-- An empty string places a separator -->
@@ -98,7 +102,7 @@
 	
 	
 	<symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes" scope="markup.constant.entity">
-	    <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
+      <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
     </symbol>
 	
 	<symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no" scope="markup.invalid">
@@ -114,15 +118,21 @@
 		</symbol>
 		
 	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
-        <regex>NSLog(\([^;]+)</regex>
+        <regex>(NSLog\([^\)]+\))?[\n|;]?</regex>
         <postprocess>
-        	<find>(^\()|(\)$)</find>
-        	<replace></replace>
+        	<find>\(</find>
+        	<replace> </replace>
+					<find>\)</find>
+					<replace></replace>
         </postprocess>
     </symbol>
 
-	<symbol id="TODO" font-weight="normal" font-style="normal" image="Symbol!" indentation="0" ignoreblocks="no" show-in-comments="yes" scope="style.at-rule">
-	    <regex>TODO\s([^\n]+)</regex>
+	<symbol id="TODO" font-weight="normal" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="no" show-in-comments="yes" scope="style.at-rule">
+	    <regex>(TODO?:?\s[^\n]+)</regex>
+      <postprocess>
+        <find>TODO:</find>
+        <replace>TODO</replace>
+      </postprocess>
     </symbol>
 
     <symbol id="Objective-C implementation and interface" useforautocomplete="yes" hidden="yes" image="SymbolAt">
