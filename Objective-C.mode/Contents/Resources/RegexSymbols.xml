@@ -17,11 +17,11 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
-	<symbol id="Import" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
+	<symbol id="Import" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
 		<regex>import\s\"([^\"]+)\"</regex>
 	</symbol>
 	
-	<symbol id="Import Framework" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
+	<symbol id="Import Framework" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
 		<regex>import\s&lt;\w+\/([^\.]+)\.\w&gt;</regex>
 	</symbol>
 	
@@ -55,7 +55,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolM" indentation="0" ignoreblocks="yes" scope="language.directives">
+    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolM" indentation="0" ignoreblocks="yes" scope="language.directives" useforautocomplete="yes">
         <regex>(@implementation[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -73,7 +73,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolH" indentation="0" ignoreblocks="yes" scope="language.declarations">
+    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations">
         <regex>(@interface[^[:cntrl:]{\/]*|@protocol[^[:cntrl:]{\/]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -127,7 +127,15 @@
     </symbol>
 
     <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes" image="SymbolH">
-    	<regex>(\w+\.h)</regex>
+    	<regex>(\w+)\.h</regex>
+    </symbol>
+		
+    <symbol id="Objective-C Interface Auto-completions" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
+        <regex>@interface\s([^[\s\n\r\t]{\/]*)|@protocol\s([^[:cntrl:\s]{\/]*)</regex>
+    </symbol>
+		
+    <symbol id="Objective-C Implementations Auto-completions" font-weight="bold" font-style="italic" image="SymbolM" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
+        <regex>@implementation\s([^[\s\n\r\t]{\/]*)</regex>
     </symbol>
 	
 </symbols>
