@@ -1719,8 +1719,6 @@
 			<string>=&quot;&quot;</string>
 			<key>MoveCursor</key>
 			<integer>2</integer>
-			<key>Autocomplete</key>
-			<string>language.class.css</string>
 			<key>Children_ID</key>
 			<array>
 				<string>child.language.class.css</string>
@@ -2070,8 +2068,6 @@
 			<string>=&quot;&quot;</string>
 			<key>MoveCursor</key>
 			<integer>2</integer>
-			<key>Autocomplete</key>
-			<string>language.id.css</string>
 			<key>Children_ID</key>
 			<array>
 				<string>child.language.id.css</string>

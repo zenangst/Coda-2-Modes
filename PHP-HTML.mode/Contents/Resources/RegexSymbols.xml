@@ -37,7 +37,7 @@
             <find>[ \t]+</find>
             <replace> </replace>
         </postprocess>
-        <arguments>(&amp;?[\$\w]+[\$=\w\s'"\(\)]*)[,\n\t]*</arguments>
+        <arguments>(&amp;?([\$\w]+)[^,]*)[,]*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
     </symbol>
 
@@ -49,7 +49,7 @@
             <find>[ \t]+</find>
             <replace> </replace>
         </postprocess>
-        <arguments>(&amp;?[\$\w]+[\$=\w\s'"\(\)]*)[,\n\t]*</arguments>
+        <arguments>(&amp;?([\$\w]+)[^,]*)[,]*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
         <regex>(?:^|(?&lt;=\r))[ \t]*switch[^\n\(]+\(([^\)]+)</regex>
         <postprocess>

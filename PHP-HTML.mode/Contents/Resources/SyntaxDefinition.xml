@@ -31,7 +31,13 @@
                     <regex>([A-Za-z0-9_]+) *\(</regex>
                 </keywords>
                 
-                <!-- NOTE, regex values must be sorted by length to work correctly -->
+                <keywords id="Operators" useforautocomplete="no" scope="language.operator" highlightInOrder="yes">
+					<regex>([\+\-\*\\\=\|\!])</regex>
+					<regex>(\&lt;)(?![\?])</regex>
+					<regex>(?&lt;!\?)(\&gt;)</regex>
+					<regex>([\/\%&amp;\^\~\@\.])</regex>
+				</keywords>
+                
                 <keywords id="PHP4 Functions" casesensitive="no" useforautocomplete="yes" postregex="(?:[ \t]*\()" scope="support.function.php" highlightInOrder="yes">
                     <string>_</string>
 					<string>abs</string>
@@ -3636,7 +3642,7 @@
                     <regex>(?&lt;=[^\w\d]|^)(((([0-9]+\.[0-9]*)|(\.[0-9]+))([eE][+\-]?[0-9]+)?[fFlL]?)|((([1-9][0-9]*)|0[0-7]*|(0[xX][0-9a-fA-F]+))(([uU][lL]?)|([lL][uU]?))?))(?=[^\w\d]|$)</regex>
                 </keywords>
                 <keywords id="PHP Variables" useforautocomplete="no" scope="language.variable.php">
-                    <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
+                    <regex>(\$[\$a-zA-Z_][a-zA-Z0-9_]*)</regex>
 					<regex>\-&gt;(\w+)</regex>
                 </keywords>
                 <keywords id="PHP Class Property" scope="keyword">
@@ -3646,6 +3652,16 @@
                     <regex>(\w+\:\:\w+)</regex>
                     <regex>(\w+\:\:)</regex>
                 </keywords>
+                
+                 <!--
+                 <state id="Import Functions" casesensitive="no" scope="meta.default.import">
+					<begin><regex>(?i)(?:(?:^|\s)(?:include|require)(?:_once)?)\s*\(</regex></begin>
+					<end><regex>\)</regex></end>
+					
+					<state-link state="PHP String" scope="meta.link"/>
+				</state>
+                -->
+                
                 <state id="PHP Comment" type="comment" foldable="yes" scope="comment.block.php">
                     <begin>
                         <regex>/\*</regex><autoend>\*/</autoend>
@@ -3670,7 +3686,7 @@
                         <regex>(((?&lt;!\\)(\\\\)*)|^)"</regex>
                     </end>
                     <keywords id="Variables" useforautocomplete="no" scope="language.variable.string.php">
-                        <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
+                        <regex>(\$[\$a-zA-Z_][a-zA-Z0-9_]*)</regex>
                     </keywords>
                 </state>
                 <state id="PHP String2" type="string" scope="string.single.php" usespellchecking="yes">
@@ -3698,7 +3714,7 @@
                         <regex>[\r\n](?#see-insert-start-group:phpheredoc)\b</regex>
                     </end>
                      <keywords id="Variables" useforautocomplete="no" scope="language.variable.string.php">
-                        <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
+                        <regex>(\$[\$a-zA-Z_][a-zA-Z0-9_]*)</regex>
                     </keywords>
                 </state>
                 <state id="PHP Heredoc Quotes" type="string" scope="string.here-doc.php">
@@ -3710,7 +3726,7 @@
                         <regex>[\r\n](?#see-insert-start-group:phpheredocquotes)\b</regex>
                     </end>
                      <keywords id="Variables" useforautocomplete="no" scope="language.variable.string.php">
-                        <regex>(\$[a-zA-Z_][a-zA-Z0-9_]*)</regex>
+                        <regex>(\$[\$a-zA-Z_][a-zA-Z0-9_]*)</regex>
                     </keywords>
                 </state>
 
@@ -4025,7 +4041,7 @@
 					
 				</state>
 
-            	<state-link state="Style CSS" mode="HTML"/>
+            	<state-link state="Style CSS" mode="HTML" />
             	
                	<state id="Strings in Tags" type="string" useforautocomplete="no" scope="markup.tag.attribute.value.string">
 					<begin><regex>"</regex></begin>

@@ -60,6 +60,10 @@
 				<keywords id="Value" useforautocomplete="no" scope="style.value.string">
 					<regex>=\s*([^\[\]]+)</regex>
 				</keywords>
+				
+				<state-link state="String"/>
+				<state-link state="SingleString"/>
+				
 			</state>
 			
 			<state id="Digits and Colors" containerState="yes" scope="meta.default">

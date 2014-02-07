@@ -22,7 +22,7 @@
         	<find>#.*</find>
         	<replace></replace>
         </postprocess>
-        <arguments>([\$A-Za-z0-9_\s={}]+)[ ,]*</arguments>
+        <arguments>(&amp;*\**([\$\*A-Za-z0-9_]+)[^,]*),*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
     </symbol>
     
@@ -47,7 +47,7 @@
         	<find>#.*</find>
         	<replace></replace>
         </postprocess>
-        <arguments>([\$A-Za-z0-9_\s={}]+)[ ,]*</arguments>
+        <arguments>(&amp;*\**([\$\*A-Za-z0-9_]+)[^,]*),*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
     </symbol>
     
