@@ -18,7 +18,7 @@
 	</symbol>
 	
 	<symbol id="Import" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
-		<regex>import\s\"([^"]+)\"</regex>
+		<regex>import\s\"([^\"]+)\"</regex>
 	</symbol>
 	
 	<symbol id="Import Framework" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="yes">
@@ -30,9 +30,9 @@
 	</symbol> -->
 	
 		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes" scope="language.function">
-	    <regex>([-|+][|\s]\([A-z\\s*]+\)[^;|\n|\{]+)</regex>
+	    <regex>([-|+][|\s]\([A-z\\s* ]+\)[^;|\n|\{]+)</regex>
 	    <postprocess>
-				<find>([-|+][|\s]\([A-z\\s*]+\))</find>
+				<find>([-|+][|\s]\([A-z\\s* ]+\))</find>
 				<replace></replace>
         <find>(:) *\([^\)]*\)</find>
         <replace>:</replace>
@@ -87,7 +87,7 @@
     </symbol>
 
     <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolH" indentation="0" ignoreblocks="yes" scope="language.declarations">
-        <regex>(@interface[^[:cntrl:]{]*|@protocol[^[:cntrl:]{]*)</regex>
+        <regex>(@interface[^[:cntrl:]{\/]*|@protocol[^[:cntrl:]{\/]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
