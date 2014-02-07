@@ -41,20 +41,7 @@
 	    </postprocess>
 			<arguments>(:)</arguments>
 			<captures>{"sender" : "1"}</captures>
-			<!-- <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures> -->
-			<!-- <arguments>(:\w+)</arguments>
-			<captures>{"sender" : "1"}</captures> -->
 	  </symbol>
-
-	<!-- <symbol id="Objective-C Methods (without arguments)" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes" scope="language.function.objective-c">
-        <regex>(^[ \t]*[-][^(-;]*\([A-Za-z0-9 *_]*\)[A-Za-z0-9_ \t]+[\s\t+|^;])</regex>
-        <postprocess>
-            <find>(:) *\([^\)]*\)</find>
-            <replace></replace>
-            <find>([\n\r\t\-\+]| +|\([^\)]*\))</find>
-            <replace></replace>
-        </postprocess>
-    </symbol> -->
 	
 	<symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
 	        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
@@ -137,10 +124,6 @@
         <find>TODO:</find>
         <replace>TODO</replace>
       </postprocess>
-    </symbol>
-
-    <symbol id="Objective-C implementation and interface" useforautocomplete="yes" hidden="yes" image="SymbolAt">
-    	<regex>implementation\s(\w+)|interface\s(\w+)</regex>
     </symbol>
 
     <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes" image="SymbolH">
