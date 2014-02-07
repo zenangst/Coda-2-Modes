@@ -60,7 +60,7 @@
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
-						<find>@implementation\s</find>
+						<find>@implementation\s|\s</find>
 						<replace></replace>
         </postprocess>
     </symbol>
@@ -78,7 +78,7 @@
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
-						<find>@interface|@protocol|\s:\s\w+</find>
+						<find>@interface|@protocol|\s:\s\w+|\s</find>
 						<replace></replace>
         </postprocess>
     </symbol>
