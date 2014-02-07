@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
     <recognition>
-        <extension>rb</extension>
-        <extension>ruby</extension>
-        <extension>rbx</extension>
-        <extension>rxml</extension>
-        <extension>builder</extension>
-        <extension>rjs</extension>
-        <filename>Rakefile</filename>
-		<filename>Gemfile</filename>
-        <regex>\A#!/usr/bin/(env )?ruby</regex>
-        <regex>\A#!/usr/bin/(env )?macruby</regex>
-        <regex>\A#!/usr/local/bin/macruby</regex>
+      <extension>rb</extension>
+      <extension>ruby</extension>
+      <extension>rbx</extension>
+      <extension>rxml</extension>
+      <extension>builder</extension>
+      <extension>rjs</extension>
+      <filename>Rakefile</filename>
+      <filename>Gemfile</filename>
+      <filename>Guardfile</filename>
+      <filename>Procfile</filename>
+      <regex>\A#!/usr/bin/(env )?ruby</regex>
+      <regex>\A#!/usr/bin/(env )?macruby</regex>
+      <regex>\A#!/usr/local/bin/macruby</regex>
     </recognition>
     <color>0.929, 0.392, 0.400</color>
 </settings>
