@@ -18,4 +18,12 @@ this new one.
 
 ## Updates
 
+If you want to get the latest updates, you simply run git pull inside the Modes directory
+
+    $ cd ~/Library/Application\ Support/Coda\ 2
+    $ git pull
+    
+Or the following if you are running the sandboxed MAS version.
+
+    $ cd ~/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2
     $ git pull
