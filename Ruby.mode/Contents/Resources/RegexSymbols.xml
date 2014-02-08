@@ -67,7 +67,7 @@
         <regex>\b[ \t]*class[ \t]+([\w\d?!_]+)</regex>
     </symbol>
     
-    <symbol id="language.class.model" image="SymbolM" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
+    <symbol id="language.class" image="SymbolM" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
         <regex>\b[ \t]*class[ \t]++([\w\d?!_]+\s&lt;\sActiveRecord::Base+)</regex>
         <postprocess>
           <find>&lt;[^\n]+</find>
@@ -75,7 +75,7 @@
         </postprocess>
     </symbol>
     
-    <symbol id="language.class.controller" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
+    <symbol id="language.class" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
         <regex>\b[ \t]*class[ \t]+([\w\d?!_]+Controller)</regex>
         <postprocess>
           <find>Controller</find>
@@ -83,7 +83,7 @@
         </postprocess>
     </symbol>
 		
-    <symbol id="language.class.controller.alt" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
+    <symbol id="language.class" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
         <regex>\b[ \t]*class[ \t]+([\w\d?!_]+Controller)</regex>
         <postprocess>
           <find>sController</find>
@@ -116,7 +116,7 @@
         <regex>(?:^|(?&lt;=\r))[\t ]*#mark[\t -]*([^\n]*)\n</regex>
     </symbol>
 	
-	<symbol id="User Variables" useforautocomplete="yes" scope="language.variable.ruby" hidden="yes" image="SymbolsV">
+	<symbol id="language.variables" useforautocomplete="yes" scope="language.variable.ruby" hidden="yes" image="SymbolsV">
 		<regex>(@\w+)|(\w+)[^=]=</regex>
         <postprocess>
             <find>[\s|\t|=]</find>
