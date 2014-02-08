@@ -6,7 +6,7 @@
         <endregex>}</endregex>
     </blocks>
 	
-	<symbol id="Objects" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8" image="SymbolsV">
+	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8" image="SymbolsV">
 		<regex>\*(\w+)</regex>
 		<regex>(\w+)\s\=</regex>
 		<regex>(\w+);</regex>
@@ -17,11 +17,11 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
-	<symbol id="Import" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
+	<symbol id="language.include" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
 		<regex>import\s\"([^\"]+)\"</regex>
 	</symbol>
 	
-	<symbol id="Import Framework" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
+	<symbol id="language.include" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
 		<regex>import\s&lt;\w+\/([^\.]+)\.\w&gt;</regex>
 	</symbol>
 	
@@ -43,7 +43,7 @@
 			<captures>{"sender" : "1"}</captures>
 	  </symbol>
 	
-	<symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
+	<symbol id="language.function" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
 	        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
         <postprocess>
             <find>\([^\)]*\)</find>
@@ -55,7 +55,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Directives" font-weight="bold" image="SymbolM" indentation="0" ignoreblocks="yes" scope="language.directives" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" image="SymbolM" indentation="0" ignoreblocks="yes" scope="language.directives" useforautocomplete="yes">
         <regex>(@implementation[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -65,7 +65,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Synthesize" font-weight="bold" image="SymbolS" indentation="0" ignoreblocks="yes" scope="language.directives">
+    <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="0" ignoreblocks="yes" scope="language.directives">
         <regex>@synthesize\s([^[:cntrl:]{]*);</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -73,7 +73,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Objective-C Declarations" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations">
         <regex>(@interface[^[:cntrl:]{\/]*|@protocol[^[:cntrl:]{\/]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -104,7 +104,7 @@
 	        </postprocess>
 	    </symbol>
     	
-		<symbol id="Properties" font-weight="bold" hidden="yes" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="language.function.objective-c" image="SymbolP">
+		<symbol id="language.variable" font-weight="bold" hidden="yes" useforautocomplete="yes" indentation="0" ignoreblocks="no" scope="language.function.objective-c" image="SymbolP">
 			<regex>\.(\w{2,}+)</regex>
 		</symbol>
 		
@@ -126,15 +126,15 @@
       </postprocess>
     </symbol>
 
-    <symbol id="Objective-C headers" useforautocomplete="yes" hidden="yes" image="SymbolH">
+    <symbol id="language.include" useforautocomplete="yes" hidden="yes" image="SymbolH">
     	<regex>(\w+)\.h</regex>
     </symbol>
 		
-    <symbol id="Objective-C Interface Auto-completions" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
         <regex>@interface\s([^[\s\n\r\t]{\/]*)|@protocol\s([^[:cntrl:\s]{\/]*)</regex>
     </symbol>
 		
-    <symbol id="Objective-C Implementations Auto-completions" font-weight="bold" font-style="italic" image="SymbolM" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolM" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
         <regex>@implementation\s([^[\s\n\r\t]{\/]*)</regex>
     </symbol>
 	
