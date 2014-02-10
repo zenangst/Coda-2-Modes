@@ -10,7 +10,7 @@
 
     <states>
     
-        <default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
+        <default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal" scope="meta.default">
             <keywords id="C Keywords" color="#881350" font-weight="bold" useforautocomplete="yes" scope="keyword">
 				<string>break</string>
 				<string>case</string>
@@ -92,7 +92,7 @@
             <state id="DoxyGen Comment" type="comment" color="#236E25"  font-style="italic" scope="comment.doxygen.c">
                 <begin><regex>/\*[\*\!]</regex></begin>
                 <end><regex>\*/</regex></end>
-                <keywords id="DoxyGen Tags" color="#236E25" font-weight="bold" useforautocomplete="no">
+                <keywords id="DoxyGen Tags" color="#236E25" font-weight="bold" useforautocomplete="no" scope="comment.doxygen.c.tags">
                     <regex>(?&lt;=[^\w\d]|^)([@\\]\w+)</regex>
                 </keywords>
                 <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
