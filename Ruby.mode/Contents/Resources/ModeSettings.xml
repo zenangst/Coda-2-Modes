@@ -11,6 +11,7 @@
       <filename>Gemfile</filename>
       <filename>Guardfile</filename>
       <filename>Procfile</filename>
+      <filename>Podfile</filename>
       <regex>\A#!/usr/bin/(env )?ruby</regex>
       <regex>\A#!/usr/bin/(env )?macruby</regex>
       <regex>\A#!/usr/local/bin/macruby</regex>
