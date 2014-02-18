@@ -17,17 +17,9 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
-	<symbol id="language.include" color="#6C0540" image="SymbolGroup" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
-		<regex>import\s\"([^\"]+)\"</regex>
-	</symbol>
-	
 	<symbol id="language.include" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
 		<regex>import\s&lt;\w+\/([^\.]+)\.\w&gt;</regex>
 	</symbol>
-	
-	<!-- <symbol id="User Methods" color="#6C0540" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="yes" useforautocomplete="yes">
-		<regex>\)(\w+)[^{]+</regex>
-	</symbol> -->
 	
 		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes" scope="language.function">
 	    <regex>([-|+][|\s]\([A-z\\s* ]+\)[^;|\n|\{]+)</regex>
@@ -55,7 +47,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.class" font-weight="bold" image="SymbolM" indentation="0" ignoreblocks="yes" scope="language.directives" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" image="SymbolM" scope="language.directives" useforautocomplete="yes">
         <regex>(@implementation[^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -124,10 +116,6 @@
         <find>TODO:</find>
         <replace>TODO</replace>
       </postprocess>
-    </symbol>
-
-    <symbol id="language.include" useforautocomplete="yes" hidden="yes" image="SymbolH">
-    	<regex>(\w+)\.h</regex>
     </symbol>
 		
     <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
