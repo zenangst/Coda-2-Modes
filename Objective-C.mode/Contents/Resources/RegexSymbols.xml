@@ -48,7 +48,7 @@
     </symbol>
 
     <symbol id="language.class" font-weight="bold" image="SymbolM" scope="language.directives" useforautocomplete="yes">
-        <regex>(@implementation[^[:cntrl:]{]*)</regex>
+        <regex>@implementation\s([^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
             <replace> </replace>
