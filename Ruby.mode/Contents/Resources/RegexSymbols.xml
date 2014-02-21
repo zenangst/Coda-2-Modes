@@ -6,7 +6,7 @@
         <beginregex>{</beginregex>
         <endregex>}</endregex>
     </blocks>
-	<symbol id="Auto-Complete" useforautocomplete="yes" hidden="yes" scope="language" image="SymbolS">
+	<symbol id="language.variables" useforautocomplete="yes" hidden="yes" scope="language" image="SymbolS" casesensitive="no">
 		<regex>([A-z0-9_]+)</regex>
         <postprocess>
             <find>[\[|\]]</find>
