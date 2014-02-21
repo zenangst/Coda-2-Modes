@@ -722,9 +722,9 @@
 							<regex>\w+\:(\w+)</regex>
 						</keywords>
 						
-						<keywords id="Instance and iterator variables" useforautocomplete="yes" scope="language.variable.ruby">
+						<keywords id="Instance and iterator variables" useforautocomplete="yes" casesensitive="no" scope="language.variable.ruby">
 							<regex>(@\w+)</regex>
-							<regex>\|([A-Za-z\s]+)|([A-Za-z\s]+)\||([A-Za-z\s]+),</regex>
+							<regex>\|([a-z\s]+)|([a-z\s]+)\||([a-z\s]+),</regex>
 						</keywords>
 						
             <keywords id="Rails Keywords" useforautocomplete="yes" scope="keyword.control">
