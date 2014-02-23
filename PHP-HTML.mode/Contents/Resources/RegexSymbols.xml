@@ -76,10 +76,10 @@
 
 	<symbol id="language.variable" hidden="yes" useforautocomplete="yes">
 		<regex>(\$\w[\w\d]+)</regex>
-		<regex>&gt;(\w[\w\d]+)</regex>
+		<regex>(\$[\w\$][\w\d]+)</regex>
 	</symbol>
-	
-	<symbol id="language.variable.php.instance.variables" hidden="yes" useforautocomplete="yes">
+
+	<symbol id="language.variable" hidden="yes" useforautocomplete="yes">
 		<regex>[private|protected|public]\s(\$\w+)</regex>
 		<postprocess>
 			<find>\$</find>

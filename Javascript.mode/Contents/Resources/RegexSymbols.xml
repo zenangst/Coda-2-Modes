@@ -41,7 +41,7 @@
             <find>[ \t]+</find>
             <replace> </replace>
         </postprocess>
-        <arguments>([\$A-Za-z0-9_]+)[ ,]*</arguments>
+        <arguments>([\$A-Za-z0-9_]+)\s*[,]*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
     </symbol>
 
@@ -53,7 +53,7 @@
             <find>[ \t]+</find>
             <replace> </replace>
         </postprocess>
-        <arguments>([\$A-Za-z0-9_]+)[ ,]*</arguments>
+        <arguments>([\$A-Za-z0-9_]+)\s*[,]*</arguments>
         <captures>{ "value" : "1", "name" : "2", "arguments" : "3" }</captures>
     </symbol>
     
@@ -68,7 +68,7 @@
             <find>(\s{0,64}=\s{0,64}function\s{0,64})</find>
             <replace></replace>
         </postprocess>
-        <arguments>([\$A-Za-z0-9_]+)[ ,]*</arguments>
+        <arguments>([\$A-Za-z0-9_]+)\s*[,]*</arguments>
         <captures>{ "value" : "1", "name" : "2", "trim" : "3", "arguments" : "4" }</captures>
     </symbol>
 
