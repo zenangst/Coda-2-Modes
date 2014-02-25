@@ -6401,6 +6401,12 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>rename_table</string>
+			<key>String</key>
+			<string>rename_table</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>rename_column</string>
 			<key>String</key>
 			<string>rename_column</string>
