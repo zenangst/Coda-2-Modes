@@ -379,14 +379,12 @@
             </keywords>
 			
 			
-			<keywords id="Symbols" useforautocomplete="yes" scope="markup.tag.attribute.name">
-				<regex>(:\w+)</regex>
+			<keywords id="Symbols" useforautocomplete="yes" scope="markup.tag.attribute.name" casesensitive="no">
+				<regex>(:[a-z_]+)</regex>
 			</keywords>
 			
 			
-			<keywords id="Hashes" useforautocomplete="yes" scope="markup.tag.attribute.value">
-				<regex>(\w+):</regex>
-			</keywords>
+			
         	
         	<state id="String with double quotes" type="string" scope="string.double">
                 <begin><regex>"</regex></begin>
@@ -755,6 +753,10 @@
 							<string>render</string>
 							<string>before_action</string>
 						</keywords>
+
+      			<keywords id="Hashes" useforautocomplete="yes" scope="markup.tag.attribute.value" casesensitive="no">
+      				<regex>([a-z_]+:)</regex>
+      			</keywords>
 
         </default>
         
