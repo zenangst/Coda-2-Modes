@@ -715,9 +715,10 @@
 							<regex>([A-Z]{1}\w+)</regex>
 						</keywords>
 						
-						<keywords id="User Variables" scope="markup.tag.attribute.name" useforautocomplete="yes">
+						<keywords id="User Variables" scope="markup.tag.attribute.name" useforautocomplete="yes" casesensitive="no">
 							<regex>(\w+_[^\s|\[|\(|\|\)|\]]+)|\s([a-z_]+)\.</regex>
 							<regex>\w+\:(\w+)</regex>
+              <regex>&lt; (\w+)</regex>
 						</keywords>
 						
 						<keywords id="Instance and iterator variables" useforautocomplete="yes" casesensitive="no" scope="language.variable.ruby">
