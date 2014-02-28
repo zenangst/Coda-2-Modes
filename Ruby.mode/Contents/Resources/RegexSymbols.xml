@@ -91,8 +91,22 @@
         </postprocess>
     </symbol>
 
-    <symbol id="Modules" image="SymbolM" indentation="0" ignoreblocks="yes">
-        <regex>\b[ \t]*module[ \t]+([\w\d?!_]+)</regex>
+    <symbol id="language.class" image="SymbolM" indentation="0" ignoreblocks="yes">
+        <regex>\b[ \t]*module[ \t]+([\w\d?!_:]+)</regex>
+        <postprocess>
+          <find>::</find>
+          <replace> </replace>
+        </postprocess>
+    </symbol>
+    
+    <symbol id="language.class" hidden="yes" image="Symbola" indentation="0" ignoreblocks="yes">
+        <regex>\b[ \t]*module[ \t]+([\w\d?!_:]+)</regex>
+        <postprocess>
+          <find>Admin::</find>
+          <replace></replace>
+          <find>$</find>
+          <replace> Admin</replace>
+        </postprocess>
     </symbol>
 
     <symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no">
