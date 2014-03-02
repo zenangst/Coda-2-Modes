@@ -131,7 +131,7 @@
     </symbol>
 	
 	<symbol id="language.variables" useforautocomplete="yes" scope="language.variable.ruby" hidden="yes" image="SymbolsV">
-		<regex>(@\w+)|(\w+)[^=]=</regex>
+		<regex>(@\w+)|(\w+)[^=]=|:(\w+)|(\w+):</regex>
         <postprocess>
             <find>[\s|\t|=]</find>
             <replace></replace>
