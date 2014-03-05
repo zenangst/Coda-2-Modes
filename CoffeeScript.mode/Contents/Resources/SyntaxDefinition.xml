@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "syntax.dtd">
+<syntax>
+
+    <head>
+        <name>CoffeeScript</name>
+        <charsintokens><![CDATA[@$_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]]></charsintokens> 
+    </head>
+
+    <states>
+
+        <default id="Base" color="#363636" inverted-color="#f0f" scope="meta.default">
+            
+            <!--
+            WIP - Folding support
+            
+            <state id="Block" foldable="yes">
+      				<begin><regex>^(?'indent'\s*)\S</regex></begin>
+      				<end><regex>\n(?=(?#see-insert-start-group:indent)\S)</regex></end>
+      				<import />
+      			</state>
+      			-->
+            
+            <state id="Function" scope="language.function">
+              <begin><regex>(?:\([^()]*\)\s*)?[-=](?=>)</regex></begin>
+              <end><regex>></regex></end>
+            </state>
+
+            <state id="Comment" scope="comment">
+                <begin><string>###</string></begin>
+                <end><string>###</string></end>
+            </state>
+
+            <state id="Single Comment" scope="comment">
+                <begin><string>#</string></begin>
+                <end><string>\n</string></end>
+            </state>
+
+            <state id="String 3" scope="string">
+                <begin><string>"""</string></begin>
+                <end><regex>((\\\\)*(?&lt;!\\))"""</regex></end>
+
+                <state id="Interpolated Values" scope="style.value.keyword">
+                  <begin><string>#{</string></begin>
+                  <end><string>}</string></end>
+                  <import />
+                </state>
+                
+            </state>
+            
+            <state id="Single String 3" scope="string">
+                <begin><string>'''</string></begin>
+                <end><regex>((\\\\)*(?&lt;!\\))'''</regex></end>
+            </state>
+            
+            <state id="String" scope="string">
+                <begin><string>"</string></begin>
+                <end><regex>((\\\\)*(?&lt;!\\))"</regex></end>
+
+                <state id="Interpolated Values" scope="style.value.keyword">
+                  <begin><string>#{</string></begin>
+                  <end><string>}</string></end>
+                  <import mode="CoffeeScript" />
+                </state>
+                
+            </state>
+
+            <state id="Single String" scope="string">
+                <begin><string>'</string></begin>
+                <end><regex>((\\\\)*(?&lt;!\\))'</regex></end>
+            </state>
+            
+            <state id="RegularExpression" scope="string.regex">
+                <!-- copied from CODA2 Javascript.mode -->
+                <begin><regex>(?i)(?&lt;=[=(,:\+~!]|return|;)\s*/(?![/*+{}?\r\n])</regex></begin>
+                <end><regex>/[cgimosx]*</regex></end>
+
+                <state id="Escaped Characters" scope="string.regex.escaped.js">
+                    <begin><regex>\\</regex></begin>
+                    <end><regex>.</regex></end>	
+                </state>
+            </state>
+            
+            <state id="Embedded JavaScript" scope="string">
+              <begin><string>`</string></begin>
+              <end><string>`</string></end>
+              <import mode="JavaScript" />
+            </state>
+            
+            <keywords id="Keywords" useforautocomplete="yes" scope="keyword.control">
+                <string>if</string>
+                <string>unless</string>
+                <string>else</string>
+                <string>switch</string>
+                <string>when</string>
+                <string>then</string>
+                <string>for</string>
+                <string>while</string>
+                <string>until</string>
+                <string>do</string>
+                <string>new</string>
+                <string>this</string>
+                <string>class</string>
+                <string>extends</string>
+                <string>break</string>
+                <string>continue</string>
+                <string>return</string>
+                <string>try</string>
+                <string>catch</string>
+                <string>finally</string>
+                <string>throw</string>
+                <string>is</string>
+                <string>isnt</string>
+                <string>not</string>
+                <string>and</string>
+                <string>or</string>
+                <string>of</string>
+                <string>in</string>
+                <string>instanceof</string>
+                <string>typeof</string>
+            </keywords>
+            
+            <keywords id="Operators" scope="language.operator">
+              <regex>([-+*/=!&lt;>%])</regex>
+            </keywords>
+            
+            <keywords id="Object Keys" scope="language.variable">
+              <regex>\s*([\w$]+)\s*[^\w$.]</regex>
+            </keywords>
+            
+            <keywords id="Numbers" scope="constant.numeric">
+              <regex>(?&lt;=[^\w\d]|^)(((([0-9]+\.[0-9]*)|(\.[0-9]+))([eE][+\-]?[0-9]+)?[fFlL]?)|((([1-9][0-9]*)|0[0-7]*|(0[xX][0-9a-fA-F]+))(([uU][lL]?)|([lL][uU]?))?))(?=[^\w\$]|$)</regex>
+            </keywords>
+            
+            <keywords id="Number Literals" useforautocomplete="yes" scope="constant.numeric.keyword">
+                <string>true</string>
+                <string>yes</string>
+                <string>on</string>
+                <string>false</string>
+                <string>no</string>
+                <string>off</string>
+                <string>null</string>
+                <string>NaN</string>
+                <string>infinity</string>
+                <string>undefined</string>
+            </keywords>
+            
+            <keywords id="Properties" scope="keyword.type">
+              <regex>(@\w*)</regex>
+              <regex>(@?[$\w]+\s*:)</regex>
+            </keywords>
+
+            <keywords id="Classes" scope="support">
+              <regex>(\b[A-Z]\w*)</regex>
+            </keywords>
+            
+        </default>
+
+    </states>
+
+</syntax>
