@@ -19,4 +19,7 @@
         <regex># !([^\n\r]+)</regex>
     </symbol>
     
+    <symbol id="language.variable" image="SymbolsV" ignoreblocks="yes" hidden="no" useforautocomplete="yes">
+      <regex>(\w+)\s=</regex>
+    </symbol>
 </symbols>
