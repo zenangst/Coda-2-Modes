@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "syntax.dtd">
+
+<syntax>
+    <head>
+        <name>HAML Syntax</name>
+
+        <autocompleteoptions use-spelling-dictionary="no" />
+
+        <charsintokens>
+            <![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#%.{}]]>
+        </charsintokens>
+    </head>
+
+    <states>
+        <default id="Base" scope="meta.default">
+      			<state id="Single Tag" foldable="no" scope="markup.tag">
+        				<begin>
+          					<regex>\s*%</regex>
+        				</begin>
+        				
+        				<end>
+                    <regex>\w+</regex>
+        				</end>
+        				
+        				<import/>
+      			</state>
+
+      			<state id="Tag Attributes" foldable="no" scope="markup.tag.attribute.name">
+      			   <begin>
+      			       <regex>{</regex>
+      			   </begin>
+      			   
+      			   <end>
+      			       <regex>}</regex>
+      			   </end>
+      			   
+               <state id="String" type="string" scope="markup.tag.attribute.value.string">
+                   <begin><regex>"</regex></begin>
+                   <end><regex>"</regex></end>
+               </state>
+
+               <state id="SingleString" type="string" scope="markup.tag.attribute.value.string">
+                   <begin><regex>'</regex></begin>
+                   <end><regex>'</regex></end>
+               </state>
+      			</state>
+
+      			<state id="Tag Class or ID" foldable="no" scope="markup.tag.attribute.name">
+        				<begin>
+          					<regex>[#\.]</regex>
+        				</begin>
+        				
+        				<end>
+                    <regex>[-_\d\w]+</regex>
+        				</end>
+        				
+        				<import/>
+      			</state>
+      			
+            <state id="Inline JavaScript" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="yes" indent="yes" scope="meta.block.js">
+            
+                <begin>
+                    <regex>^\s+:javascript</regex>
+                </begin>
+                
+                <end>
+                    <regex>\n\s*\n</regex>
+                </end>
+                
+                <import mode="JavaScript"/>
+            </state>
+
+      			<state id="Ruby" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby" foldable="yes" scope="meta.default">
+  			<begin><regex>[-=]</regex></begin>
+  				<end><regex>\n</regex></end>
+  
+  				<keywords id="ERB Delimiter" useforautocomplete="no" scope="markup.processing.languageswitch">				
+            <regex>\n</regex>
+  				</keywords>
+  
+  				<import mode="Ruby" keywords-only="yes" />
+  
+  				<state-link mode="Ruby" state="String with double quotes" />
+  				<state-link mode="Ruby" state="String with single quotes" />
+  				<state-link mode="Ruby" state="Heredoc" />
+  				<state-link mode="Ruby" state="Heredoc Indented End" />
+                  <state id="ERB Percent Strings with Interpolation" type="string" foldable="yes" scope="string.percentage">
+                  <begin><regex>%Q?(?'erbpercentstringchar'[^\s{\[\(&lt;A-Za-z0-9>])</regex></begin>
+                  <end><regex>(?#see-insert-start-group:erbpercentstringchar)</regex></end>
+                      <state-link mode="Ruby" state="Interpolation"/>
+                  </state>
+                  <state id="ERB Percent Strings without Interpolation" type="string" foldable="yes" scope="string.percentage">
+                  <begin><regex>%q(?'erbpercentstringcharnointer'[^\s{\[\(&lt;A-Za-z0-9>])</regex></begin>
+                  <end><regex>(?#see-insert-start-group:erbpercentstringcharnointer)</regex></end>
+                  </state>
+  				<state-link mode="Ruby" state="Percent Strings {" />
+  				<state-link mode="Ruby" state="Percent Strings (" />
+  				<state-link mode="Ruby" state="Percent Strings &lt;" />
+  				<state-link mode="Ruby" state="Percent Strings [" />
+  				<state-link mode="Ruby" state="Percent Strings Q {" />
+  				<state-link mode="Ruby" state="Percent Strings Q (" />
+  				<state-link mode="Ruby" state="Percent Strings Q &lt;" />
+  				<state-link mode="Ruby" state="Percent Strings Q [" />
+  				<state-link mode="Ruby" state="Backticks" />
+  				<state-link mode="Ruby" state="Percent Execution" />
+  				<state-link mode="Ruby" state="Percent Execution {" />
+  				<state-link mode="Ruby" state="Percent Execution (" />
+  				<state-link mode="Ruby" state="Percent Execution &lt;" />
+  				<state-link mode="Ruby" state="Percent Execution [" />
+  				<state-link mode="Ruby" state="Regexp" />
+  				<state-link mode="Ruby" state="Percent Regex" />
+  				<state-link mode="Ruby" state="Percent Regex {" />
+  				<state-link mode="Ruby" state="Percent Regex (" />
+  				<state-link mode="Ruby" state="Percent Regex &lt;" />
+  				<state-link mode="Ruby" state="Percent Regex [" />
+  				<state-link mode="Ruby" state="Percent Symbol" />
+  				<state-link mode="Ruby" state="Percent Symbol {" />
+  				<state-link mode="Ruby" state="Percent Symbol (" />
+  				<state-link mode="Ruby" state="Percent Symbol &lt;" />
+  				<state-link mode="Ruby" state="Percent Symbol [" />
+  				<state-link mode="Ruby" state="Percent Array" />
+  				<state-link mode="Ruby" state="Percent Array {" />
+  				<state-link mode="Ruby" state="Percent Array (" />
+  				<state-link mode="Ruby" state="Percent Array &lt;" />
+  				<state-link mode="Ruby" state="Percent Array [" />
+  				
+  				<state id="Singleline Comment" type="comment" scope="comment.line.double-slash">
+  					<begin><regex>#</regex></begin>
+  					<end><regex>(?:.(?=[\n\r]))|(?:.(?=%>|-%>))</regex></end>
+  					<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
+  				</state>
+  			</state>
+        </default>
+    </states>
+</syntax>
