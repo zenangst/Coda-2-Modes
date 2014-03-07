@@ -53,7 +53,7 @@
     
     <!-- no args -->
     <symbol id="language.method" image="SymbolF" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
-        <regex>\bdef\s+self.([\w\d?!_]+)\s*[\r\n]+</regex>
+        <regex>\bdef\s+self.([\w\d?!_]+)</regex>
         <postprocess>
         	<find>\s+</find>
         	<replace> </replace>
@@ -137,6 +137,14 @@
             <replace></replace>
         </postprocess>
 	</symbol>
+  
+  <symbol id="Scopes" useforautocomplete="no" hidden="no" image="SymbolS">
+    <regex>scope\s(:\w+)</regex>
+  </symbol>
+  
+  <symbol id="Validates" useforautocomplete="no" hidden="no" image="SymbolsV">
+    <regex>validates\s(:\w+)</regex>
+  </symbol>
 	
   <symbol id="TODO" font-weight="normal" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="no" show-in-comments="yes">
     <regex>(TODO\s[^\n]+)</regex>
