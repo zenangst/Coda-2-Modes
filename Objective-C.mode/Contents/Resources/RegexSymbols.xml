@@ -18,7 +18,7 @@
 	</symbol>
 	
 	<symbol id="language.include" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0"  hidden="no" useforautocomplete="no">
-		<regex>import\s&lt;\w+\/([^\.]+)\.\w&gt;</regex>
+    <regex>import\s\"([^"]+)\"</regex>
 	</symbol>
 	
 		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes">
