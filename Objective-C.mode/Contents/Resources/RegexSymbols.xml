@@ -6,7 +6,7 @@
         <endregex>}</endregex>
     </blocks>
 	
-	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes" scope="markup.tag.attribute.name" color="#006ff8" image="SymbolsV">
+	<symbol id="language.variable" hidden="yes" casesensitive="no" useforautocomplete="yes"  color="#006ff8" image="SymbolsV">
 		<regex>\*(\w+)</regex>
 		<regex>(\w+)\s\=</regex>
 		<regex>(\w+);</regex>
@@ -17,11 +17,11 @@
 		<regex>\(?[^\w]([a-z]{1}\w+)</regex>
 	</symbol>
 	
-	<symbol id="language.include" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0" scope="language.function.objective-c" hidden="no" useforautocomplete="no">
+	<symbol id="language.include" color="#6C0540" image="SymbolF" casesensitive="yes" indentation="0"  hidden="no" useforautocomplete="no">
 		<regex>import\s&lt;\w+\/([^\.]+)\.\w&gt;</regex>
 	</symbol>
 	
-		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes" scope="language.function">
+		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes">
 	    <regex>([-|+][|\s]\([A-z\\s* ]+\)[^;|\n|\{]+)</regex>
 	    <postprocess>
 				<find>([-|+][|\s]\([A-z\\s* ]+\))</find>
@@ -47,7 +47,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.class" font-weight="bold" image="SymbolM" scope="language.directives" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" image="SymbolM"  useforautocomplete="yes">
         <regex>@implementation\s([^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -57,7 +57,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="0" ignoreblocks="yes" scope="language.directives">
+    <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="0" ignoreblocks="yes">
         <regex>@synthesize\s([^[:cntrl:]{]*);</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -65,7 +65,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH">
         <regex>(@interface[^[:cntrl:]{\/]*|@protocol[^[:cntrl:]{\/]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -75,7 +75,7 @@
         </postprocess>
     </symbol>
 	
-	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolMark" scope="meta.tag.framework.pragma">
+	<symbol id="Pragma Marks" font-weight="bold" indentation="0" ignoreblocks="yes" show-in-comments="yes" image="SymbolMark">
         <regex>(#pragma mark[	 -]*[^\n]*)\n</regex>
         <postprocess>
             <find>#pragma mark[-	 \n]*</find> <!-- An empty string places a separator -->
@@ -84,11 +84,11 @@
     </symbol>
 	
 	
-	<symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes" scope="markup.constant.entity">
+	<symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes">
       <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
     </symbol>
 	
-	<symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no" scope="markup.invalid">
+	<symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no">
 	        <regex>^&lt;&lt;&lt;&lt;&lt;&lt;&lt;([\n\r]|.)*?======([\n\r]|.)*?&gt;&gt;&gt;&gt;&gt;&gt;&gt;</regex>
 	        <postprocess>
 	            <find>.*</find>
@@ -96,11 +96,11 @@
 	        </postprocess>
 	    </symbol>
     	
-		<symbol id="language.variable" font-weight="bold" hidden="yes" useforautocomplete="yes" indentation="0" ignoreblocks="no" scope="language.function.objective-c" image="SymbolP">
+		<symbol id="language.variable" font-weight="bold" hidden="yes" useforautocomplete="yes" indentation="0" ignoreblocks="no"  image="SymbolP">
 			<regex>\.(\w{2,}+)</regex>
 		</symbol>
 		
-	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no" scope="language.function.objective-c.log">
+	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no">
         <regex>(NSLog[^;]+?;?)</regex>
         <postprocess>
         	<find>\(</find>
@@ -110,7 +110,7 @@
         </postprocess>
     </symbol>
 
-	<symbol id="TODO" font-weight="normal" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="no" show-in-comments="yes" scope="style.at-rule">
+	<symbol id="TODO" font-weight="normal" font-style="normal" image="SymbolT" indentation="0" ignoreblocks="no" show-in-comments="yes">
 	    <regex>(TODO?:?\s[^\n]+)</regex>
       <postprocess>
         <find>TODO:</find>
@@ -118,11 +118,11 @@
       </postprocess>
     </symbol>
 		
-    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolH"  hidden="yes" useforautocomplete="yes">
         <regex>@interface\s([^[\s\n\r\t]{\/]*)|@protocol\s([^[:cntrl:\s]{\/]*)</regex>
     </symbol>
 		
-    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolM" scope="language.declarations.autocomplete" hidden="yes" useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolM"  hidden="yes" useforautocomplete="yes">
         <regex>@implementation\s([^[\s\n\r\t]{\/]*)</regex>
     </symbol>
 	
