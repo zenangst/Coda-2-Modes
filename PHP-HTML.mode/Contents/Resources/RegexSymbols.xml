@@ -8,7 +8,10 @@
 
 	<!-- CODA -->
 	<symbol id="language.include" font-weight="normal" font-style="normal" image="Symbol#" indentation="0" ignoreblocks="no"> 
-		<regex>(?i)(?:(?:^|\s)(?:include|require)(?:_once)?)\s+\(([-\s_\w\./\$'"\[\]]+?)\)</regex>
+		<regex>include[\s|\(]["|'](\w+\.\w+)["|']</regex>
+		<regex>require[\s|\(]["|'](\w+\.\w+)["|']</regex>
+		<regex>include_once[\s|\(]["|'](\w+\.\w+)["|']</regex>
+		<regex>require_once[\s|\(]["|'](\w+\.\w+)["|']</regex>
 		<postprocess>
 			<find>[-\s_\d\w\./'"]*?/</find>
 			<replace></replace>
