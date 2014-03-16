@@ -21,7 +21,7 @@
     <regex>import\s\"([^"]+)\"</regex>
 	</symbol>
 	
-		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="0" useforautocomplete="yes">
+		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="1" useforautocomplete="yes">
 	    <regex>([-|+][|\s]\([A-z\\s* ]+\)[^;|\n|\{]+)</regex>
 	    <postprocess>
 				<find>([-|+][|\s]\([A-z\\s* ]+\))</find>
@@ -47,7 +47,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.class" font-weight="bold" image="SymbolM"  useforautocomplete="yes">
+    <symbol id="language.class" font-weight="bold" image="SymbolM"  useforautocomplete="yes" indentation="0" ignoreblocks="no">
         <regex>@implementation\s([^[:cntrl:]{]*)</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -57,7 +57,7 @@
         </postprocess>
     </symbol>
 
-    <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="0" ignoreblocks="yes">
+    <symbol id="language.prototype" font-weight="bold" image="SymbolS" indentation="1" ignoreblocks="yes">
         <regex>@synthesize\s([^[:cntrl:]{]*);</regex>
         <postprocess>
             <find>([\n\r]| +)</find>
@@ -100,7 +100,7 @@
 			<regex>\.(\w{2,}+)</regex>
 		</symbol>
 		
-	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="0" ignoreblocks="no" show-in-comments="no">
+	    <symbol id="NSLog" font-weight="normal" font-style="normal" image="SymbolWarn" indentation="2" ignoreblocks="no" show-in-comments="no">
         <regex>(NSLog[^;]+?;?)</regex>
         <postprocess>
         	<find>\(</find>
