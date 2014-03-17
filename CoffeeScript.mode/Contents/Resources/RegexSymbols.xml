@@ -19,7 +19,7 @@
         <regex># !([^\n\r]+)</regex>
     </symbol>
     
-    <symbol id="language.variable" image="SymbolsV" ignoreblocks="yes" hidden="no" useforautocomplete="yes">
-      <regex>(\w+)\s=</regex>
+    <symbol id="language.variable" image="SymbolsV" ignoreblocks="yes" hidden="no" useforautocomplete="yes" casesensitive="no">
+      <regex>(\w+)\s=\s[a-z0-9]</regex>
     </symbol>
 </symbols>
