@@ -142,6 +142,10 @@
     <regex>scope\s(:\w+)</regex>
   </symbol>
   
+  <symbol id="language.include" casesensitive="no" useforautocomplete="no" hidden="no" image="SymbolGroup">
+    <regex>include\s([A-Za-z\:]+)</regex>
+  </symbol>
+  
   <symbol id="Validates" useforautocomplete="no" hidden="no" image="SymbolsV">
     <regex>validates\s(:\w+)</regex>
   </symbol>
