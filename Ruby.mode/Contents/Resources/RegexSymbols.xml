@@ -64,28 +64,38 @@
     </symbol>
 
     <symbol id="language.class" image="SymbolC" indentation="0" ignoreblocks="yes" useforautocomplete="yes">
-        <regex>\b[ \t]*class[ \t]+([\w\d?!_]+)</regex>
+        <regex>\b[ \t]*class[ \t]+([\w\d?!_:]+)</regex>
+        <postprocess>
+          <find>(^\w+::)</find>
+          <replace></replace>
+        </postprocess>
     </symbol>
     
     <symbol id="language.class" image="SymbolM" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
-        <regex>\b[ \t]*class[ \t]++([\w\d?!_]+\s&lt;\sActiveRecord::Base+)</regex>
+        <regex>\b[ \t]*class[ \t]++([\w\d?!_:]+\s&lt;\sActiveRecord::Base+)</regex>
         <postprocess>
+          <find>(^\w+::)</find>
+          <replace></replace>
           <find>&lt;[^\n]+</find>
           <replace>Model</replace>
         </postprocess>
     </symbol>
     
     <symbol id="language.class" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
-        <regex>\b[ \t]*class[ \t]+([\w\d?!_]+Controller)</regex>
+        <regex>\b[ \t]*class[ \t]+([\w\d?!_:]+Controller)</regex>
         <postprocess>
+          <find>(^\w+::)</find>
+          <replace></replace>
           <find>Controller</find>
           <replace> Controller</replace>
         </postprocess>
     </symbol>
 		
     <symbol id="language.class" image="SymbolC" indentation="0" ignoreblocks="yes" hidden="yes" useforautocomplete="no">
-        <regex>\b[ \t]*class[ \t]+([\w\d?!_]+Controller)</regex>
+        <regex>\b[ \t]*class[ \t]+([\w\d?!_:]+Controller)</regex>
         <postprocess>
+          <find>(^\w+::)</find>
+          <replace></replace>
           <find>sController</find>
           <replace> Controller</replace>
         </postprocess>
