@@ -23,7 +23,7 @@
       <regex>(\w+)\s=\s[a-z0-9]</regex>
     </symbol>
     
-    <symbol id="language.variable" image="SymbolS" ignoreblocks="yes" hidden="no" useforautocomplete="yes" casesensitive="no">
+    <symbol id="language.variable" image="SymbolS" ignoreblocks="yes" hidden="yes" useforautocomplete="yes" casesensitive="no">
       <regex>(\$\([^\)]+\))</regex>
     </symbol>
     
