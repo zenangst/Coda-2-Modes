@@ -22,4 +22,12 @@
     <symbol id="language.variable" image="SymbolsV" ignoreblocks="yes" hidden="no" useforautocomplete="yes" casesensitive="no">
       <regex>(\w+)\s=\s[a-z0-9]</regex>
     </symbol>
+    
+    <symbol id="language.variable" image="SymbolS" ignoreblocks="yes" hidden="no" useforautocomplete="yes" casesensitive="no">
+      <regex>(\$\([^\)]+\))</regex>
+    </symbol>
+    
+    <symbol id="language.variable" image="SymbolP" ignoreblocks="yes" hidden="yes" useforautocomplete="yes" casesensitive="no">
+      <regex>\.(\w+)</regex>
+    </symbol>
 </symbols>
