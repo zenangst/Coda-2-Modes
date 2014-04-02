@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "settings.dtd">
+<settings>
+  <recognition>
+    <extension>yml</extension>
+    <extension>yaml</extension>
+  </recognition>
+  <color>0.416, 0.706, 0.921</color>
+</settings>
