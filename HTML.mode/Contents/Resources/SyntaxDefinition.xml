@@ -197,7 +197,10 @@
 				<keywords id="Attributes in Tags" useforautocomplete="no" scope="markup.tag.attribute.name">
 					<regex>\b([\w-]*)(?=[ \t]*=)</regex>
 				</keywords>
-
+        <keywords id="Trailing Whitespace" scope="meta.invalid">
+          <regex>\r?\n([ \t]+)\r?\n</regex>
+          <regex>([ \t]+)\r?\n</regex>
+        </keywords>
             </state>
             
         </default>

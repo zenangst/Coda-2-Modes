@@ -486,6 +486,11 @@
 				<regex>(&lt;/?LocationMatch[^&gt;]*&gt;)</regex>
 				<regex>(&lt;/?VirtualHost[^&gt;]*&gt;)</regex>
             </keywords>
+            
+            <keywords id="Trailing Whitespace" scope="meta.invalid">
+              <regex>\r?\n([ \t]+)\r?\n</regex>
+              <regex>([ \t]+)\r?\n</regex>
+            </keywords>
         </default>
         
         <state id="Singleline Comment" color="#7F4C7F" font-style="italic" scope="comment.doc.apache" type="comment">

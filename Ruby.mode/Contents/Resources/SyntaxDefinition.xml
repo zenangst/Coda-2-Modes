@@ -758,6 +758,11 @@
       			<keywords id="Hashes" useforautocomplete="yes" scope="markup.tag.attribute.value" casesensitive="no">
       				<regex>([a-z_]+:)</regex>
       			</keywords>
+            
+            <keywords id="Trailing Whitespace" scope="meta.invalid">
+              <regex>\r?\n([ \t]+)\r?\n</regex>
+              <regex>([ \t]+)\r?\n</regex>
+            </keywords>
 
         </default>
         

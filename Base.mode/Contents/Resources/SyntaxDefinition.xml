@@ -31,7 +31,10 @@
 			    <regex>TODO?:?\s([^\n]+)</regex>
 			    <regex>EDGE_CASE?:?\s([^\n]+)</regex>
 		    </keywords>          
-
+        <keywords id="Trailing Whitespace" scope="meta.invalid">
+          <regex>\r?\n([ \t]+)\r?\n</regex>
+          <regex>([ \t]+)\r?\n</regex>
+        </keywords>
           </state>
 
         </default>
