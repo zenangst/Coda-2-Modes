@@ -81,8 +81,8 @@
 		<regex>(\$\w[\w\d]+)</regex>
 		<regex>(\$[\w\$][\w\d]+)</regex>
 	</symbol>
-
-	<symbol id="language.variable" hidden="yes" useforautocomplete="yes">
+  
+	<symbol id="language.variable" hidden="no" useforautocomplete="yes" image="SymbolsV">
 		<regex>[private|protected|public]\s(\$\w+)</regex>
 		<postprocess>
 			<find>\$</find>
