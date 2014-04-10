@@ -125,5 +125,9 @@
     <symbol id="language.class" font-weight="bold" font-style="italic" image="SymbolM"  hidden="yes" useforautocomplete="yes">
         <regex>@implementation\s([^[\s\n\r\t]{\/]*)</regex>
     </symbol>
+    
+    <symbol id="language.class" font-weight="bold" image="SymbolC"  hidden="yes" useforautocomplete="yes">
+        <regex>&lt;?(\w+)&gt;? \*\w+</regex>
+    </symbol>
 	
 </symbols>
