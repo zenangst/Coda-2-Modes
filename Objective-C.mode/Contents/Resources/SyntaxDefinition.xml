@@ -155,6 +155,7 @@
         <string>self</string>
         <string>setter</string>
         <string>super</string>
+        <string>__block</string>
       </keywords>
       <keywords id="Cocoa Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="language.function.cocoa.objective-c">
         <string>ABAddPropertiesAndTypes</string>
