@@ -75,7 +75,7 @@
                 <end><regex>(\\'')|(.')</regex></end>
             </state>
     
-            <state id="Preprocessor" color="#683821" scope="support.preprocessor">
+            <state id="Preprocessor" color="#683821" scope="style.at-rule">
                 <begin><regex>#</regex></begin>
                 <end><regex>(\w+\s\w+|\w+)</regex></end>
                 <keywords id="Numbers" color="#00f" useforautocomplete="no" scope="constant.numeric">

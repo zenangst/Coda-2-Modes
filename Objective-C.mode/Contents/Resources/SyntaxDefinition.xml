@@ -62,12 +62,9 @@
       <keywords id="Referenced Object" color="#6C0540" casesensitive="yes" scope="style.value.color.rgb-value" useforautocomplete="yes">
         <regex>(&amp;\w+)</regex>
       </keywords>
-      <keywords id="User Methods" color="#6C0540" casesensitive="no" scope="language.function.objective-c" useforautocomplete="yes">
+      <keywords id="User Methods" color="#6C0540" casesensitive="no" scope="language.function" useforautocomplete="yes">
         <regex>\)([A-z]+)</regex>
         <regex>\)(\w+)[^{]+</regex>
-      </keywords>
-      <keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="language.function">
-        <regex>(?&lt;![\w:_])(new|allocWithZone:|alloc|autorelease|copyWithZone:|copy|mutableCopyWithZone:|mutableCopy|retain|release)(?![\w:_])</regex>
       </keywords>
       <keywords id="Objective-C Keywords (@)" color="#881350" useforautocomplete="yes" font-weight="bold" scope="style.value.keyword">
         <string>@catch</string>
@@ -92,21 +89,16 @@
         <string>@throw</string>
         <string>@try</string>
       </keywords>
-      <keywords id="Objective-C Keywords" color="#881350" useforautocomplete="yes" font-weight="bold" scope="keyword">
+      <keywords id="Objective-C Keywords" color="#881350" useforautocomplete="yes" font-weight="bold" scope="constant.numeric.keyword">
         <regex>(YES|NO)</regex>
-        <string>NSUInteger</string>
-        <string>NSInteger</string>
         <string>BOOL</string>
-        <string>Class</string>
-        <string>IBAction</string>
-        <string>IBOutlet</string>
         <string>NO</string>
         <string>Nil</string>
         <string>SEL</string>
         <string>YES</string>
         <string>__attribute__</string>
-        <string>__strong</string>
-        <string>__weak</string>
+        <regex>(_?_?strong)</regex>
+        <regex>(_?_?weak)</regex>
         <string>assign</string>
         <string>auto</string>
         <string>getter</string>
@@ -115,51 +107,18 @@
         <string>nonatomic</string>
         <string>readonly</string>
         <string>readwrite</string>
-        <string>self</string>
         <string>setter</string>
-        <string>super</string>
         <string>__block</string>
+        <string>const</string>
+        <string>static</string>
       </keywords>
       
-      <!-- Foundation (OS X and iOS) and Application Kit (OS X) -->
-      <keywords id="NS Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
-        <regex>\s(NS\w+)</regex>
-      </keywords>
-      <!-- UIKit (iOS) -->
-      <keywords id="UI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
-        <regex>\s(UI\w+)</regex>
-      </keywords>
-      <!-- Address Book -->
-      <keywords id="AB Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
-        <regex>\s(AB\w+)</regex>
-      </keywords>
-      <!-- Core Animation, Core Graphics, Core Image   -->
-      <keywords id="CA, CG and CI Classes" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="style.value.string">
-        <regex>\s(CA\w+)</regex>
-        <regex>\s(CI\w+)</regex>
-        <regex>\s([a-z]{1}CG\w+)|\s(CG\w+)</regex>
-      </keywords>
-      <keywords id="User Classes" useforautocomplete="yes" casesensitive="no" font-weight="normal" scope="support.function.objective-c">
-        <regex>\[([A-Z]{1}\w+)</regex>
-      </keywords>
-      <keywords id="User Classes Declaration" useforautocomplete="yes" casesensitive="no" font-weight="normal" scope="markup.tag">
-        <regex>\@implementation\s(\w+)</regex>
-        <regex>\@interface\s(\w+)</regex>
-      </keywords>
-      <keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
-        <regex>(\w+):</regex>
-      </keywords>
-      <keywords id="Method calls" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
-        <regex>\s(\w+)\]</regex>
-      </keywords>
-      <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
-        <regex>\.(\w{2,}+)</regex>
-      </keywords>
-      <keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="markup.tag.attribute.value">
-        <regex>(@)</regex>
-      </keywords>
-      
-      <keywords id="Cocoa Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="language.function.cocoa.objective-c">
+      <keywords id="Cocoa Functions" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="language.function">
+        <string>Class</string>
+        <string>IBAction</string>
+        <string>IBOutlet</string>
+        <string>self</string>
+        <string>super</string>
         <string>ABAddPropertiesAndTypes</string>
         <string>ABAddRecord</string>
         <string>ABAddressBookAddRecord</string>
@@ -261,690 +220,6 @@
         <string>ABTypeOfProperty</string>
         <string>AudioComponentInstanceCanDo</string>
         <string>AudioComponentRegister</string>
-        <string>CFRelease</string>
-        <string>CFRetain</string>
-        <string>CFStringTokenizerAdvanceToNextToken</string>
-        <string>CFStringTokenizerCopyBestStringLanguage</string>
-        <string>CFStringTokenizerCopyCurrentTokenAttribute</string>
-        <string>CFStringTokenizerCreate</string>
-        <string>CFStringTokenizerGetCurrentSubTokens</string>
-        <string>CFStringTokenizerGetCurrentTokenRange</string>
-        <string>CFStringTokenizerGetTypeID</string>
-        <string>CFStringTokenizerGoToTokenAtIndex</string>
-        <string>CFStringTokenizerSetString</string>
-        <string>CGAffineTransformConcat</string>
-        <string>CGAffineTransformEqualToTransform</string>
-        <string>CGAffineTransformInvert</string>
-        <string>CGAffineTransformIsIdentity</string>
-        <string>CGAffineTransformMake</string>
-        <string>CGAffineTransformMakeRotation</string>
-        <string>CGAffineTransformMakeScale</string>
-        <string>CGAffineTransformMakeTranslation</string>
-        <string>CGAffineTransformRotate</string>
-        <string>CGAffineTransformScale</string>
-        <string>CGAffineTransformTranslate</string>
-        <string>CGBitmapContextCreate</string>
-        <string>CGBitmapContextCreateImage</string>
-        <string>CGBitmapContextGetAlphaInfo</string>
-        <string>CGBitmapContextGetBitmapInfo</string>
-        <string>CGBitmapContextGetBitsPerComponent</string>
-        <string>CGBitmapContextGetBitsPerPixel</string>
-        <string>CGBitmapContextGetBytesPerRow</string>
-        <string>CGBitmapContextGetColorSpace</string>
-        <string>CGBitmapContextGetHeight</string>
-        <string>CGBitmapContextGetWidth</string>
-        <string>CGBlendMode</string>
-        <string>CGColorCreate</string>
-        <string>CGColorCreateCopy</string>
-        <string>CGColorCreateCopyWithAlpha</string>
-        <string>CGColorCreateGenericCMYK</string>
-        <string>CGColorCreateGenericGray</string>
-        <string>CGColorCreateGenericRGB</string>
-        <string>CGColorCreateWithPattern</string>
-        <string>CGColorEqualToColor</string>
-        <string>CGColorGetAlpha</string>
-        <string>CGColorGetColorSpace</string>
-        <string>CGColorGetConstantColor</string>
-        <string>CGColorGetNumberOfComponents</string>
-        <string>CGColorGetPattern</string>
-        <string>CGColorGetTypeID</string>
-        <string>CGColorRelease</string>
-        <string>CGColorRenderingIntent</string>
-        <string>CGColorRetain</string>
-        <string>CGColorSpaceCopyICCProfile</string>
-        <string>CGColorSpaceCreateCalibratedGray</string>
-        <string>CGColorSpaceCreateCalibratedRGB</string>
-        <string>CGColorSpaceCreateDeviceCMYK</string>
-        <string>CGColorSpaceCreateDeviceGray</string>
-        <string>CGColorSpaceCreateDeviceRGB</string>
-        <string>CGColorSpaceCreateICCBased</string>
-        <string>CGColorSpaceCreateIndexed</string>
-        <string>CGColorSpaceCreateLab</string>
-        <string>CGColorSpaceCreatePattern</string>
-        <string>CGColorSpaceCreateWithName</string>
-        <string>CGColorSpaceCreateWithPlatformColorSpace</string>
-        <string>CGColorSpaceGetBaseColorSpace</string>
-        <string>CGColorSpaceGetColorTable</string>
-        <string>CGColorSpaceGetColorTableCount</string>
-        <string>CGColorSpaceGetModel</string>
-        <string>CGColorSpaceGetNumberOfComponents</string>
-        <string>CGColorSpaceGetTypeID</string>
-        <string>CGColorSpaceModel</string>
-        <string>CGColorSpaceRelease</string>
-        <string>CGColorSpaceRetain</string>
-        <string>CGContextAddArc</string>
-        <string>CGContextAddArcToPoint</string>
-        <string>CGContextAddCurveToPoint</string>
-        <string>CGContextAddEllipseInRect</string>
-        <string>CGContextAddLineToPoint</string>
-        <string>CGContextAddLines</string>
-        <string>CGContextAddPath</string>
-        <string>CGContextAddQuadCurveToPoint</string>
-        <string>CGContextAddRect</string>
-        <string>CGContextAddRects</string>
-        <string>CGContextBeginPage</string>
-        <string>CGContextBeginPath</string>
-        <string>CGContextBeginTransparencyLayer</string>
-        <string>CGContextBeginTransparencyLayerWithRect</string>
-        <string>CGContextClearRect</string>
-        <string>CGContextClip</string>
-        <string>CGContextClipToMask</string>
-        <string>CGContextClipToRect</string>
-        <string>CGContextClipToRects</string>
-        <string>CGContextClosePath</string>
-        <string>CGContextConcatCTM</string>
-        <string>CGContextConvertPointToDeviceSpace</string>
-        <string>CGContextConvertPointToUserSpace</string>
-        <string>CGContextConvertRectToDeviceSpace</string>
-        <string>CGContextConvertRectToUserSpace</string>
-        <string>CGContextConvertSizeToDeviceSpace</string>
-        <string>CGContextConvertSizeToUserSpace</string>
-        <string>CGContextDrawImage</string>
-        <string>CGContextDrawLayerAtPoint</string>
-        <string>CGContextDrawLayerInRect</string>
-        <string>CGContextDrawLinearGradient</string>
-        <string>CGContextDrawPDFDocument</string>
-        <string>CGContextDrawPDFPage</string>
-        <string>CGContextDrawPath</string>
-        <string>CGContextDrawRadialGradient</string>
-        <string>CGContextDrawShading</string>
-        <string>CGContextDrawTiledImage</string>
-        <string>CGContextEOClip</string>
-        <string>CGContextEOFillPath</string>
-        <string>CGContextEndPage</string>
-        <string>CGContextEndTransparencyLayer</string>
-        <string>CGContextFillEllipseInRect</string>
-        <string>CGContextFillPath</string>
-        <string>CGContextFillRect</string>
-        <string>CGContextFillRects</string>
-        <string>CGContextFlush</string>
-        <string>CGContextGetCTM</string>
-        <string>CGContextGetClipBoundingBox</string>
-        <string>CGContextGetInterpolationQuality</string>
-        <string>CGContextGetPathBoundingBox</string>
-        <string>CGContextGetPathCurrentPoint</string>
-        <string>CGContextGetTextMatrix</string>
-        <string>CGContextGetTextPosition</string>
-        <string>CGContextGetTypeID</string>
-        <string>CGContextGetUserSpaceToDeviceSpaceTransform</string>
-        <string>CGContextIsPathEmpty</string>
-        <string>CGContextMoveToPoint</string>
-        <string>CGContextPathContainsPoint</string>
-        <string>CGContextRelease</string>
-        <string>CGContextReplacePathWithStrokedPath</string>
-        <string>CGContextRestoreGState</string>
-        <string>CGContextRetain</string>
-        <string>CGContextRotateCTM</string>
-        <string>CGContextSaveGState</string>
-        <string>CGContextScaleCTM</string>
-        <string>CGContextSelectFont</string>
-        <string>CGContextSetAllowsAntialiasing</string>
-        <string>CGContextSetAlpha</string>
-        <string>CGContextSetBlendMode</string>
-        <string>CGContextSetCMYKFillColor</string>
-        <string>CGContextSetCMYKStrokeColor</string>
-        <string>CGContextSetCharacterSpacing</string>
-        <string>CGContextSetFillColor</string>
-        <string>CGContextSetFillColorSpace</string>
-        <string>CGContextSetFillColorWithColor</string>
-        <string>CGContextSetFillPattern</string>
-        <string>CGContextSetFlatness</string>
-        <string>CGContextSetFont</string>
-        <string>CGContextSetFontSize</string>
-        <string>CGContextSetGrayFillColor</string>
-        <string>CGContextSetGrayStrokeColor</string>
-        <string>CGContextSetInterpolationQuality</string>
-        <string>CGContextSetLineCap</string>
-        <string>CGContextSetLineDash</string>
-        <string>CGContextSetLineJoin</string>
-        <string>CGContextSetLineWidth</string>
-        <string>CGContextSetMiterLimit</string>
-        <string>CGContextSetPatternPhase</string>
-        <string>CGContextSetRGBFillColor</string>
-        <string>CGContextSetRGBStrokeColor</string>
-        <string>CGContextSetRenderingIntent</string>
-        <string>CGContextSetShadow</string>
-        <string>CGContextSetShadowWithColor</string>
-        <string>CGContextSetShouldAntialias</string>
-        <string>CGContextSetShouldSmoothFonts</string>
-        <string>CGContextSetStrokeColor</string>
-        <string>CGContextSetStrokeColorSpace</string>
-        <string>CGContextSetStrokeColorWithColor</string>
-        <string>CGContextSetStrokePattern</string>
-        <string>CGContextSetTextDrawingMode</string>
-        <string>CGContextSetTextMatrix</string>
-        <string>CGContextSetTextPosition</string>
-        <string>CGContextShowGlyphs</string>
-        <string>CGContextShowGlyphsAtPoint</string>
-        <string>CGContextShowGlyphsAtPositions</string>
-        <string>CGContextShowGlyphsWithAdvances</string>
-        <string>CGContextShowText</string>
-        <string>CGContextShowTextAtPoint</string>
-        <string>CGContextStrokeEllipseInRect</string>
-        <string>CGContextStrokeLineSegments</string>
-        <string>CGContextStrokePath</string>
-        <string>CGContextStrokeRect</string>
-        <string>CGContextStrokeRectWithWidth</string>
-        <string>CGContextSynchronize</string>
-        <string>CGContextTranslateCTM</string>
-        <string>CGDataConsumerCreate</string>
-        <string>CGDataConsumerCreateWithCFData</string>
-        <string>CGDataConsumerCreateWithURL</string>
-        <string>CGDataConsumerGetTypeID</string>
-        <string>CGDataConsumerRelease</string>
-        <string>CGDataConsumerRetain</string>
-        <string>CGDataProviderCopyData</string>
-        <string>CGDataProviderCreate</string>
-        <string>CGDataProviderCreateDirect</string>
-        <string>CGDataProviderCreateDirectAccess</string>
-        <string>CGDataProviderCreateSequential</string>
-        <string>CGDataProviderCreateWithCFData</string>
-        <string>CGDataProviderCreateWithData</string>
-        <string>CGDataProviderCreateWithFilename</string>
-        <string>CGDataProviderCreateWithURL</string>
-        <string>CGDataProviderGetTypeID</string>
-        <string>CGDataProviderRelease</string>
-        <string>CGDataProviderRetain</string>
-        <string>CGFontCanCreatePostScriptSubset</string>
-        <string>CGFontCopyFullName</string>
-        <string>CGFontCopyGlyphNameForGlyph</string>
-        <string>CGFontCopyPostScriptName</string>
-        <string>CGFontCopyTableForTag</string>
-        <string>CGFontCopyTableTags</string>
-        <string>CGFontCopyVariationAxes</string>
-        <string>CGFontCopyVariations</string>
-        <string>CGFontCreateCopyWithVariations</string>
-        <string>CGFontCreatePostScriptEncoding</string>
-        <string>CGFontCreatePostScriptSubset</string>
-        <string>CGFontCreateWithDataProvider</string>
-        <string>CGFontCreateWithFontName</string>
-        <string>CGFontCreateWithPlatformFont</string>
-        <string>CGFontGetAscent</string>
-        <string>CGFontGetCapHeight</string>
-        <string>CGFontGetDescent</string>
-        <string>CGFontGetFontBBox</string>
-        <string>CGFontGetGlyphAdvances</string>
-        <string>CGFontGetGlyphBBoxes</string>
-        <string>CGFontGetGlyphWithGlyphName</string>
-        <string>CGFontGetItalicAngle</string>
-        <string>CGFontGetLeading</string>
-        <string>CGFontGetNumberOfGlyphs</string>
-        <string>CGFontGetStemV</string>
-        <string>CGFontGetTypeID</string>
-        <string>CGFontGetUnitsPerEm</string>
-        <string>CGFontGetXHeight</string>
-        <string>CGFontPostScriptFormat</string>
-        <string>CGFontRelease</string>
-        <string>CGFontRetain</string>
-        <string>CGFunctionCreate</string>
-        <string>CGFunctionGetTypeID</string>
-        <string>CGFunctionRelease</string>
-        <string>CGFunctionRetain</string>
-        <string>CGGradientCreateWithColorComponents</string>
-        <string>CGGradientCreateWithColors</string>
-        <string>CGGradientGetTypeID</string>
-        <string>CGGradientRelease</string>
-        <string>CGGradientRetain</string>
-        <string>CGImageAlphaInfo</string>
-        <string>CGImageCreate</string>
-        <string>CGImageCreateCopy</string>
-        <string>CGImageCreateCopyWithColorSpace</string>
-        <string>CGImageCreateWithImageInRect</string>
-        <string>CGImageCreateWithJPEGDataProvider</string>
-        <string>CGImageCreateWithMask</string>
-        <string>CGImageCreateWithMaskingColors</string>
-        <string>CGImageCreateWithPNGDataProvider</string>
-        <string>CGImageGetAlphaInfo</string>
-        <string>CGImageGetBitmapInfo</string>
-        <string>CGImageGetBitsPerComponent</string>
-        <string>CGImageGetBitsPerPixel</string>
-        <string>CGImageGetBytesPerRow</string>
-        <string>CGImageGetColorSpace</string>
-        <string>CGImageGetDataProvider</string>
-        <string>CGImageGetHeight</string>
-        <string>CGImageGetRenderingIntent</string>
-        <string>CGImageGetShouldInterpolate</string>
-        <string>CGImageGetTypeID</string>
-        <string>CGImageGetWidth</string>
-        <string>CGImageIsMask</string>
-        <string>CGImageMaskCreate</string>
-        <string>CGImageRelease</string>
-        <string>CGImageRetain</string>
-        <string>CGInterpolationQuality</string>
-        <string>CGLayerCreateWithContext</string>
-        <string>CGLayerGetContext</string>
-        <string>CGLayerGetSize</string>
-        <string>CGLayerGetTypeID</string>
-        <string>CGLayerRelease</string>
-        <string>CGLayerRetain</string>
-        <string>CGLineCap</string>
-        <string>CGLineJoin</string>
-        <string>CGPDFArrayGetArray</string>
-        <string>CGPDFArrayGetBoolean</string>
-        <string>CGPDFArrayGetCount</string>
-        <string>CGPDFArrayGetDictionary</string>
-        <string>CGPDFArrayGetInteger</string>
-        <string>CGPDFArrayGetName</string>
-        <string>CGPDFArrayGetNull</string>
-        <string>CGPDFArrayGetNumber</string>
-        <string>CGPDFArrayGetObject</string>
-        <string>CGPDFArrayGetStream</string>
-        <string>CGPDFArrayGetString</string>
-        <string>CGPDFBox</string>
-        <string>CGPDFContentStreamCreateWithPage</string>
-        <string>CGPDFContentStreamGetResource</string>
-        <string>CGPDFContentStreamGetStreams</string>
-        <string>CGPDFContentStreamRelease</string>
-        <string>CGPDFContentStreamRetain</string>
-        <string>CGPDFContextAddDestinationAtPoint</string>
-        <string>CGPDFContextBeginPage</string>
-        <string>CGPDFContextClose</string>
-        <string>CGPDFContextCreate</string>
-        <string>CGPDFContextCreateWithURL</string>
-        <string>CGPDFContextEndPage</string>
-        <string>CGPDFContextSetDestinationForRect</string>
-        <string>CGPDFContextSetURLForRect</string>
-        <string>CGPDFDataFormat</string>
-        <string>CGPDFDictionaryApplyFunction</string>
-        <string>CGPDFDictionaryGetArray</string>
-        <string>CGPDFDictionaryGetBoolean</string>
-        <string>CGPDFDictionaryGetCount</string>
-        <string>CGPDFDictionaryGetDictionary</string>
-        <string>CGPDFDictionaryGetInteger</string>
-        <string>CGPDFDictionaryGetName</string>
-        <string>CGPDFDictionaryGetNumber</string>
-        <string>CGPDFDictionaryGetObject</string>
-        <string>CGPDFDictionaryGetStream</string>
-        <string>CGPDFDictionaryGetString</string>
-        <string>CGPDFDocumentAllowsCopying</string>
-        <string>CGPDFDocumentAllowsPrinting</string>
-        <string>CGPDFDocumentCreateWithProvider</string>
-        <string>CGPDFDocumentCreateWithURL</string>
-        <string>CGPDFDocumentGetArtBox</string>
-        <string>CGPDFDocumentGetBleedBox</string>
-        <string>CGPDFDocumentGetCatalog</string>
-        <string>CGPDFDocumentGetCropBox</string>
-        <string>CGPDFDocumentGetID</string>
-        <string>CGPDFDocumentGetInfo</string>
-        <string>CGPDFDocumentGetMediaBox</string>
-        <string>CGPDFDocumentGetNumberOfPages</string>
-        <string>CGPDFDocumentGetPage</string>
-        <string>CGPDFDocumentGetRotationAngle</string>
-        <string>CGPDFDocumentGetTrimBox</string>
-        <string>CGPDFDocumentGetTypeID</string>
-        <string>CGPDFDocumentGetVersion</string>
-        <string>CGPDFDocumentIsEncrypted</string>
-        <string>CGPDFDocumentIsUnlocked</string>
-        <string>CGPDFDocumentRelease</string>
-        <string>CGPDFDocumentRetain</string>
-        <string>CGPDFDocumentUnlockWithPassword</string>
-        <string>CGPDFObjectGetType</string>
-        <string>CGPDFObjectGetValue</string>
-        <string>CGPDFObjectType</string>
-        <string>CGPDFOperatorTableCreate</string>
-        <string>CGPDFOperatorTableRelease</string>
-        <string>CGPDFOperatorTableRetain</string>
-        <string>CGPDFOperatorTableSetCallback</string>
-        <string>CGPDFPageGetBoxRect</string>
-        <string>CGPDFPageGetDictionary</string>
-        <string>CGPDFPageGetDocument</string>
-        <string>CGPDFPageGetDrawingTransform</string>
-        <string>CGPDFPageGetPageNumber</string>
-        <string>CGPDFPageGetRotationAngle</string>
-        <string>CGPDFPageGetTypeID</string>
-        <string>CGPDFPageRelease</string>
-        <string>CGPDFPageRetain</string>
-        <string>CGPDFScannerCreate</string>
-        <string>CGPDFScannerGetContentStream</string>
-        <string>CGPDFScannerPopArray</string>
-        <string>CGPDFScannerPopBoolean</string>
-        <string>CGPDFScannerPopDictionary</string>
-        <string>CGPDFScannerPopInteger</string>
-        <string>CGPDFScannerPopName</string>
-        <string>CGPDFScannerPopNumber</string>
-        <string>CGPDFScannerPopObject</string>
-        <string>CGPDFScannerPopStream</string>
-        <string>CGPDFScannerPopString</string>
-        <string>CGPDFScannerRelease</string>
-        <string>CGPDFScannerRetain</string>
-        <string>CGPDFScannerScan</string>
-        <string>CGPDFStreamCopyData</string>
-        <string>CGPDFStreamGetDictionary</string>
-        <string>CGPDFStringCopyDate</string>
-        <string>CGPDFStringCopyTextString</string>
-        <string>CGPDFStringGetLength</string>
-        <string>CGPathAddArc</string>
-        <string>CGPathAddArcToPoint</string>
-        <string>CGPathAddCurveToPoint</string>
-        <string>CGPathAddEllipseInRect</string>
-        <string>CGPathAddLineToPoint</string>
-        <string>CGPathAddLines</string>
-        <string>CGPathAddPath</string>
-        <string>CGPathAddQuadCurveToPoint</string>
-        <string>CGPathAddRect</string>
-        <string>CGPathAddRects</string>
-        <string>CGPathApply</string>
-        <string>CGPathCloseSubpath</string>
-        <string>CGPathContainsPoint</string>
-        <string>CGPathCreateCopy</string>
-        <string>CGPathCreateMutable</string>
-        <string>CGPathCreateMutableCopy</string>
-        <string>CGPathDrawingMode</string>
-        <string>CGPathElementType</string>
-        <string>CGPathEqualToPath</string>
-        <string>CGPathGetBoundingBox</string>
-        <string>CGPathGetCurrentPoint</string>
-        <string>CGPathGetTypeID</string>
-        <string>CGPathIsEmpty</string>
-        <string>CGPathIsRect</string>
-        <string>CGPathMoveToPoint</string>
-        <string>CGPathRelease</string>
-        <string>CGPathRetain</string>
-        <string>CGPatternCreate</string>
-        <string>CGPatternGetTypeID</string>
-        <string>CGPatternRelease</string>
-        <string>CGPatternRetain</string>
-        <string>CGPatternTiling</string>
-        <string>CGPointApplyAffineTransform</string>
-        <string>CGPointCreateDictionaryRepresentation</string>
-        <string>CGPointEqualToPoint</string>
-        <string>CGPointMake</string>
-        <string>CGPointMakeWithDictionaryRepresentation</string>
-        <string>CGRectApplyAffineTransform</string>
-        <string>CGRectContainsPoint</string>
-        <string>CGRectContainsRect</string>
-        <string>CGRectCreateDictionaryRepresentation</string>
-        <string>CGRectDivide</string>
-        <string>CGRectEdge</string>
-        <string>CGRectEqualToRect</string>
-        <string>CGRectGetHeight</string>
-        <string>CGRectGetMaxX</string>
-        <string>CGRectGetMaxY</string>
-        <string>CGRectGetMidX</string>
-        <string>CGRectGetMidY</string>
-        <string>CGRectGetMinX</string>
-        <string>CGRectGetMinY</string>
-        <string>CGRectGetWidth</string>
-        <string>CGRectInset</string>
-        <string>CGRectIntegral</string>
-        <string>CGRectIntersection</string>
-        <string>CGRectIntersectsRect</string>
-        <string>CGRectIsEmpty</string>
-        <string>CGRectIsInfinite</string>
-        <string>CGRectIsNull</string>
-        <string>CGRectMake</string>
-        <string>CGRectMakeWithDictionaryRepresentation</string>
-        <string>CGRectOffset</string>
-        <string>CGRectStandardize</string>
-        <string>CGRectUnion</string>
-        <string>CGShadingCreateAxial</string>
-        <string>CGShadingCreateRadial</string>
-        <string>CGShadingGetTypeID</string>
-        <string>CGShadingRelease</string>
-        <string>CGShadingRetain</string>
-        <string>CGSizeApplyAffineTransform</string>
-        <string>CGSizeCreateDictionaryRepresentation</string>
-        <string>CGSizeEqualToSize</string>
-        <string>CGSizeMake</string>
-        <string>CGSizeMakeWithDictionaryRepresentation</string>
-        <string>CGTextDrawingMode</string>
-        <string>CGTextEncoding</string>
-        <string>MAX</string>
-        <string>MIN</string>
-        <string>MKCoordinateRegionMake</string>
-        <string>MKCoordinateRegionMakeWithDistance</string>
-        <string>MKCoordinateSpanMake</string>
-        <string>NSAccessibilityActionDescription</string>
-        <string>NSAccessibilityPostNotification</string>
-        <string>NSAccessibilityRaiseBadArgumentException</string>
-        <string>NSAccessibilityRoleDescription</string>
-        <string>NSAccessibilityRoleDescriptionForUIElement</string>
-        <string>NSAccessibilityUnignoredAncestor</string>
-        <string>NSAccessibilityUnignoredChildren</string>
-        <string>NSAccessibilityUnignoredChildrenForOnlyChild</string>
-        <string>NSAccessibilityUnignoredDescendant</string>
-        <string>NSAllHashTableObjects</string>
-        <string>NSApplicationLoad</string>
-        <string>NSApplicationMain</string>
-        <string>NSAssert1</string>
-        <string>NSAssert2</string>
-        <string>NSAssert3</string>
-        <string>NSAssert4</string>
-        <string>NSAssert5</string>
-        <string>NSAssert</string>
-        <string>NSAvailableWindowDepths</string>
-        <string>NSBeep</string>
-        <string>NSBeginAlertSheet</string>
-        <string>NSBeginCriticalAlertSheet</string>
-        <string>NSBeginInformationalAlertSheet</string>
-        <string>NSBestDepth</string>
-        <string>NSBitsPerPixelFromDepth</string>
-        <string>NSBitsPerSampleFromDepth</string>
-        <string>NSCAssert1</string>
-        <string>NSCAssert2</string>
-        <string>NSCAssert3</string>
-        <string>NSCAssert4</string>
-        <string>NSCAssert5</string>
-        <string>NSCAssert</string>
-        <string>NSCParameterAssert</string>
-        <string>NSClassFromString</string>
-        <string>NSColorSpaceFromDepth</string>
-        <string>NSCompareHashTables</string>
-        <string>NSCompareMapTables</string>
-        <string>NSContainsRect</string>
-        <string>NSConvertGlyphsToPackedGlyphs</string>
-        <string>NSConvertHostDoubleToSwapped</string>
-        <string>NSConvertHostFloatToSwapped</string>
-        <string>NSConvertSwappedDoubleToHost</string>
-        <string>NSConvertSwappedFloatToHost</string>
-        <string>NSCopyBits</string>
-        <string>NSCountHashTable</string>
-        <string>NSCountMapTable</string>
-        <string>NSCountWindows</string>
-        <string>NSCountWindowsForContext</string>
-        <string>NSCreateFileContentsPboardType</string>
-        <string>NSCreateFilenamePboardType</string>
-        <string>NSDecimalAdd</string>
-        <string>NSDecimalCompact</string>
-        <string>NSDecimalCompare</string>
-        <string>NSDecimalCopy</string>
-        <string>NSDecimalDivide</string>
-        <string>NSDecimalIsNotANumber</string>
-        <string>NSDecimalMultiply</string>
-        <string>NSDecimalMultiplyByPowerOf10</string>
-        <string>NSDecimalNormalize</string>
-        <string>NSDecimalPower</string>
-        <string>NSDecimalRound</string>
-        <string>NSDecimalString</string>
-        <string>NSDecimalSubtract</string>
-        <string>NSDisableScreenUpdates</string>
-        <string>NSDottedFrameRect</string>
-        <string>NSDrawBitmap</string>
-        <string>NSDrawButton</string>
-        <string>NSDrawColorTiledRects</string>
-        <string>NSDrawDarkBezel</string>
-        <string>NSDrawGrayBezel</string>
-        <string>NSDrawGroove</string>
-        <string>NSDrawLightBezel</string>
-        <string>NSDrawNinePartImage</string>
-        <string>NSDrawThreePartImage</string>
-        <string>NSDrawTiledRects</string>
-        <string>NSDrawWhiteBezel</string>
-        <string>NSDrawWindowBackground</string>
-        <string>NSEnableScreenUpdates</string>
-        <string>NSEndHashTableEnumeration</string>
-        <string>NSEndMapTableEnumeration</string>
-        <string>NSEqualPoints</string>
-        <string>NSEqualRanges</string>
-        <string>NSEqualRects</string>
-        <string>NSEqualSizes</string>
-        <string>NSEraseRect</string>
-        <string>NSEventMaskFromType</string>
-        <string>NSFileTypeForHFSTypeCode</string>
-        <string>NSFrameRect</string>
-        <string>NSFrameRectWithWidth</string>
-        <string>NSFrameRectWithWidthUsingOperation</string>
-        <string>NSFullUserName</string>
-        <string>NSGetAlertPanel</string>
-        <string>NSGetCriticalAlertPanel</string>
-        <string>NSGetFileType</string>
-        <string>NSGetFileTypes</string>
-        <string>NSGetInformationalAlertPanel</string>
-        <string>NSGetSizeAndAlignment</string>
-        <string>NSGetWindowServerMemory</string>
-        <string>NSGlyphInfoAtIndex</string>
-        <string>NSHFSTypeCodeFromFileType</string>
-        <string>NSHFSTypeOfFile</string>
-        <string>NSHashGet</string>
-        <string>NSHeight</string>
-        <string>NSHighlightRect</string>
-        <string>NSHomeDirectory</string>
-        <string>NSHomeDirectoryForUser</string>
-        <string>NSHostByteOrder</string>
-        <string>NSInsetRect</string>
-        <string>NSIntegralRect</string>
-        <string>NSInterfaceStyleForKey</string>
-        <string>NSIntersectionRange</string>
-        <string>NSIntersectionRect</string>
-        <string>NSIntersectsRect</string>
-        <string>NSIsControllerMarker</string>
-        <string>NSIsEmptyRect</string>
-        <string>NSJavaBundleCleanup</string>
-        <string>NSJavaBundleSetup</string>
-        <string>NSJavaNeedsToLoadClasses</string>
-        <string>NSJavaNeedsVirtualMachine</string>
-        <string>NSJavaObjectNamedInPath</string>
-        <string>NSJavaProvidesClasses</string>
-        <string>NSJavaSetup</string>
-        <string>NSLocalizedString</string>
-        <string>NSLocalizedStringFromTable</string>
-        <string>NSLocalizedStringFromTableInBundle</string>
-        <string>NSLocalizedStringWithDefaultValue</string>
-        <string>NSLocationInRange</string>
-        <string>NSLog</string>
-        <string>NSLogv</string>
-        <string>NSMakePoint</string>
-        <string>NSMakeRange</string>
-        <string>NSMakeRect</string>
-        <string>NSMakeSize</string>
-        <string>NSMaxRange</string>
-        <string>NSMaxX</string>
-        <string>NSMaxY</string>
-        <string>NSMidX</string>
-        <string>NSMidY</string>
-        <string>NSMinX</string>
-        <string>NSMinY</string>
-        <string>NSMouseInRect</string>
-        <string>NSNumberOfColorComponents</string>
-        <string>NSOffsetRect</string>
-        <string>NSOpenGLGetOption</string>
-        <string>NSOpenGLGetVersion</string>
-        <string>NSOpenGLSetOption</string>
-        <string>NSOpenStepRootDirectory</string>
-        <string>NSParameterAssert</string>
-        <string>NSPerformService</string>
-        <string>NSPlanarFromDepth</string>
-        <string>NSPointFromString</string>
-        <string>NSPointInRect</string>
-        <string>NSRangeFromString</string>
-        <string>NSReadPixel</string>
-        <string>NSRealMemoryAvailable</string>
-        <string>NSRectClip</string>
-        <string>NSRectClipList</string>
-        <string>NSRectFill</string>
-        <string>NSRectFillList</string>
-        <string>NSRectFillListUsingOperation</string>
-        <string>NSRectFillListWithColors</string>
-        <string>NSRectFillListWithColorsUsingOperation</string>
-        <string>NSRectFillListWithGrays</string>
-        <string>NSRectFillUsingOperation</string>
-        <string>NSRectFromString</string>
-        <string>NSRegisterServicesProvider</string>
-        <string>NSReleaseAlertPanel</string>
-        <string>NSRunAlertPanel</string>
-        <string>NSRunCriticalAlertPanel</string>
-        <string>NSRunInformationalAlertPanel</string>
-        <string>NSSearchPathForDirectoriesInDomains</string>
-        <string>NSSelectorFromString</string>
-        <string>NSSetFocusRingStyle</string>
-        <string>NSSetShowsServicesMenuItem</string>
-        <string>NSShouldRetainWithZone</string>
-        <string>NSShowAnimationEffect</string>
-        <string>NSShowsServicesMenuItem</string>
-        <string>NSSizeFromString</string>
-        <string>NSStringFromCGAffineTransform</string>
-        <string>NSStringFromCGPoint</string>
-        <string>NSStringFromCGRect</string>
-        <string>NSStringFromCGSize</string>
-        <string>NSStringFromClass</string>
-        <string>NSStringFromHashTable</string>
-        <string>NSStringFromMapTable</string>
-        <string>NSStringFromPoint</string>
-        <string>NSStringFromRange</string>
-        <string>NSStringFromRect</string>
-        <string>NSStringFromSelector</string>
-        <string>NSStringFromSize</string>
-        <string>NSStringFromUIEdgeInsets</string>
-        <string>NSSwapBigDoubleToHost</string>
-        <string>NSSwapBigFloatToHost</string>
-        <string>NSSwapBigIntToHost</string>
-        <string>NSSwapBigLongLongToHost</string>
-        <string>NSSwapBigLongToHost</string>
-        <string>NSSwapBigShortToHost</string>
-        <string>NSSwapDouble</string>
-        <string>NSSwapFloat</string>
-        <string>NSSwapHostDoubleToBig</string>
-        <string>NSSwapHostDoubleToLittle</string>
-        <string>NSSwapHostFloatToBig</string>
-        <string>NSSwapHostFloatToLittle</string>
-        <string>NSSwapHostIntToBig</string>
-        <string>NSSwapHostIntToLittle</string>
-        <string>NSSwapHostLongLongToBig</string>
-        <string>NSSwapHostLongLongToLittle</string>
-        <string>NSSwapHostLongToBig</string>
-        <string>NSSwapHostLongToLittle</string>
-        <string>NSSwapHostShortToBig</string>
-        <string>NSSwapHostShortToLittle</string>
-        <string>NSSwapInt</string>
-        <string>NSSwapLittleDoubleToHost</string>
-        <string>NSSwapLittleFloatToHost</string>
-        <string>NSSwapLittleIntToHost</string>
-        <string>NSSwapLittleLongLongToHost</string>
-        <string>NSSwapLittleLongToHost</string>
-        <string>NSSwapLittleShortToHost</string>
-        <string>NSSwapLong</string>
-        <string>NSSwapLongLong</string>
-        <string>NSSwapShort</string>
-        <string>NSTemporaryDirectory</string>
-        <string>NSUnRegisterServicesProvider</string>
-        <string>NSUnionRange</string>
-        <string>NSUnionRect</string>
-        <string>NSUpdateDynamicServices</string>
-        <string>NSUserName</string>
-        <string>NSWidth</string>
-        <string>NSWindowList</string>
-        <string>NSWindowListForContext</string>
-        <string>NSZoneFromPointer</string>
         <string>QTEqualTimeRanges</string>
         <string>QTGetTimeInterval</string>
         <string>QTGetTimeRecord</string>
@@ -1076,7 +351,7 @@
         <string>glVertexAttrib4fv</string>
         <string>glVertexAttribPointer</string>
       </keywords>
-      <keywords id="Cocoa Types" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="support.function.cocoatypes.objective-c">
+      <keywords id="Cocoa Types" color="#400080" font-weight="normal" font-style="italic" useforautocomplete="yes" scope="keyword.type">
         <string>CAAction</string>
         <string>CFAllocatorRef</string>
         <string>CFArrayRef</string>
@@ -8036,6 +7311,25 @@
         <!-- Channel Configuration Options -->
         <string>DISPATCH_IO_STRICT_INTERVAL</string>
       </keywords>
+      <keywords id="User Classes" useforautocomplete="yes" casesensitive="no" font-weight="normal" scope="language.variable">
+        <regex>\[([A-Z]{1}\w+)</regex>
+      </keywords>
+      <keywords id="User Classes Declaration" useforautocomplete="yes" casesensitive="no" font-weight="normal" scope="markup.tag">
+        <regex>\@implementation\s(\w+)</regex>
+        <regex>\@interface\s(\w+)</regex>
+      </keywords>
+      <keywords id="Methods" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
+        <regex>(\w+):</regex>
+      </keywords>
+      <keywords id="Method calls" color="#6C0540" casesensitive="yes" scope="language.function.objective-c" useforautocomplete="yes">
+        <regex>\s(\w+)\]</regex>
+      </keywords>
+      <keywords id="Properties" useforautocomplete="yes" scope="language.variable.objective-c" casesensitive="no" color="#8735a5">
+        <regex>\.(\w{2,}+)</regex>
+      </keywords>
+      <keywords id="Literals" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="markup.tag.attribute.value">
+        <regex>(@)</regex>
+      </keywords>
       <keywords id="Float" font-weight="bold" hidden="no" useforautocomplete="no" indentation="0" ignoreblocks="no" scope="constant.numeric">
         <regex>(\d+\.\d+f)</regex>
       </keywords>
@@ -8047,6 +7341,35 @@
       </keywords>
       <keywords id="Contants" font-weight="bold" hidden="yes" useforautocomplete="no" casesensitive="no" indentation="0" ignoreblocks="no" scope="style.at-rule">
         <regex>const ([A-Z0-9_]+)</regex>
+      </keywords>
+      <!-- Foundation (OS X and iOS) and Application Kit (OS X) -->
+      <keywords id="NS Prefix" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
+        <regex>(NS\w+) \*|\[(NS\w+)|(NS\w+)&lt;</regex>
+      </keywords>
+      <!-- UIKit (iOS) -->
+      <keywords id="UI Prefix" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
+        <regex>\s(UI\w+)|\[(UI\w+)</regex>
+      </keywords>
+      <!-- Address Book -->
+      <keywords id="AB Prefix" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="support">
+        <regex>\s(AB\w+)|\[(AB\w+)</regex>
+      </keywords>
+      <!-- QT Book -->
+      <keywords id="QT Prefix" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="style.value.string">
+        <regex>\s(QT\w+)|\[(QT\w+)</regex>
+      </keywords>
+      <!-- Core Animation, Core Graphics, Core Image   -->
+      <keywords id="CA, CG and CI Prefix" color="#400080" background-color="#fff" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes" scope="style.value.string">
+        <regex>\s(CA\w+)|\[(CA\w+)</regex>
+        <regex>\s(CI\w+)|\[(CI\w+)</regex>
+        <regex>\s([a-z]{1}CG\w+)|\s(CG\w+)|\[(CG\w+)</regex>
+      </keywords>
+      <keywords id="FunctionRegex" color="#003369" useforautocomplete="yes" scope="markup.tag.framework">
+      	<regex>(NS[\w+]+)\(</regex>
+      </keywords>
+      <keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="markup.inline.cdata">
+        <regex>(?&lt;![\w:_])(new|allocWithZone:|alloc|autorelease|copyWithZone:|copy|mutableCopyWithZone:|mutableCopy|retain|release)(?![\w:_])</regex>
+        <regex>(init\w+)</regex>
       </keywords>
     </default>
   </states>
