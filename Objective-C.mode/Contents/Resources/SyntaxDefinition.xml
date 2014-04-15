@@ -7369,7 +7369,7 @@
       </keywords>
       <keywords id="Memory Management" color="#f00" font-weight="bold" font-style="normal" useforautocomplete="yes" scope="markup.inline.cdata">
         <regex>(?&lt;![\w:_])(new|allocWithZone:|alloc|autorelease|copyWithZone:|copy|mutableCopyWithZone:|mutableCopy|retain|release)(?![\w:_])</regex>
-        <regex>(init\w+)</regex>
+        <regex>(init\w+|init)</regex>
       </keywords>
     </default>
   </states>
