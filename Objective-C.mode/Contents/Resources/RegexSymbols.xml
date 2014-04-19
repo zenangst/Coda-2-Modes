@@ -20,6 +20,10 @@
     <regex>import\s\"([^"]+)\"</regex>
 	</symbol>
 	
+	<symbol id="language.function" hidden="yes" image="SymbolF()" indentation="1" useforautocomplete="yes">
+    <regex>\(?[^\w]([a-z]{1}\w+\:)</regex>
+  </symbol>
+  
 		<symbol id="language.function" hidden="no" image="SymbolF()" indentation="1" useforautocomplete="yes">
 	    <regex>([-|+][|\s]\([A-z\\s* ]+\)[^;|\n|\{]+)</regex>
 	    <postprocess>
@@ -32,7 +36,6 @@
 	    </postprocess>
 			<arguments>(:)</arguments>
 			<captures>{"sender" : "1"}</captures>
-      <regex>\(?[^\w]([a-z]{1}\w+\:)</regex>
 	  </symbol>
 	
 	<symbol id="language.function" image="SymbolF()" indentation="1" ignoreblocks="yes" useforautocomplete="yes">
