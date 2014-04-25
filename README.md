@@ -1,7 +1,5 @@
-Coda-2-Modes
+Coda 2 Modes
 ============
-
-Modes for Coda 2
 
 ## Installation (non Mac App Store version)
 
