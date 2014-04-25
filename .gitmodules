@@ -1,0 +1,3 @@
+[submodule "Ruby.mode"]
+	path = Ruby.mode
+	url = git://github.com/zenangst/Ruby.mode
