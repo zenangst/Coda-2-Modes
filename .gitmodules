@@ -1,3 +1,48 @@
 [submodule "Ruby.mode"]
 	path = Ruby.mode
 	url = git://github.com/zenangst/Ruby.mode
+[submodule "ApacheConf.mode"]
+	path = ApacheConf.mode
+	url = git://github.com/zenangst/ApacheConf.mode
+[submodule "Base.mode"]
+	path = Base.mode
+	url = git://github.com/zenangst/Base.mode
+[submodule "C.mode"]
+	path = C.mode
+	url = git://github.com/zenangst/C.mode
+[submodule "CSS.mode"]
+	path = CSS.mode
+	url = git://github.com/zenangst/CSS.mode
+[submodule "CoffeeScript.mode"]
+	path = CoffeeScript.mode
+	url = git://github.com/zenangst/CoffeeScript.mode
+[submodule "Conference.mode"]
+	path = Conference.mode
+	url = git://github.com/zenangst/Conference.mode
+[submodule "ERB.mode"]
+	path = ERB.mode
+	url = git://github.com/zenangst/ERB.mode
+[submodule "HTML.mode"]
+	path = HTML.mode
+	url = git://github.com/zenangst/HTML.mode
+[submodule "Javascript.mode"]
+	path = Javascript.mode
+	url = git://github.com/zenangst/Javascript.mode
+[submodule "Objective-C.mode"]
+	path = Objective-C.mode
+	url = git://github.com/zenangst/Objective-C.mode
+[submodule "PHP-HTML.mode"]
+	path = PHP-HTML.mode
+	url = git://github.com/zenangst/PHP-HTML.mode
+[submodule "Sass.mode"]
+	path = Sass.mode
+	url = git://github.com/zenangst/Sass.mode
+[submodule "XML.mode"]
+	path = XML.mode
+	url = git://github.com/zenangst/XML.mode
+[submodule "YAML.mode"]
+	path = YAML.mode
+	url = git://github.com/zenangst/YAML.mode
+[submodule "haml.mode"]
+	path = haml.mode
+	url = git://github.com/zenangst/haml.mode
