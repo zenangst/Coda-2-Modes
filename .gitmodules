@@ -46,3 +46,6 @@
 [submodule "haml.mode"]
 	path = haml.mode
 	url = https://github.com/zenangst/haml.mode
+[submodule "Objective-C-Headers.mode"]
+	path = Objective-C-Headers.mode
+	url = git://github.com/zenangst/Objective-C-Headers.mode
