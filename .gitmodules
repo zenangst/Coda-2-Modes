@@ -49,3 +49,6 @@
 [submodule "Objective-C-Headers.mode"]
 	path = Objective-C-Headers.mode
 	url = git://github.com/zenangst/Objective-C-Headers.mode
+[submodule "Swift.mode"]
+	path = Swift.mode
+	url = git://github.com/zenangst/Swift.mode
